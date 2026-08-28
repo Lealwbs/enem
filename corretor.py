@@ -9,10 +9,19 @@ Tecnologias: Python, OpenCV (cv2), NumPy, Pandas
 import os
 import sys
 import glob
+import re
 import argparse
 import cv2
 import numpy as np
 import pandas as pd
+
+
+def ordenacao_natural_chave(texto):
+    """
+    Função auxiliar para ordenação natural de strings contendo números
+    (ex: 1.jpg, 5.jpg, 10.jpg ao invés de 1.jpg, 10.jpg, 5.jpg).
+    """
+    return [int(c) if c.isdigit() else c.lower() for c in re.split(r'(\d+)', texto)]
 
 
 def normalizar_iluminacao(img_bgr):
@@ -37,51 +46,9 @@ def normalizar_iluminacao(img_bgr):
     return gray, norm, darkness_map
 
 
-def obter_configuracao_colunas(img_shape):
+def processar_cartao_omr(caminho_imagem, salvar_debug=False, pasta_debug="debug"):
     """
-    Retorna as coordenadas normalizadas proporcionais à resolução da imagem
-    para os 4 blocos de questões (1-18, 19-36, 37-54, 55-70).
-    """
-    h_img, w_img = img_shape[:2]
-    
-    col_configs = [
-        {
-            'start_q': 1,
-            'end_q': 18,
-            'hx': 0.1475 * w_img,
-            'y0': 0.2902 * h_img,
-            'opt_dx': [0.0357 * w_img, 0.0559 * w_img, 0.0766 * w_img, 0.0974 * w_img, 0.1192 * w_img]
-        },
-        {
-            'start_q': 19,
-            'end_q': 36,
-            'hx': 0.3560 * w_img,
-            'y0': 0.2885 * h_img,
-            'opt_dx': [0.0357 * w_img, 0.0559 * w_img, 0.0766 * w_img, 0.0974 * w_img, 0.1192 * w_img]
-        },
-        {
-            'start_q': 37,
-            'end_q': 54,
-            'hx': 0.5634 * w_img,
-            'y0': 0.2859 * h_img,
-            'opt_dx': [0.0357 * w_img, 0.0559 * w_img, 0.0766 * w_img, 0.0974 * w_img, 0.1192 * w_img]
-        },
-        {
-            'start_q': 55,
-            'end_q': 70,
-            'hx': 0.7696 * w_img,
-            'y0': 0.2824 * h_img,
-            'opt_dx': [0.0357 * w_img, 0.0559 * w_img, 0.0766 * w_img, 0.0974 * w_img, 0.1192 * w_img]
-        },
-    ]
-    
-    pitch_y = 0.01964 * h_img
-    return col_configs, pitch_y
-
-
-def processar_cartao_omr(caminho_imagem, salvar_debug=True):
-    """
-    Processa a imagem de um cartão-resposta de 70 questões.
+    Processa a imagem de um cartão-resposta de 70 questões com detecção geométrica adaptativa.
     
     Retorna:
       - df_resultado: DataFrame com as colunas ['Questão', 'Resposta', 'Confiança']
@@ -91,92 +58,124 @@ def processar_cartao_omr(caminho_imagem, salvar_debug=True):
     if img is None:
         raise FileNotFoundError(f"Erro: Não foi possível carregar a imagem em '{caminho_imagem}'")
 
+    h, w = img.shape[:2]
     gray, norm, darkness = normalizar_iluminacao(img)
-    col_configs, pitch_y_padrao = obter_configuracao_colunas(img.shape)
+    img_debug = img.copy() if salvar_debug else None
+
+    # Detecção adaptativa dos círculos das bolinhas do cartão
+    thresh = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 21, 8)
+    contours, _ = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     
+    min_dim, max_dim = int(w * 0.005), int(w * 0.025)
+    circles = []
+    for c in contours:
+        x, y, bw, bh = cv2.boundingRect(c)
+        if min_dim <= bw <= max_dim and min_dim <= bh <= max_dim and 0.70 <= bw / float(bh) <= 1.40:
+            circles.append((x + bw / 2.0, y + bh / 2.0, bw, bh))
+            
+    # Filtra os círculos na região das questões
+    circles = [c for c in circles if 0.10 * h <= c[1] <= 0.95 * h]
+    if len(circles) < 50:
+        raise ValueError(f"Não foi possível detectar bolinhas suficientes em '{caminho_imagem}'.")
+
+    # Agrupa em 4 colunas horizontais principais (Blocos 1-18, 19-36, 37-54, 55-70)
+    xs = np.array([[c[0]] for c in circles], dtype=np.float32)
+    criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
+    _, col_labels, col_centers = cv2.kmeans(xs, 4, None, criteria, 10, cv2.KMEANS_RANDOM_CENTERS)
+    sorted_cols = np.argsort(col_centers.flatten())
+    
+    q_start = [1, 19, 37, 55]
+    q_count = [18, 18, 18, 16]
     letras = ['A', 'B', 'C', 'D', 'E']
     resultados = []
-    img_debug = img.copy()
-    
-    # Raio de busca e patch proporcional à resolução
-    raio_patch = max(3, int(round(img.shape[0] * 0.004)))
-    
-    # Processa cada um dos 4 blocos de questões
-    for col in col_configs:
-        start_q = col['start_q']
-        end_q = col['end_q']
-        hx = col['hx']
-        y0 = col['y0']
-        opt_dx = col['opt_dx']
-        num_questoes_bloco = end_q - start_q + 1
+
+    for c_i, cluster_id in enumerate(sorted_cols):
+        pts = [circles[i] for i in range(len(circles)) if col_labels[i][0] == cluster_id]
+        num_rows = q_count[c_i]
         
-        # Rastreamento dinâmico de linhas para absorver rotações/deformações de perspectiva
-        y_atual = y0
-        linhas_y = [y_atual]
+        # Encontra as 5 colunas de opções A, B, C, D, E
+        opt_xs_arr = np.array([[p[0]] for p in pts], dtype=np.float32)
+        _, opt_labels, opt_centers = cv2.kmeans(opt_xs_arr, 5, None, criteria, 10, cv2.KMEANS_RANDOM_CENTERS)
+        opt_xs = sorted(opt_centers.flatten())
+        delta_x = np.median(np.diff(opt_xs[-4:])) if len(opt_xs) >= 4 else (w * 0.021)
+        opt_xs = [opt_xs[-1] - (4 - k) * delta_x for k in range(5)]
         
-        for _ in range(1, num_questoes_bloco):
-            y_estimado = y_atual + pitch_y_padrao * 1.015
-            melhor_y = y_estimado
-            max_intensidade = -1
-            
-            # Busca local do pico de tinta da linha (bolinhas e números)
-            delta_busca = pitch_y_padrao * 0.25
-            for dy in np.linspace(-delta_busca, delta_busca, 21):
-                y_teste = y_estimado + dy
-                y_int = int(round(y_teste))
-                if 0 <= y_int < darkness.shape[0]:
-                    soma = sum(
-                        darkness[y_int, min(darkness.shape[1]-1, int(round(hx + dx)))]
-                        for dx in opt_dx
-                    )
-                    if soma > max_intensidade:
-                        max_intensidade = soma
-                        melhor_y = y_teste
-                        
-            y_atual = melhor_y
-            linhas_y.append(y_atual)
-            
-        # Avaliação de preenchimento das alternativas em cada questão
-        for q_idx, y_linha in enumerate(linhas_y):
-            q_num = start_q + q_idx
-            scores_alternativas = []
-            coordenadas_bolinhas = []
-            
-            for dx in opt_dx:
-                # Busca do centro exato da bolinha na vizinhança 5x5
-                max_densidade = 0.0
-                centro_x_otimo = int(round(hx + dx))
-                centro_y_otimo = int(round(y_linha))
+        # Agrupa os Ys para encontrar as linhas da coluna
+        c_ys = np.sort([p[1] for p in pts])
+        row_clusters = []
+        cur = [c_ys[0]]
+        for y in c_ys[1:]:
+            if y - np.mean(cur) < h * 0.015:
+                cur.append(y)
+            else:
+                row_clusters.append((np.mean(cur), len(cur)))
+                cur = [y]
+        row_clusters.append((np.mean(cur), len(cur)))
+        
+        strong_rows = [rc[0] for rc in row_clusters if rc[1] >= 2]
+        diffs = np.diff(strong_rows)
+        pitch = np.median(diffs[(diffs >= h * 0.025) & (diffs <= h * 0.055)]) if len(diffs) > 0 else delta_x * 1.25
+        
+        # Identifica a linha inicial correta (Y0) para o bloco de questões
+        best_y0 = strong_rows[0]
+        best_matches = -1
+        for cand in strong_rows:
+            matches = sum(1 for r in range(num_rows) if np.min(np.abs(strong_rows - (cand + r * pitch))) < pitch * 0.25)
+            if matches > best_matches:
+                best_matches = matches
+                best_y0 = cand
                 
-                step_x = max(1, int(round(raio_patch * 0.5)))
-                for dy_off in range(-step_x, step_x + 1):
-                    for dx_off in range(-step_x, step_x + 1):
-                        cx = int(round(hx + dx + dx_off))
-                        cy = int(round(y_linha + dy_off))
-                        
-                        if raio_patch <= cy < darkness.shape[0]-raio_patch and raio_patch <= cx < darkness.shape[1]-raio_patch:
-                            patch = darkness[cy-raio_patch:cy+raio_patch+1, cx-raio_patch:cx+raio_patch+1]
-                            media = float(np.mean(patch))
-                            if media > max_densidade:
-                                max_densidade = media
-                                centro_x_otimo = cx
-                                centro_y_otimo = cy
-                                
-                scores_alternativas.append(max_densidade)
-                coordenadas_bolinhas.append((centro_x_otimo, centro_y_otimo))
+        # Refinamento por regressão linear nas linhas detectadas
+        matched_y, matched_r = [], []
+        for r in range(num_rows):
+            exp = best_y0 + r * pitch
+            dist = np.abs(strong_rows - exp)
+            if np.min(dist) < pitch * 0.25:
+                matched_y.append(strong_rows[np.argmin(dist)])
+                matched_r.append(r)
                 
-            # Identificação da alternativa mais escura
-            best_idx = int(np.argmax(scores_alternativas))
-            scores_ordenados = sorted(scores_alternativas, reverse=True)
-            confianca = scores_ordenados[0] - scores_ordenados[1]
+        if len(matched_r) >= 6:
+            poly = np.polyfit(matched_r, matched_y, 1)
+            pitch, best_y0 = poly[0], poly[1]
             
-            # Regras de classificação:
-            # 1. Em Branco: nenhum círculo atinge limiar de marcação
-            # 2. Anulada / Dupla Marcação: dois círculos muito escuros e com escore próximo
-            # 3. Válida: alternativa com maior densidade
-            if scores_ordenados[0] < 45.0:
+        r_inner = max(3, int(round(delta_x * 0.20)))
+        
+        # Avaliação de preenchimento para cada questão do bloco
+        for r in range(num_rows):
+            q_num = q_start[c_i] + r
+            y_base = best_y0 + r * pitch
+            
+            scores = []
+            coords_bolinhas = []
+            for ox in opt_xs:
+                cx, cy = int(round(ox)), int(round(y_base))
+                max_d = 0.0
+                best_cx, best_cy = cx, cy
+                for dy_off in range(-2, 3):
+                    for dx_off in range(-2, 3):
+                        ccx = np.clip(cx + dx_off, r_inner, darkness.shape[1] - r_inner - 1)
+                        ccy = np.clip(cy + dy_off, r_inner, darkness.shape[0] - r_inner - 1)
+                        patch = darkness[ccy - r_inner:ccy + r_inner + 1, ccx - r_inner:ccx + r_inner + 1]
+                        m = float(np.mean(patch))
+                        if m > max_d:
+                            max_d = m
+                            best_cx, best_cy = ccx, ccy
+                scores.append(max_d)
+                coords_bolinhas.append((best_cx, best_cy))
+                
+            baseline = float(np.median(scores))
+            deltas = [s - baseline for s in scores]
+            sorted_deltas = sorted(deltas, reverse=True)
+            best_idx = int(np.argmax(scores))
+            confianca = sorted_deltas[0] - sorted_deltas[1] if len(sorted_deltas) > 1 else sorted_deltas[0]
+            
+            # Regras robustas de classificação OMR:
+            # 1. EM_BRANCO: nenhum círculo tem contraste significativo acima do fundo da linha
+            # 2. ANULADA: dois ou mais círculos preenchidos com intensidade similar
+            # 3. Resposta Válida (A, B, C, D, E): alternativa com maior escore de preenchimento
+            if sorted_deltas[0] < 12.0:
                 resposta_final = 'EM_BRANCO'
-            elif confianca < 12.0 and scores_ordenados[0] > 70.0 and scores_ordenados[1] > 70.0:
+            elif sorted_deltas[0] >= 12.0 and sorted_deltas[1] >= 12.0 and confianca < 8.0:
                 resposta_final = 'ANULADA'
             else:
                 resposta_final = letras[best_idx]
@@ -187,75 +186,99 @@ def processar_cartao_omr(caminho_imagem, salvar_debug=True):
                 'Confiança': round(confianca, 1)
             })
             
-            # Anotação visual no mapa de debug
-            for l_i, (bx, by) in enumerate(coordenadas_bolinhas):
-                if l_i == best_idx and resposta_final not in ['EM_BRANCO', 'ANULADA']:
-                    # Círculo verde para a resposta identificada
-                    cv2.circle(img_debug, (bx, by), raio_patch + 3, (0, 220, 0), 2)
-                    cv2.putText(img_debug, letras[l_i], (bx - 4, by + 4),
-                                cv2.FONT_HERSHEY_SIMPLEX, 0.35, (0, 200, 0), 1)
-                else:
-                    # Círculo vermelho suave para alternativas não preenchidas
-                    cv2.circle(img_debug, (bx, by), raio_patch + 1, (0, 0, 200), 1)
-                    
+            # Anotação visual de verificação
+            if salvar_debug and img_debug is not None:
+                for l_i, (bx, by) in enumerate(coords_bolinhas):
+                    if l_i == best_idx and resposta_final not in ['EM_BRANCO', 'ANULADA']:
+                        cv2.circle(img_debug, (bx, by), r_inner + 4, (0, 220, 0), 2)
+                        cv2.putText(img_debug, letras[l_i], (bx - 4, by + 4),
+                                    cv2.FONT_HERSHEY_SIMPLEX, 0.40, (0, 200, 0), 1)
+                    else:
+                        cv2.circle(img_debug, (bx, by), r_inner + 1, (0, 0, 200), 1)
+                        
     df_resultado = pd.DataFrame(resultados)
     
-    if salvar_debug:
+    if salvar_debug and img_debug is not None:
+        os.makedirs(pasta_debug, exist_ok=True)
         nome_base = os.path.splitext(os.path.basename(caminho_imagem))[0]
-        caminho_debug = f"debug_{nome_base}.png"
+        caminho_debug = os.path.join(pasta_debug, f"debug_{nome_base}.png")
         cv2.imwrite(caminho_debug, img_debug)
         
     return df_resultado, img_debug
 
 
-def processar_lote(pasta_imagens=".", padrao="*.jp*g", salvar_individual=True):
+def processar_lote(pasta_imagens="cartoes", salvar_individual=False, salvar_debug=False, arquivo_saida="resultado.csv"):
     """
-    Processa todas as imagens encontradas em lote (ex: as 22 imagens de prova),
-    gerando CSVs individuais e uma tabela geral consolidada.
+    Processa todas as imagens encontradas na pasta especificada (ex: 'cartoes'),
+    gerando uma única planilha consolidada onde:
+      - Cada linha representa uma imagem/cartão
+      - As colunas de 1 a 70 representam as respostas das questões
     """
-    arquivos = glob.glob(os.path.join(pasta_imagens, padrao))
-    arquivos.extend(glob.glob(os.path.join(pasta_imagens, "*.png")))
-    # Remover arquivos de debug gerados
-    arquivos = [f for f in arquivos if not os.path.basename(f).startswith("debug_")]
+    if not os.path.exists(pasta_imagens):
+        print(f"[Erro] A pasta '{pasta_imagens}' não foi encontrada.")
+        return None
+
+    # Busca apenas por arquivos de imagem suportados (.jpg, .jpeg, .png)
+    extensoes = ("*.jpg", "*.jpeg", "*.png", "*.JPG", "*.JPEG", "*.PNG")
+    arquivos = []
+    for ext in extensoes:
+        arquivos.extend(glob.glob(os.path.join(pasta_imagens, ext)))
+    
+    # Remover arquivos de debug e duplicatas
+    arquivos = list(set([f for f in arquivos if not os.path.basename(f).startswith("debug_")]))
     
     if not arquivos:
-        print(f"[Aviso] Nenhuma imagem encontrada em '{pasta_imagens}' com o padrão especificado.")
+        print(f"[Aviso] Nenhuma imagem encontrada na pasta '{pasta_imagens}'.")
         return None
     
+    # Ordenação natural dos arquivos (ex: 1.jpg, 5.jpg, 8.jpg, 10.jpg ...)
+    arquivos = sorted(arquivos, key=lambda x: ordenacao_natural_chave(os.path.basename(x)))
+    
     print(f"\n========================================================")
-    print(f"Iniciando processamento em lote: {len(arquivos)} imagens encontradas")
+    print(f"Iniciando leitura dos cartões em '{pasta_imagens}': {len(arquivos)} imagens")
     print(f"========================================================\n")
     
-    tabela_consolidada = {}
+    linhas_tabela = []
     
-    for i, caminho in enumerate(sorted(arquivos), 1):
+    for i, caminho in enumerate(arquivos, 1):
         nome_arquivo = os.path.basename(caminho)
         nome_base = os.path.splitext(nome_arquivo)[0]
-        print(f"[{i:02d}/{len(arquivos):02d}] Processando: {nome_arquivo} ... ", end="")
+        print(f"[{i:02d}/{len(arquivos):02d}] Lendo: {nome_arquivo:<12} ... ", end="", flush=True)
         
         try:
-            df, _ = processar_cartao_omr(caminho, salvar_debug=True)
+            df, _ = processar_cartao_omr(caminho, salvar_debug=salvar_debug, pasta_debug="debug")
             
-            # Salvar CSV individual
+            # Salvar CSV individual caso solicitado
             if salvar_individual:
                 csv_individual = f"resultado_{nome_base}.csv"
-                df[['Questão', 'Resposta']].to_csv(csv_individual, index=False, encoding='utf-8')
+                df[['Questão', 'Resposta']].to_csv(csv_individual, index=False, encoding='utf-8-sig')
+            
+            # Monta a linha com o identificador do cartão e as respostas de 1 a 70
+            linha = {'Cartao': nome_base}
+            for _, row in df.iterrows():
+                linha[int(row['Questão'])] = row['Resposta']
                 
-            tabela_consolidada[nome_base] = df.set_index('Questão')['Resposta']
-            print(f"[OK] 70 questões lidas.")
+            linhas_tabela.append(linha)
+            
+            marcadas = sum(1 for v in linha.values() if v not in [nome_base, 'EM_BRANCO', 'ANULADA'])
+            brancas = sum(1 for v in linha.values() if v == 'EM_BRANCO')
+            anuladas = sum(1 for v in linha.values() if v == 'ANULADA')
+            print(f"[OK] 70 questões lidas (Marcadas: {marcadas:2d}, Brancas: {brancas:2d}, Anuladas: {anuladas:2d})")
         except Exception as e:
             print(f"[ERRO] {str(e)}")
             
-    # Criar DataFrame consolidado com todas as folhas
-    if tabela_consolidada:
-        df_geral = pd.DataFrame(tabela_consolidada)
-        df_geral.index.name = 'Questão'
-        df_geral.reset_index(inplace=True)
+    if linhas_tabela:
+        colunas_questoes = [i for i in range(1, 71)]
+        colunas_finais = ['Cartao'] + [q for q in colunas_questoes if q in linhas_tabela[0]]
         
-        csv_geral = "resultado_consolidado_provas.csv"
-        df_geral.to_csv(csv_geral, index=False, encoding='utf-8')
+        df_geral = pd.DataFrame(linhas_tabela)
+        df_geral = df_geral[colunas_finais]
+        
+        df_geral.to_csv(arquivo_saida, index=False, encoding='utf-8-sig')
+        
         print(f"\n========================================================")
-        print(f"[Sucesso] Tabela consolidada exportada para: '{csv_geral}'")
+        print(f"[Sucesso] Planilha consolidada salva em: '{arquivo_saida}'")
+        print(f"Total de cartões processados: {len(df_geral)} linhas x {len(colunas_finais)-1} questões")
         print(f"========================================================\n")
         return df_geral
     
@@ -263,26 +286,34 @@ def processar_lote(pasta_imagens=".", padrao="*.jp*g", salvar_individual=True):
 
 
 if __name__ == "__main__":
+    pasta_padrao = "cartoes" if os.path.exists("cartoes") else "cards" if os.path.exists("cards") else "."
+    
     parser = argparse.ArgumentParser(description="Corretor Automático de Cartões-Resposta OMR (70 Questões)")
-    parser.add_argument("--imagem", type=str, default="1.jpeg", help="Caminho para uma imagem específica")
-    parser.add_argument("--pasta", type=str, default=None, help="Caminho para a pasta com as 22 imagens de prova")
-    parser.add_argument("--todas", action="store_true", help="Processar todas as imagens na pasta atual")
+    parser.add_argument("--imagem", type=str, default=None, help="Processar apenas uma imagem específica")
+    parser.add_argument("--pasta", type=str, default=pasta_padrao, help=f"Pasta contendo os cartões (padrão: '{pasta_padrao}')")
+    parser.add_argument("--saida", type=str, default="resultado.csv", help="Nome do arquivo CSV de saída (padrão: 'resultado.csv')")
+    parser.add_argument("--debug", action="store_true", default=False, help="Salvar imagens de verificação visual na pasta 'debug/'")
+    parser.add_argument("--individual", action="store_true", default=False, help="Salvar também um CSV individual para cada cartão")
     
     args = parser.parse_args()
     
-    if args.pasta or args.todas:
-        pasta = args.pasta if args.pasta else "."
-        processar_lote(pasta_imagens=pasta)
-    else:
+    if args.imagem:
         imagem_alvo = args.imagem
         print(f"\n--- Processando Imagem: {imagem_alvo} ---")
-        df_res, _ = processar_cartao_omr(imagem_alvo, salvar_debug=True)
+        df_res, _ = processar_cartao_omr(imagem_alvo, salvar_debug=True, pasta_debug="debug")
         
         nome_base = os.path.splitext(os.path.basename(imagem_alvo))[0]
         saida_csv = f"resultado_{nome_base}.csv"
-        df_res[['Questão', 'Resposta']].to_csv(saida_csv, index=False, encoding='utf-8')
+        df_res[['Questão', 'Resposta']].to_csv(saida_csv, index=False, encoding='utf-8-sig')
         
         print("\n=== Todas as 70 Questões Detectadas ===")
         print(df_res[['Questão', 'Resposta', 'Confiança']].to_string(index=False))
-        print(f"\n[Sucesso] Tabela exportada para '{saida_csv}'")
-        print(f"[Visual] Imagem anotada de verificação salva em 'debug_{nome_base}.png'")
+        print(f"\n[Sucesso] Tabela individual exportada para '{saida_csv}'")
+        print(f"[Visual] Imagem anotada de verificação salva em 'debug/debug_{nome_base}.png'")
+    else:
+        processar_lote(
+            pasta_imagens=args.pasta,
+            salvar_individual=args.individual,
+            salvar_debug=args.debug,
+            arquivo_saida=args.saida
+        )

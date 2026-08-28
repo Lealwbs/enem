@@ -24,20 +24,32 @@ pip install opencv-python numpy pandas
 
 ### Usage
 
-Process a single answer sheet image:
-```bash
-python corretor.py 1.jpeg --debug
-```
-
-Or run directly without flags (processes `1.jpeg` by default):
+Processar todos os cartões da pasta `cards` (padrão) e gerar a planilha consolidada `resultado_consolidado.csv`:
 ```bash
 python corretor.py
 ```
 
+Processar uma imagem específica:
+```bash
+python corretor.py --imagem cards/1.jpg
+```
+
+Opções adicionais:
+```bash
+# Definir pasta personalizada e nome do arquivo de saída:
+python corretor.py --pasta cards --saida resultado_final.csv
+
+# Gerar também imagens de conferência visual (salvas na pasta debug/):
+python corretor.py --debug
+
+# Gerar CSVs individuais para cada cartão além da planilha consolidada:
+python corretor.py --individual
+```
+
 ### Output
 
-- `resultado_<nome>.csv`: Extracted answers for all questions.
-- `debug_<nome>.png`: Visual feedback overlay with bubble detection and scoring.
+- `resultado_consolidado.csv`: Tabela com 1 linha por cartão e 70 colunas (questões de 1 a 70).
+- `debug/debug_<nome>.png`: Visual feedback overlay com detecção das bolinhas (quando `--debug` for ativado).
 
 ---
 
