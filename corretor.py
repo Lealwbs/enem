@@ -33,10 +33,14 @@ def normalizar_iluminacao(img_bgr):
 
 
 def score_bolinha(darkness, cx, cy, r_inner):
+    """
+    Calcula o score de preenchimento amostrado no centro da bolinha.
+    Usa mascara circular para evitar a borda impressa.
+    Pequena busca local (+-2px) para compensar desalinhamentos leves.
+    """
     best_score = 0.0
-    search = 3
-    for dy in range(-search, search + 1):
-        for dx in range(-search, search + 1):
+    for dy in range(-2, 3):
+        for dx in range(-2, 3):
             nx = int(np.clip(cx + dx, r_inner, darkness.shape[1] - r_inner - 1))
             ny = int(np.clip(cy + dy, r_inner, darkness.shape[0] - r_inner - 1))
             patch = darkness[ny - r_inner:ny + r_inner + 1, nx - r_inner:nx + r_inner + 1]
@@ -61,6 +65,7 @@ def processar_cartao_omr(caminho_imagem, salvar_debug=False, pasta_debug="debug"
     gray, norm, darkness = normalizar_iluminacao(img)
     img_debug = img.copy() if salvar_debug else None
 
+    # --- Deteccao dos contornos das bolinhas ---
     thresh = cv2.adaptiveThreshold(
         gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 21, 8
     )
@@ -69,16 +74,17 @@ def processar_cartao_omr(caminho_imagem, salvar_debug=False, pasta_debug="debug"
     min_dim = int(w * 0.005)
     max_dim = int(w * 0.028)
     circles = []
-    for c in contours:
-        x, y, bw, bh = cv2.boundingRect(c)
+    for cont in contours:
+        x, y, bw, bh = cv2.boundingRect(cont)
         if min_dim <= bw <= max_dim and min_dim <= bh <= max_dim and 0.65 <= bw / float(bh) <= 1.50:
             circles.append((x + bw / 2.0, y + bh / 2.0, bw, bh))
 
-    circles = [c for c in circles if 0.08 * h <= c[1] <= 0.97 * h]
+    circles = [ci for ci in circles if 0.08 * h <= ci[1] <= 0.97 * h]
     if len(circles) < 50:
         raise ValueError(f"Nao foi possivel detectar bolinhas suficientes em '{caminho_imagem}'.")
 
-    xs = np.array([[c[0]] for c in circles], dtype=np.float32)
+    # --- Agrupa em 4 colunas (blocos de questoes) ---
+    xs = np.array([[ci[0]] for ci in circles], dtype=np.float32)
     criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 200, 0.0001)
     _, col_labels, col_centers = cv2.kmeans(xs, 4, None, criteria, 15, cv2.KMEANS_RANDOM_CENTERS)
     sorted_cols = np.argsort(col_centers.flatten())
@@ -92,16 +98,20 @@ def processar_cartao_omr(caminho_imagem, salvar_debug=False, pasta_debug="debug"
         pts = [circles[i] for i in range(len(circles)) if col_labels[i][0] == cluster_id]
         num_rows = q_count[c_i]
 
+        # --- Encontra as 5 sub-colunas (A B C D E) ---
         opt_xs_arr = np.array([[p[0]] for p in pts], dtype=np.float32)
-        _, opt_labels_sub, opt_centers_sub = cv2.kmeans(
+        _, _, opt_centers_sub = cv2.kmeans(
             opt_xs_arr, 5, None, criteria, 15, cv2.KMEANS_RANDOM_CENTERS
         )
         opt_xs = sorted(opt_centers_sub.flatten().tolist())
         diffs = np.diff(opt_xs)
         delta_x = float(np.median(diffs))
 
-        r_inner = max(4, int(round(delta_x * 0.28)))
+        # Raio: 12% do espacamento. Pequeno o suficiente para ficar no centro
+        # da bolinha e longe da borda impressa (que fica a ~35-45% do raio total)
+        r_inner = max(4, int(round(delta_x * 0.12)))
 
+        # --- Agrupa Ys em linhas ---
         c_ys = np.sort([p[1] for p in pts])
         row_clusters = []
         cur = [c_ys[0]]
@@ -119,49 +129,66 @@ def processar_cartao_omr(caminho_imagem, salvar_debug=False, pasta_debug="debug"
         valid_diffs = diffs_y[(diffs_y >= h * 0.020) & (diffs_y <= h * 0.060)]
         pitch = float(np.median(valid_diffs)) if len(valid_diffs) > 0 else delta_x * 1.3
 
+        # --- Encontra Y0 ---
         best_y0 = strong_rows[0] if strong_rows else h * 0.12
         best_matches = -1
         for cand in strong_rows:
-            strong_arr_tmp = np.array(strong_rows)
+            sa_tmp = np.array(strong_rows)
             matches = sum(
                 1 for r in range(num_rows)
-                if np.min(np.abs(strong_arr_tmp - (cand + r * pitch))) < pitch * 0.30
+                if np.min(np.abs(sa_tmp - (cand + r * pitch))) < pitch * 0.30
             )
             if matches > best_matches:
                 best_matches = matches
                 best_y0 = cand
 
+        # --- Refinamento via regressao linear ---
         matched_y, matched_r = [], []
-        strong_arr = np.array(strong_rows)
+        sa = np.array(strong_rows)
         for r in range(num_rows):
             exp = best_y0 + r * pitch
-            dist = np.abs(strong_arr - exp)
+            dist = np.abs(sa - exp)
             if np.min(dist) < pitch * 0.30:
-                matched_y.append(strong_arr[np.argmin(dist)])
+                matched_y.append(sa[np.argmin(dist)])
                 matched_r.append(r)
         if len(matched_r) >= 5:
             poly = np.polyfit(matched_r, matched_y, 1)
             pitch, best_y0 = float(poly[0]), float(poly[1])
 
+        # --- Avaliacao por questao ---
         for r in range(num_rows):
             q_num = q_start[c_i] + r
             y_base = best_y0 + r * pitch
 
-            scores = [score_bolinha(darkness, int(round(ox)), int(round(y_base)), r_inner) for ox in opt_xs]
+            scores = [
+                score_bolinha(darkness, int(round(ox)), int(round(y_base)), r_inner)
+                for ox in opt_xs
+            ]
 
+            best_idx = int(np.argmax(scores))
+            best_score_abs = scores[best_idx]
+
+            # Baseline = mediana dos 5 scores da linha (estimativa do fundo)
             baseline = float(np.median(scores))
             deltas = [s - baseline for s in scores]
             sorted_deltas = sorted(deltas, reverse=True)
-            best_idx = int(np.argmax(scores))
-
             d0 = sorted_deltas[0]
             d1 = sorted_deltas[1] if len(sorted_deltas) > 1 else 0.0
             margem = d0 - d1
 
-            if d0 < 8.0:
+            # --- Classificacao ---
+            # REGRA 1 - EM_BRANCO: score absoluto maximo muito baixo
+            #   Bolinhas vazias tem score ~1-15 no centro (papel branco)
+            #   Bolinhas preenchidas tem score >= 30 mesmo com iluminacao fraca
+            if best_score_abs < 25.0:
                 resposta_final = 'EM_BRANCO'
-            elif d0 >= 20.0 and d1 >= 20.0 and margem < 10.0:
+
+            # REGRA 2 - ANULADA: dois bubbles com score absoluto alto e similares
+            #   Exige d0 >= 30 (marcacao forte) E d1 >= 30 E margem pequena
+            elif d0 >= 30.0 and d1 >= 30.0 and margem < 15.0:
                 resposta_final = 'ANULADA'
+
+            # REGRA 3 - Valida: resposta com maior score
             else:
                 resposta_final = letras[best_idx]
 
@@ -172,15 +199,15 @@ def processar_cartao_omr(caminho_imagem, salvar_debug=False, pasta_debug="debug"
                 for l_i, ox in enumerate(opt_xs):
                     bx, by = int(round(ox)), int(round(y_base))
                     if l_i == best_idx and resposta_final not in ['EM_BRANCO', 'ANULADA']:
-                        cv2.circle(img_debug, (bx, by), r_inner + 4, (0, 220, 0), 2)
+                        cv2.circle(img_debug, (bx, by), r_inner + 6, (0, 220, 0), 2)
                         cv2.putText(img_debug, letras[l_i], (bx - 5, by + 5),
                                     cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 200, 0), 1)
                     elif resposta_final == 'ANULADA':
-                        cv2.circle(img_debug, (bx, by), r_inner + 4, (0, 100, 255), 2)
+                        cv2.circle(img_debug, (bx, by), r_inner + 6, (0, 100, 255), 2)
                     elif resposta_final == 'EM_BRANCO':
-                        cv2.circle(img_debug, (bx, by), r_inner + 2, (0, 0, 200), 1)
+                        cv2.circle(img_debug, (bx, by), r_inner + 3, (0, 0, 200), 1)
                     else:
-                        cv2.circle(img_debug, (bx, by), r_inner + 1, (200, 200, 0), 1)
+                        cv2.circle(img_debug, (bx, by), r_inner + 2, (200, 200, 0), 1)
 
     df_resultado = pd.DataFrame(resultados)
 
@@ -252,7 +279,6 @@ def processar_lote(pasta_imagens="cartoes", salvar_individual=False, salvar_debu
 
     colunas_questoes = list(range(1, 71))
     colunas_finais   = ['Cartao'] + colunas_questoes
-
     df_geral = pd.DataFrame(linhas_tabela, columns=colunas_finais)
 
     ext = os.path.splitext(arquivo_saida)[1].lower()
@@ -273,7 +299,7 @@ def processar_lote(pasta_imagens="cartoes", salvar_individual=False, salvar_debu
     else:
         df_geral.to_csv(arquivo_saida, index=False, encoding='utf-8-sig')
         print(f"\n========================================================")
-        print(f"[Sucesso] Planilha CSV salva em: '{arquivo_saida}'")
+        print(f"[Sucesso] Planilha salva em: '{arquivo_saida}'")
 
     print(f"Total de cartoes processados: {len(df_geral)} linhas x {len(colunas_questoes)} questoes")
     print(f"========================================================\n")
