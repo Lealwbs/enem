@@ -1,4 +1,4 @@
-﻿"""
+"""
 ================================================================================
 CORRETOR AUTOMATICO DE CARTAO-RESPOSTA (OMR - OPTICAL MARK RECOGNITION)
 Modelo: Similar ao ENEM (70 Questoes em 4 Blocos, 5 Alternativas A-E)
@@ -225,7 +225,7 @@ def processar_cartao_omr(caminho_imagem, salvar_debug=False, pasta_debug="debug"
     return df_resultado, img_debug
 
 
-def processar_lote(pasta_imagens="cartoes", salvar_individual=False, salvar_debug=False, arquivo_saida="resultado.xlsx"):
+def processar_lote(pasta_imagens="cartoes", salvar_individual=False, salvar_debug=False, arquivo_saida="resultado.csv"):
     if not os.path.exists(pasta_imagens):
         print(f"[Erro] A pasta '{pasta_imagens}' nao foi encontrada.")
         return None
@@ -312,7 +312,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Corretor Automatico de Cartoes-Resposta OMR (70 Questoes)")
     parser.add_argument("--imagem",     type=str, default=None,             help="Processar apenas uma imagem especifica")
     parser.add_argument("--pasta",      type=str, default=pasta_padrao,     help=f"Pasta com os cartoes (padrao: '{pasta_padrao}')")
-    parser.add_argument("--saida",      type=str, default="resultado.xlsx", help="Arquivo de saida (padrao: resultado.xlsx)")
+    parser.add_argument("--saida",      type=str, default="resultado.csv",  help="Arquivo de saida (padrao: resultado.csv)")
     parser.add_argument("--debug",      action="store_true", default=False, help="Salvar imagens de verificacao em 'debug/'")
     parser.add_argument("--individual", action="store_true", default=False, help="Salvar CSV individual por cartao")
 
