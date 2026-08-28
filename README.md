@@ -24,15 +24,11 @@ pip install opencv-python numpy pandas
 
 ### Usage
 
-Processar todos os cartões da pasta `cards` (padrão) e gerar a planilha consolidada `resultado_consolidado.csv`:
 ```bash
 python corretor.py
 ```
 
-Processar uma imagem específica:
-```bash
-python corretor.py --imagem cards/1.jpg
-```
+Irá processar automaticamente todas as imagens `.jpg` da pasta `cartoes/` e salvar a planilha consolidada em `resultado.xlsx` (com colunas ajustadas e compatibilidade direta com o Excel).
 
 Opções adicionais:
 ```bash
