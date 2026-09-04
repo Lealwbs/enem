@@ -10,10 +10,178 @@ import os
 import sys
 import glob
 import re
+import json
 import argparse
 import cv2
 import numpy as np
 import pandas as pd
+
+CALIBRACAO_PADRAO = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'calibracao_gabarito.json')
+LETRAS = ['A', 'B', 'C', 'D', 'E']
+
+
+def normalizar_letra(valor):
+    """Normaliza entradas como ' b ', 'EM BRANCO' ou 'anulada' para o formato interno do sistema."""
+    if valor is None:
+        return 'EM_BRANCO'
+    texto = str(valor).strip().upper()
+    if texto in ('', 'NONE', 'NULL'):
+        return 'EM_BRANCO'
+    texto = re.sub(r'\s+', ' ', texto)
+    texto = texto.replace('-', '_')
+    texto = texto.replace('Ã', 'A').replace('Â', 'A').replace('Á', 'A').replace('À', 'A')
+    texto = texto.replace('Ê', 'E').replace('É', 'E').replace('È', 'E')
+    texto = texto.replace('Î', 'I').replace('Í', 'I').replace('Ì', 'I')
+    texto = texto.replace('Ô', 'O').replace('Ó', 'O').replace('Ò', 'O')
+    texto = texto.replace('Û', 'U').replace('Ú', 'U').replace('Ù', 'U')
+    texto = texto.replace(' ', '_')
+    if texto in {'A', 'B', 'C', 'D', 'E'}:
+        return texto
+    if texto in {'_', 'EM_BRANCO', 'BRANCO', 'VAZIO', 'EM_BRANCO_'}:
+        return 'EM_BRANCO'
+    if texto in {'ANULADA', 'ANULADO', 'NULA'}:
+        return 'ANULADA'
+    if texto in {'X'}:
+        return 'ANULADA'
+    return 'EM_BRANCO' if texto in {'?', 'NAO'} else texto
+
+
+def carregar_calibracao(caminho_calibracao=CALIBRACAO_PADRAO):
+    if not os.path.exists(caminho_calibracao):
+        return {}
+    try:
+        with open(caminho_calibracao, 'r', encoding='utf-8') as f:
+            dados = json.load(f)
+        if not isinstance(dados, dict):
+            return {}
+        return dados
+    except Exception:
+        return {}
+
+
+def salvar_calibracao(calibracao, caminho_calibracao=CALIBRACAO_PADRAO):
+    with open(caminho_calibracao, 'w', encoding='utf-8') as f:
+        json.dump(calibracao, f, ensure_ascii=False, indent=2)
+
+
+def atualizar_calibracao(calibracao, questao, letra, origem='manual', cartao_id=None):
+    q_key = str(int(questao))
+    letra_norm = normalizar_letra(letra)
+    if letra_norm not in ['A', 'B', 'C', 'D', 'E', 'EM_BRANCO', 'ANULADA']:
+        letra_norm = 'EM_BRANCO'
+
+    if cartao_id is not None:
+        cartao_key = str(cartao_id)
+        calibracao.setdefault(cartao_key, {})
+        calibracao[cartao_key][q_key] = {
+            'letra': letra_norm,
+            'origem': origem,
+            'questao': q_key,
+        }
+        return calibracao
+
+    calibracao[q_key] = {
+        'letra': letra_norm,
+        'origem': origem,
+        'questao': q_key,
+    }
+    return calibracao
+
+
+def aplicar_calibracao_resposta(questao, resposta, calibracao=None, cartao_id=None):
+    if calibracao is None:
+        calibracao = {}
+    q_key = str(int(questao))
+
+    if cartao_id is not None:
+        cartao_key = str(cartao_id)
+        if cartao_key in calibracao and q_key in calibracao[cartao_key]:
+            return calibracao[cartao_key][q_key].get('letra', resposta)
+
+    if q_key in calibracao:
+        return calibracao[q_key].get('letra', resposta)
+    return normalizar_letra(resposta)
+
+
+def decidir_resposta_questao(dq, cartao_majoritariamente_vazio, calibracao=None, questao=None, cartao_id=None):
+    """Decide a resposta com fallbacks mais conservadores para reduzir falsos positivos."""
+    q_num = dq['q_num'] if questao is None else questao
+    d0 = dq['d0']
+    d1 = dq['d1']
+    max_s = dq['max_s']
+    best_idx = dq['best_idx']
+    melhor_letra = LETTERS[best_idx]
+    if calibracao is not None:
+        resposta_calibrada = aplicar_calibracao_resposta(q_num, melhor_letra, calibracao, cartao_id=cartao_id)
+        if resposta_calibrada in ['A', 'B', 'C', 'D', 'E', 'EM_BRANCO', 'ANULADA']:
+            return resposta_calibrada, melhor_letra
+
+    if cartao_majoritariamente_vazio:
+        if d0 < 22.0 or max_s < 70.0:
+            return 'EM_BRANCO', melhor_letra
+        if d0 >= 30.0 and d1 >= 25.0 and (d0 - d1) < 6.0:
+            return 'ANULADA', melhor_letra
+        return melhor_letra, melhor_letra
+
+    if (d0 < 8.0 and max_s < 25.0) or max_s < 15.0:
+        return 'EM_BRANCO', melhor_letra
+    if d0 >= 30.0 and d1 >= 25.0 and (d0 - d1) < 6.0:
+        return 'ANULADA', melhor_letra
+    return melhor_letra, melhor_letra
+
+
+def prompt_confirmacao_questao(caminho_imagem, questao, letra_predita, debug_path=None):
+    """Pede confirmação de marcação manual para a questão e salva o resultado em calibração."""
+    print(f"\n[Treinamento ativo] Questão {questao}: leitura automática sugeriu '{letra_predita}'.")
+    if debug_path:
+        print(f"Imagem de apoio: {debug_path}")
+    print("Abra a imagem e confirme se a marcação da questão está correta.")
+    print("Opções: [S]im / [N]ão / ou digite a letra correta (A-E) / '_' para em branco / 'X' para anulada")
+    entrada = input('Confirma? ').strip().upper()
+    if entrada in {'S', 'SIM', 'Y', 'YES'}:
+        return letra_predita, 'confirmado'
+    if entrada in {'_', 'BRANCO', 'V', 'VAZIO'}:
+        return 'EM_BRANCO', 'correção_manual'
+    if entrada in {'X', 'ANULADA', 'NULA'}:
+        return 'ANULADA', 'correção_manual'
+    if entrada in LETTERS:
+        return entrada, 'correção_manual'
+    if entrada in {'N', 'NAO', 'NO'}:
+        print('Digite a letra correta, ou _ para em branco, ou X para anulada.')
+        nova = input('Qual a resposta correta? ').strip().upper()
+        if nova in {'_', 'BRANCO', 'V', 'VAZIO'}:
+            return 'EM_BRANCO', 'correção_manual'
+        if nova in {'X', 'ANULADA', 'NULA'}:
+            return 'ANULADA', 'correção_manual'
+        if nova in LETTERS:
+            return nova, 'correção_manual'
+    return letra_predita, 'ignorado'
+
+
+def processar_arquivo_com_calibracao(caminho_imagem, calibracao=None, salvar_debug=False, pasta_debug='debug', treinamento_ativo=False):
+    if calibracao is None:
+        calibracao = {}
+    nome_base = os.path.splitext(os.path.basename(caminho_imagem))[0]
+    df, img_debug = processar_cartao_omr(caminho_imagem, salvar_debug=salvar_debug, pasta_debug=pasta_debug)
+    if treinamento_ativo:
+        caminho_debug = os.path.join(pasta_debug, f'debug_{nome_base}.jpg')
+        for _, row in df.iterrows():
+            q_num = int(row['Questao'])
+            letra = row['Resposta']
+            if letra in {'EM_BRANCO', 'ANULADA'}:
+                continue
+            card_map = calibracao.get(str(nome_base), {}) if isinstance(calibracao, dict) else {}
+            if str(q_num) in card_map:
+                continue
+            letra_corrigida, origem = prompt_confirmacao_questao(caminho_imagem, q_num, letra, debug_path=caminho_debug)
+            if origem != 'ignorado':
+                atualizar_calibracao(calibracao, q_num, letra_corrigida, origem='manual', cartao_id=nome_base)
+        salvar_calibracao(calibracao)
+    for idx, row in df.iterrows():
+        q_num = int(row['Questao'])
+        resposta = aplicar_calibracao_resposta(q_num, row['Resposta'], calibracao, cartao_id=nome_base)
+        df.at[idx, 'Resposta'] = resposta
+    return df, img_debug
 
 
 def ordenacao_natural_chave(texto):
@@ -242,13 +410,16 @@ def processar_cartao_omr(caminho_imagem, salvar_debug=False, pasta_debug="debug"
     return df_resultado, img_debug
 
 
-def processar_lote(pasta_imagens="cartoes", salvar_individual=False, salvar_debug=False, arquivo_saida="resultado.xlsx"):
+def processar_lote(pasta_imagens="cartoes", salvar_individual=False, salvar_debug=False, arquivo_saida="resultado.xlsx", calibracao=None, treinamento_ativo=False):
     """
     Processa todas as imagens encontradas na pasta especificada,
     gerando uma planilha consolidada (.csv) onde:
       - Cada linha representa uma imagem/cartao
       - As colunas de 1 a 70 representam as respostas das questoes
     """
+    if calibracao is None:
+        calibracao = carregar_calibracao()
+
     if not os.path.exists(pasta_imagens):
         print(f"[Erro] A pasta '{pasta_imagens}' nao foi encontrada.")
         return None
@@ -278,7 +449,13 @@ def processar_lote(pasta_imagens="cartoes", salvar_individual=False, salvar_debu
         print(f"[{i:02d}/{len(arquivos):02d}] Lendo: {nome_arquivo:<12} ... ", end="", flush=True)
 
         try:
-            df, _ = processar_cartao_omr(caminho, salvar_debug=salvar_debug, pasta_debug="debug")
+            df, _ = processar_arquivo_com_calibracao(
+                caminho,
+                calibracao=calibracao,
+                salvar_debug=salvar_debug,
+                pasta_debug="debug",
+                treinamento_ativo=treinamento_ativo,
+            )
 
             if salvar_individual:
                 ind_path = f"resultado_{nome_base}.csv"
@@ -333,17 +510,26 @@ if __name__ == "__main__":
     pasta_padrao = "cartoes" if os.path.exists("cartoes") else "cards" if os.path.exists("cards") else "."
 
     parser = argparse.ArgumentParser(description="Corretor Automatico de Cartoes-Resposta OMR (70 Questoes)")
-    parser.add_argument("--imagem",     type=str, default=None,             help="Processar apenas uma imagem especifica")
-    parser.add_argument("--pasta",      type=str, default=pasta_padrao,     help=f"Pasta com os cartoes (padrao: '{pasta_padrao}')")
-    parser.add_argument("--saida",      type=str, default="resultado.xlsx", help="Arquivo de saida (padrao: resultado.xlsx)")
-    parser.add_argument("--debug",      action="store_true", default=False, help="Salvar imagens de verificacao em 'debug/'")
-    parser.add_argument("--individual", action="store_true", default=False, help="Salvar CSV individual por cartao")
+    parser.add_argument("--imagem",      type=str, default=None,             help="Processar apenas uma imagem especifica")
+    parser.add_argument("--pasta",       type=str, default=pasta_padrao,     help=f"Pasta com os cartoes (padrao: '{pasta_padrao}')")
+    parser.add_argument("--saida",       type=str, default="resultado.xlsx", help="Arquivo de saida (padrao: resultado.xlsx)")
+    parser.add_argument("--debug",       action="store_true", default=False, help="Salvar imagens de verificacao em 'debug/'")
+    parser.add_argument("--individual",  action="store_true", default=False, help="Salvar CSV individual por cartao")
+    parser.add_argument("--calibracao",  type=str, default=CALIBRACAO_PADRAO, help="Arquivo JSON de calibração do gabarito")
+    parser.add_argument("--treinamento", action="store_true", default=False, help="Ativa treinamento ativo com confirmação da resposta detectada")
 
     args = parser.parse_args()
+    calibracao = carregar_calibracao(args.calibracao)
 
     if args.imagem:
         print(f"\n--- Processando Imagem: {args.imagem} ---")
-        df_res, _ = processar_cartao_omr(args.imagem, salvar_debug=True, pasta_debug="debug")
+        df_res, _ = processar_arquivo_com_calibracao(
+            args.imagem,
+            calibracao=calibracao,
+            salvar_debug=True,
+            pasta_debug="debug",
+            treinamento_ativo=args.treinamento,
+        )
         nome_base = os.path.splitext(os.path.basename(args.imagem))[0]
         saida_csv = f"resultado_{nome_base}.csv"
         df_res[['Questao', 'Resposta']].to_csv(saida_csv, index=False, encoding='utf-8-sig')
@@ -357,4 +543,6 @@ if __name__ == "__main__":
             salvar_individual=args.individual,
             salvar_debug=args.debug,
             arquivo_saida=args.saida,
+            calibracao=calibracao,
+            treinamento_ativo=args.treinamento,
         )
