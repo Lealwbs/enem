@@ -31,6 +31,20 @@ def normalizar_iluminacao(img_bgr):
     return gray, norm, darkness_map
 
 
+# Dimensões canônicas da área recortada das questões
+QUESTIONS_WARP_W = 1500
+QUESTIONS_WARP_H = 920
+WARP_PAD = 35.0
+
+# Coordenadas de referência no PDF dos centros dos 4 marcadores das questões:
+TL_X, TL_Y = 22.0, 601.89
+TR_X, TR_Y = 573.27, 601.89
+BL_X, BL_Y = 22.0, 266.89
+BR_X, BR_Y = 573.27, 266.89
+SPAN_X = TR_X - TL_X
+SPAN_Y = TL_Y - BL_Y
+
+
 def order_points(pts):
     """Ordena 4 pontos nas posições: top-left, top-right, bottom-right, bottom-left."""
     rect = np.zeros((4, 2), dtype="float32")
@@ -46,15 +60,14 @@ def order_points(pts):
 
 def detectar_marcadores_fiduciais(gray):
     """
-    Busca os 4 marcadores quadrados nos 4 cantos da folha para alinhamento por homografia.
-    Retorna os 4 cantos ordenados se encontrar com alta confiança, ou None.
+    Busca os 4 marcadores quadrados pretos que delimitam exclusivamente a área de questões.
+    Retorna os 4 cantos ordenados [TL, TR, BR, BL] se encontrar, ou None.
     """
     h, w = gray.shape[:2]
-    # Binarização inversa para destacar os quadrados pretos
     _, thresh = cv2.threshold(gray, 80, 255, cv2.THRESH_BINARY_INV)
 
     contours, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    min_area = (w * 0.015) * (h * 0.01)
+    min_area = (w * 0.008) * (h * 0.008)
     max_area = (w * 0.08) * (h * 0.08)
 
     candidates = []
@@ -71,50 +84,46 @@ def detectar_marcadores_fiduciais(gray):
                     if M["m00"] > 0:
                         cx = M["m10"] / M["m00"]
                         cy = M["m01"] / M["m00"]
-                        candidates.append((cx, cy, approx))
+                        candidates.append((cx, cy, area))
 
     if len(candidates) < 4:
         return None
 
-    # Tenta encontrar 1 candidato em cada um dos 4 quadrantes
-    tl, tr, bl, br = None, None, None, None
-    for cand in candidates:
-        cx, cy, approx = cand
-        if cx < w * 0.25 and cy < h * 0.25:
-            tl = (cx, cy)
-        elif cx > w * 0.75 and cy < h * 0.25:
-            tr = (cx, cy)
-        elif cx < w * 0.25 and cy > h * 0.75:
-            bl = (cx, cy)
-        elif cx > w * 0.75 and cy > h * 0.75:
-            br = (cx, cy)
-
-    if tl and tr and bl and br:
-        pts = np.array([tl, tr, br, bl], dtype="float32")
+    # Se houver exatamente 4 candidatos, ordena diretamente
+    if len(candidates) == 4:
+        pts = np.array([[c[0], c[1]] for c in candidates], dtype="float32")
         return order_points(pts)
-    return None
+
+    # Se houver mais de 4, seleciona os 4 que formam a maior área consistente
+    from itertools import combinations
+    best_quad = None
+    best_area = 0
+    for quad in combinations(candidates, 4):
+        pts = np.array([[c[0], c[1]] for c in quad], dtype="float32")
+        ordered = order_points(pts)
+        w_top = np.linalg.norm(ordered[1] - ordered[0])
+        w_bot = np.linalg.norm(ordered[2] - ordered[3])
+        h_l = np.linalg.norm(ordered[3] - ordered[0])
+        h_r = np.linalg.norm(ordered[2] - ordered[1])
+        area = cv2.contourArea(ordered.astype(np.int32))
+        if area > best_area and min(w_top, w_bot) > 1.1 * max(h_l, h_r):
+            best_area = area
+            best_quad = ordered
+
+    return best_quad
 
 
 def get_canonical_bubble_coordinates():
     """
     Calcula as coordenadas teóricas de cada uma das 70 questões na imagem canônica
-    (CANONICAL_W x CANONICAL_H) gerada a partir do PDF do Cartão-Resposta.
+    retificada (QUESTIONS_WARP_W x QUESTIONS_WARP_H) delimitada exclusivamente
+    pelos 4 marcadores pretos nos cantos das questões.
     """
-    # Escalas entre pontos do PDF A4 (595.27 x 841.89) e pixels canônicos (1654 x 2338)
-    sx = CANONICAL_W / 595.27
-    sy = CANONICAL_H / 841.89
-
-    fid_margin = 20.0
-    grid_x = (fid_margin + 20) * sx
-    grid_w = (595.27 - 2 * (fid_margin + 20)) * sx
-    col_w = (grid_w - 3 * 10 * sx) / 4.0
-
-    # No gerador:
-    # y_after_cand = PAGE_HEIGHT - 95 - 100 = 646.89
-    # y_after_inst = 646.89 - 44 - 8 = 594.89
-    # cy_top = 594.89 - 12 = 582.89 (em coordenadas ReportLab, de baixo para cima)
-    # Na imagem do OpenCV (de cima para baixo):
-    # y_img = (PAGE_HEIGHT - y_pdf) * sy
+    GRID_MARGIN_X = 36.0
+    COL_W = 123.3175
+    GAP_COLUMNS = 10.0
+    ROW_H = 18.0
+    OPT_DX = 15.8
 
     col_defs = [
         {"start": 1, "end": 18},
@@ -123,61 +132,48 @@ def get_canonical_bubble_coordinates():
         {"start": 55, "end": 70},
     ]
 
-    header_h = 18.0
-    row_h = 16.5
-    opt_dx = 15.0
-
     coords = {}
-
     for col_idx, col_def in enumerate(col_defs):
-        cx = grid_x + col_idx * (col_w + 10 * sx)
-        first_opt_x = cx + 33.0 * sx
-
+        cx = GRID_MARGIN_X + col_idx * (COL_W + GAP_COLUMNS)
+        first_opt_x = cx + 33.0
         start_q = col_def["start"]
         end_q = col_def["end"]
         num_q = end_q - start_q + 1
 
         for r in range(num_q):
             q_num = start_q + r
-            # Em coordenadas de baixo para cima do PDF:
-            pdf_y = 582.89 - header_h - 14.0 - r * row_h
-            # Converte para coordenadas de imagem (origem no topo):
-            img_y = (841.89 - pdf_y) * sy
-
+            by = 576.89 - r * ROW_H
             coords[q_num] = {}
             for opt_idx, opt_letter in enumerate(OPCOES):
-                bx = first_opt_x + opt_idx * opt_dx * sx
-                coords[q_num][opt_letter] = (int(round(bx)), int(round(img_y)))
+                bx = first_opt_x + opt_idx * OPT_DX
+                x_norm = (bx - TL_X) / SPAN_X
+                y_norm = (TL_Y - by) / SPAN_Y
+                wx = int(round(WARP_PAD + x_norm * (QUESTIONS_WARP_W - 2 * WARP_PAD)))
+                wy = int(round(WARP_PAD + y_norm * (QUESTIONS_WARP_H - 2 * WARP_PAD)))
+                coords[q_num][opt_letter] = (wx, wy)
 
     return coords
 
 
 def ler_cartao_fiducial(img_bgr, pts_fiduciais):
     """
-    Processa o cartão-resposta alinhando por homografia contra os 4 marcadores dos cantos.
-    Garante máxima precisão de leitura para cartões novos gerados pelo sistema.
+    Processa a folha recortando e retificando EXCLUSIVAMENTE o bloco das 70 questões
+    entre os 4 marcadores quadrados pretos via homografia.
     """
-    # Mapeia os cantos para a resolução canônica
-    sx = CANONICAL_W / 595.27
-    sy = CANONICAL_H / 841.89
-    fid_margin = 20.0
-    fid_size = 18.0
-    half_fid = fid_size / 2.0
-
     dst_pts = np.array([
-        [(fid_margin + half_fid) * sx, (fid_margin + half_fid) * sy],  # TL
-        [(595.27 - fid_margin - half_fid) * sx, (fid_margin + half_fid) * sy],  # TR
-        [(595.27 - fid_margin - half_fid) * sx, (841.89 - fid_margin - half_fid) * sy],  # BR
-        [(fid_margin + half_fid) * sx, (841.89 - fid_margin - half_fid) * sy]   # BL
+        [WARP_PAD, WARP_PAD],                                         # TL
+        [QUESTIONS_WARP_W - WARP_PAD, WARP_PAD],                     # TR
+        [QUESTIONS_WARP_W - WARP_PAD, QUESTIONS_WARP_H - WARP_PAD],  # BR
+        [WARP_PAD, QUESTIONS_WARP_H - WARP_PAD]                       # BL
     ], dtype="float32")
 
     M = cv2.getPerspectiveTransform(pts_fiduciais, dst_pts)
-    warped = cv2.warpPerspective(img_bgr, M, (CANONICAL_W, CANONICAL_H))
+    warped = cv2.warpPerspective(img_bgr, M, (QUESTIONS_WARP_W, QUESTIONS_WARP_H))
 
     _, norm, darkness = normalizar_iluminacao(warped)
     coords_teoricas = get_canonical_bubble_coordinates()
 
-    r_inner = int(round(4.8 * sx * 0.75))
+    r_inner = 10  # Raio em pixels para a bolinha no espaço canônico de questões
     resultados = []
     debug_img = warped.copy()
 
@@ -191,13 +187,12 @@ def ler_cartao_fiducial(img_bgr, pts_fiduciais):
 
         for opt in OPCOES:
             bx, by = q_opts[opt]
-            # Busca melhor intensidade em pequena vizinhança de 3 pixels
             best_s = 0.0
             best_pt = (bx, by)
             for dy in range(-3, 4):
                 for dx in range(-3, 4):
-                    nx = int(np.clip(bx + dx, r_inner, CANONICAL_W - r_inner - 1))
-                    ny = int(np.clip(by + dy, r_inner, CANONICAL_H - r_inner - 1))
+                    nx = int(np.clip(bx + dx, r_inner, QUESTIONS_WARP_W - r_inner - 1))
+                    ny = int(np.clip(by + dy, r_inner, QUESTIONS_WARP_H - r_inner - 1))
                     patch = darkness[ny - r_inner:ny + r_inner + 1, nx - r_inner:nx + r_inner + 1]
                     s = float(patch.mean())
                     if s > best_s:
@@ -214,7 +209,6 @@ def ler_cartao_fiducial(img_bgr, pts_fiduciais):
         d0, d1 = sorted(deltas, reverse=True)[:2]
 
         # Decisão de marcação:
-        # Se max_s for baixa ou o contraste (d0) for baixo -> Em branco
         if d0 < 12.0 or max_s < 35.0:
             resposta = "EM_BRANCO"
         elif d0 >= 28.0 and d1 >= 22.0 and (d0 - d1) < 8.0:
@@ -230,9 +224,9 @@ def ler_cartao_fiducial(img_bgr, pts_fiduciais):
             if resposta == opt:
                 cv2.circle(debug_img, pt, r_inner + 3, (0, 220, 0), 2)  # Verde: marcada
             elif resposta == "ANULADA" and (scores[idx] - baseline) > 18.0:
-                cv2.circle(debug_img, pt, r_inner + 3, (0, 200, 255), 2)  # Amarelo: dupla marcação
+                cv2.circle(debug_img, pt, r_inner + 3, (0, 200, 255), 2)  # Amarelo: dupla
             else:
-                cv2.circle(debug_img, pt, r_inner + 2, (180, 180, 180), 1)  # Cinza: não marcada
+                cv2.circle(debug_img, pt, r_inner + 2, (180, 180, 180), 1)  # Cinza: vazia
 
         resultados.append({
             "Questao": q_num,
