@@ -42,57 +42,101 @@ COLUMNS_DEF = [
 
 
 def draw_clean_header(c, is_gabarito=False):
-    """Desenha cabeçalho oficial do cartão."""
-    start_y = PAGE_HEIGHT - 34.0
+    """Desenha cabeçalho oficial do cartão com margem segura de impressão e respiro ampliado."""
+    start_y = PAGE_HEIGHT - 40.0
 
     c.setFont("Helvetica-Bold", 16)
     c.setFillColor(colors.black)
-    titulo = "GABARITO OFICIAL" if is_gabarito else "CARTÃO-RESPOSTA OFICIAL"
+    titulo = "GABARITO OFICIAL" if is_gabarito else "CARTÃO-RESPOSTA"
     c.drawString(GRID_MARGIN_X, start_y, titulo)
 
     c.setFont("Helvetica-Bold", 7.8)
     c.setFillColor(colors.HexColor("#333333"))
-    c.drawString(GRID_MARGIN_X, start_y - 12, "2º SIMULADO UNIFICADO • COLETIVO VOA VOA & PREPARATÓRIO GABARITA")
+    c.drawString(GRID_MARGIN_X, start_y - 12.0, "2º SIMULADO UNIFICADO • COLETIVO VOA VOA & PREPARATÓRIO GABARITA")
 
     c.setStrokeColor(colors.black)
     c.setLineWidth(1.0)
-    c.line(GRID_MARGIN_X, start_y - 16, GRID_MARGIN_X + GRID_W, start_y - 16)
+    c.line(GRID_MARGIN_X, start_y - 17.0, GRID_MARGIN_X + GRID_W, start_y - 17.0)
 
-    return start_y - 28.0
+    # Espaço maior de respiro antes do campo de identificação do participante
+    return start_y - 36.0
 
 
 def draw_candidate_name_field(c, start_y, is_gabarito=False):
-    """Desenha campo contínuo para o nome do participante com espaçamento pequeno após o rótulo."""
-    box_x = GRID_MARGIN_X
-    box_w = GRID_W
-    box_h = 22.0
+    """
+    Desenha o campo de identificação com:
+    - À esquerda: Nome Completo do Participante
+    - À direita: Seleção de Unidade (Coletivo Voa Voa ou Preparatório Gabarita)
+    """
+    gap_fields = 10.0
+    name_w = 320.0
+    unit_w = GRID_W - name_w - gap_fields
+    box_h = 24.0
 
-    c.setFont("Helvetica-Bold", 7.5)
+    box_name_x = GRID_MARGIN_X
+    box_unit_x = box_name_x + name_w + gap_fields
+
+    # Rótulos alinhados
+    c.setFont("Helvetica-Bold", 7.2)
     c.setFillColor(colors.black)
-    c.drawString(box_x, start_y, "NOME COMPLETO DO PARTICIPANTE:")
+    c.drawString(box_name_x, start_y, "NOME COMPLETO DO PARTICIPANTE:")
+    c.drawString(box_unit_x, start_y, "UNIDADE:")
 
-    # Espaço pequeno após o texto
     box_top_y = start_y - 4.5
     box_y = box_top_y - box_h
 
+    # 1. Caixa do Nome Completo
     c.setStrokeColor(colors.black)
     c.setLineWidth(0.8)
     c.setFillColor(colors.white)
-    c.rect(box_x, box_y, box_w, box_h, fill=1, stroke=1)
+    c.rect(box_name_x, box_y, name_w, box_h, fill=1, stroke=1)
 
     if is_gabarito:
-        c.setFont("Helvetica-Bold", 9.5)
+        c.setFont("Helvetica-Bold", 9.0)
         c.setFillColor(colors.black)
-        c.drawString(box_x + 10, box_y + 6.5, "FOLHA DE RESPOSTAS PADRÃO — GABARITO OFICIAL")
+        c.drawString(box_name_x + 10, box_y + 7.5, "FOLHA DE RESPOSTAS PADRÃO — GABARITO OFICIAL")
+
+    # 2. Caixa de Seleção de Unidade
+    c.setStrokeColor(colors.black)
+    c.setFillColor(colors.white)
+    c.rect(box_unit_x, box_y, unit_w, box_h, fill=1, stroke=1)
+
+    # Opções de Unidade com bolhas de marcação
+    r_bubble = 3.4
+    opt1_y = box_y + 15.5
+    opt2_y = box_y + 6.0
+    opt_x = box_unit_x + 9.0
+    text_x = box_unit_x + 17.5
+
+    # Opção 1: Coletivo Voa Voa
+    c.setLineWidth(0.7)
+    c.setStrokeColor(colors.black)
+    c.setFillColor(colors.white)
+    c.circle(opt_x, opt1_y, r_bubble, fill=1, stroke=1)
+
+    c.setFont("Helvetica-Bold", 6.2)
+    c.setFillColor(colors.black)
+    c.drawString(text_x, opt1_y - 2.2, "Coletivo Voa Voa (Riacho das Pedras)")
+
+    # Opção 2: Preparatório Gabarita
+    c.setFillColor(colors.white)
+    c.circle(opt_x, opt2_y, r_bubble, fill=1, stroke=1)
+
+    c.setFont("Helvetica-Bold", 6.2)
+    c.setFillColor(colors.black)
+    c.drawString(text_x, opt2_y - 2.2, "Preparatório Gabarita (Jardim Laguna)")
 
     return box_y
 
 
 def draw_instructions_bw(c, start_y):
-    """Desenha instruções de preenchimento destacando a caneta preta obrigatória."""
+    """
+    Desenha instruções de preenchimento destacando a caneta preta obrigatória.
+    Exemplos de Correto e Incorretos organizados verticalmente (um em cima do outro) à direita.
+    """
     bar_x = GRID_MARGIN_X
     bar_w = GRID_W
-    bar_h = 32.0
+    bar_h = 36.0
     bar_y = start_y - bar_h
 
     c.setStrokeColor(colors.HexColor("#333333"))
@@ -100,46 +144,56 @@ def draw_instructions_bw(c, start_y):
     c.setLineWidth(0.7)
     c.rect(bar_x, bar_y, bar_w, bar_h, fill=1, stroke=1)
 
+    # Texto à esquerda
     c.setFont("Helvetica-Bold", 7.4)
     c.setFillColor(colors.black)
     c.drawString(bar_x + 8, bar_y + bar_h - 9.5, "INSTRUÇÕES DE PREENCHIMENTO:")
 
-    c.setFont("Helvetica", 6.6)
+    c.setFont("Helvetica", 6.5)
     c.setFillColor(colors.HexColor("#222222"))
-    c.drawString(bar_x + 8, bar_y + bar_h - 18.0, "• Preencha a bolha por completo utilizando EXCLUSIVAMENTE caneta esferográfica de tinta PRETA (tubo transparente).")
-    c.drawString(bar_x + 8, bar_y + bar_h - 26.5, "• É ESTRITAMENTE PROIBIDO O USO DE CANETA AZUL, lápis ou corretivo. Marque apenas uma opção por questão.")
+    c.drawString(bar_x + 8, bar_y + bar_h - 19.0, "• Preencha a bolha por completo utilizando EXCLUSIVAMENTE caneta esferográfica de tinta PRETA (tubo transparente).")
+    c.drawString(bar_x + 8, bar_y + bar_h - 28.5, "• É ESTRITAMENTE PROIBIDO O USO DE CANETA AZUL, lápis ou corretivo. Marque apenas uma opção por questão.")
 
-    # Exemplos visuais P&B
-    ex_x = bar_x + bar_w - 150
-    center_y = bar_y + bar_h - 16.0
+    # Bloco de exemplos empilhados verticalmente à direita
+    ex_block_w = 115.0
+    ex_x = bar_x + bar_w - ex_block_w - 6.0
 
+    # Linha divisória sutil vertical separando o texto dos exemplos
+    c.setStrokeColor(colors.HexColor("#D8D8D8"))
+    c.setLineWidth(0.6)
+    c.line(ex_x - 10.0, bar_y + 4.0, ex_x - 10.0, bar_y + bar_h - 4.0)
+
+    # 1. Linha Superior: Correto
+    y_correto = bar_y + bar_h - 13.0
     c.setFont("Helvetica-Bold", 6.8)
-    c.drawString(ex_x, center_y - 2.5, "Correto:")
-
-    # Bolinha 100% preenchida de preto sem letra vazada
     c.setFillColor(colors.black)
-    c.circle(ex_x + 38, center_y, 4.2, fill=1, stroke=1)
+    c.drawString(ex_x, y_correto - 2.2, "Correto:")
 
     c.setFillColor(colors.black)
+    c.circle(ex_x + 48.0, y_correto, 4.2, fill=1, stroke=1)
+
+    # 2. Linha Inferior: Incorretos
+    y_incorreto = bar_y + 10.5
     c.setFont("Helvetica-Bold", 6.8)
-    c.drawString(ex_x + 56, center_y - 2.5, "Incorretos:")
+    c.setFillColor(colors.black)
+    c.drawString(ex_x, y_incorreto - 2.2, "Incorretos:")
 
     # Incorreto 1: Com X
     c.setFillColor(colors.white)
-    c.circle(ex_x + 98, center_y, 4.2, fill=1, stroke=1)
+    c.circle(ex_x + 48.0, y_incorreto, 4.2, fill=1, stroke=1)
     c.setStrokeColor(colors.black)
     c.setLineWidth(0.8)
-    c.line(ex_x + 95, center_y - 3, ex_x + 101, center_y + 3)
-    c.line(ex_x + 95, center_y + 3, ex_x + 101, center_y - 3)
+    c.line(ex_x + 45.0, y_incorreto - 3, ex_x + 51.0, y_incorreto + 3)
+    c.line(ex_x + 45.0, y_incorreto + 3, ex_x + 51.0, y_incorreto - 3)
 
     # Incorreto 2: Com traço
-    c.circle(ex_x + 114, center_y, 4.2, fill=1, stroke=1)
-    c.line(ex_x + 111, center_y - 3, ex_x + 117, center_y + 3)
+    c.circle(ex_x + 66.0, y_incorreto, 4.2, fill=1, stroke=1)
+    c.line(ex_x + 63.0, y_incorreto - 3, ex_x + 69.0, y_incorreto + 3)
 
     # Incorreto 3: Ponto central
-    c.circle(ex_x + 130, center_y, 4.2, fill=1, stroke=1)
+    c.circle(ex_x + 84.0, y_incorreto, 4.2, fill=1, stroke=1)
     c.setFillColor(colors.black)
-    c.circle(ex_x + 130, center_y, 1.4, fill=1, stroke=1)
+    c.circle(ex_x + 84.0, y_incorreto, 1.4, fill=1, stroke=1)
 
     return bar_y
 
@@ -147,20 +201,35 @@ def draw_instructions_bw(c, start_y):
 def draw_bubble_grid(c, start_y, gabarito_oficial=None):
     """
     Desenha o grid das 70 questões:
-    - Quadrados pretos de alinhamento EXCLUSIVAMENTE em cima dos locais de marcar o gabarito.
+    - Quadrados pretos de alinhamento em volta do espaço de marcar as respostas (topo, rodapé e cantos laterais).
     - Bolinhas preenchidas do gabarito 100% pretas (como preenchimento real de caneta).
     """
     grid_top_y = start_y
     grid_h = HEADER_H + MAX_ROWS * ROW_H
     grid_bottom_y = grid_top_y - grid_h
 
-    # Marcadores pretos SOMENTE em cima das colunas de marcar o gabarito
     marker_s = 8.0
     c.setFillColor(colors.black)
     c.setStrokeColor(colors.black)
+
+    # 1. Marcadores pretos em cima de cada uma das 4 colunas
     for col_idx in range(4):
         cx = GRID_MARGIN_X + col_idx * (COL_W + GAP_COLUMNS)
         c.rect(cx + (COL_W - marker_s) / 2.0, grid_top_y + 4.0, marker_s, marker_s, fill=1, stroke=0)
+
+    # 2. Marcadores pretos embaixo de cada uma das 4 colunas
+    for col_idx in range(4):
+        cx = GRID_MARGIN_X + col_idx * (COL_W + GAP_COLUMNS)
+        c.rect(cx + (COL_W - marker_s) / 2.0, grid_bottom_y - 12.0, marker_s, marker_s, fill=1, stroke=0)
+
+    # 3. Marcadores pretos fiduciais nas laterais delimitando o bloco de questões
+    f_size = 9.0
+    # Canto superior esquerdo e direito (alinhados com a primeira linha de respostas)
+    c.rect(GRID_MARGIN_X - 16.0, grid_top_y - HEADER_H - 2.0, f_size, f_size, fill=1, stroke=0)
+    c.rect(GRID_MARGIN_X + GRID_W + 7.0, grid_top_y - HEADER_H - 2.0, f_size, f_size, fill=1, stroke=0)
+    # Canto inferior esquerdo e direito (alinhados com a última linha de respostas)
+    c.rect(GRID_MARGIN_X - 16.0, grid_bottom_y + 4.0, f_size, f_size, fill=1, stroke=0)
+    c.rect(GRID_MARGIN_X + GRID_W + 7.0, grid_bottom_y + 4.0, f_size, f_size, fill=1, stroke=0)
 
     geometry = {
         "questions": {}
@@ -243,7 +312,7 @@ def draw_clean_evaluator_panel(c):
     panel_x = GRID_MARGIN_X
     panel_w = GRID_W
     panel_h = 84.0
-    panel_y = 28.0  # Margem segura para não cortar na impressão
+    panel_y = 40.0  # Margem segura para não cortar na impressão (40 pt da borda inferior)
 
     # Moldura externa do painel
     c.setStrokeColor(colors.black)
@@ -384,15 +453,24 @@ def draw_clean_evaluator_panel(c):
     c.drawCentredString(tot_x + w_tot / 2.0, table_top_y - 8.5, "TOTAL GERAL")
     c.setFont("Helvetica", 5.0)
     c.setFillColor(colors.HexColor("#DDDDDD"))
-    c.drawCentredString(tot_x + w_tot / 2.0, table_top_y - 14.5, "70Q + Redação")
+    c.drawCentredString(tot_x + w_tot / 2.0, table_top_y - 14.5, "Desempenho Global")
 
-    # Célula Acertos Total (sem placeholders)
-    c.setFillColor(colors.white)
+    # Célula Superior: Soma Total de Acertos (com fundo levemente sombreado mas ótimo para caneta)
+    box_tot_y1 = table_top_y - row_h_title - row_h_data
+    c.setFillColor(colors.HexColor("#EAEAEA"))
     c.setStrokeColor(colors.HexColor("#777777"))
-    c.rect(tot_x, table_top_y - row_h_title - row_h_data, w_tot, row_h_data, fill=1, stroke=1)
+    c.rect(tot_x, box_tot_y1, w_tot, row_h_data, fill=1, stroke=1)
+    c.setFont("Helvetica-Bold", 5.2)
+    c.setFillColor(colors.HexColor("#555555"))
+    c.drawCentredString(tot_x + w_tot / 2.0, box_tot_y1 + row_h_data - 6.5, "TOTAL ACERTOS (0 a 70)")
 
-    # Célula Média Final (sem placeholders)
-    c.rect(tot_x, table_top_y - row_h_title - 2 * row_h_data, w_tot, row_h_data, fill=1, stroke=1)
+    # Célula Inferior: Média Geral / Nota Final
+    box_tot_y2 = table_top_y - row_h_title - 2 * row_h_data
+    c.setFillColor(colors.HexColor("#EAEAEA"))
+    c.rect(tot_x, box_tot_y2, w_tot, row_h_data, fill=1, stroke=1)
+    c.setFont("Helvetica-Bold", 5.2)
+    c.setFillColor(colors.HexColor("#555555"))
+    c.drawCentredString(tot_x + w_tot / 2.0, box_tot_y2 + row_h_data - 6.5, "MÉDIA GERAL (0 a 1000)")
 
 
 def render_answer_sheet_on_canvas(c, is_gabarito=False, gabarito_oficial=None):
@@ -401,7 +479,7 @@ def render_answer_sheet_on_canvas(c, is_gabarito=False, gabarito_oficial=None):
     y_cand = draw_candidate_name_field(c, start_y=y_head, is_gabarito=is_gabarito)
 
     # Espaço antes das instruções
-    y_inst = draw_instructions_bw(c, start_y=y_cand - 6.0)
+    y_inst = draw_instructions_bw(c, start_y=y_cand - 8.0)
 
     # Espaço de respiro antes de começar a grade de questões
     grid_start_y = y_inst - 16.0
