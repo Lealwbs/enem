@@ -270,7 +270,7 @@ def draw_cover_background(canv, doc):
     footer_y = MARGIN_BOTTOM - 2
     canv.setFont("Helvetica-Bold", 8)
     canv.setFillColor(colors.black)
-    canv.drawString(MARGIN_LEFT, footer_y, "SIMULADO COLETIVO • CADERNO BRANCO")
+    canv.drawString(MARGIN_LEFT, footer_y, "COLETIVO • CADERNO BRANCO")
     canv.drawRightString(PAGE_W - MARGIN_RIGHT, footer_y, "MODELO OFICIAL ENEM • 70 QUESTÕES")
 
     canv.restoreState()
@@ -325,7 +325,7 @@ def draw_two_column_decorations(canv, doc):
     # Identificador à direita
     canv.setFont("Helvetica", 7.5)
     canv.setFillColor(colors.HexColor("#555555"))
-    canv.drawRightString(PAGE_W - MARGIN_RIGHT, footer_y + 1, "SIMULADO COLETIVO • 1º DIA • CADERNO 1 BRANCO")
+    canv.drawRightString(PAGE_W - MARGIN_RIGHT, footer_y + 1, "COLETIVO • 1º DIA • CADERNO 1 BRANCO")
 
     canv.restoreState()
 

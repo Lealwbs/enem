@@ -1,6 +1,6 @@
 """
 ================================================================================
-Simulado Coletivo • Gerador de Cartão-Resposta (Gabarito OMR) 70 Questões em PDF
+Coletivo • Gerador de Cartão-Resposta (Gabarito OMR) 70 Questões em PDF
 Modelo oficial estilo ENEM otimizado para impressão P&B e máxima legibilidade:
 - Sem código de barras, sem '* 010175BR1 *', sem '1º DIA' e sem subtítulo redundante.
 - Sem CPF, sem Data de Nascimento, sem Assinatura e sem Transcrição de Frase da capa.

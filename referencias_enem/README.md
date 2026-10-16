@@ -1,6 +1,6 @@
 # Modelos e Referências Oficiais do ENEM
 
-Esta pasta contém os arquivos de referência originais do Exame Nacional do Ensino Médio (ENEM) utilizados como gabarito visual, tipográfico e dimensional para a implementação do **Simulado Coletivo**:
+Esta pasta contém os arquivos de referência originais do Exame Nacional do Ensino Médio (ENEM) utilizados como gabarito visual, tipográfico e dimensional para a implementação do projeto **Coletivo**:
 
 1. **Cadernos de Prova Oficiais (PDF):**
    - `2025_PV_impresso_D1_CD1.pdf`: Prova oficial impressa Dia 1 (Caderno Azul).

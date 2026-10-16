@@ -1,4 +1,4 @@
-# Simulado Coletivo (antigo `omr-exam-grader`) 🎓📄
+# Coletivo 🎓📄
 
 Uma suíte completa em Python para **geração automatizada de simulados e exames no padrão visual oficial do ENEM** (Caderno de Questões, Cartão-Resposta OMR e Folha de Redação) e **correção automática de gabaritos via OMR (Optical Mark Recognition)** com visão computacional.
 
@@ -45,7 +45,7 @@ Uma suíte completa em Python para **geração automatizada de simulados e exame
 ## 📁 Estrutura Organizada do Repositório
 
 ```
-omr-exam-grader/ (Simulado Coletivo)
+coletivo/
 ├── cli.py                     # CLI unificada (gerar-tudo, gerar-prova, corrigir, etc.)
 ├── core/                      # Módulos centrais do sistema
 │   ├── exam_generator.py      # Gerador do Caderno de Questões (2 Colunas, Caderno Branco)

@@ -1,6 +1,6 @@
 """
 ================================================================================
-Simulado Coletivo • Sistema Integrado de Criação de Provas Estilo ENEM e Correção OMR
+Coletivo • Sistema Integrado de Criação de Provas Estilo ENEM e Correção OMR
 CLI Unificada para Geração de Provas, Cartões-Resposta, Redação e Correção
 ================================================================================
 """
@@ -83,7 +83,7 @@ def cmd_corrigir(args):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Simulado Coletivo • Gerador de Provas estilo ENEM e Corretor OMR",
+        description="Coletivo • Gerador de Provas estilo ENEM e Corretor OMR",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Exemplos de uso:
