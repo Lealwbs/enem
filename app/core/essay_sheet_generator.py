@@ -1,10 +1,11 @@
 """
 Gerador da Folha Oficial de Redação em PDF.
 Modelo padrão ENEM otimizado para legibilidade, conforto de escrita e impressão:
-- Campo de Nome Completo em caixa única para escrita manual normal.
-- Instruções oficiais compactas padronizadas do ENEM com alerta de caneta preta.
-- 30 linhas pautadas com altura confortável (~21.6 pt / 7.6 mm) para escrita manual.
-- Marcadores fiduciais nos cantos extremos para alinhamento e digitalização.
+- Margens seguras de impressão (40 pt) para evitar cortes em qualquer impressora.
+- Cabeçalho padronizado idêntico ao Cartão-Resposta (Título, subtítulo logo abaixo e linha divisória).
+- Campo de Nome Completo com respiro vertical entre o rótulo e a caixa.
+- 30 linhas pautadas com altura ampla (~22.5 pt / 7.9 mm) para escrita manual confortável.
+- Marcadores fiduciais nos cantos posicionados em margens seguras.
 """
 
 import os
@@ -14,65 +15,73 @@ from reportlab.lib import colors
 
 PAGE_WIDTH, PAGE_HEIGHT = A4
 
-FIDUCIAL_SIZE = 16.0
-FIDUCIAL_MARGIN = 24.0
+MARGIN_X = 40.0
+FIDUCIAL_SIZE = 14.0
+FIDUCIAL_MARGIN = 32.0
 
 
 def draw_essay_fiducials(c):
-    """Desenha 4 marcadores nos cantos extremos para alinhamento OMR."""
-    c.setFillColor(colors.black)
-    c.setStrokeColor(colors.black)
-    c.rect(FIDUCIAL_MARGIN, PAGE_HEIGHT - FIDUCIAL_MARGIN - FIDUCIAL_SIZE, FIDUCIAL_SIZE, FIDUCIAL_SIZE, fill=1)
-    c.rect(PAGE_WIDTH - FIDUCIAL_MARGIN - FIDUCIAL_SIZE, PAGE_HEIGHT - FIDUCIAL_MARGIN - FIDUCIAL_SIZE, FIDUCIAL_SIZE, FIDUCIAL_SIZE, fill=1)
-    c.rect(FIDUCIAL_MARGIN, FIDUCIAL_MARGIN, FIDUCIAL_SIZE, FIDUCIAL_SIZE, fill=1)
-    c.rect(PAGE_WIDTH - FIDUCIAL_MARGIN - FIDUCIAL_SIZE, FIDUCIAL_MARGIN, FIDUCIAL_SIZE, FIDUCIAL_SIZE, fill=1)
+    """Marcadores de alinhamento desativados para evitar sobreposição com cabeçalho e margens."""
+    pass
 
 
 def draw_essay_compact_header(c, start_y, is_model=False):
-    """Desenha cabeçalho oficial da folha de redação (sem caixa de instruções e sem placeholders)."""
-    box_x = FIDUCIAL_MARGIN + 20
-    box_w = PAGE_WIDTH - 2 * (FIDUCIAL_MARGIN + 20)
+    """
+    Desenha cabeçalho oficial da folha de redação:
+    - Título principal
+    - Subtítulo logo abaixo
+    - Linha divisória horizontal
+    - Campo de nome completo com espaço de respiro após o rótulo
+    """
+    box_x = MARGIN_X
+    box_w = PAGE_WIDTH - 2 * MARGIN_X
 
-    # 1. Título e Subtítulo
-    c.setFont("Helvetica-Bold", 14)
+    # 1. Título e Subtítulo (semelhante ao Cartão-Resposta Oficial)
+    c.setFont("Helvetica-Bold", 16)
     c.setFillColor(colors.black)
     c.drawString(box_x, start_y, "FOLHA DE REDAÇÃO DEFINITIVA")
 
-    c.setFont("Helvetica-Bold", 7.6)
+    c.setFont("Helvetica-Bold", 7.8)
     c.setFillColor(colors.HexColor("#333333"))
-    c.drawRightString(box_x + box_w, start_y + 1, "2º SIMULADO UNIFICADO • COLETIVO VOA VOA & GABARITA")
+    c.drawString(box_x, start_y - 12, "2º SIMULADO UNIFICADO • COLETIVO VOA VOA & PREPARATÓRIO GABARITA")
+
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(1.0)
+    c.line(box_x, start_y - 16, box_x + box_w, start_y - 16)
 
     # 2. Campo para Nome Completo do Participante
-    name_label_y = start_y - 24.0
-    c.setFont("Helvetica-Bold", 7.2)
+    name_label_y = start_y - 28.0
+    c.setFont("Helvetica-Bold", 7.5)
     c.setFillColor(colors.black)
     c.drawString(box_x, name_label_y, "NOME COMPLETO DO PARTICIPANTE:")
 
-    name_box_y = name_label_y - 20
-    name_box_h = 20.0
-    c.setStrokeColor(colors.HexColor("#333333"))
+    # Espaço pequeno (respiro) após o texto antes da caixa
+    name_box_top = name_label_y - 4.5
+    name_box_h = 22.0
+    name_box_y = name_box_top - name_box_h
+
+    c.setStrokeColor(colors.black)
     c.setLineWidth(0.8)
     c.setFillColor(colors.white)
     c.rect(box_x, name_box_y, box_w, name_box_h, fill=1, stroke=1)
 
     if is_model:
-        c.setFont("Helvetica-Bold", 8.5)
+        c.setFont("Helvetica-Bold", 9.0)
         c.setFillColor(colors.black)
-        c.drawString(box_x + 8, name_box_y + 6, "FOLHA MODELO OFICIAL — VERSO DO CARTÃO-RESPOSTA")
+        c.drawString(box_x + 10, name_box_y + 6.5, "FOLHA MODELO OFICIAL — VERSO DO CARTÃO-RESPOSTA")
 
-    return name_box_y - 14.0
-
+    return name_box_y - 12.0
 
 
 def draw_essay_30_lines(c, start_y):
-    """Desenha a grade de 30 linhas pautadas oficiais."""
-    margin_x = FIDUCIAL_MARGIN + 20
+    """Desenha a grade de 30 linhas pautadas oficiais com margens seguras."""
+    margin_x = MARGIN_X
     box_w = PAGE_WIDTH - 2 * margin_x
     num_col_w = 24.0
 
-    target_bottom = FIDUCIAL_MARGIN + 12
+    target_bottom = 32.0  # Margem segura inferior para impressão
     available_h = start_y - target_bottom
-    line_h = min(22.0, available_h / 30.0)
+    line_h = min(23.0, available_h / 30.0)
     total_grid_h = 30 * line_h
     grid_y = start_y - total_grid_h
 
@@ -105,7 +114,7 @@ def draw_essay_30_lines(c, start_y):
 def render_essay_sheet_on_canvas(c, is_model=False):
     """Renderiza a folha de redação no canvas."""
     draw_essay_fiducials(c)
-    top_y = PAGE_HEIGHT - (FIDUCIAL_MARGIN + 10)
+    top_y = PAGE_HEIGHT - 34.0
     start_lines_y = draw_essay_compact_header(c, top_y, is_model=is_model)
     draw_essay_30_lines(c, start_lines_y)
 
