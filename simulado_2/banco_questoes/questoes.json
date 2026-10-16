@@ -140,55 +140,6 @@
       "numero": 6,
       "area": "Linguagens, Códigos e suas Tecnologias",
       "disciplina": "Língua Portuguesa e Literatura",
-      "texto_apoio": {
-        "titulo": "A memória e a escrita",
-        "conteudo": "Agora que expliquei o título, passo a escrever o livro. Antes disso, porém, digamos os motivos que me põem a pena na mão. Vivo só, com um criado. A casa em que moro é própria; fi-la construir de propósito, levado de um desejo tão particular que me vexa imprimi-lo, mas vá lá. Um dia, há bastantes anos, lembrou-me reproduzir no Engenho Novo a casa em que me criei na antiga Rua de Matacavalos, dando-lhe o mesmo aspecto e economia daquela outra, que desapareceu.",
-        "fonte": "ASSIS, M. Dom Casmurro. 1899."
-      },
-      "enunciado": "No fragmento, o narrador emprega a construção “os motivos que me põem a pena na mão”. Considerando as regras de colocação pronominal da norma-padrão da língua portuguesa, assinale a alternativa que apresenta uma reescrita correta do trecho, mantendo seu sentido original.",
-      "alternativas": {
-        "A": "Os motivos que põem-me a pena na mão justificam a escrita do livro.",
-        "B": "Os motivos pelos quais me ponho a escrever justificam a escrita do livro.",
-        "C": "Os motivos que põem a pena na mão-me justificam a escrita do livro.",
-        "D": "Os motivos que põem-na a pena na mão justificam a escrita do livro.",
-        "E": "Os motivos pelos quais ponho-me a escrever justificam a escrita do livro."
-      },
-      "gabarito": "B"
-    },
-    {
-      "numero": 7,
-      "area": "Linguagens, Códigos e suas Tecnologias",
-      "disciplina": "Língua Portuguesa e Literatura",
-      "texto_apoio": null,
-      "enunciado": "A colocação dos pronomes oblíquos átonos varia conforme o contexto sintático e o registro de linguagem. Considerando as regras prescritas pela gramática normativa para o uso da próclise e da ênclise, assinale a alternativa em que a colocação pronominal está correta.",
-      "alternativas": {
-        "A": "Me falaram que o romance machadiano retrata a sociedade carioca do século XIX.",
-        "B": "Bentinho recordava-se dos fatos, porém não entregou-se totalmente às lembranças.",
-        "C": "Quando trata-se de literatura realista, Machado de Assis destaca-se pela ironia.",
-        "D": "Machado de Assis sempre dedicou-se à análise psicológica das personagens.",
-        "E": "Em se tratando de memória ficcional, a perspectiva do narrador é determinante."
-      },
-      "gabarito": "E"
-    },
-    {
-      "numero": 8,
-      "area": "Linguagens, Códigos e suas Tecnologias",
-      "disciplina": "Língua Portuguesa e Literatura",
-      "texto_apoio": null,
-      "enunciado": "A regência verbal corresponde à relação estabelecida entre um verbo e seus complementos. Em textos de registro formal, essa relação deve observar as normas gramaticais consagradas. Assinale a alternativa que atende à norma-padrão da língua portuguesa quanto à regência verbal.",
-      "alternativas": {
-        "A": "O narrador prefere recordar o passado do que viver o presente.",
-        "B": "Bentinho sempre visava o bem-estar da família ao tomar decisões.",
-        "C": "Machado de Assis procedeu a uma análise profunda da alma humana.",
-        "D": "Os leitores assistiram o desenrolar dos fatos com desconfiança.",
-        "E": "O advogado custou para entender os motivos que levaram à desconfiança."
-      },
-      "gabarito": "C"
-    },
-    {
-      "numero": 9,
-      "area": "Linguagens, Códigos e suas Tecnologias",
-      "disciplina": "Língua Portuguesa e Literatura",
       "texto_apoio": null,
       "enunciado": "A adequação linguística de um texto depende, entre outros fatores, do emprego apropriado da norma-padrão e da precisão vocabular. Considere a frase a seguir: “Os alunos assistiram o documentário sobre Machado de Assis e aspiravam o sucesso no vestibular.” Assinale a alternativa que apresenta a reescrita desse período inteiramente conforme a norma-padrão da língua portuguesa.",
       "alternativas": {
@@ -201,22 +152,7 @@
       "gabarito": "B"
     },
     {
-      "numero": 10,
-      "area": "Linguagens, Códigos e suas Tecnologias",
-      "disciplina": "Língua Portuguesa e Literatura",
-      "texto_apoio": null,
-      "enunciado": "A concordância verbal estabelece a relação entre o verbo e o núcleo do sujeito. Em determinados contextos, a norma-padrão admite mais de uma forma de concordância. Assinale a alternativa em que a flexão verbal está em desacordo com as regras prescritas pela gramática normativa.",
-      "alternativas": {
-        "A": "A maior parte dos críticos afirmaram que o romance apresenta caráter inovador.",
-        "B": "Mais de um leitor considerou as reflexões do narrador excessivamente paranoicas.",
-        "C": "Mais de um especialista e mais de um historiador discutiram a estrutura da narrativa.",
-        "D": "A maioria dos episódios narrados ocorrem no Rio de Janeiro do século XIX.",
-        "E": "Haviam muitas dúvidas entre os leitores a respeito da veracidade do relato."
-      },
-      "gabarito": "E"
-    },
-    {
-      "numero": 11,
+      "numero": 7,
       "area": "Linguagens, Códigos e suas Tecnologias",
       "disciplina": "Língua Portuguesa e Literatura",
       "texto_apoio": null,
@@ -231,7 +167,46 @@
       "gabarito": "C"
     },
     {
-      "numero": 12,
+      "numero": 8,
+      "area": "Linguagens, Códigos e suas Tecnologias",
+      "disciplina": "Artes",
+      "texto_apoio": {
+        "titulo": "A arte de Luís Otávio Burnier",
+        "conteudo": "Para Burnier, o trabalho do ator consistia no desvelamento de matrizes corporais arcaicas e expressivas. Pesquisador incansável da mímica e das técnicas orientais e ocidentais de representação, fundou o LUME (Núcleo Interdisciplinar de Pesquisas Teatrais da Unicamp), onde investigava a expressividade do movimento puro, despido de artifícios puramente cenográficos, fazendo do próprio corpo do ator a matriz viva e dramática da cena.",
+        "fonte": "BURNIER, L. O. A Arte de Ator: da máscara à mímica corporal. Campinas: Editora da Unicamp, 2001."
+      },
+      "enunciado": "A concepção cênica e corporal analisada no fragmento fundamenta a pesquisa teatral contemporânea a partir da",
+      "alternativas": {
+        "A": "subordinação das ações corporais aos efeitos de iluminação e figurinos de época.",
+        "B": "centralidade do corpo do ator como instrumento primordial de criação poética e dramática.",
+        "C": "reprodução estrita e convencional dos gestos cotidianos da burguesia oitocentista.",
+        "D": "valorização da oratória clássica e declamação em detrimento da movimentação física.",
+        "E": "dependência de recursos multimídia digitais na composição das atmosferas do palco."
+      },
+      "gabarito": "B"
+    },
+    {
+      "numero": 9,
+      "area": "Linguagens, Códigos e suas Tecnologias",
+      "disciplina": "Artes",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2023_q07_segall.png",
+      "texto_apoio": {
+        "titulo": "",
+        "conteudo": "<b>TEXTO I</b>\nSEGALL, L. Eternos caminhantes. Óleo sobre tela, 138 x 184 cm. Museu Lasar Segall, IbramMinc, São Paulo, 1919.\n\n<b>TEXTO II</b>\nEm 1933, a obra Eternos caminhantes ingressou em uma das primeiras edições das exposições de Arte Degenerada, promovida por membros do partido nazista alemão. Nos anos seguintes, ela voltaria a ser exibida na mostra denominada Exposição da Vergonha, promovida por pequenos grupos abastados. Em 1937, essa obra foi confiscada pelo Ministério da Propaganda daquele país, na grande ação nacional-socialista contra a “Arte Degenerada”.",
+        "fonte": "SCHWARTZ, J. Perseguição à Arte Moderna em tempos de guerra. São Paulo: Museu Lasar Segall, 2018 (adaptado)."
+      },
+      "enunciado": "Quase cinquenta obras de Lasar Segall foram confiscadas pelo regime totalitário alemão na primeira metade do século XX, entre elas a obra Eternos caminhantes, considerada degenerada por",
+      "alternativas": {
+        "A": "representar uma estética tida como inconveniente para o ideário político vigente.",
+        "B": "manifestar um posicionamento político-cultural concebido por grupos de oposição.",
+        "C": "expressar a cultura artística por meio da representação parcial do corpo humano.",
+        "D": "apresentar uma composição que antecipa o imaginário artístico germânico.",
+        "E": "estimular discussões sobre o papel da arte na construção coletiva de cultura."
+      },
+      "gabarito": "A"
+    },
+    {
+      "numero": 10,
       "area": "Linguagens, Códigos e suas Tecnologias",
       "disciplina": "Língua Portuguesa e Literatura",
       "texto_apoio": null,
@@ -242,6 +217,44 @@
         "C": "O advogado leu os documentos no escritório antes do início da audiência.",
         "D": "Machado de Assis escreveu romances que retratam a elite daquela época.",
         "E": "Os leitores debateram os detalhes do enredo na biblioteca da universidade."
+      },
+      "gabarito": "B"
+    },
+    {
+      "numero": 11,
+      "area": "Linguagens, Códigos e suas Tecnologias",
+      "disciplina": "Educação Física",
+      "texto_apoio": {
+        "titulo": "Indústria do Fitness e Cultura Corporal",
+        "conteudo": "Existe uma indústria que comercializa o fitness; o Brasil é o segundo maior mercado de academias no mundo, com um número crescente de estabelecimentos e produtos voltados ao aprimoramento físico. No entanto, essa expansão mercantil frequentemente promove um culto obsessivo à padronização estética corporal, associando saúde exclusivamente a silhuetas hipertrofiadas ou excessivamente magras, transformando o exercício físico em mercadoria e imperativo estético punitivo.",
+        "fonte": "SOARES, C. L. Educação Física, Corpo e Cultura: a mercantilização do fitness no Brasil. Campinas: Autores Associados, 2020."
+      },
+      "enunciado": "A abordagem crítica da cultura fitness apresentada no texto alerta a sociedade para o fato de que:",
+      "alternativas": {
+        "A": "a prática regular de exercícios físicos em academias deve ser desaconselhada pelas diretrizes médicas.",
+        "B": "o acesso às academias de ginástica é universal e desprovido de qualquer barreira socioeconômica no país.",
+        "C": "a mercantilização da atividade física pode reduzir a saúde integral a padrões estéticos padronizados e excludentes.",
+        "D": "a busca pelo condicionamento cardiorrespiratório pleno independe de fatores sociais ou nutricionais.",
+        "E": "o bem-estar biológico é privilégio exclusivo daqueles que consomem suplementação alimentar industrializada."
+      },
+      "gabarito": "C"
+    },
+    {
+      "numero": 12,
+      "area": "Linguagens, Códigos e suas Tecnologias",
+      "disciplina": "Língua Portuguesa e Literatura",
+      "texto_apoio": {
+        "titulo": "A memória e a escrita",
+        "conteudo": "Agora que expliquei o título, passo a escrever o livro. Antes disso, porém, digamos os motivos que me põem a pena na mão. Vivo só, com um criado. A casa em que moro é própria; fi-la construir de propósito, levado de um desejo tão particular que me vexa imprimi-lo, mas vá lá. Um dia, há bastantes anos, lembrou-me reproduzir no Engenho Novo a casa em que me criei na antiga Rua de Matacavalos, dando-lhe o mesmo aspecto e economia daquela outra, que desapareceu.",
+        "fonte": "ASSIS, M. Dom Casmurro. 1899."
+      },
+      "enunciado": "No fragmento, o narrador emprega a construção “os motivos que me põem a pena na mão”. Considerando as regras de colocação pronominal da norma-padrão da língua portuguesa, assinale a alternativa que apresenta uma reescrita correta do trecho, mantendo seu sentido original.",
+      "alternativas": {
+        "A": "Os motivos que põem-me a pena na mão justificam a escrita do livro.",
+        "B": "Os motivos pelos quais me ponho a escrever justificam a escrita do livro.",
+        "C": "Os motivos que põem a pena na mão-me justificam a escrita do livro.",
+        "D": "Os motivos que põem-na a pena na mão justificam a escrita do livro.",
+        "E": "Os motivos pelos quais ponho-me a escrever justificam a escrita do livro."
       },
       "gabarito": "B"
     },
@@ -263,63 +276,88 @@
     {
       "numero": 14,
       "area": "Linguagens, Códigos e suas Tecnologias",
-      "disciplina": "Artes",
-      "texto_apoio": {
-        "titulo": "A arte de Luís Otávio Burnier",
-        "conteudo": "Para Burnier, o trabalho do ator consistia no desvelamento de matrizes corporais arcaicas e expressivas. Pesquisador incansável da mímica e das técnicas orientais e ocidentais de representação, fundou o LUME (Núcleo Interdisciplinar de Pesquisas Teatrais da Unicamp), onde investigava a expressividade do movimento puro, despido de artifícios puramente cenográficos, fazendo do próprio corpo do ator a matriz viva e dramática da cena.",
-        "fonte": "BURNIER, L. O. A Arte de Ator: da máscara à mímica corporal. Campinas: Editora da Unicamp, 2001."
-      },
-      "enunciado": "A concepção cênica e corporal analisada no fragmento fundamenta a pesquisa teatral contemporânea a partir da",
+      "disciplina": "Língua Portuguesa e Literatura",
+      "texto_apoio": null,
+      "enunciado": "A concordância verbal estabelece a relação entre o verbo e o núcleo do sujeito. Em determinados contextos, a norma-padrão admite mais de uma forma de concordância. Assinale a alternativa em que a flexão verbal está em desacordo com as regras prescritas pela gramática normativa.",
       "alternativas": {
-        "A": "subordinação das ações corporais aos efeitos de iluminação e figurinos de época.",
-        "B": "centralidade do corpo do ator como instrumento primordial de criação poética e dramática.",
-        "C": "reprodução estrita e convencional dos gestos cotidianos da burguesia oitocentista.",
-        "D": "valorização da oratória clássica e declamação em detrimento da movimentação física.",
-        "E": "dependência de recursos multimídia digitais na composição das atmosferas do palco."
+        "A": "A maior parte dos críticos afirmaram que o romance apresenta caráter inovador.",
+        "B": "Mais de um leitor considerou as reflexões do narrador excessivamente paranoicas.",
+        "C": "Mais de um especialista e mais de um historiador discutiram a estrutura da narrativa.",
+        "D": "A maioria dos episódios narrados ocorrem no Rio de Janeiro do século XIX.",
+        "E": "Haviam muitas dúvidas entre os leitores a respeito da veracidade do relato."
       },
-      "gabarito": "B"
+      "gabarito": "E"
     },
     {
       "numero": 15,
       "area": "Linguagens, Códigos e suas Tecnologias",
-      "disciplina": "Educação Física",
-      "texto_apoio": {
-        "titulo": "Indústria do Fitness e Cultura Corporal",
-        "conteudo": "Existe uma indústria que comercializa o fitness; o Brasil é o segundo maior mercado de academias no mundo, com um número crescente de estabelecimentos e produtos voltados ao aprimoramento físico. No entanto, essa expansão mercantil frequentemente promove um culto obsessivo à padronização estética corporal, associando saúde exclusivamente a silhuetas hipertrofiadas ou excessivamente magras, transformando o exercício físico em mercadoria e imperativo estético punitivo.",
-        "fonte": "SOARES, C. L. Educação Física, Corpo e Cultura: a mercantilização do fitness no Brasil. Campinas: Autores Associados, 2020."
-      },
-      "enunciado": "A abordagem crítica da cultura fitness apresentada no texto alerta a sociedade para o fato de que:",
+      "disciplina": "Língua Portuguesa e Literatura",
+      "texto_apoio": null,
+      "enunciado": "A colocação dos pronomes oblíquos átonos varia conforme o contexto sintático e o registro de linguagem. Considerando as regras prescritas pela gramática normativa para o uso da próclise e da ênclise, assinale a alternativa em que a colocação pronominal está correta.",
       "alternativas": {
-        "A": "a prática regular de exercícios físicos em academias deve ser desaconselhada pelas diretrizes médicas.",
-        "B": "o acesso às academias de ginástica é universal e desprovido de qualquer barreira socioeconômica no país.",
-        "C": "a mercantilização da atividade física pode reduzir a saúde integral a padrões estéticos padronizados e excludentes.",
-        "D": "a busca pelo condicionamento cardiorrespiratório pleno independe de fatores sociais ou nutricionais.",
-        "E": "o bem-estar biológico é privilégio exclusivo daqueles que consomem suplementação alimentar industrializada."
+        "A": "Me falaram que o romance machadiano retrata a sociedade carioca do século XIX.",
+        "B": "Bentinho recordava-se dos fatos, porém não entregou-se totalmente às lembranças.",
+        "C": "Quando trata-se de literatura realista, Machado de Assis destaca-se pela ironia.",
+        "D": "Machado de Assis sempre dedicou-se à análise psicológica das personagens.",
+        "E": "Em se tratando de memória ficcional, a perspectiva do narrador é determinante."
       },
-      "gabarito": "C"
+      "gabarito": "E"
     },
     {
       "numero": 16,
       "area": "Linguagens, Códigos e suas Tecnologias",
-      "disciplina": "Artes",
-      "imagem": "simulado_2/banco_questoes/imagens/enem_2023_q07_segall.png",
-      "texto_apoio": {
-        "titulo": "",
-        "conteudo": "<b>TEXTO I</b>\nSEGALL, L. Eternos caminhantes. Óleo sobre tela, 138 x 184 cm. Museu Lasar Segall, IbramMinc, São Paulo, 1919.\n\n<b>TEXTO II</b>\nEm 1933, a obra Eternos caminhantes ingressou em uma das primeiras edições das exposições de Arte Degenerada, promovida por membros do partido nazista alemão. Nos anos seguintes, ela voltaria a ser exibida na mostra denominada Exposição da Vergonha, promovida por pequenos grupos abastados. Em 1937, essa obra foi confiscada pelo Ministério da Propaganda daquele país, na grande ação nacional-socialista contra a “Arte Degenerada”.",
-        "fonte": "SCHWARTZ, J. Perseguição à Arte Moderna em tempos de guerra. São Paulo: Museu Lasar Segall, 2018 (adaptado)."
-      },
-      "enunciado": "Quase cinquenta obras de Lasar Segall foram confiscadas pelo regime totalitário alemão na primeira metade do século XX, entre elas a obra Eternos caminhantes, considerada degenerada por",
+      "disciplina": "Língua Portuguesa e Literatura",
+      "texto_apoio": null,
+      "enunciado": "A regência verbal corresponde à relação estabelecida entre um verbo e seus complementos. Em textos de registro formal, essa relação deve observar as normas gramaticais consagradas. Assinale a alternativa que atende à norma-padrão da língua portuguesa quanto à regência verbal.",
       "alternativas": {
-        "A": "representar uma estética tida como inconveniente para o ideário político vigente.",
-        "B": "manifestar um posicionamento político-cultural concebido por grupos de oposição.",
-        "C": "expressar a cultura artística por meio da representação parcial do corpo humano.",
-        "D": "apresentar uma composição que antecipa o imaginário artístico germânico.",
-        "E": "estimular discussões sobre o papel da arte na construção coletiva de cultura."
+        "A": "O narrador prefere recordar o passado do que viver o presente.",
+        "B": "Bentinho sempre visava o bem-estar da família ao tomar decisões.",
+        "C": "Machado de Assis procedeu a uma análise profunda da alma humana.",
+        "D": "Os leitores assistiram o desenrolar dos fatos com desconfiança.",
+        "E": "O advogado custou para entender os motivos que levaram à desconfiança."
       },
-      "gabarito": "A"
+      "gabarito": "C"
     },
     {
       "numero": 17,
+      "area": "Ciências Humanas e suas Tecnologias",
+      "disciplina": "Sociologia",
+      "texto_apoio": {
+        "titulo": "Injustiça Epistêmica e Preconceito Social",
+        "conteudo": "Os grupos dominantes são beneficiados em termos de credibilidade e podem, com isso, controlar falas de membros de outros grupos, descredibilizando seus testemunhos com base em concepções compartilhadas de preconceito de identidade (gênero e raça). Algumas formas de preconceito tornam as declarações das pessoas menos importantes devido ao seu pertencimento a determinado grupo social. Assim, um falante recebe menos credibilidade devido ao preconceito do ouvinte.",
+        "fonte": "KUHNEN, T. Resenha de The Power and Ethics of Knowing, de Miranda Fricker. Revista Princípios, n. 33, 2013."
+      },
+      "enunciado": "Com base na reflexão suscitada no texto, o preconceito de identidade é responsável por um tipo de injustiça",
+      "alternativas": {
+        "A": "estética, que normatiza os padrões corporais.",
+        "B": "sensorial, que privilegia as habilidades visuais.",
+        "C": "afetiva, que impede as expressões emocionais.",
+        "D": "epistêmica, que prejudica as trocas informacionais.",
+        "E": "econômica, que perpetua as desigualdades materiais."
+      },
+      "gabarito": "D"
+    },
+    {
+      "numero": 18,
+      "area": "Ciências Humanas e suas Tecnologias",
+      "disciplina": "Filosofia",
+      "texto_apoio": {
+        "titulo": "",
+        "conteudo": "<b>TEXTO I</b>\nAristóteles entendia que a felicidade era diretamente ligada ao respeito pela própria natureza e, de certa maneira, a uma vida que tivesse na natureza de si mesma uma referência inabalável. Isso lhe permitiu formular o conceito de excelência. O que seria excelência? Seria, justamente, ao longo da vida, tirar de si mesmo, em forma de performance, de conduta, de comportamento, de disposição, o que a natureza permitiria de melhor.\n(COEN, M.; BARROS FILHO, C. A monja e o professor. Rio de Janeiro: Best Seller, 2018).\n\n<b>TEXTO II</b>\nA noção de eudaimonia é central para a ética aristotélica. A eudaimonia é uma atividade e não um estado psicológico, pois é definida na Ética a Nicômaco como uma atividade da alma com base na virtude moral. A virtude moral é definida em termos de uma disposição diretamente ligada à deliberação, o que o leva a estudar a virtude intelectual que opera em seu interior, isto é, a prudência.\n(ZINGANO, M. Aristóteles: tratado da virtude moral. São Paulo: Discurso Editorial, 2008).",
+        "fonte": "ENEM 2024."
+      },
+      "enunciado": "Na perspectiva da filosofia aristotélica apresentada nos textos, a realização plena da felicidade humana requer a",
+      "alternativas": {
+        "A": "supressão incondicional das inclinações naturais do indivíduo.",
+        "B": "busca utilitarista de bens materiais e privilégios honoríficos.",
+        "C": "prática contínua de virtudes balizadas pelo discernimento prudente.",
+        "D": "obediência cega aos dogmas religiosos instituídos na polis.",
+        "E": "acumulação passiva de conhecimentos puramente teóricos."
+      },
+      "gabarito": "C"
+    },
+    {
+      "numero": 19,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "História",
       "texto_apoio": null,
@@ -334,67 +372,7 @@
       "gabarito": "C"
     },
     {
-      "numero": 18,
-      "area": "Ciências Humanas e suas Tecnologias",
-      "disciplina": "História",
-      "texto_apoio": null,
-      "enunciado": "Durante o Primeiro Reinado (1822–1831), o governo de D. Pedro I enfrentou diversas dificuldades políticas. Um dos principais marcos desse período foi:",
-      "alternativas": {
-        "A": "A criação da República brasileira.",
-        "B": "A elaboração e aprovação da Constituição de 1824.",
-        "C": "A abolição da escravidão.",
-        "D": "A Proclamação da República.",
-        "E": "A Guerra do Paraguai."
-      },
-      "gabarito": "B"
-    },
-    {
-      "numero": 19,
-      "area": "Ciências Humanas e suas Tecnologias",
-      "disciplina": "História",
-      "texto_apoio": null,
-      "enunciado": "O Segundo Reinado, período governado por D. Pedro II, foi marcado por importantes transformações econômicas no Brasil, destacando-se:",
-      "alternativas": {
-        "A": "O crescimento da produção e exportação de café.",
-        "B": "O fim imediato do trabalho escravo.",
-        "C": "A ausência de conflitos militares externos.",
-        "D": "A implantação do regime republicano.",
-        "E": "O desaparecimento das atividades industriais no Brasil."
-      },
-      "gabarito": "A"
-    },
-    {
       "numero": 20,
-      "area": "Ciências Humanas e suas Tecnologias",
-      "disciplina": "História",
-      "texto_apoio": null,
-      "enunciado": "No final do século XIX e início do século XX, as potências europeias intensificaram o processo de expansão imperialista sobre a África e a Ásia. Esse processo foi motivado principalmente por:",
-      "alternativas": {
-        "A": "A busca por matérias-primas, mercados consumidores e áreas para investimentos de capital.",
-        "B": "A defesa da independência política das colônias.",
-        "C": "O abandono da competição econômica entre as potências europeias.",
-        "D": "A igualdade política entre europeus e povos colonizados.",
-        "E": "A redução da industrialização europeia."
-      },
-      "gabarito": "A"
-    },
-    {
-      "numero": 21,
-      "area": "Ciências Humanas e suas Tecnologias",
-      "disciplina": "História",
-      "texto_apoio": null,
-      "enunciado": "A Primeira Guerra Mundial (1914–1918) foi resultado de um conjunto de fatores que aumentaram as tensões internacionais na Europa. Entre esses fatores, destacam-se:",
-      "alternativas": {
-        "A": "A queda do Império Romano.",
-        "B": "A expansão do feudalismo europeu.",
-        "C": "O nacionalismo, o imperialismo, a corrida armamentista e o sistema de alianças militares.",
-        "D": "A Revolução Industrial do século XVIII, exclusivamente.",
-        "E": "A Guerra Fria entre Estados Unidos e União Soviética."
-      },
-      "gabarito": "C"
-    },
-    {
-      "numero": 22,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Geografia",
       "imagem": "simulado_2/banco_questoes/imagens/enem_2024_q90_satelite.png",
@@ -414,27 +392,7 @@
       "gabarito": "D"
     },
     {
-      "numero": 23,
-      "area": "Ciências Humanas e suas Tecnologias",
-      "disciplina": "Geografia",
-      "imagem": "simulado_2/banco_questoes/imagens/enem_2023_q85_clima.png",
-      "texto_apoio": {
-        "titulo": "Cenários de Aquecimento Global",
-        "conteudo": "Simulação de mudança da temperatura média anual e da pluviosidade média anual em relação ao período pré-industrial em três cenários de aquecimento global (1,5 °C, 2 °C e 4 °C).",
-        "fonte": "PIVETTA, M. O clima no Antropoceno. Pesquisa FAPESP, n. 307, set. 2021 (adaptado)."
-      },
-      "enunciado": "Com base nas simulações apresentadas para os diferentes cenários climáticos, a elevação da temperatura média global projeta para a maior parte do território brasileiro",
-      "alternativas": {
-        "A": "manutenção dos índices de umidade na bacia amazônica.",
-        "B": "aumento uniforme da precipitação nas regiões semiáridas.",
-        "C": "redução simultânea da pluviosidade e acentuado aquecimento térmico.",
-        "D": "estabilização térmica das médias sazonais no Centro-Oeste.",
-        "E": "reversão do estresse hídrico nos biomas subtropicais."
-      },
-      "gabarito": "C"
-    },
-    {
-      "numero": 24,
+      "numero": 21,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Geografia",
       "imagem": "simulado_2/banco_questoes/imagens/enem_2023_q87_bordado.png",
@@ -454,83 +412,7 @@
       "gabarito": "C"
     },
     {
-      "numero": 25,
-      "area": "Ciências Humanas e suas Tecnologias",
-      "disciplina": "Geografia",
-      "texto_apoio": {
-        "titulo": "Expansão da Soja e Desmatamento",
-        "conteudo": "Alternativas logísticas estão servindo de instrumentos que ativam os mercados especuladores de terras nas diferentes regiões da Amazônia e constituem em indicadores utilizados por diferentes atores para defender ou denunciar o avanço da cultura da soja na região e, com ela, a retomada do desmatamento. É evidente que o crescimento do desmatamento tem a ver também com a expansão da soja, porém atribuir a ela o fator principal parece não totalmente correto. Parto da compreensão central de que a lógica que gera o desmatamento está articulada pelo tripé grileiros, madeireiros e pecuaristas.",
-        "fonte": "BERNARDES, J. A. et al. Geografias da soja: dinâmicas territoriais no bioma amazônico. Rio de Janeiro: Arquimedes, 2019 (adaptado)."
-      },
-      "enunciado": "De acordo com a perspectiva expressa no texto, a dinâmica recente de ocupação e degradação ambiental na Amazônia é impulsionada por um modelo associado à",
-      "alternativas": {
-        "A": "presença de projetos de silvicultura comercial voltados à celulose.",
-        "B": "atuação consorciada de atividades tradicionais e especulação fundiária.",
-        "C": "exclusividade do monocultivo mecanizado na abertura inicial da mata.",
-        "D": "ausência completa de infraestrutura viária e escoamento fluvial.",
-        "E": "supremacia de pequenos agricultores familiares no avanço da fronteira."
-      },
-      "gabarito": "B"
-    },
-    {
-      "numero": 26,
-      "area": "Ciências Humanas e suas Tecnologias",
-      "disciplina": "Geografia",
-      "texto_apoio": {
-        "titulo": "Fronteiras e Refugiados",
-        "conteudo": "O que alicerça, portanto, o acolhimento de refugiados pelos Estados gira em torno da fronteira erguida entre inclusão e exclusão, admissão e rejeição, desejáveis e indesejáveis; ao mesmo tempo, enseja vulnerabilidade, indefinição e incerteza a esses migrantes internacionais forçados.",
-        "fonte": "MOREIRA, J. B. Refugiados no Brasil. REMHU: Revista Interdisciplinar da Mobilidade Humana, v. 22, n. 43, jul.-dez. 2014."
-      },
-      "enunciado": "A eliminação, para os refugiados, do tipo de fronteira descrita no texto necessita de políticas públicas de",
-      "alternativas": {
-        "A": "planejamento familiar.",
-        "B": "segregação territorial.",
-        "C": "homogeneização cultural.",
-        "D": "diferenciação étnico-racial.",
-        "E": "integração socioeconômica."
-      },
-      "gabarito": "E"
-    },
-    {
-      "numero": 27,
-      "area": "Ciências Humanas e suas Tecnologias",
-      "disciplina": "Filosofia",
-      "texto_apoio": {
-        "titulo": "",
-        "conteudo": "<b>TEXTO I</b>\nAristóteles entendia que a felicidade era diretamente ligada ao respeito pela própria natureza e, de certa maneira, a uma vida que tivesse na natureza de si mesma uma referência inabalável. Isso lhe permitiu formular o conceito de excelência. O que seria excelência? Seria, justamente, ao longo da vida, tirar de si mesmo, em forma de performance, de conduta, de comportamento, de disposição, o que a natureza permitiria de melhor.\n(COEN, M.; BARROS FILHO, C. A monja e o professor. Rio de Janeiro: Best Seller, 2018).\n\n<b>TEXTO II</b>\nA noção de eudaimonia é central para a ética aristotélica. A eudaimonia é uma atividade e não um estado psicológico, pois é definida na Ética a Nicômaco como uma atividade da alma com base na virtude moral. A virtude moral é definida em termos de uma disposição diretamente ligada à deliberação, o que o leva a estudar a virtude intelectual que opera em seu interior, isto é, a prudência.\n(ZINGANO, M. Aristóteles: tratado da virtude moral. São Paulo: Discurso Editorial, 2008).",
-        "fonte": "ENEM 2024."
-      },
-      "enunciado": "Na perspectiva da filosofia aristotélica apresentada nos textos, a realização plena da felicidade humana requer a",
-      "alternativas": {
-        "A": "supressão incondicional das inclinações naturais do indivíduo.",
-        "B": "busca utilitarista de bens materiais e privilégios honoríficos.",
-        "C": "prática contínua de virtudes balizadas pelo discernimento prudente.",
-        "D": "obediência cega aos dogmas religiosos instituídos na polis.",
-        "E": "acumulação passiva de conhecimentos puramente teóricos."
-      },
-      "gabarito": "C"
-    },
-    {
-      "numero": 28,
-      "area": "Ciências Humanas e suas Tecnologias",
-      "disciplina": "Filosofia",
-      "texto_apoio": {
-        "titulo": "Discurso do Método",
-        "conteudo": "Para começar com a maior exatidão possível, examinarei aqui muito atentamente se há alguma coisa no mundo que seja tão certa que seja impossível duvidar dela. Notando que nossos sentidos às vezes nos enganam, quis supor que não havia coisa alguma que fosse tal como eles nos fazem imaginar. E, porque há homens que se equivocam ao raciocinar, mesmo no tocante aos mais simples temas de geometria, rejeitei como falsas todas as razões que eu tivera antes por demonstrativas.",
-        "fonte": "DESCARTES, R. Discurso do método. São Paulo: Nova Cultural, 1999 (adaptado)."
-      },
-      "enunciado": "O método empregado pelo pensador na busca de uma certeza inabalável consiste em",
-      "alternativas": {
-        "A": "aceitar as convicções da tradição escolástica como premissas irrefutáveis.",
-        "B": "utilizar a dúvida radical como instrumento para superar o engano e a ilusão.",
-        "C": "fundamentar a verdade na observação empírica direta proporcionada pelos sentidos.",
-        "D": "adotar o ceticismo permanente como fim supremo da investigação filosófica.",
-        "E": "subordinar os raciocínios lógicos às crenças religiosas consolidadas."
-      },
-      "gabarito": "B"
-    },
-    {
-      "numero": 29,
+      "numero": 22,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Filosofia",
       "texto_apoio": {
@@ -549,26 +431,110 @@
       "gabarito": "C"
     },
     {
-      "numero": 30,
+      "numero": 23,
       "area": "Ciências Humanas e suas Tecnologias",
-      "disciplina": "Sociologia",
-      "texto_apoio": {
-        "titulo": "Injustiça Epistêmica e Preconceito Social",
-        "conteudo": "Os grupos dominantes são beneficiados em termos de credibilidade e podem, com isso, controlar falas de membros de outros grupos, descredibilizando seus testemunhos com base em concepções compartilhadas de preconceito de identidade (gênero e raça). Algumas formas de preconceito tornam as declarações das pessoas menos importantes devido ao seu pertencimento a determinado grupo social. Assim, um falante recebe menos credibilidade devido ao preconceito do ouvinte.",
-        "fonte": "KUHNEN, T. Resenha de The Power and Ethics of Knowing, de Miranda Fricker. Revista Princípios, n. 33, 2013."
-      },
-      "enunciado": "Com base na reflexão suscitada no texto, o preconceito de identidade é responsável por um tipo de injustiça",
+      "disciplina": "História",
+      "texto_apoio": null,
+      "enunciado": "No final do século XIX e início do século XX, as potências europeias intensificaram o processo de expansão imperialista sobre a África e a Ásia. Esse processo foi motivado principalmente por:",
       "alternativas": {
-        "A": "estética, que normatiza os padrões corporais.",
-        "B": "sensorial, que privilegia as habilidades visuais.",
-        "C": "afetiva, que impede as expressões emocionais.",
-        "D": "epistêmica, que prejudica as trocas informacionais.",
-        "E": "econômica, que perpetua as desigualdades materiais."
+        "A": "A busca por matérias-primas, mercados consumidores e áreas para investimentos de capital.",
+        "B": "A defesa da independência política das colônias.",
+        "C": "O abandono da competição econômica entre as potências europeias.",
+        "D": "A igualdade política entre europeus e povos colonizados.",
+        "E": "A redução da industrialização europeia."
       },
-      "gabarito": "D"
+      "gabarito": "A"
     },
     {
-      "numero": 31,
+      "numero": 24,
+      "area": "Ciências Humanas e suas Tecnologias",
+      "disciplina": "Filosofia",
+      "texto_apoio": {
+        "titulo": "Discurso do Método",
+        "conteudo": "Para começar com a maior exatidão possível, examinarei aqui muito atentamente se há alguma coisa no mundo que seja tão certa que seja impossível duvidar dela. Notando que nossos sentidos às vezes nos enganam, quis supor que não havia coisa alguma que fosse tal como eles nos fazem imaginar. E, porque há homens que se equivocam ao raciocinar, mesmo no tocante aos mais simples temas de geometria, rejeitei como falsas todas as razões que eu tivera antes por demonstrativas.",
+        "fonte": "DESCARTES, R. Discurso do método. São Paulo: Nova Cultural, 1999 (adaptado)."
+      },
+      "enunciado": "O método empregado pelo pensador na busca de uma certeza inabalável consiste em",
+      "alternativas": {
+        "A": "aceitar as convicções da tradição escolástica como premissas irrefutáveis.",
+        "B": "utilizar a dúvida radical como instrumento para superar o engano e a ilusão.",
+        "C": "fundamentar a verdade na observação empírica direta proporcionada pelos sentidos.",
+        "D": "adotar o ceticismo permanente como fim supremo da investigação filosófica.",
+        "E": "subordinar os raciocínios lógicos às crenças religiosas consolidadas."
+      },
+      "gabarito": "B"
+    },
+    {
+      "numero": 25,
+      "area": "Ciências Humanas e suas Tecnologias",
+      "disciplina": "Geografia",
+      "texto_apoio": {
+        "titulo": "Fronteiras e Refugiados",
+        "conteudo": "O que alicerça, portanto, o acolhimento de refugiados pelos Estados gira em torno da fronteira erguida entre inclusão e exclusão, admissão e rejeição, desejáveis e indesejáveis; ao mesmo tempo, enseja vulnerabilidade, indefinição e incerteza a esses migrantes internacionais forçados.",
+        "fonte": "MOREIRA, J. B. Refugiados no Brasil. REMHU: Revista Interdisciplinar da Mobilidade Humana, v. 22, n. 43, jul.-dez. 2014."
+      },
+      "enunciado": "A eliminação, para os refugiados, do tipo de fronteira descrita no texto necessita de políticas públicas de",
+      "alternativas": {
+        "A": "planejamento familiar.",
+        "B": "segregação territorial.",
+        "C": "homogeneização cultural.",
+        "D": "diferenciação étnico-racial.",
+        "E": "integração socioeconômica."
+      },
+      "gabarito": "E"
+    },
+    {
+      "numero": 26,
+      "area": "Ciências Humanas e suas Tecnologias",
+      "disciplina": "História",
+      "texto_apoio": null,
+      "enunciado": "O Segundo Reinado, período governado por D. Pedro II, foi marcado por importantes transformações econômicas no Brasil, destacando-se:",
+      "alternativas": {
+        "A": "O crescimento da produção e exportação de café.",
+        "B": "O fim imediato do trabalho escravo.",
+        "C": "A ausência de conflitos militares externos.",
+        "D": "A implantação do regime republicano.",
+        "E": "O desaparecimento das atividades industriais no Brasil."
+      },
+      "gabarito": "A"
+    },
+    {
+      "numero": 27,
+      "area": "Ciências Humanas e suas Tecnologias",
+      "disciplina": "Geografia",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2023_q85_clima.png",
+      "texto_apoio": {
+        "titulo": "Cenários de Aquecimento Global",
+        "conteudo": "Simulação de mudança da temperatura média anual e da pluviosidade média anual em relação ao período pré-industrial em três cenários de aquecimento global (1,5 °C, 2 °C e 4 °C).",
+        "fonte": "PIVETTA, M. O clima no Antropoceno. Pesquisa FAPESP, n. 307, set. 2021 (adaptado)."
+      },
+      "enunciado": "Com base nas simulações apresentadas para os diferentes cenários climáticos, a elevação da temperatura média global projeta para a maior parte do território brasileiro",
+      "alternativas": {
+        "A": "manutenção dos índices de umidade na bacia amazônica.",
+        "B": "aumento uniforme da precipitação nas regiões semiáridas.",
+        "C": "redução simultânea da pluviosidade e acentuado aquecimento térmico.",
+        "D": "estabilização térmica das médias sazonais no Centro-Oeste.",
+        "E": "reversão do estresse hídrico nos biomas subtropicais."
+      },
+      "gabarito": "C"
+    },
+    {
+      "numero": 28,
+      "area": "Ciências Humanas e suas Tecnologias",
+      "disciplina": "História",
+      "texto_apoio": null,
+      "enunciado": "A Primeira Guerra Mundial (1914–1918) foi resultado de um conjunto de fatores que aumentaram as tensões internacionais na Europa. Entre esses fatores, destacam-se:",
+      "alternativas": {
+        "A": "A queda do Império Romano.",
+        "B": "A expansão do feudalismo europeu.",
+        "C": "O nacionalismo, o imperialismo, a corrida armamentista e o sistema de alianças militares.",
+        "D": "A Revolução Industrial do século XVIII, exclusivamente.",
+        "E": "A Guerra Fria entre Estados Unidos e União Soviética."
+      },
+      "gabarito": "C"
+    },
+    {
+      "numero": 29,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Sociologia",
       "texto_apoio": {
@@ -587,7 +553,22 @@
       "gabarito": "B"
     },
     {
-      "numero": 32,
+      "numero": 30,
+      "area": "Ciências Humanas e suas Tecnologias",
+      "disciplina": "História",
+      "texto_apoio": null,
+      "enunciado": "Durante o Primeiro Reinado (1822–1831), o governo de D. Pedro I enfrentou diversas dificuldades políticas. Um dos principais marcos desse período foi:",
+      "alternativas": {
+        "A": "A criação da República brasileira.",
+        "B": "A elaboração e aprovação da Constituição de 1824.",
+        "C": "A abolição da escravidão.",
+        "D": "A Proclamação da República.",
+        "E": "A Guerra do Paraguai."
+      },
+      "gabarito": "B"
+    },
+    {
+      "numero": 31,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Sociologia",
       "texto_apoio": {
@@ -606,57 +587,42 @@
       "gabarito": "A"
     },
     {
+      "numero": 32,
+      "area": "Ciências Humanas e suas Tecnologias",
+      "disciplina": "Geografia",
+      "texto_apoio": {
+        "titulo": "Expansão da Soja e Desmatamento",
+        "conteudo": "Alternativas logísticas estão servindo de instrumentos que ativam os mercados especuladores de terras nas diferentes regiões da Amazônia e constituem em indicadores utilizados por diferentes atores para defender ou denunciar o avanço da cultura da soja na região e, com ela, a retomada do desmatamento. É evidente que o crescimento do desmatamento tem a ver também com a expansão da soja, porém atribuir a ela o fator principal parece não totalmente correto. Parto da compreensão central de que a lógica que gera o desmatamento está articulada pelo tripé grileiros, madeireiros e pecuaristas.",
+        "fonte": "BERNARDES, J. A. et al. Geografias da soja: dinâmicas territoriais no bioma amazônico. Rio de Janeiro: Arquimedes, 2019 (adaptado)."
+      },
+      "enunciado": "De acordo com a perspectiva expressa no texto, a dinâmica recente de ocupação e degradação ambiental na Amazônia é impulsionada por um modelo associado à",
+      "alternativas": {
+        "A": "presença de projetos de silvicultura comercial voltados à celulose.",
+        "B": "atuação consorciada de atividades tradicionais e especulação fundiária.",
+        "C": "exclusividade do monocultivo mecanizado na abertura inicial da mata.",
+        "D": "ausência completa de infraestrutura viária e escoamento fluvial.",
+        "E": "supremacia de pequenos agricultores familiares no avanço da fronteira."
+      },
+      "gabarito": "B"
+    },
+    {
       "numero": 33,
       "area": "Ciências da Natureza e suas Tecnologias",
-      "disciplina": "Biologia",
-      "imagem": "simulado_2/banco_questoes/imagens/biologia_img_1.png",
-      "texto_apoio": {
-        "titulo": "Tipos Sanguíneos",
-        "conteudo": "A tabela indica as características dos tipos sanguíneos X, Y e Z quanto à presença de aglutinogênios nas hemácias e aglutininas no plasma.",
-        "fonte": "Simulado Voa-Voa e Gabarita."
-      },
-      "enunciado": "Em caso de necessidade clínica de transfusão sanguínea em um paciente com sangue do tipo Z, podem ser utilizados eritrócitos do tipo:",
+      "disciplina": "Física",
+      "imagem": "simulado_2/banco_questoes/imagens/q50_bicicleta_catraca.png",
+      "texto_apoio": null,
+      "enunciado": "A catraca traseira de uma bicicleta possui raio de 5 cm e está acoplada por uma corrente inextensível à coroa dianteira, que possui raio de 15 cm. Quando o ciclista pedala e a coroa dianteira gira com frequência constante de 20 rotações por minuto (rpm), a frequência de rotação da catraca traseira, em rpm, é igual a:",
       "alternativas": {
-        "A": "Y, apenas.",
-        "B": "X, apenas.",
-        "C": "Z, apenas.",
-        "D": "X e Z, apenas.",
-        "E": "Y e Z, apenas."
+        "A": "40,0.",
+        "B": "60,0.",
+        "C": "75,0.",
+        "D": "80,0.",
+        "E": "90,0."
       },
       "gabarito": "B"
     },
     {
       "numero": 34,
-      "area": "Ciências da Natureza e suas Tecnologias",
-      "disciplina": "Biologia",
-      "texto_apoio": null,
-      "enunciado": "Uma pessoa do grupo sanguíneo AB sofre uma hemorragia e necessita com urgência de transfusão sanguínea. No banco de sangue do hospital, verificou-se a indisponibilidade de sangue do mesmo grupo sanguíneo. Sabendo que o indivíduo é do grupo AB (receptor universal), a equipe médica pode utilizar sangue dos tipos:",
-      "alternativas": {
-        "A": "Apenas do tipo O.",
-        "B": "Apenas do tipo A.",
-        "C": "Apenas do tipo B.",
-        "D": "Dos tipos A, B ou O.",
-        "E": "Nenhum tipo, sendo a transfusão inviável."
-      },
-      "gabarito": "D"
-    },
-    {
-      "numero": 35,
-      "area": "Ciências da Natureza e suas Tecnologias",
-      "disciplina": "Biologia",
-      "texto_apoio": null,
-      "enunciado": "A organela celular eucarionte onde ocorre a degradação da água oxigenada (H2O2), substância tóxica produzida em reações metabólicas celulares, pela ação da enzima catalase, é o:",
-      "alternativas": {
-        "A": "Peroxissomo.",
-        "B": "Lisossomo.",
-        "C": "Complexo Golgiense.",
-        "D": "Ribossomo.",
-        "E": "Retículo endoplasmático liso."
-      },
-      "gabarito": "A"
-    },
-    {
-      "numero": 36,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Biologia",
       "texto_apoio": null,
@@ -671,60 +637,23 @@
       "gabarito": "C"
     },
     {
-      "numero": 37,
+      "numero": 35,
       "area": "Ciências da Natureza e suas Tecnologias",
-      "disciplina": "Biologia",
-      "texto_apoio": {
-        "titulo": "Neuroquímica do Afeto",
-        "conteudo": "As substâncias químicas conhecidas como o 'quarteto da felicidade' — dopamina, endorfina, serotonina e ocitocina — desempenham papéis biológicos essenciais na modulação do humor, da dor, da empatia e das conexões sociais humanas.",
-        "fonte": "GUYTON, A. C.; HALL, J. E. Tratado de Fisiologia Médica."
-      },
-      "enunciado": "Essas substâncias reguladoras e moduladoras de emoções no organismo atuam como:",
-      "alternativas": {
-        "A": "Nutrientes energéticos celulares.",
-        "B": "Neurotransmissores e hormônios.",
-        "C": "Enzimas digestivas intestinais.",
-        "D": "Anticorpos de defesa imunológica.",
-        "E": "Pigmentos biliares hepáticos."
-      },
-      "gabarito": "B"
-    },
-    {
-      "numero": 38,
-      "area": "Ciências da Natureza e suas Tecnologias",
-      "disciplina": "Biologia",
+      "disciplina": "Física",
+      "imagem": "simulado_2/banco_questoes/imagens/q45_campo_eletrico.png",
       "texto_apoio": null,
-      "enunciado": "A etiologia do aparecimento de cáries dentárias descrita no processo infeccioso bacteriano está diretamente associada à:",
+      "enunciado": "Uma carga puntiforme Q está fixa no espaço; a uma distância d dela existe um ponto P, no qual é colocada uma carga de prova positiva q0. A respeito dessa configuração eletrostática, é correto afirmar que:",
       "alternativas": {
-        "A": "Produção de ácidos por bactérias a partir da fermentação de restos de açúcares.",
-        "B": "Deficiência congênita na síntese de colágeno na matriz óssea mandibular.",
-        "C": "Ação mecânica abrasiva da saliva durante a mastigação de sólidos.",
-        "D": "Absorção excessiva de flúor pelos tecidos dentários de sustentação.",
-        "E": "Falta de escovação matinal decorrente exclusivamente de causas genéticas."
+        "A": "O potencial elétrico devido a Q diminui com o inverso de d.",
+        "B": "A força elétrica tem direção radial e aproxima-se de Q se Q for positiva.",
+        "C": "O campo elétrico depende apenas do módulo da carga de prova q0.",
+        "D": "O campo elétrico no ponto P é necessariamente um vetor nulo.",
+        "E": "A energia potencial elétrica das cargas varia com o inverso do quadrado de d."
       },
       "gabarito": "A"
     },
     {
-      "numero": 39,
-      "area": "Ciências da Natureza e suas Tecnologias",
-      "disciplina": "Química",
-      "texto_apoio": {
-        "titulo": "Obtenção do Magnésio",
-        "conteudo": "O magnésio metálico utilizado em ligas leves é produzido em um processo que envolve várias etapas. Em uma delas, o íon magnésio presente na água do mar é precipitado na forma de hidróxido de magnésio, segundo a equação: Mg2+ (aq) + Ca(OH)2 (aq) -> Mg(OH)2 (s) + Ca2+ (aq).",
-        "fonte": "SHREVE, R. N. Indústrias de Processos Químicos."
-      },
-      "enunciado": "O método de separação mais adequado para separar o precipitado de Mg(OH)2 dessa mistura aquosa é a:",
-      "alternativas": {
-        "A": "Filtração.",
-        "B": "Catação.",
-        "C": "Destilação.",
-        "D": "Dissolução.",
-        "E": "Evaporação."
-      },
-      "gabarito": "A"
-    },
-    {
-      "numero": 40,
+      "numero": 36,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Química",
       "imagem": "simulado_2/banco_questoes/imagens/quimica_img_1.png",
@@ -742,6 +671,78 @@
         "E": "Éter."
       },
       "gabarito": "A"
+    },
+    {
+      "numero": 37,
+      "area": "Ciências da Natureza e suas Tecnologias",
+      "disciplina": "Física",
+      "texto_apoio": {
+        "titulo": "Concentração de Doce de Leite",
+        "conteudo": "Em uma indústria alimentícia, para a produção de doce de leite, utiliza-se um tacho de concentração encamisado. O vapor de água saturado a 120 ºC circula pela camisa externa, transferindo calor para a mistura de leite e açúcar até que esta atinja a consistência desejada por evaporação da água.",
+        "fonte": "ENEM 2023."
+      },
+      "enunciado": "No processo de concentração do produto, a energia térmica transferida pelo vapor é proveniente:",
+      "alternativas": {
+        "A": "Somente do calor latente de vaporização.",
+        "B": "Somente do calor latente de condensação.",
+        "C": "Do calor sensível e do calor latente de vaporização.",
+        "D": "Do calor sensível e do calor latente de condensação.",
+        "E": "Do calor latente de fusão do vapor superaquecido."
+      },
+      "gabarito": "B"
+    },
+    {
+      "numero": 38,
+      "area": "Ciências da Natureza e suas Tecnologias",
+      "disciplina": "Física",
+      "texto_apoio": null,
+      "enunciado": "No preparo de uma xícara de café com leite, são misturados 150 g de café quente a 90 ºC com 50 g de leite frio a 10 ºC em um recipiente de capacidade térmica desprezível. Considerando os calores específicos do café e do leite iguais a 1,0 cal/(g·ºC) e desprezando perdas para o ambiente, a temperatura final de equilíbrio térmico da mistura é de:",
+      "alternativas": {
+        "A": "70 ºC.",
+        "B": "65 ºC.",
+        "C": "75 ºC.",
+        "D": "80 ºC.",
+        "E": "85 ºC."
+      },
+      "gabarito": "A"
+    },
+    {
+      "numero": 39,
+      "area": "Ciências da Natureza e suas Tecnologias",
+      "disciplina": "Química",
+      "texto_apoio": {
+        "titulo": "Nióbio e Tântalo",
+        "conteudo": "Na mitologia grega, Nióbia era filha de Tântalo. Na química, os elementos nióbio (Nb) e tântalo (Ta) compartilham grande proximidade de propriedades e ocorrem com frequência associados nos mesmos minérios.",
+        "fonte": "KEAN, S. A Colher que Desaparece."
+      },
+      "enunciado": "A importância econômica e tecnológica desses elementos, pela notável similaridade de suas propriedades físico-químicas, está associada ao fato de:",
+      "alternativas": {
+        "A": "Terem elétrons no subnível f.",
+        "B": "Serem elementos de transição interna.",
+        "C": "Terem seus elétrons mais externos nos níveis 4 e 5, respectivamente.",
+        "D": "Pertencerem ao mesmo grupo na tabela periódica.",
+        "E": "Estarem localizados na família dos metais alcalinos e alcalinoterrosos."
+      },
+      "gabarito": "D"
+    },
+    {
+      "numero": 40,
+      "area": "Ciências da Natureza e suas Tecnologias",
+      "disciplina": "Física",
+      "texto_apoio": {
+        "titulo": "Sensação Térmica ao Toque",
+        "conteudo": "É muito comum encostarmos a mão na maçaneta metálica de uma porta e termos a sensação de que ela está mais fria do que a madeira da mesma porta, mesmo estando ambas em equilíbrio térmico com o ambiente.",
+        "fonte": "Fundamentos de Termodinâmica."
+      },
+      "enunciado": "Fisicamente, a sensação térmica mencionada no texto é explicada pelo fato de que:",
+      "alternativas": {
+        "A": "A madeira é melhor condutora de calor que o metal.",
+        "B": "O metal absorve mais temperatura do que a madeira.",
+        "C": "O fluxo de calor por condução da mão para o metal é mais rápido que para a madeira.",
+        "D": "A madeira retém mais energia térmica interna que a liga metálica.",
+        "E": "O metal armazena frio que é transferido para a mão do observador."
+      },
+      "gabarito": "C"
     },
     {
       "numero": 41,
@@ -765,6 +766,26 @@
     {
       "numero": 42,
       "area": "Ciências da Natureza e suas Tecnologias",
+      "disciplina": "Biologia",
+      "imagem": "simulado_2/banco_questoes/imagens/biologia_img_1.png",
+      "texto_apoio": {
+        "titulo": "Tipos Sanguíneos",
+        "conteudo": "A tabela indica as características dos tipos sanguíneos X, Y e Z quanto à presença de aglutinogênios nas hemácias e aglutininas no plasma.",
+        "fonte": "Simulado Voa-Voa e Gabarita."
+      },
+      "enunciado": "Em caso de necessidade clínica de transfusão sanguínea em um paciente com sangue do tipo Z, podem ser utilizados eritrócitos do tipo:",
+      "alternativas": {
+        "A": "Y, apenas.",
+        "B": "X, apenas.",
+        "C": "Z, apenas.",
+        "D": "X e Z, apenas.",
+        "E": "Y e Z, apenas."
+      },
+      "gabarito": "B"
+    },
+    {
+      "numero": 43,
+      "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Química",
       "imagem": "simulado_2/banco_questoes/imagens/quimica_img_2.png",
       "texto_apoio": {
@@ -781,25 +802,6 @@
         "E": "Noretindrona."
       },
       "gabarito": "B"
-    },
-    {
-      "numero": 43,
-      "area": "Ciências da Natureza e suas Tecnologias",
-      "disciplina": "Química",
-      "texto_apoio": {
-        "titulo": "Nióbio e Tântalo",
-        "conteudo": "Na mitologia grega, Nióbia era filha de Tântalo. Na química, os elementos nióbio (Nb) e tântalo (Ta) compartilham grande proximidade de propriedades e ocorrem com frequência associados nos mesmos minérios.",
-        "fonte": "KEAN, S. A Colher que Desaparece."
-      },
-      "enunciado": "A importância econômica e tecnológica desses elementos, pela notável similaridade de suas propriedades físico-químicas, está associada ao fato de:",
-      "alternativas": {
-        "A": "Terem elétrons no subnível f.",
-        "B": "Serem elementos de transição interna.",
-        "C": "Terem seus elétrons mais externos nos níveis 4 e 5, respectivamente.",
-        "D": "Pertencerem ao mesmo grupo na tabela periódica.",
-        "E": "Estarem localizados na família dos metais alcalinos e alcalinoterrosos."
-      },
-      "gabarito": "D"
     },
     {
       "numero": 44,
@@ -823,16 +825,15 @@
     {
       "numero": 45,
       "area": "Ciências da Natureza e suas Tecnologias",
-      "disciplina": "Física",
-      "imagem": "simulado_2/banco_questoes/imagens/q45_campo_eletrico.png",
+      "disciplina": "Biologia",
       "texto_apoio": null,
-      "enunciado": "Uma carga puntiforme Q está fixa no espaço; a uma distância d dela existe um ponto P, no qual é colocada uma carga de prova positiva q0. A respeito dessa configuração eletrostática, é correto afirmar que:",
+      "enunciado": "A organela celular eucarionte onde ocorre a degradação da água oxigenada (H2O2), substância tóxica produzida em reações metabólicas celulares, pela ação da enzima catalase, é o:",
       "alternativas": {
-        "A": "O potencial elétrico devido a Q diminui com o inverso de d.",
-        "B": "A força elétrica tem direção radial e aproxima-se de Q se Q for positiva.",
-        "C": "O campo elétrico depende apenas do módulo da carga de prova q0.",
-        "D": "O campo elétrico no ponto P é necessariamente um vetor nulo.",
-        "E": "A energia potencial elétrica das cargas varia com o inverso do quadrado de d."
+        "A": "Peroxissomo.",
+        "B": "Lisossomo.",
+        "C": "Complexo Golgiense.",
+        "D": "Ribossomo.",
+        "E": "Retículo endoplasmático liso."
       },
       "gabarito": "A"
     },
@@ -854,159 +855,73 @@
     {
       "numero": 47,
       "area": "Ciências da Natureza e suas Tecnologias",
-      "disciplina": "Física",
+      "disciplina": "Biologia",
       "texto_apoio": {
-        "titulo": "Sensação Térmica ao Toque",
-        "conteudo": "É muito comum encostarmos a mão na maçaneta metálica de uma porta e termos a sensação de que ela está mais fria do que a madeira da mesma porta, mesmo estando ambas em equilíbrio térmico com o ambiente.",
-        "fonte": "Fundamentos de Termodinâmica."
+        "titulo": "Neuroquímica do Afeto",
+        "conteudo": "As substâncias químicas conhecidas como o 'quarteto da felicidade' — dopamina, endorfina, serotonina e ocitocina — desempenham papéis biológicos essenciais na modulação do humor, da dor, da empatia e das conexões sociais humanas.",
+        "fonte": "GUYTON, A. C.; HALL, J. E. Tratado de Fisiologia Médica."
       },
-      "enunciado": "Fisicamente, a sensação térmica mencionada no texto é explicada pelo fato de que:",
+      "enunciado": "Essas substâncias reguladoras e moduladoras de emoções no organismo atuam como:",
       "alternativas": {
-        "A": "A madeira é melhor condutora de calor que o metal.",
-        "B": "O metal absorve mais temperatura do que a madeira.",
-        "C": "O fluxo de calor por condução da mão para o metal é mais rápido que para a madeira.",
-        "D": "A madeira retém mais energia térmica interna que a liga metálica.",
-        "E": "O metal armazena frio que é transferido para a mão do observador."
+        "A": "Nutrientes energéticos celulares.",
+        "B": "Neurotransmissores e hormônios.",
+        "C": "Enzimas digestivas intestinais.",
+        "D": "Anticorpos de defesa imunológica.",
+        "E": "Pigmentos biliares hepáticos."
       },
-      "gabarito": "C"
+      "gabarito": "B"
     },
     {
       "numero": 48,
       "area": "Ciências da Natureza e suas Tecnologias",
-      "disciplina": "Física",
+      "disciplina": "Química",
       "texto_apoio": {
-        "titulo": "Concentração de Doce de Leite",
-        "conteudo": "Em uma indústria alimentícia, para a produção de doce de leite, utiliza-se um tacho de concentração encamisado. O vapor de água saturado a 120 ºC circula pela camisa externa, transferindo calor para a mistura de leite e açúcar até que esta atinja a consistência desejada por evaporação da água.",
-        "fonte": "ENEM 2023."
+        "titulo": "Obtenção do Magnésio",
+        "conteudo": "O magnésio metálico utilizado em ligas leves é produzido em um processo que envolve várias etapas. Em uma delas, o íon magnésio presente na água do mar é precipitado na forma de hidróxido de magnésio, segundo a equação: Mg2+ (aq) + Ca(OH)2 (aq) -> Mg(OH)2 (s) + Ca2+ (aq).",
+        "fonte": "SHREVE, R. N. Indústrias de Processos Químicos."
       },
-      "enunciado": "No processo de concentração do produto, a energia térmica transferida pelo vapor é proveniente:",
+      "enunciado": "O método de separação mais adequado para separar o precipitado de Mg(OH)2 dessa mistura aquosa é a:",
       "alternativas": {
-        "A": "Somente do calor latente de vaporização.",
-        "B": "Somente do calor latente de condensação.",
-        "C": "Do calor sensível e do calor latente de vaporização.",
-        "D": "Do calor sensível e do calor latente de condensação.",
-        "E": "Do calor latente de fusão do vapor superaquecido."
-      },
-      "gabarito": "B"
-    },
-    {
-      "numero": 49,
-      "area": "Ciências da Natureza e suas Tecnologias",
-      "disciplina": "Física",
-      "texto_apoio": null,
-      "enunciado": "No preparo de uma xícara de café com leite, são misturados 150 g de café quente a 90 ºC com 50 g de leite frio a 10 ºC em um recipiente de capacidade térmica desprezível. Considerando os calores específicos do café e do leite iguais a 1,0 cal/(g·ºC) e desprezando perdas para o ambiente, a temperatura final de equilíbrio térmico da mistura é de:",
-      "alternativas": {
-        "A": "70 ºC.",
-        "B": "65 ºC.",
-        "C": "75 ºC.",
-        "D": "80 ºC.",
-        "E": "85 ºC."
+        "A": "Filtração.",
+        "B": "Catação.",
+        "C": "Destilação.",
+        "D": "Dissolução.",
+        "E": "Evaporação."
       },
       "gabarito": "A"
     },
     {
+      "numero": 49,
+      "area": "Ciências da Natureza e suas Tecnologias",
+      "disciplina": "Biologia",
+      "texto_apoio": null,
+      "enunciado": "Uma pessoa do grupo sanguíneo AB sofre uma hemorragia e necessita com urgência de transfusão sanguínea. No banco de sangue do hospital, verificou-se a indisponibilidade de sangue do mesmo grupo sanguíneo. Sabendo que o indivíduo é do grupo AB (receptor universal), a equipe médica pode utilizar sangue dos tipos:",
+      "alternativas": {
+        "A": "Apenas do tipo O.",
+        "B": "Apenas do tipo A.",
+        "C": "Apenas do tipo B.",
+        "D": "Dos tipos A, B ou O.",
+        "E": "Nenhum tipo, sendo a transfusão inviável."
+      },
+      "gabarito": "D"
+    },
+    {
       "numero": 50,
       "area": "Ciências da Natureza e suas Tecnologias",
-      "disciplina": "Física",
-      "imagem": "simulado_2/banco_questoes/imagens/q50_bicicleta_catraca.png",
+      "disciplina": "Biologia",
       "texto_apoio": null,
-      "enunciado": "A catraca traseira de uma bicicleta possui raio de 5 cm e está acoplada por uma corrente inextensível à coroa dianteira, que possui raio de 15 cm. Quando o ciclista pedala e a coroa dianteira gira com frequência constante de 20 rotações por minuto (rpm), a frequência de rotação da catraca traseira, em rpm, é igual a:",
+      "enunciado": "A etiologia do aparecimento de cáries dentárias descrita no processo infeccioso bacteriano está diretamente associada à:",
       "alternativas": {
-        "A": "40,0.",
-        "B": "60,0.",
-        "C": "75,0.",
-        "D": "80,0.",
-        "E": "90,0."
+        "A": "Produção de ácidos por bactérias a partir da fermentação de restos de açúcares.",
+        "B": "Deficiência congênita na síntese de colágeno na matriz óssea mandibular.",
+        "C": "Ação mecânica abrasiva da saliva durante a mastigação de sólidos.",
+        "D": "Absorção excessiva de flúor pelos tecidos dentários de sustentação.",
+        "E": "Falta de escovação matinal decorrente exclusivamente de causas genéticas."
       },
-      "gabarito": "B"
+      "gabarito": "A"
     },
     {
       "numero": 51,
-      "area": "Matemática e suas Tecnologias",
-      "disciplina": "Matemática",
-      "texto_apoio": {
-        "titulo": "",
-        "conteudo": "Uma empresa produz mochilas escolares sob encomenda. Essa empresa tem um custo total de produção, composto por um custo fixo, que não depende do número de mochilas, mais um custo variável, que é proporcional ao número de mochilas produzidas. O custo total cresce de forma linear, e a tabela apresenta esse custo para três quantidades de mochilas produzidas:\n\nQuantidade de mochilas | Custo total (R$)\n30 | 1 050,00\n50 | 1 650,00\n100 | 3 150,00",
-        "fonte": ""
-      },
-      "enunciado": "O custo total, em real, para a produção de 80 mochilas será",
-      "alternativas": {
-        "A": "2 400,00.",
-        "B": "2 520,00.",
-        "C": "2 550,00.",
-        "D": "2 700,00.",
-        "E": "2 800,00."
-      },
-      "gabarito": "C",
-      "habilidade": "H19 - Identificar representações algébricas que expressem relações a partir de um texto.",
-      "fonte": "ENEM 2024 - Caderno 6 Cinza (Questão 138)"
-    },
-    {
-      "numero": 52,
-      "area": "Matemática e suas Tecnologias",
-      "disciplina": "Matemática",
-      "texto_apoio": {
-        "titulo": "",
-        "conteudo": "Uma empresa de tecnologia vai padronizar a velocidade de conexão de internet que oferece a seus clientes em dez cidades. A direção da empresa decide que seu novo padrão de velocidade de referência será a mediana dos valores das velocidades de referência de conexões nessas dez cidades. Esses valores, em megabyte por segundo (MB/s), são apresentados no quadro:\n\nCidade | Velocidade de referência (MB/s)\nC1 | 390\nC2 | 380\nC3 | 320\nC4 | 390\nC5 | 340\nC6 | 380\nC7 | 390\nC8 | 400\nC9 | 350\nC10 | 360",
-        "fonte": ""
-      },
-      "enunciado": "A velocidade de referência, em megabyte por segundo, a ser adotada por essa empresa é",
-      "alternativas": {
-        "A": "360.",
-        "B": "370.",
-        "C": "380.",
-        "D": "390.",
-        "E": "400."
-      },
-      "gabarito": "C",
-      "habilidade": "H27 - Calcular medidas de tendência central de uma distribuição de dados.",
-      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 146)"
-    },
-    {
-      "numero": 53,
-      "area": "Matemática e suas Tecnologias",
-      "disciplina": "Matemática",
-      "texto_apoio": {
-        "titulo": "",
-        "conteudo": "Quatro candidatos se apresentaram para realizar a prova de um concurso. Antes de iniciar a prova, os celulares dos quatro candidatos foram recolhidos pelo aplicador, que os guardou, cada um, dentro de um envelope preto. Ao término da prova, o aplicador devolveu os quatro envelopes com os celulares aos quatro candidatos, de maneira aleatória, já que não havia feito a identificação dos envelopes.",
-        "fonte": ""
-      },
-      "enunciado": "A probabilidade de que todos os candidatos tenham recebido de volta os envelopes com os seus respectivos celulares é",
-      "alternativas": {
-        "A": "1/2",
-        "B": "1/10",
-        "C": "1/16",
-        "D": "1/24",
-        "E": "1/256"
-      },
-      "gabarito": "D",
-      "habilidade": "H28 - Resolver situação-problema que envolva conhecimentos de probabilidade de eventos.",
-      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 150)"
-    },
-    {
-      "numero": 54,
-      "area": "Matemática e suas Tecnologias",
-      "disciplina": "Matemática",
-      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q140_infografico.png",
-      "texto_apoio": {
-        "titulo": "",
-        "conteudo": "O infográfico apresenta a distribuição percentual de usuários de uma rede social digital por faixa etária e por gênero em determinado mês.",
-        "fonte": ""
-      },
-      "enunciado": "Segundo os dados do infográfico, ao se escolher aleatoriamente um usuário dessa rede social, a probabilidade de ele ser uma mulher com idade de 25 a 34 anos é",
-      "alternativas": {
-        "A": "0,148.",
-        "B": "0,154.",
-        "C": "0,302.",
-        "D": "0,446.",
-        "E": "0,510."
-      },
-      "gabarito": "B",
-      "habilidade": "H28 - Resolver situação-problema que envolva interpretação de gráficos e probabilidade.",
-      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 140)"
-    },
-    {
-      "numero": 55,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
       "texto_apoio": {
@@ -1027,29 +942,28 @@
       "fonte": "ENEM 2024 - Caderno 6 Cinza (Questão 140)"
     },
     {
-      "numero": 56,
+      "numero": 52,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q151_setores.png",
       "texto_apoio": {
         "titulo": "",
-        "conteudo": "Uma escola de idiomas realizou uma pesquisa para estimar a quantidade de novas matrículas no primeiro semestre do próximo ano. O gráfico de setores ilustra a distribuição percentual das opções de cursos escolhidas pelos interessados.\nA direção da escola estima que serão feitas 600 novas matrículas no curso de Francês.",
+        "conteudo": "Dez casais fundaram um grupo de dança e decidiram constituir uma diretoria com três cargos: presidente, secretário e tesoureiro. Para maior representatividade, decidiu-se que no máximo uma pessoa por casal poderá ocupar um cargo nessa diretoria.",
         "fonte": ""
       },
-      "enunciado": "Segundo essa estimativa, o número de matrículas no curso de Inglês será igual a",
+      "enunciado": "Quantas diretorias diferentes podem ser constituídas por esses 10 casais?",
       "alternativas": {
-        "A": "750.",
-        "B": "900.",
-        "C": "1 050.",
-        "D": "1 200.",
-        "E": "1 500."
+        "A": "10 × 9 × 8",
+        "B": "20 × 18 × 16",
+        "C": "20 × 19 × 18",
+        "D": "10 × 9 × 8 × 2",
+        "E": "20 × 18 × 16 × 2"
       },
-      "gabarito": "E",
-      "habilidade": "H27 - Interpretar dados expressos em gráfico de setores.",
-      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 151)"
+      "gabarito": "B",
+      "habilidade": "H02 - Resolver situação-problema envolvendo o princípio fundamental da contagem.",
+      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 160)"
     },
     {
-      "numero": 57,
+      "numero": 53,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
       "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q152_controle.png",
@@ -1071,48 +985,133 @@
       "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 152)"
     },
     {
+      "numero": 54,
+      "area": "Matemática e suas Tecnologias",
+      "disciplina": "Matemática",
+      "texto_apoio": {
+        "titulo": "",
+        "conteudo": "Uma sorveteria comercializa sorvete artesanal em potes cilíndricos com capacidade de 20 000 cm³. Para servir seus clientes, o proprietário utiliza taças de sobremesa com capacidade de 250 mL cada. Sabe-se que 1 cm³ equivale a 1 mL.",
+        "fonte": ""
+      },
+      "enunciado": "A quantidade de taças que ele consegue servir a partir de um único pote totalmente cheio desse sorvete é igual a",
+      "alternativas": {
+        "A": "8.",
+        "B": "20.",
+        "C": "50.",
+        "D": "80.",
+        "E": "100."
+      },
+      "gabarito": "D",
+      "habilidade": "H12 - Resolver situação-problema que envolva medidas de grandezas e conversão de unidades.",
+      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 164)"
+    },
+    {
+      "numero": 55,
+      "area": "Matemática e suas Tecnologias",
+      "disciplina": "Matemática",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q167_caixa.png",
+      "texto_apoio": {
+        "titulo": "",
+        "conteudo": "Uma caixa de descarga tem a forma de paralelepípedo reto-retângulo com dimensões internas da base medindo 2,5 dm e 1,5 dm. Uma boia interrompe o abastecimento quando a altura da coluna de água atinge 2 dm.\nPara reduzir o volume de água despejado a cada acionamento, serão colocadas garrafas de 300 mL totalmente submersas. Para garantir a limpeza eficiente do vaso, o volume mínimo de água despejada deve ser de 5 L.",
+        "fonte": ""
+      },
+      "enunciado": "A quantidade máxima de garrafas que serão colocadas nessa caixa, garantindo um funcionamento eficiente, é igual a",
+      "alternativas": {
+        "A": "10.",
+        "B": "8.",
+        "C": "4.",
+        "D": "3.",
+        "E": "2."
+      },
+      "gabarito": "B",
+      "habilidade": "H14 - Avaliar proposta de intervenção na realidade utilizando conhecimentos geométricos de sólidos.",
+      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 167)"
+    },
+    {
+      "numero": 56,
+      "area": "Matemática e suas Tecnologias",
+      "disciplina": "Matemática",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q140_infografico.png",
+      "texto_apoio": {
+        "titulo": "",
+        "conteudo": "O infográfico apresenta a distribuição percentual de usuários de uma rede social digital por faixa etária e por gênero em determinado mês.",
+        "fonte": ""
+      },
+      "enunciado": "Segundo os dados do infográfico, ao se escolher aleatoriamente um usuário dessa rede social, a probabilidade de ele ser uma mulher com idade de 25 a 34 anos é",
+      "alternativas": {
+        "A": "0,148.",
+        "B": "0,154.",
+        "C": "0,302.",
+        "D": "0,446.",
+        "E": "0,510."
+      },
+      "gabarito": "B",
+      "habilidade": "H28 - Resolver situação-problema que envolva interpretação de gráficos e probabilidade.",
+      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 140)"
+    },
+    {
+      "numero": 57,
+      "area": "Matemática e suas Tecnologias",
+      "disciplina": "Matemática",
+      "texto_apoio": {
+        "titulo": "",
+        "conteudo": "João e Felipe participaram, na escola, de uma maratona de matemática na qual, durante uma semana, resolveram 200 questões cada. Nessa maratona, a porcentagem P de acertos de cada participante é convertida em um conceito:\n• insatisfatório: se 0 ≤ P < 50;\n• regular: se 50 ≤ P < 60;\n• bom: se 60 ≤ P < 75;\n• muito bom: se 75 ≤ P < 90;\n• excelente: se 90 ≤ P ≤ 100.\nJoão acertou 75% das questões da maratona e Felipe acertou 30% a menos que a quantidade de questões que João acertou.",
+        "fonte": ""
+      },
+      "enunciado": "Os conceitos de João e Felipe foram, respectivamente,",
+      "alternativas": {
+        "A": "muito bom e bom.",
+        "B": "muito bom e regular.",
+        "C": "muito bom e insatisfatório.",
+        "D": "bom e regular.",
+        "E": "bom e insatisfatório."
+      },
+      "gabarito": "B",
+      "habilidade": "H16 - Resolver situação-problema que envolva porcentagem e variação percentual.",
+      "fonte": "ENEM 2024 - Caderno 6 Cinza (Questão 175)"
+    },
+    {
       "numero": 58,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q154_barras.png",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q151_setores.png",
       "texto_apoio": {
         "titulo": "",
-        "conteudo": "O gerente de uma livraria registrou a quantidade de exemplares vendidos dos cinco gêneros literários mais procurados em sua loja durante o primeiro semestre de 2024. Com base no sucesso de vendas, ele planeja fazer uma nova encomenda no segundo semestre, priorizando o gênero que teve o maior percentual de crescimento de vendas entre o primeiro e o segundo trimestre.",
+        "conteudo": "Uma escola de idiomas realizou uma pesquisa para estimar a quantidade de novas matrículas no primeiro semestre do próximo ano. O gráfico de setores ilustra a distribuição percentual das opções de cursos escolhidas pelos interessados.\nA direção da escola estima que serão feitas 600 novas matrículas no curso de Francês.",
         "fonte": ""
       },
-      "enunciado": "O gênero de livro do qual o gerente deverá encomendar mais exemplares é",
+      "enunciado": "Segundo essa estimativa, o número de matrículas no curso de Inglês será igual a",
       "alternativas": {
-        "A": "Ficção científica.",
-        "B": "Biografia.",
-        "C": "Romance.",
-        "D": "Autoajuda.",
-        "E": "Suspense."
+        "A": "750.",
+        "B": "900.",
+        "C": "1 050.",
+        "D": "1 200.",
+        "E": "1 500."
       },
-      "gabarito": "C",
-      "habilidade": "H27 - Interpretar dados estatísticos apresentados em gráfico de colunas.",
-      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 154)"
+      "gabarito": "E",
+      "habilidade": "H27 - Interpretar dados expressos em gráfico de setores.",
+      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 151)"
     },
     {
       "numero": 59,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q156_malha.png",
       "texto_apoio": {
         "titulo": "",
-        "conteudo": "A malha quadriculada representa o mapa de um bairro plano com quarteirões quadrados de mesmo tamanho. João mora em um desses quarteirões. Para ir à escola, ele sai do ponto A e caminha exatamente 3 quarteirões para o leste e 2 quarteirões para o norte.",
+        "conteudo": "A densidade demográfica de uma região é definida como sendo a razão entre o número de habitantes dessa região e sua área, expressa na unidade habitantes por quilômetro quadrado.\nUma região R é subdividida em várias outras, sendo uma delas a região Q. A área de Q é igual a três quartos da área de R, e o número de habitantes de Q é igual à metade do número de habitantes de R. As densidades demográficas correspondentes a essas regiões são denotadas por d(Q) e d(R).",
         "fonte": ""
       },
-      "enunciado": "O quarteirão onde se encontra a casa de João é representado pela letra",
+      "enunciado": "A expressão que relaciona d(Q) e d(R) é",
       "alternativas": {
-        "A": "P.",
-        "B": "Q.",
-        "C": "R.",
-        "D": "S.",
-        "E": "T."
+        "A": "d(Q) = (1/4) · d(R)",
+        "B": "d(Q) = (1/2) · d(R)",
+        "C": "d(Q) = (3/4) · d(R)",
+        "D": "d(Q) = (3/2) · d(R)",
+        "E": "d(Q) = (2/3) · d(R)"
       },
-      "gabarito": "A",
-      "habilidade": "H06 - Interpretar a localização e a movimentação de pessoas/objetos em representações gráficas.",
-      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 156)"
+      "gabarito": "E",
+      "habilidade": "H16 - Resolver situação-problema envolvendo a razão entre duas grandezas de espécies diferentes.",
+      "fonte": "ENEM 2024 - Caderno 6 Cinza (Questão 152)"
     },
     {
       "numero": 60,
@@ -1120,20 +1119,20 @@
       "disciplina": "Matemática",
       "texto_apoio": {
         "titulo": "",
-        "conteudo": "Em um laboratório, há 10 litros de uma solução aquosa composta exclusivamente pelas substâncias S1 e S2, sendo que a substância S1 representa 20% do volume total da solução. O químico responsável deseja alterar a concentração dessa solução por meio da evaporação exclusiva da substância S1, de modo que ela passe a representar exatamente 10% do novo volume total da solução.",
+        "conteudo": "Uma empresa de tecnologia vai padronizar a velocidade de conexão de internet que oferece a seus clientes em dez cidades. A direção da empresa decide que seu novo padrão de velocidade de referência será a mediana dos valores das velocidades de referência de conexões nessas dez cidades. Esses valores, em megabyte por segundo (MB/s), são apresentados no quadro:\n\nCidade | Velocidade de referência (MB/s)\nC1 | 390\nC2 | 380\nC3 | 320\nC4 | 390\nC5 | 340\nC6 | 380\nC7 | 390\nC8 | 400\nC9 | 350\nC10 | 360",
         "fonte": ""
       },
-      "enunciado": "Quantos litros da substância S1 devem ser evaporados dessa solução?",
+      "enunciado": "A velocidade de referência, em megabyte por segundo, a ser adotada por essa empresa é",
       "alternativas": {
-        "A": "1,0",
-        "B": "1,1",
-        "C": "1,2",
-        "D": "1,5",
-        "E": "2,0"
+        "A": "360.",
+        "B": "370.",
+        "C": "380.",
+        "D": "390.",
+        "E": "400."
       },
-      "gabarito": "B",
-      "habilidade": "H16 - Resolver situação-problema que envolva porcentagem e proporção.",
-      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 144)"
+      "gabarito": "C",
+      "habilidade": "H27 - Calcular medidas de tendência central de uma distribuição de dados.",
+      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 146)"
     },
     {
       "numero": 61,
@@ -1162,49 +1161,6 @@
       "disciplina": "Matemática",
       "texto_apoio": {
         "titulo": "",
-        "conteudo": "Uma sorveteria comercializa sorvete artesanal em potes cilíndricos com capacidade de 20 000 cm³. Para servir seus clientes, o proprietário utiliza taças de sobremesa com capacidade de 250 mL cada. Sabe-se que 1 cm³ equivale a 1 mL.",
-        "fonte": ""
-      },
-      "enunciado": "A quantidade de taças que ele consegue servir a partir de um único pote totalmente cheio desse sorvete é igual a",
-      "alternativas": {
-        "A": "8.",
-        "B": "20.",
-        "C": "50.",
-        "D": "80.",
-        "E": "100."
-      },
-      "gabarito": "D",
-      "habilidade": "H12 - Resolver situação-problema que envolva medidas de grandezas e conversão de unidades.",
-      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 164)"
-    },
-    {
-      "numero": 63,
-      "area": "Matemática e suas Tecnologias",
-      "disciplina": "Matemática",
-      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q167_caixa.png",
-      "texto_apoio": {
-        "titulo": "",
-        "conteudo": "Uma caixa de descarga tem a forma de paralelepípedo reto-retângulo com dimensões internas da base medindo 2,5 dm e 1,5 dm. Uma boia interrompe o abastecimento quando a altura da coluna de água atinge 2 dm.\nPara reduzir o volume de água despejado a cada acionamento, serão colocadas garrafas de 300 mL totalmente submersas. Para garantir a limpeza eficiente do vaso, o volume mínimo de água despejada deve ser de 5 L.",
-        "fonte": ""
-      },
-      "enunciado": "A quantidade máxima de garrafas que serão colocadas nessa caixa, garantindo um funcionamento eficiente, é igual a",
-      "alternativas": {
-        "A": "10.",
-        "B": "8.",
-        "C": "4.",
-        "D": "3.",
-        "E": "2."
-      },
-      "gabarito": "B",
-      "habilidade": "H14 - Avaliar proposta de intervenção na realidade utilizando conhecimentos geométricos de sólidos.",
-      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 167)"
-    },
-    {
-      "numero": 64,
-      "area": "Matemática e suas Tecnologias",
-      "disciplina": "Matemática",
-      "texto_apoio": {
-        "titulo": "",
         "conteudo": "Uma fábrica de tijolos ecológicos com 3 funcionários, cada um trabalhando 6 horas diárias, produz 720 unidades por dia. A fábrica pretende expandir sua produção para 1 800 tijolos diários, mantendo a jornada de 6 horas diárias para todos os funcionários e a mesma produtividade individual.",
         "fonte": ""
       },
@@ -1221,25 +1177,68 @@
       "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 148)"
     },
     {
+      "numero": 63,
+      "area": "Matemática e suas Tecnologias",
+      "disciplina": "Matemática",
+      "texto_apoio": {
+        "titulo": "",
+        "conteudo": "Quatro candidatos se apresentaram para realizar a prova de um concurso. Antes de iniciar a prova, os celulares dos quatro candidatos foram recolhidos pelo aplicador, que os guardou, cada um, dentro de um envelope preto. Ao término da prova, o aplicador devolveu os quatro envelopes com os celulares aos quatro candidatos, de maneira aleatória, já que não havia feito a identificação dos envelopes.",
+        "fonte": ""
+      },
+      "enunciado": "A probabilidade de que todos os candidatos tenham recebido de volta os envelopes com os seus respectivos celulares é",
+      "alternativas": {
+        "A": "1/2",
+        "B": "1/10",
+        "C": "1/16",
+        "D": "1/24",
+        "E": "1/256"
+      },
+      "gabarito": "D",
+      "habilidade": "H28 - Resolver situação-problema que envolva conhecimentos de probabilidade de eventos.",
+      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 150)"
+    },
+    {
+      "numero": 64,
+      "area": "Matemática e suas Tecnologias",
+      "disciplina": "Matemática",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q154_barras.png",
+      "texto_apoio": {
+        "titulo": "",
+        "conteudo": "O gerente de uma livraria registrou a quantidade de exemplares vendidos dos cinco gêneros literários mais procurados em sua loja durante o primeiro semestre de 2024. Com base no sucesso de vendas, ele planeja fazer uma nova encomenda no segundo semestre, priorizando o gênero que teve o maior percentual de crescimento de vendas entre o primeiro e o segundo trimestre.",
+        "fonte": ""
+      },
+      "enunciado": "O gênero de livro do qual o gerente deverá encomendar mais exemplares é",
+      "alternativas": {
+        "A": "Ficção científica.",
+        "B": "Biografia.",
+        "C": "Romance.",
+        "D": "Autoajuda.",
+        "E": "Suspense."
+      },
+      "gabarito": "C",
+      "habilidade": "H27 - Interpretar dados estatísticos apresentados em gráfico de colunas.",
+      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 154)"
+    },
+    {
       "numero": 65,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
       "texto_apoio": {
         "titulo": "",
-        "conteudo": "Um confeiteiro passou a produzir tortas em formato de cilindro circular reto, com raio da base variando entre 12 cm e 16 cm e altura de 6 cm. Essas tortas deverão ser embaladas em caixas com formato de prisma reto de base quadrada, de modo que seja possível acomodar a torta em seu interior e ainda restar pelo menos 1 cm de distância entre a torta e as superfícies internas da caixa, lateral e superior. Ele dispõe, originalmente, de caixas no formato pretendido, cujas dimensões internas são 14 cm de comprimento do lado da base e 7 cm de altura, que não atendem às suas necessidades. Portanto, ele comprará novas caixas, com o mesmo formato das caixas originais, mas com comprimento do lado da base maior, que sejam adequadas para embalar todos os tipos de torta que produz.",
+        "conteudo": "Uma empresa produz mochilas escolares sob encomenda. Essa empresa tem um custo total de produção, composto por um custo fixo, que não depende do número de mochilas, mais um custo variável, que é proporcional ao número de mochilas produzidas. O custo total cresce de forma linear, e a tabela apresenta esse custo para três quantidades de mochilas produzidas:\n\nQuantidade de mochilas | Custo total (R$)\n30 | 1 050,00\n50 | 1 650,00\n100 | 3 150,00",
         "fonte": ""
       },
-      "enunciado": "A aresta da base das novas caixas deve ser, no mínimo, quantos centímetros maior do que a das caixas originais?",
+      "enunciado": "O custo total, em real, para a produção de 80 mochilas será",
       "alternativas": {
-        "A": "4",
-        "B": "12",
-        "C": "16",
-        "D": "18",
-        "E": "20"
+        "A": "2 400,00.",
+        "B": "2 520,00.",
+        "C": "2 550,00.",
+        "D": "2 700,00.",
+        "E": "2 800,00."
       },
-      "gabarito": "E",
-      "habilidade": "H08 - Resolver situação-problema que envolva conhecimentos geométricos de espaço e forma.",
-      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 168)"
+      "gabarito": "C",
+      "habilidade": "H19 - Identificar representações algébricas que expressem relações a partir de um texto.",
+      "fonte": "ENEM 2024 - Caderno 6 Cinza (Questão 138)"
     },
     {
       "numero": 66,
@@ -1266,22 +1265,23 @@
       "numero": 67,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q156_malha.png",
       "texto_apoio": {
         "titulo": "",
-        "conteudo": "A densidade demográfica de uma região é definida como sendo a razão entre o número de habitantes dessa região e sua área, expressa na unidade habitantes por quilômetro quadrado.\nUma região R é subdividida em várias outras, sendo uma delas a região Q. A área de Q é igual a três quartos da área de R, e o número de habitantes de Q é igual à metade do número de habitantes de R. As densidades demográficas correspondentes a essas regiões são denotadas por d(Q) e d(R).",
+        "conteudo": "A malha quadriculada representa o mapa de um bairro plano com quarteirões quadrados de mesmo tamanho. João mora em um desses quarteirões. Para ir à escola, ele sai do ponto A e caminha exatamente 3 quarteirões para o leste e 2 quarteirões para o norte.",
         "fonte": ""
       },
-      "enunciado": "A expressão que relaciona d(Q) e d(R) é",
+      "enunciado": "O quarteirão onde se encontra a casa de João é representado pela letra",
       "alternativas": {
-        "A": "d(Q) = (1/4) · d(R)",
-        "B": "d(Q) = (1/2) · d(R)",
-        "C": "d(Q) = (3/4) · d(R)",
-        "D": "d(Q) = (3/2) · d(R)",
-        "E": "d(Q) = (2/3) · d(R)"
+        "A": "P.",
+        "B": "Q.",
+        "C": "R.",
+        "D": "S.",
+        "E": "T."
       },
-      "gabarito": "E",
-      "habilidade": "H16 - Resolver situação-problema envolvendo a razão entre duas grandezas de espécies diferentes.",
-      "fonte": "ENEM 2024 - Caderno 6 Cinza (Questão 152)"
+      "gabarito": "A",
+      "habilidade": "H06 - Interpretar a localização e a movimentação de pessoas/objetos em representações gráficas.",
+      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 156)"
     },
     {
       "numero": 68,
@@ -1289,23 +1289,44 @@
       "disciplina": "Matemática",
       "texto_apoio": {
         "titulo": "",
-        "conteudo": "João e Felipe participaram, na escola, de uma maratona de matemática na qual, durante uma semana, resolveram 200 questões cada. Nessa maratona, a porcentagem P de acertos de cada participante é convertida em um conceito:\n• insatisfatório: se 0 ≤ P < 50;\n• regular: se 50 ≤ P < 60;\n• bom: se 60 ≤ P < 75;\n• muito bom: se 75 ≤ P < 90;\n• excelente: se 90 ≤ P ≤ 100.\nJoão acertou 75% das questões da maratona e Felipe acertou 30% a menos que a quantidade de questões que João acertou.",
+        "conteudo": "Um confeiteiro passou a produzir tortas em formato de cilindro circular reto, com raio da base variando entre 12 cm e 16 cm e altura de 6 cm. Essas tortas deverão ser embaladas em caixas com formato de prisma reto de base quadrada, de modo que seja possível acomodar a torta em seu interior e ainda restar pelo menos 1 cm de distância entre a torta e as superfícies internas da caixa, lateral e superior. Ele dispõe, originalmente, de caixas no formato pretendido, cujas dimensões internas são 14 cm de comprimento do lado da base e 7 cm de altura, que não atendem às suas necessidades. Portanto, ele comprará novas caixas, com o mesmo formato das caixas originais, mas com comprimento do lado da base maior, que sejam adequadas para embalar todos os tipos de torta que produz.",
         "fonte": ""
       },
-      "enunciado": "Os conceitos de João e Felipe foram, respectivamente,",
+      "enunciado": "A aresta da base das novas caixas deve ser, no mínimo, quantos centímetros maior do que a das caixas originais?",
       "alternativas": {
-        "A": "muito bom e bom.",
-        "B": "muito bom e regular.",
-        "C": "muito bom e insatisfatório.",
-        "D": "bom e regular.",
-        "E": "bom e insatisfatório."
+        "A": "4",
+        "B": "12",
+        "C": "16",
+        "D": "18",
+        "E": "20"
       },
-      "gabarito": "B",
-      "habilidade": "H16 - Resolver situação-problema que envolva porcentagem e variação percentual.",
-      "fonte": "ENEM 2024 - Caderno 6 Cinza (Questão 175)"
+      "gabarito": "E",
+      "habilidade": "H08 - Resolver situação-problema que envolva conhecimentos geométricos de espaço e forma.",
+      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 168)"
     },
     {
       "numero": 69,
+      "area": "Matemática e suas Tecnologias",
+      "disciplina": "Matemática",
+      "texto_apoio": {
+        "titulo": "",
+        "conteudo": "Em um laboratório, há 10 litros de uma solução aquosa composta exclusivamente pelas substâncias S1 e S2, sendo que a substância S1 representa 20% do volume total da solução. O químico responsável deseja alterar a concentração dessa solução por meio da evaporação exclusiva da substância S1, de modo que ela passe a representar exatamente 10% do novo volume total da solução.",
+        "fonte": ""
+      },
+      "enunciado": "Quantos litros da substância S1 devem ser evaporados dessa solução?",
+      "alternativas": {
+        "A": "1,0",
+        "B": "1,1",
+        "C": "1,2",
+        "D": "1,5",
+        "E": "2,0"
+      },
+      "gabarito": "B",
+      "habilidade": "H16 - Resolver situação-problema que envolva porcentagem e proporção.",
+      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 144)"
+    },
+    {
+      "numero": 70,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
       "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q179_grafico.png",
@@ -1325,27 +1346,78 @@
       "gabarito": "D",
       "habilidade": "H16 - Resolver situação-problema envolvendo grandezas financeiras e rendimento.",
       "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 179)"
-    },
-    {
-      "numero": 70,
-      "area": "Matemática e suas Tecnologias",
-      "disciplina": "Matemática",
-      "texto_apoio": {
-        "titulo": "",
-        "conteudo": "Dez casais fundaram um grupo de dança e decidiram constituir uma diretoria com três cargos: presidente, secretário e tesoureiro. Para maior representatividade, decidiu-se que no máximo uma pessoa por casal poderá ocupar um cargo nessa diretoria.",
-        "fonte": ""
-      },
-      "enunciado": "Quantas diretorias diferentes podem ser constituídas por esses 10 casais?",
-      "alternativas": {
-        "A": "10 × 9 × 8",
-        "B": "20 × 18 × 16",
-        "C": "20 × 19 × 18",
-        "D": "10 × 9 × 8 × 2",
-        "E": "20 × 18 × 16 × 2"
-      },
-      "gabarito": "B",
-      "habilidade": "H02 - Resolver situação-problema envolvendo o princípio fundamental da contagem.",
-      "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 160)"
     }
-  ]
+  ],
+  "gabarito_oficial": {
+    "1": "D",
+    "2": "B",
+    "3": "A",
+    "4": "C",
+    "5": "D",
+    "6": "B",
+    "7": "C",
+    "8": "B",
+    "9": "A",
+    "10": "B",
+    "11": "C",
+    "12": "B",
+    "13": "D",
+    "14": "E",
+    "15": "E",
+    "16": "C",
+    "17": "D",
+    "18": "C",
+    "19": "C",
+    "20": "D",
+    "21": "C",
+    "22": "C",
+    "23": "A",
+    "24": "B",
+    "25": "E",
+    "26": "A",
+    "27": "C",
+    "28": "C",
+    "29": "B",
+    "30": "B",
+    "31": "A",
+    "32": "B",
+    "33": "B",
+    "34": "C",
+    "35": "A",
+    "36": "A",
+    "37": "B",
+    "38": "A",
+    "39": "D",
+    "40": "C",
+    "41": "C",
+    "42": "B",
+    "43": "B",
+    "44": "E",
+    "45": "A",
+    "46": "C",
+    "47": "B",
+    "48": "A",
+    "49": "D",
+    "50": "A",
+    "51": "C",
+    "52": "B",
+    "53": "C",
+    "54": "D",
+    "55": "B",
+    "56": "B",
+    "57": "B",
+    "58": "E",
+    "59": "E",
+    "60": "C",
+    "61": "B",
+    "62": "A",
+    "63": "D",
+    "64": "C",
+    "65": "C",
+    "66": "A",
+    "67": "A",
+    "68": "E",
+    "69": "B",
+    "70": "D"
+  }
 }
