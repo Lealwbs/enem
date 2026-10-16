@@ -116,7 +116,7 @@ def draw_candidate_name_field(c, start_y, is_gabarito=False):
 
     c.setFont("Helvetica-Bold", 6.2)
     c.setFillColor(colors.black)
-    c.drawString(text_x, opt1_y - 2.2, "Coletivo Voa Voa (Riacho das Pedras)")
+    c.drawString(text_x, opt1_y - 2.2, "Coletivo Voa Voa (Novo Riacho)")
 
     # Opção 2: Preparatório Gabarita
     c.setFillColor(colors.white)
@@ -320,14 +320,19 @@ def draw_clean_evaluator_panel(c):
     c.setFillColor(colors.white)
     c.rect(panel_x, panel_y, panel_w, panel_h, fill=1, stroke=1)
 
-    # Faixa de título: RESULTADOS (sem '4 ÁREAS DO CONHECIMENTO')
+    # Faixa de título: RESULTADOS + AVISO DE USO EXCLUSIVO
     header_h = 16.0
     c.setFillColor(colors.black)
     c.rect(panel_x, panel_y + panel_h - header_h, panel_w, header_h, fill=1, stroke=0)
 
     c.setFont("Helvetica-Bold", 8.8)
     c.setFillColor(colors.white)
-    c.drawCentredString(panel_x + panel_w / 2.0, panel_y + panel_h - 11.5, "RESULTADOS")
+    c.drawString(panel_x + 10.0, panel_y + panel_h - 11.5, "RESULTADOS")
+
+    # Aviso explícito para o aluno não preencher este painel
+    c.setFont("Helvetica-Bold", 6.8)
+    c.setFillColor(colors.HexColor("#FFCCCC"))
+    c.drawRightString(panel_x + panel_w - 10.0, panel_y + panel_h - 11.5, "USO EXCLUSIVO DOS AVALIADORES • NÃO PREENCHER")
 
     # Dimensões da tabela
     table_top_y = panel_y + panel_h - header_h
@@ -337,8 +342,7 @@ def draw_clean_evaluator_panel(c):
     w_lbl = 54.0
     w_area = 58.0
     w_red = 145.0
-    gap_sep = 6.0
-    w_tot = panel_w - (w_lbl + 4 * w_area + w_red + gap_sep)
+    w_tot = panel_w - (w_lbl + 4 * w_area + w_red)
 
     # 1. Coluna de Rótulos das Linhas (Acertos e Nota)
     c.setFillColor(colors.HexColor("#F0F0F0"))
@@ -435,14 +439,7 @@ def draw_clean_evaluator_panel(c):
 
     curr_x += w_red
 
-    # 4. Divisória / Espaço Separador para o TOTAL GERAL
-    c.setStrokeColor(colors.black)
-    c.setLineWidth(1.2)
-    c.line(curr_x + gap_sep / 2.0, panel_y, curr_x + gap_sep / 2.0, table_top_y)
-
-    curr_x += gap_sep
-
-    # 5. Coluna TOTAL GERAL / MÉDIA (Separado)
+    # 4. Coluna TOTAL GERAL / MÉDIA (adjacente com divisória padrão da tabela)
     tot_x = curr_x
     c.setFillColor(colors.HexColor("#222222"))
     c.setStrokeColor(colors.black)
@@ -460,17 +457,17 @@ def draw_clean_evaluator_panel(c):
     c.setFillColor(colors.HexColor("#EAEAEA"))
     c.setStrokeColor(colors.HexColor("#777777"))
     c.rect(tot_x, box_tot_y1, w_tot, row_h_data, fill=1, stroke=1)
-    c.setFont("Helvetica-Bold", 5.2)
-    c.setFillColor(colors.HexColor("#555555"))
-    c.drawCentredString(tot_x + w_tot / 2.0, box_tot_y1 + row_h_data - 6.5, "TOTAL ACERTOS (0 a 70)")
+    c.setFont("Helvetica-Bold", 5.8)
+    c.setFillColor(colors.HexColor("#444444"))
+    c.drawCentredString(tot_x + w_tot / 2.0, box_tot_y1 + row_h_data - 7.5, "TOTAL ACERTOS")
 
     # Célula Inferior: Média Geral / Nota Final
     box_tot_y2 = table_top_y - row_h_title - 2 * row_h_data
     c.setFillColor(colors.HexColor("#EAEAEA"))
     c.rect(tot_x, box_tot_y2, w_tot, row_h_data, fill=1, stroke=1)
-    c.setFont("Helvetica-Bold", 5.2)
-    c.setFillColor(colors.HexColor("#555555"))
-    c.drawCentredString(tot_x + w_tot / 2.0, box_tot_y2 + row_h_data - 6.5, "MÉDIA GERAL (0 a 1000)")
+    c.setFont("Helvetica-Bold", 5.8)
+    c.setFillColor(colors.HexColor("#444444"))
+    c.drawCentredString(tot_x + w_tot / 2.0, box_tot_y2 + row_h_data - 7.5, "MÉDIA GERAL")
 
 
 def render_answer_sheet_on_canvas(c, is_gabarito=False, gabarito_oficial=None):
@@ -481,8 +478,9 @@ def render_answer_sheet_on_canvas(c, is_gabarito=False, gabarito_oficial=None):
     # Espaço antes das instruções
     y_inst = draw_instructions_bw(c, start_y=y_cand - 8.0)
 
-    # Espaço de respiro antes de começar a grade de questões
-    grid_start_y = y_inst - 16.0
+    # Centralização vertical precisa da grade de questões (incluindo marcadores ao redor)
+    panel_top = 124.0
+    grid_start_y = (y_inst + panel_top + 340.0) / 2.0
     bottom_grid_y, geometry = draw_bubble_grid(c, start_y=grid_start_y, gabarito_oficial=gabarito_oficial)
 
     # Painel de Resultados desenhado SOMENTE no cartão-resposta do estudante (removido no gabarito oficial)

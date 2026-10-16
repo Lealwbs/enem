@@ -100,7 +100,7 @@ def draw_essay_compact_header(c, start_y, is_model=False):
 
     c.setFont("Helvetica-Bold", 6.2)
     c.setFillColor(colors.black)
-    c.drawString(text_x, opt1_y - 2.2, "Coletivo Voa Voa (Riacho das Pedras)")
+    c.drawString(text_x, opt1_y - 2.2, "Coletivo Voa Voa (Novo Riacho)")
 
     # Opção 2: Preparatório Gabarita
     c.setFillColor(colors.white)
