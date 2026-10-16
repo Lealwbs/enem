@@ -1,9 +1,9 @@
 {
   "metadados": {
     "titulo_exame": "EXAME NACIONAL DO ENSINO MÉDIO",
-    "subtitulo": "2º SIMULADO PREPARATÓRIO ENEM - 70 QUESTÕES",
+    "subtitulo": "2º SIMULADO UNIFICADO COLETIVO VOA VOA & PREPARATÓRIO GABARITA",
     "ano": "2026",
-    "dia": "1º E 2º DIAS UNIFICADOS",
+    "dia": "",
     "caderno_nome": "CADERNO 1",
     "cor_caderno": "BRANCO",
     "codigo_caderno": "020170BR1",
@@ -17,18 +17,25 @@
     "textos_motivadores": [
       {
         "titulo": "TEXTO I",
-        "conteudo": "Nos últimos anos tem crescido a conscientização sobre a importância da inclusão de pessoas neurodivergentes no mercado de trabalho e nas instituições de ensino. Neurodivergentes são indivíduos cujo funcionamento neurológico ou desenvolvimento cognitivo se desvia do que é considerado típico ou padrão. Isso pode se manifestar em condições como Transtorno do Espectro Autista (TEA), dislexia, dispraxia e Transtorno do Déficit de Atenção com Hiperatividade (TDAH). Estima-se que o autismo afete cerca de 1% a 2% da população mundial e o TDAH entre 5% e 8% das crianças e jovens. A carência de estatísticas públicas motivou a recente inclusão de perguntas específicas sobre neurodivergência nos questionários censitários nacionais para orientar políticas públicas de atenção integral.",
-        "fonte": "AGÊNCIA SENADO. Inclusão e direitos das pessoas neurodivergentes no Brasil contemporâneo. Brasília: Senado Federal, 2023. Disponível em: https://www12.senado.leg.br. Acesso em: 10 out. 2026."
+        "conteudo": "Nos últimos anos tem crescido a conscientização sobre a importância da inclusão de pessoas neurodivergentes no mercado de trabalho e nas instituições de ensino. Neurodivergentes são indivíduos cujo funcionamento neurológico ou desenvolvimento cognitivo se desvia do que é considerado típico ou padrão, abrangendo condições como Transtorno do Espectro Autista (TEA), dislexia e Transtorno do Déficit de Atenção com Hiperatividade (TDAH).\nO termo ‘neurodivergência’ faz menção ao indivíduo, enquanto neurodiversidade se refere à pluralidade humana como um todo. De acordo com estimativas internacionais, o autismo afeta cerca de 1% a 2% da população mundial e o TDAH entre 5% e 8% das crianças e jovens. Para superar a histórica carência de dados, o Projeto de Lei 4459/2021 foi aprovado para incluir perguntas específicas sobre diagnósticos de neurodivergência nos censos demográficos nacionais, fundamental para a formulação de políticas públicas integradas de saúde e educação inclusiva.",
+        "fonte": "Disponível em: https://revistarba.org.br. Acesso em: 10 out. 2026 (adaptado)."
       },
       {
         "titulo": "TEXTO II",
-        "conteudo": "O conceito de 'neurodiversidade' refere-se à infinita e legítima variação do cérebro e da cognição humana. Não se trata de um déficit moral ou incapacidade ontológica, mas de uma perspectiva de reconhecimento da diversidade. A inclusão requer a superação de barreiras arquitetônicas, pedagógicas e atitudinais, garantindo que as habilidades e singularidades de cada indivíduo sejam acolhidas sem a imposição de padrões neurotípicos excludentes.",
-        "fonte": "CONSELHO NACIONAL DE JUSTIÇA (CNJ). Cartilha de Acessibilidade e Inclusão da Pessoa com Deficiência e Neurodivergência no Poder Judiciário. Brasília: CNJ, 2022. p. 18-21."
+        "imagem": "simulado_2/banco_questoes/imagens/redacao_texto2_infografico.png",
+        "conteudo": "",
+        "fonte": "TRIBUNAL REGIONAL FEDERAL DA 5ª REGIÃO (TRF5). 3ª Semana de Acessibilidade e Inclusão. Disponível em: https://www.facebook.com/TRF5a. Acesso em: 10 out. 2026."
       },
       {
         "titulo": "TEXTO III",
-        "conteudo": "A legislação brasileira, especialmente a Lei Brasileira de Inclusão (Lei nº 13.146/2015) e a Lei Berenice Piana (Lei nº 12.764/2012), assegura direitos fundamentais às pessoas neurodivergentes, prevendo prioridade no atendimento, adaptação de provas e metodologias escolares, acompanhante terapêutico especializado e punição rigorosa a qualquer conduta discriminatória nos ambientes públicos e privados de convivência.",
-        "fonte": "BRASIL. Presidência da República. Lei nº 13.146, de 6 de julho de 2015. Institui a Lei Brasileira de Inclusão da Pessoa com Deficiência. Diário Oficial da União: seção 1, Brasília, DF, 7 jul. 2015."
+        "conteudo": "A legislação brasileira assegura direitos fundamentais às pessoas neurodivergentes. Centrada na Lei Brasileira de Inclusão (LBI – Lei nº 13.146/2015) e na Lei Berenice Piana (Lei nº 12.764/2012), a ordem jurídica equipara o autismo à deficiência para todos os efeitos legais. Isso garante prioridade no atendimento, adaptação pedagógica com Plano Educacional Individualizado (PEI), acompanhante terapêutico e punição rigorosa a condutas discriminatórias. Ademais, propostas legislativas como o PL 5499/23 buscam instituir cotas em concursos e vestibulares, assegurando a plena participação social e profissional.",
+        "fonte": "Disponível em: https://www.politize.com.br/neurodiversidade. Acesso em: 10 out. 2026 (adaptado)."
+      },
+      {
+        "titulo": "TEXTO IV",
+        "imagem": "simulado_2/banco_questoes/imagens/redacao_texto4_quebracabeca.png",
+        "conteudo": "A neurodiversidade nos lembra que cada pessoa tem um cérebro único e que essas diferenças são naturais, valiosas e merecedoras de acolhimento e respeito.",
+        "fonte": "Disponível em: https://www.politize.com.br/neurodiversidade. Acesso em: 10 out. 2026."
       }
     ]
   },
@@ -40,15 +47,15 @@
       "texto_apoio": {
         "titulo": "Things We Carry on the Sea",
         "conteudo": "We carry tears in our eyes: good-bye father, good-bye mother\nWe carry soil in small bags: may home never fade in our hearts\nWe carry carnage of mining, droughts, floods, genocides\nWe carry dust of our families and neighbors incinerated in mushroom clouds\nWe carry our islands sinking under the sea\nWe carry our hands, feet, bones, hearts and best minds for a new life\nWe carry diplomas: medicine, engineer, nurse, education, math, poetry, even if they mean nothing to the other shore\nWe carry railroads, plantations, laundromats, bodegas, taco trucks, farms, factories, nursing homes, hospitals, schools, temples... built on our ancestors’ backs\nWe carry old homes along the spine, new dreams in our chests\nWe carry yesterday, today and tomorrow\nWe’re orphans of the wars forced upon us\nWe’re refugees of the sea rising from industrial wastes\nAnd we carry our mother tongues\n[...]\nAs we drift... in our rubber boats... from shore... to shore... to shore...",
-        "fonte": "PING, W. Things We Carry on the Sea. In: Of New and Old. Minneapolis: Milkweed Editions, 2018. p. 45-46. Disponível em: https://poets.org. Acesso em: 1 jun. 2023. ENEM 2023."
+        "fonte": "PING, W. Disponível em: https://poets.org. Acesso em: 1 jun. 2023 (fragmento)."
       },
-      "enunciado": "Ao retratar a trajetória de refugiados, o poema recorre à imagem da viagem marítima para destacar o(a)",
+      "enunciado": "Ao retratar a trajetória de refugiados, o poema recorre à imagem de viagem marítima para destacar o(a)",
       "alternativas": {
-        "A": "risco de choques culturais nos países de acolhimento.",
-        "B": "impacto do ensino de história sobre os conflitos bélicos.",
-        "C": "importância das manifestações populares em defesa do meio ambiente.",
-        "D": "existência de experiências plurais e memórias compartilhadas pelos migrantes.",
-        "E": "necessidade premente de capacitação profissional em solo estrangeiro."
+        "A": "risco de choques culturais.",
+        "B": "impacto do ensino de história.",
+        "C": "importância da luta ambiental.",
+        "D": "existência de experiências plurais.",
+        "E": "necessidade de capacitação profissional."
       },
       "gabarito": "D"
     },
@@ -56,18 +63,19 @@
       "numero": 2,
       "area": "Linguagens, Códigos e suas Tecnologias",
       "disciplina": "Língua Estrangeira (Inglês)",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2023_q02_cartoon.png",
       "texto_apoio": {
-        "titulo": "Office Culture",
-        "conteudo": "“Oh, you’ll love working here. Nobody treats you any differently just because of your age, race, or gender.”\n(No cartum, a frase é dita a um candidato em uma sala de reuniões corporativa onde todos os diretores ao redor da mesa possuem rigorosamente a mesma fisionomia e vestimenta padronizada).",
-        "fonte": "HILBURN, S. The Office Culture: Irony and Diversity in Modern Corporations. CartoonStock Business Collection. Nova York: CartoonStock Ltd., 2021. ENEM 2023."
+        "titulo": "",
+        "conteudo": "“Oh, you’ll love working here. Nobody treats you any differently just because of your age, race, or gender.”",
+        "fonte": "Disponível em: www.cartoonstock.com. Acesso em: 25 out. 2021."
       },
-      "enunciado": "Ao retratar o ambiente de trabalho em um escritório por meio da ironia entre a fala e a imagem homogênea, o cartum tem por objetivo",
+      "enunciado": "Ao retratar o ambiente de trabalho em um escritório, esse cartum tem por objetivo",
       "alternativas": {
-        "A": "criticar os códigos de vestimenta formal nas empresas multinacionais.",
-        "B": "destacar a falta de diversidade representativa nas equipes de trabalho.",
-        "C": "indicar um modelo harmonioso de convivência intergeracional.",
-        "D": "elogiar a integração de novatos à cultura organizacional vigente.",
-        "E": "salientar a predominância do trabalho colaborativo entre colegas."
+        "A": "criticar um padrão de vestimenta.",
+        "B": "destacar a falta de diversidade.",
+        "C": "indicar um modo de interação.",
+        "D": "elogiar um modelo de organização.",
+        "E": "salientar o espírito de cooperação."
       },
       "gabarito": "B"
     },
@@ -78,7 +86,7 @@
       "texto_apoio": {
         "titulo": "Spanglish",
         "conteudo": "pues estoy creando Spanglish\nbi-cultural systems\nscientific lexicographical\ninter-textual integrations\ntwo expressions\nexistentially wired\ntwo dominant languages\ncontinentally abrazándose\nin colloquial combate\nimperio spanglish emerges\nsobre territorio bi-lingual\nlas novelas mexicanas\nmixing with radiorocknroll\nimmigrant/migrant\nnasal mispronouncements\nhip-hop, street salsa, spanish pop\nstandard english classroom\nwith computer technicalities\nspanglish is literally perfect",
-        "fonte": "LAVIERA, T. Spanglish. In: Benedición: The Complete Poetry of Tato Laviera. Houston: Arte Público Press, 2014. p. 89-91. ENEM 2023."
+        "fonte": "LAVIERA, T. Benedición: The Complete Poetry of Tato Laviera. Houston: Arte Público Press, 2014."
       },
       "enunciado": "Nesse poema de Tato Laviera, o eu lírico celebra e destaca uma",
       "alternativas": {
@@ -96,18 +104,18 @@
       "disciplina": "Língua Estrangeira (Inglês)",
       "texto_apoio": {
         "titulo": "Food Waste Awareness",
-        "conteudo": "The average American tosses 300 pounds of food each year, making food the number one contributor to America’s landfills. Eat your leftovers and keep your perishables in the fridge – the Earth is counting on it.",
-        "fonte": "ENVIRONMENTAL DEFENSE FUND (EDF). Food Waste Awareness Campaign: The True Cost of Landfills. Washington, D.C.: Behance Creative Network, 2021. Disponível em: https://mir-s3-cdn-cf.behance.net. ENEM 2023."
+        "conteudo": "Food waste is a far greater problem than many realize. In fact, if food waste were a country, it would be the third largest emitter of greenhouse gases in the world, behind only China and the United States.\nWhen food is discarded, all the energy, water, and resources that went into producing, packaging, and transporting it are also wasted. Furthermore, when food decomposes in landfills, it produces methane, a potent gas that accelerates global climate change.\nReducing food waste is one of the most effective and accessible actions we can take to combat food insecurity and preserve planetary boundaries.",
+        "fonte": "Disponível em: https://www.worldwildlife.org. Acesso em: 10 set. 2023 (adaptado)."
       },
-      "enunciado": "A mensagem veiculada por essa campanha pública de conscientização sugere que",
+      "enunciado": "Ao comparar o desperdício de alimentos a um dos maiores emissores de gases de efeito estufa, o texto busca",
       "alternativas": {
-        "A": "os aterros sanitários urbanos demandam ampliação física imediata.",
-        "B": "o desperdício cotidiano de alimentos provoca severos impactos ambientais.",
-        "C": "os centros de distribuição devem doar exclusivamente produtos não perecíveis.",
-        "D": "as refeições congeladas representam riscos iminentes à saúde individual.",
-        "E": "as residências familiares prescindem do uso de aparelhos refrigeradores."
+        "A": "minimizar o papel dos países industrializados na crise climática global.",
+        "B": "propor a extinção de subsídios públicos à produção agrícola comercial.",
+        "C": "alertar a sociedade sobre a gravidade e o impacto socioambiental do descarte de comida.",
+        "D": "recomendar a eliminação de embalagens plásticas na conservação de produtos perecíveis.",
+        "E": "responsabilizar exclusivamente os hábitos dos consumidores finais pelo aquecimento global."
       },
-      "gabarito": "B"
+      "gabarito": "C"
     },
     {
       "numero": 5,
@@ -115,35 +123,35 @@
       "disciplina": "Língua Estrangeira (Inglês)",
       "texto_apoio": {
         "titulo": "Devotions upon Emergent Occasions",
-        "conteudo": "No man is an island,\nEntire of itself;\nEvery man is a piece of the continent,\nA part of the main.\n[...]\nAny man’s death diminishes me,\nBecause I am involved in mankind.",
-        "fonte": "DONNE, J. Devotions upon Emergent Occasions and Seated Thoughts. Meditação XVII. Londres: John W. Parker, 1624 / Edição fac-similar: Cambridge University Press, 1923. p. 98. ENEM 2023."
+        "conteudo": "No man is an island, entire of itself;\nevery man is a piece of the continent, a part of the main.\nIf a clod be washed away by the sea, Europe is the less,\nas well as if a promontory were, as well as if a manor of thy friend's or of thine own were:\nany man's death diminishes me, because I am involved in mankind,\nand therefore never send to know for whom the bell tolls;\nit tolls for thee.",
+        "fonte": "DONNE, J. Devotions upon Emergent Occasions and Seated Thoughts. Oxford: Oxford University Press, 1987."
       },
-      "enunciado": "Nesse clássico poema de John Donne, a metáfora \"No man is an island\" é mobilizada para enfatizar a",
+      "enunciado": "Nessa famosa meditação do poeta John Donne, a metáfora 'No man is an island' é empregada para expressar o princípio da",
       "alternativas": {
-        "A": "fragilidade psicológica humana diante da finitude da vida.",
-        "B": "ideia de profunda conexão moral e interdependência entre os seres humanos.",
-        "C": "necessidade de isolamento contemplativo para o amadurecimento espiritual.",
-        "D": "superioridade dos laços familiares sobre os deveres perante a comunidade.",
-        "E": "inevitabilidade das disputas territoriais na história das civilizações."
+        "A": "independência individual perante as coerções do Estado moderno.",
+        "B": "fragilidade dos acordos diplomáticos entre as potências soberanas.",
+        "C": "superioridade dos laços familiares sobre as obrigações comunitárias.",
+        "D": "interconexão e responsabilidade mútua que unem todos os seres humanos.",
+        "E": "necessidade de isolamento contemplativo para a elevação espiritual."
       },
-      "gabarito": "B"
+      "gabarito": "D"
     },
     {
       "numero": 6,
       "area": "Linguagens, Códigos e suas Tecnologias",
       "disciplina": "Língua Portuguesa e Literatura",
       "texto_apoio": {
-        "titulo": "Dom Casmurro",
-        "conteudo": "Agora que expliquei o título, passo a escrever o livro. Antes disso, porém, digamos os motivos que me põem a pena na mão. Vivo só, com um criado. A casa em que moro é própria; fi-la construir de propósito, levado de um desejo tão particular que me vexa imprimi-lo, mas vá lá. Um dia destes ocorreu-me reproduzir em Engenho Novo a casa em que me criei na antiga Rua de Matacavalos...",
-        "fonte": "ASSIS, M. Dom Casmurro. Rio de Janeiro: Livraria Garnier, 1899 / São Paulo: Penguin Classics & Companhia das Letras, 2014. cap. II, p. 15-16."
+        "titulo": "A memória e a escrita",
+        "conteudo": "Agora que expliquei o título, passo a escrever o livro. Antes disso, porém, digamos os motivos que me põem a pena na mão. Vivo só, com um criado. A casa em que moro é própria; fi-la construir de propósito, levado de um desejo tão particular que me vexa imprimi-lo, mas vá lá. Um dia, há bastantes anos, lembrou-me reproduzir no Engenho Novo a casa em que me criei na antiga Rua de Matacavalos, dando-lhe o mesmo aspecto e economia daquela outra, que desapareceu.",
+        "fonte": "ASSIS, M. Dom Casmurro. 1899."
       },
-      "enunciado": "No fragmento de Dom Casmurro, o narrador emprega a construção \"os motivos que me põem a pena na mão\". Sem alterar o sentido original nem desrespeitar as normas de regência da variedade padrão da língua, essa oração pode ser reescrita como:",
+      "enunciado": "No fragmento, o narrador emprega a construção “os motivos que me põem a pena na mão”. Considerando as regras de colocação pronominal da norma-padrão da língua portuguesa, assinale a alternativa que apresenta uma reescrita correta do trecho, mantendo seu sentido original.",
       "alternativas": {
-        "A": "as razões em que começo a escrever.",
-        "B": "os motivos pelos quais me ponho a escrever.",
-        "C": "as razões por que me ponho em escrever.",
-        "D": "os motivos que me levam em escrever.",
-        "E": "as causas donde escrevo o livro."
+        "A": "Os motivos que põem-me a pena na mão justificam a escrita do livro.",
+        "B": "Os motivos pelos quais me ponho a escrever justificam a escrita do livro.",
+        "C": "Os motivos que põem a pena na mão-me justificam a escrita do livro.",
+        "D": "Os motivos que põem-na a pena na mão justificam a escrita do livro.",
+        "E": "Os motivos pelos quais ponho-me a escrever justificam a escrita do livro."
       },
       "gabarito": "B"
     },
@@ -151,41 +159,44 @@
       "numero": 7,
       "area": "Linguagens, Códigos e suas Tecnologias",
       "disciplina": "Língua Portuguesa e Literatura",
-      "enunciado": "A colocação dos pronomes oblíquos átonos varia conforme o padrão formal da língua e a expressividade estilística. Assinale a opção que atende integralmente às regras de colocação pronominal da norma-padrão:",
+      "texto_apoio": null,
+      "enunciado": "A colocação dos pronomes oblíquos átonos varia conforme o contexto sintático e o registro de linguagem. Considerando as regras prescritas pela gramática normativa para o uso da próclise e da ênclise, assinale a alternativa em que a colocação pronominal está correta.",
       "alternativas": {
-        "A": "Nunca esqueceu-se das lembranças que vieram-lhe à mente.",
-        "B": "Não se apressou em responder, pois desejava-se expressar com precisão.",
-        "C": "As lembranças que lhe vieram foram tantas que ele se emocionou.",
-        "D": "Me pareceu que ele havia esquecido os detalhes daquela amizade.",
-        "E": "Tendo despedido-se dos amigos, recolheu-se cedo ao quarto."
+        "A": "Me falaram que o romance machadiano retrata a sociedade carioca do século XIX.",
+        "B": "Bentinho recordava-se dos fatos, porém não entregou-se totalmente às lembranças.",
+        "C": "Quando trata-se de literatura realista, Machado de Assis destaca-se pela ironia.",
+        "D": "Machado de Assis sempre dedicou-se à análise psicológica das personagens.",
+        "E": "Em se tratando de memória ficcional, a perspectiva do narrador é determinante."
       },
-      "gabarito": "C"
+      "gabarito": "E"
     },
     {
       "numero": 8,
       "area": "Linguagens, Códigos e suas Tecnologias",
       "disciplina": "Língua Portuguesa e Literatura",
-      "enunciado": "A regência verbal corresponde à relação sintática estabelecida entre o verbo e seus complementos. Assinale a alternativa que apresenta a construção correta segundo a norma-padrão da língua portuguesa:",
+      "texto_apoio": null,
+      "enunciado": "A regência verbal corresponde à relação estabelecida entre um verbo e seus complementos. Em textos de registro formal, essa relação deve observar as normas gramaticais consagradas. Assinale a alternativa que atende à norma-padrão da língua portuguesa quanto à regência verbal.",
       "alternativas": {
-        "A": "O narrador assistiu o espetáculo comovido pela atuação dos jovens atores.",
-        "B": "Ele preferia recordar os fatos da mocidade do que viver o presente.",
-        "C": "O jovem aspirava o cargo de destaque na administração pública.",
-        "D": "O personagem aspirava a uma vida tranquila longe das intrigas da corte.",
-        "E": "O autor simpatizava com a ideia, mas não obedecia os preceitos clássicos."
+        "A": "O narrador prefere recordar o passado do que viver o presente.",
+        "B": "Bentinho sempre visava o bem-estar da família ao tomar decisões.",
+        "C": "Machado de Assis procedeu a uma análise profunda da alma humana.",
+        "D": "Os leitores assistiram o desenrolar dos fatos com desconfiança.",
+        "E": "O advogado custou para entender os motivos que levaram à desconfiança."
       },
-      "gabarito": "D"
+      "gabarito": "C"
     },
     {
       "numero": 9,
       "area": "Linguagens, Códigos e suas Tecnologias",
       "disciplina": "Língua Portuguesa e Literatura",
-      "enunciado": "A adequação linguística de um texto depende do emprego apropriado das preposições exigidas por verbos e nomes. Assinale a alternativa em que todas as construções estão em estrita conformidade com a norma-padrão:",
+      "texto_apoio": null,
+      "enunciado": "A adequação linguística de um texto depende, entre outros fatores, do emprego apropriado da norma-padrão e da precisão vocabular. Considere a frase a seguir: “Os alunos assistiram o documentário sobre Machado de Assis e aspiravam o sucesso no vestibular.” Assinale a alternativa que apresenta a reescrita desse período inteiramente conforme a norma-padrão da língua portuguesa.",
       "alternativas": {
-        "A": "O narrador tinha aversão com a rotina e simpatizava aos vizinhos antigos.",
-        "B": "O protagonista mostrou-se capaz de relembrar o passado e expressou interesse por novas reflexões.",
-        "C": "A personagem era acostumada em silêncio e demonstrava capacidade com observar.",
-        "D": "Ele tinha certeza em que encontraria paz, mas hesitava de começar o relato.",
-        "E": "O autor residia à Rua de Matacavalos e confiava para a memória dos fatos."
+        "A": "Os alunos assistiram ao documentário sobre Machado de Assis e aspiravam o sucesso no vestibular.",
+        "B": "Os alunos assistiram ao documentário sobre Machado de Assis e aspiravam ao sucesso no vestibular.",
+        "C": "Os alunos assistiram o documentário sobre Machado de Assis e aspiravam ao sucesso no vestibular.",
+        "D": "Os alunos assistiram o documentário sobre Machado de Assis e aspiravam pelo sucesso no vestibular.",
+        "E": "Os alunos assistiram a documentário sobre Machado de Assis e aspiravam de sucesso no vestibular."
       },
       "gabarito": "B"
     },
@@ -193,13 +204,14 @@
       "numero": 10,
       "area": "Linguagens, Códigos e suas Tecnologias",
       "disciplina": "Língua Portuguesa e Literatura",
-      "enunciado": "A concordância verbal estabelece a harmonia sintática entre o verbo e o núcleo do sujeito. Assinale a alternativa inteiramente correta quanto às regras de concordância verbal da variedade padrão:",
+      "texto_apoio": null,
+      "enunciado": "A concordância verbal estabelece a relação entre o verbo e o núcleo do sujeito. Em determinados contextos, a norma-padrão admite mais de uma forma de concordância. Assinale a alternativa em que a flexão verbal está em desacordo com as regras prescritas pela gramática normativa.",
       "alternativas": {
-        "A": "Houveram muitos desentendimentos entre os moradores do Engenho Novo.",
-        "B": "Fazem dez anos que o narrador decidiu reconstruir a casa da infância.",
-        "C": "Mais de um amigo se cumprimentaram com efusão ao término do encontro.",
-        "D": "A maior parte dos relatos continham imprecisões históricas notáveis.",
-        "E": "Existiam lembranças antigas que o levavam a refletir sobre sua juventude."
+        "A": "A maior parte dos críticos afirmaram que o romance apresenta caráter inovador.",
+        "B": "Mais de um leitor considerou as reflexões do narrador excessivamente paranoicas.",
+        "C": "Mais de um especialista e mais de um historiador discutiram a estrutura da narrativa.",
+        "D": "A maioria dos episódios narrados ocorrem no Rio de Janeiro do século XIX.",
+        "E": "Haviam muitas dúvidas entre os leitores a respeito da veracidade do relato."
       },
       "gabarito": "E"
     },
@@ -207,27 +219,29 @@
       "numero": 11,
       "area": "Linguagens, Códigos e suas Tecnologias",
       "disciplina": "Língua Portuguesa e Literatura",
-      "enunciado": "Na língua portuguesa, verbos que indicam tempo decorrido ou fenômenos meteorológicos apresentam regras específicas de impessoalidade. Assinale a frase redigida em estrita conformidade com a norma culta:",
+      "texto_apoio": null,
+      "enunciado": "Na língua portuguesa, alguns verbos apresentam comportamento particular em construções de concordância, especialmente nas orações sem sujeito ou com voz passiva sintética. Assinale a alternativa em que a concordância verbal está empregada corretamente.",
       "alternativas": {
-        "A": "Vão fazer três meses que as obras do casarão foram concluídas.",
-        "B": "Devem haver soluções mais eficazes para solucionar o conflito.",
-        "C": "Tratam-se de recordações íntimas que o protagonista guardava.",
-        "D": "Faz muitos anos que o narrador deixou a antiga casa de infância.",
-        "E": "Choveram reclamações sobre as decisões tomadas pela assembleia."
+        "A": "Aluga-se casas no Engenho Novo para famílias que buscam tranquilidade.",
+        "B": "Fazem dez anos que o narrador decidiu reconstruir a casa de sua infância.",
+        "C": "Trata-se de memórias construídas a partir de impressões subjetivas.",
+        "D": "Podem haver diferentes interpretações para o comportamento de Capitu.",
+        "E": "Devem fazer muitos anos que a velha casa de Matacavalos desapareceu."
       },
-      "gabarito": "D"
+      "gabarito": "C"
     },
     {
       "numero": 12,
       "area": "Linguagens, Códigos e suas Tecnologias",
       "disciplina": "Língua Portuguesa e Literatura",
-      "enunciado": "A ambiguidade ocorre quando uma frase admite mais de uma interpretação sem intenção estilística deliberada. Identifique a frase em que o emprego inadequado do pronome possessivo gera duplo sentido indesejado:",
+      "texto_apoio": null,
+      "enunciado": "A ambiguidade ocorre quando uma construção linguística possibilita mais de uma interpretação para o mesmo enunciado. Assinale a alternativa em que a frase apresenta ambiguidade estrutural decorrente da organização de seus termos.",
       "alternativas": {
-        "A": "O narrador guardou os manuscritos na gaveta antes de fechar a porta do gabinete.",
-        "B": "O professor entregou a prova ao aluno e comentou sobre sua caligrafia ilegível.",
-        "C": "Os jovens conversavam animadamente sobre os rumos da carreira acadêmica.",
-        "D": "A escritora revisou os capítulos do romance acompanhada pelo editor de arte.",
-        "E": "O fiscal recolheu o cartão-resposta assinado pelo candidato no final da tarde."
+        "A": "O narrador observava atentamente os movimentos de Capitu durante o jantar.",
+        "B": "Bentinho encontrou o amigo preocupado perto da antiga casa de Matacavalos.",
+        "C": "O advogado leu os documentos no escritório antes do início da audiência.",
+        "D": "Machado de Assis escreveu romances que retratam a elite daquela época.",
+        "E": "Os leitores debateram os detalhes do enredo na biblioteca da universidade."
       },
       "gabarito": "B"
     },
@@ -235,15 +249,16 @@
       "numero": 13,
       "area": "Linguagens, Códigos e suas Tecnologias",
       "disciplina": "Língua Portuguesa e Literatura",
-      "enunciado": "A escolha precisa de termos sintáticos é indispensável para evitar equívocos de sentido. Na oração \"Bentinho contou a Escobar que sua mãe o procurava\", a reformulação que elimina completamente a ambiguidade é:",
+      "texto_apoio": null,
+      "enunciado": "A escolha de palavras e estruturas sintáticas pode eliminar ambiguidades e tornar o texto mais preciso e compreensível. Considere a frase a seguir: “O pesquisador examinou o retrato da jovem que estava guardado na gaveta.” Assinale a alternativa que reescreve a frase eliminando a ambiguidade e deixando explícito que quem estava na gaveta era o retrato.",
       "alternativas": {
-        "A": "Bentinho contou a Escobar que a mãe procurava por ele.",
-        "B": "Bentinho avisou a Escobar sobre a mãe que o procurava.",
-        "C": "Bentinho contou a Escobar que a mãe de Escobar o estava procurando.",
-        "D": "Bentinho disse que a sua mãe estava procurando Escobar.",
-        "E": "Bentinho e Escobar foram procurados pela mãe na saída da escola."
+        "A": "O pesquisador examinou o retrato guardado na gaveta da jovem.",
+        "B": "O pesquisador examinou o retrato da jovem, o qual estava guardado na gaveta.",
+        "C": "O pesquisador examinou o retrato da jovem, que se encontrava na gaveta.",
+        "D": "O pesquisador examinou, na gaveta onde estava guardado, o retrato da jovem.",
+        "E": "O pesquisador examinou a jovem cujo retrato estava guardado na gaveta."
       },
-      "gabarito": "C"
+      "gabarito": "D"
     },
     {
       "numero": 14,
@@ -251,16 +266,16 @@
       "disciplina": "Artes",
       "texto_apoio": {
         "titulo": "A arte de Luís Otávio Burnier",
-        "conteudo": "O movimento natural do corpo segue as leis cotidianas: o menor esforço para o maior efeito. Na dança e no teatro físico, busca-se o oposto: a quebra deliberada do automatismo cotidiano para instaurar um corpo cênico dilatado, expressivo e carregado de teatralidade, em que cada gesto condensa tensões estéticas significativas.",
-        "fonte": "BURNIER, L. O. A Arte de Ator: da máscara à mímica corporal. Campinas: Editora da Unicamp, 2001. p. 45-47."
+        "conteudo": "Para Burnier, o trabalho do ator consistia no desvelamento de matrizes corporais arcaicas e expressivas. Pesquisador incansável da mímica e das técnicas orientais e ocidentais de representação, fundou o LUME (Núcleo Interdisciplinar de Pesquisas Teatrais da Unicamp), onde investigava a expressividade do movimento puro, despido de artifícios puramente cenográficos, fazendo do próprio corpo do ator a matriz viva e dramática da cena.",
+        "fonte": "BURNIER, L. O. A Arte de Ator: da máscara à mímica corporal. Campinas: Editora da Unicamp, 2001."
       },
-      "enunciado": "A concepção cênica e corporal analisada no fragmento fundamenta a pesquisa teatral contemporânea a partir da:",
+      "enunciado": "A concepção cênica e corporal analisada no fragmento fundamenta a pesquisa teatral contemporânea a partir da",
       "alternativas": {
-        "A": "imitação fidedigna dos gestos e comportamentos mecânicos do cotidiano urbano.",
-        "B": "desautomatização motora para ampliação da presença cênica e expressividade estética.",
-        "C": "subordinação dos movimentos corporais aos efeitos de iluminação e figurino.",
-        "D": "eliminação completa do preparo físico na composição de personagens teatrais.",
-        "E": "reprodução dos padrões gestuais estereotipados da teledramaturgia comercial."
+        "A": "subordinação das ações corporais aos efeitos de iluminação e figurinos de época.",
+        "B": "centralidade do corpo do ator como instrumento primordial de criação poética e dramática.",
+        "C": "reprodução estrita e convencional dos gestos cotidianos da burguesia oitocentista.",
+        "D": "valorização da oratória clássica e declamação em detrimento da movimentação física.",
+        "E": "dependência de recursos multimídia digitais na composição das atmosferas do palco."
       },
       "gabarito": "B"
     },
@@ -270,48 +285,45 @@
       "disciplina": "Educação Física",
       "texto_apoio": {
         "titulo": "Indústria do Fitness e Cultura Corporal",
-        "conteudo": "Existe uma indústria que comercializa o fitness; o Brasil consolidou-se como o segundo maior mercado de academias no mundo. No entanto, por trás do discurso de bem-estar, dissemina-se frequentemente uma tirania estética que associa a magreza e a musculação hipertrofiada à ideia moral de disciplina e sucesso individual, gerando frustrações e distorções da imagem corporal.",
-        "fonte": "SOARES, C. L. Educação Física, Corpo e Cultura: a mercantilização do fitness no Brasil. Campinas: Autores Associados, 2020. p. 112-115."
+        "conteudo": "Existe uma indústria que comercializa o fitness; o Brasil é o segundo maior mercado de academias no mundo, com um número crescente de estabelecimentos e produtos voltados ao aprimoramento físico. No entanto, essa expansão mercantil frequentemente promove um culto obsessivo à padronização estética corporal, associando saúde exclusivamente a silhuetas hipertrofiadas ou excessivamente magras, transformando o exercício físico em mercadoria e imperativo estético punitivo.",
+        "fonte": "SOARES, C. L. Educação Física, Corpo e Cultura: a mercantilização do fitness no Brasil. Campinas: Autores Associados, 2020."
       },
       "enunciado": "A abordagem crítica da cultura fitness apresentada no texto alerta a sociedade para o fato de que:",
       "alternativas": {
-        "A": "a prática de esportes coletivos perdeu relevância formativa nas escolas públicas.",
-        "B": "a busca legítima por saúde pode ser desvirtuada pela imposição mercadológica de padrões estéticos opressores.",
-        "C": "o sedentarismo decorre unicamente da ausência de aparelhos modernos de musculação.",
-        "D": "o condicionamento cardiorrespiratório dispensa a orientação técnica de profissionais habilitados.",
-        "E": "a adesão a planos de academias garante automaticamente a saúde psicossocial do indivíduo."
+        "A": "a prática regular de exercícios físicos em academias deve ser desaconselhada pelas diretrizes médicas.",
+        "B": "o acesso às academias de ginástica é universal e desprovido de qualquer barreira socioeconômica no país.",
+        "C": "a mercantilização da atividade física pode reduzir a saúde integral a padrões estéticos padronizados e excludentes.",
+        "D": "a busca pelo condicionamento cardiorrespiratório pleno independe de fatores sociais ou nutricionais.",
+        "E": "o bem-estar biológico é privilégio exclusivo daqueles que consomem suplementação alimentar industrializada."
       },
-      "gabarito": "B"
+      "gabarito": "C"
     },
     {
       "numero": 16,
       "area": "Linguagens, Códigos e suas Tecnologias",
       "disciplina": "Artes",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2023_q07_segall.png",
       "texto_apoio": {
-        "titulo": "Arte Urbana e Espaço Público",
-        "conteudo": "O grafite e a arte urbana ressignificam os muros cinzentos das metrópoles, transformando espaços de passagem em galerias a céu aberto que dão visibilidade a narrativas periféricas historicamente silenciadas pelo urbanismo tradicional.",
-        "fonte": "FRANCO, M. Arte Urbana e Resistência Cultural nas Periferias Brasileiras. São Paulo: Expressão Popular, 2020. p. 78-82."
+        "titulo": "TEXTO I e TEXTO II",
+        "conteudo": "TEXTO I:\nSEGALL, L. Eternos caminhantes. Óleo sobre tela, 138 x 184 cm. Museu Lasar Segall, IbramMinc, São Paulo, 1919.\n\nTEXTO II:\nEm 1933, a obra Eternos caminhantes ingressou em uma das primeiras edições das exposições de Arte Degenerada, promovida por membros do partido nazista alemão. Nos anos seguintes, ela voltaria a ser exibida na mostra denominada Exposição da Vergonha, promovida por pequenos grupos abastados. Em 1937, essa obra foi confiscada pelo Ministério da Propaganda daquele país, na grande ação nacional-socialista contra a “Arte Degenerada”.",
+        "fonte": "SCHWARTZ, J. Perseguição à Arte Moderna em tempos de guerra. São Paulo: Museu Lasar Segall, 2018 (adaptado)."
       },
-      "enunciado": "A manifestação da arte urbana analisada no texto exerce papel relevante no espaço público metropolitano ao:",
+      "enunciado": "Quase cinquenta obras de Lasar Segall foram confiscadas pelo regime totalitário alemão na primeira metade do século XX, entre elas a obra Eternos caminhantes, considerada degenerada por",
       "alternativas": {
-        "A": "restringir o diálogo comunitário a círculos fechados de especialistas em estética.",
-        "B": "democratizar a experiência artística e valorizar identidades sociais marginalizadas.",
-        "C": "substituir integralmente a arquitetura clássica por painéis efêmeros.",
-        "D": "estimular a mercantilização predatória do solo e a especulação imobiliária.",
-        "E": "rejeitar a convivência com as demais formas de manifestação visual."
+        "A": "representar uma estética tida como inconveniente para o ideário político vigente.",
+        "B": "manifestar um posicionamento político-cultural concebido por grupos de oposição.",
+        "C": "expressar a cultura artística por meio da representação parcial do corpo humano.",
+        "D": "apresentar uma composição que antecipa o imaginário artístico germânico.",
+        "E": "estimular discussões sobre o papel da arte na construção coletiva de cultura."
       },
-      "gabarito": "B"
+      "gabarito": "A"
     },
     {
       "numero": 17,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "História",
-      "texto_apoio": {
-        "titulo": "O Processo de Emancipação Política",
-        "conteudo": "A transferência da corte portuguesa para o Rio de Janeiro em 1808 e a posterior elevação do Brasil a Reino Unido a Portugal e Algarves criaram condições para o rompimento político. Em 1822, as Cortes de Lisboa exigiram a revogação da autonomia brasileira e o retorno imediato do príncipe regente D. Pedro, precipitando a Proclamação da Independência em 7 de setembro.",
-        "fonte": "FAUSTO, B. História do Brasil. 14. ed. São Paulo: Edusp, 2012. p. 132-135."
-      },
-      "enunciado": "A Independência do Brasil, proclamada em 7 de setembro de 1822, esteve relacionada a diversos fatores políticos e econômicos. Sobre esse processo histórico, assinale a alternativa correta:",
+      "texto_apoio": null,
+      "enunciado": "A Independência do Brasil, proclamada em 7 de setembro de 1822, esteve relacionada a diversos fatores políticos e econômicos. Sobre esse processo, assinale a alternativa correta:",
       "alternativas": {
         "A": "Foi resultado exclusivamente de uma revolta popular contra a escravidão.",
         "B": "Ocorreu após a expulsão completa dos portugueses do território brasileiro.",
@@ -325,12 +337,8 @@
       "numero": 18,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "História",
-      "texto_apoio": {
-        "titulo": "A Construção da Ordem Imperial",
-        "conteudo": "Após dissolver a Assembleia Constituinte de 1823 pela força militar, D. Pedro I outorgou a primeira Carta Constitucional do Brasil em 25 de março de 1824. O texto estabeleceu a monarquia unitária, a divisão em quatro poderes com destaque para o Poder Moderador exclusivo do monarca, e o voto censitário baseado na renda agrária.",
-        "fonte": "CARVALHO, J. M. de. A Construção da Ordem: a elite política imperial. Rio de Janeiro: Civilização Brasileira, 2003. p. 64-68."
-      },
-      "enunciado": "Durante o Primeiro Reinado (1822–1831), o governo de D. Pedro I enfrentou diversas dificuldades políticas. Um dos principais acontecimentos desse período foi:",
+      "texto_apoio": null,
+      "enunciado": "Durante o Primeiro Reinado (1822–1831), o governo de D. Pedro I enfrentou diversas dificuldades políticas. Um dos principais marcos desse período foi:",
       "alternativas": {
         "A": "A criação da República brasileira.",
         "B": "A elaboração e aprovação da Constituição de 1824.",
@@ -344,18 +352,14 @@
       "numero": 19,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "História",
-      "texto_apoio": {
-        "titulo": "A Economia do Segundo Reinado",
-        "conteudo": "O Segundo Reinado (1840–1889), governado por D. Pedro II, alcançou estabilização política por meio da alternância entre liberais e conservadores no gabinete parlamentarista. No plano econômico, o café tornou-se o principal produto da pauta de exportações, financiando a modernização de portos e ferrovias no Sudeste.",
-        "fonte": "PRADO JÚNIOR, C. História Econômica do Brasil. 43. ed. São Paulo: Brasiliense, 1998. p. 178-183."
-      },
-      "enunciado": "O Segundo Reinado, período governado por D. Pedro II, foi marcado por importantes transformações econômicas e políticas. Uma característica central desse período foi:",
+      "texto_apoio": null,
+      "enunciado": "O Segundo Reinado, período governado por D. Pedro II, foi marcado por importantes transformações econômicas no Brasil, destacando-se:",
       "alternativas": {
-        "A": "O crescimento acelerado da produção e exportação de café no Vale do Paraíba e Oeste Paulista.",
-        "B": "O fim imediato do trabalho escravo logo após a coroação imperial.",
-        "C": "A ausência de conflitos militares externos na América do Sul.",
-        "D": "A implantação do regime republicano federalista sob liderança positivista.",
-        "E": "O desaparecimento completo de todas as atividades manufatureiras no país."
+        "A": "O crescimento da produção e exportação de café.",
+        "B": "O fim imediato do trabalho escravo.",
+        "C": "A ausência de conflitos militares externos.",
+        "D": "A implantação do regime republicano.",
+        "E": "O desaparecimento das atividades industriais no Brasil."
       },
       "gabarito": "A"
     },
@@ -363,18 +367,14 @@
       "numero": 20,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "História",
-      "texto_apoio": {
-        "titulo": "A Partilha Colonial do Mundo",
-        "conteudo": "A Conferência de Berlim (1884–1885) formalizou a partilha da África entre as potências industriais europeias. Justificado pela ideologia eurocêntrica do 'fardo do homem branco', o neocolonialismo subjugou milhões de pessoas e reconfigurou fronteiras étnicas ancestrais.",
-        "fonte": "HOBSBAWM, E. A Era dos Impérios: 1875–1914. Tradução de Sônia Sant'Anna. Rio de Janeiro: Paz e Terra, 1988. p. 115-120."
-      },
-      "enunciado": "No final do século XIX e início do século XX, as potências europeias intensificaram a conquista de territórios na África e na Ásia. Esse processo ficou conhecido como Imperialismo ou Neocolonialismo. Entre suas principais características estava:",
+      "texto_apoio": null,
+      "enunciado": "No final do século XIX e início do século XX, as potências europeias intensificaram o processo de expansão imperialista sobre a África e a Ásia. Esse processo foi motivado principalmente por:",
       "alternativas": {
-        "A": "A busca por matérias-primas industriais, novos mercados consumidores e áreas estratégicas para investimentos de capital.",
-        "B": "A defesa irrestrita da autonomia e independência política das populações nativas africanas e asiáticas.",
-        "C": "O abandono concertado da competição econômica e militar entre as nações industrializadas do continente europeu.",
-        "D": "A igualdade formal de direitos civis entre os colonizadores europeus e os povos submetidos ao domínio colonial.",
-        "E": "A desaceleração voluntária da produção nas fábricas europeias em virtude de acordos diplomáticos."
+        "A": "A busca por matérias-primas, mercados consumidores e áreas para investimentos de capital.",
+        "B": "A defesa da independência política das colônias.",
+        "C": "O abandono da competição econômica entre as potências europeias.",
+        "D": "A igualdade política entre europeus e povos colonizados.",
+        "E": "A redução da industrialização europeia."
       },
       "gabarito": "A"
     },
@@ -382,18 +382,14 @@
       "numero": 21,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "História",
-      "texto_apoio": {
-        "titulo": "A Grande Guerra e a Ruptura da Europa",
-        "conteudo": "A eclosão do conflito em 1914 culminou décadas de atritos imperialistas, rivalidades nacionalistas nos Bálcãs e disputas industriais e navais entre a Alemanha e o Império Britânico. O mecanismo de tratados secretos da Tríplice Entente e Tríplice Aliança transformou um incidente regional em guerra global.",
-        "fonte": "SONDHAUS, L. A Primeira Guerra Mundial: história completa. Tradução de Roberto Cataldo Costa. São Paulo: Contexto, 2013. p. 25-29."
-      },
-      "enunciado": "A Primeira Guerra Mundial (1914–1918) foi resultado de um conjunto complexo de fatores que elevaram as tensões geopolíticas no continente europeu. Entre esses fatores, destaca-se:",
+      "texto_apoio": null,
+      "enunciado": "A Primeira Guerra Mundial (1914–1918) foi resultado de um conjunto de fatores que aumentaram as tensões internacionais na Europa. Entre esses fatores, destacam-se:",
       "alternativas": {
-        "A": "A queda do Império Romano do Ocidente decorrente das invasões bárbaras.",
-        "B": "A expansão tardia do feudalismo agrário no norte e leste da Europa.",
-        "C": "A exacerbação nacionalista, a disputa imperialista por mercados, a corrida armamentista e a política de alianças militares antagônicas.",
-        "D": "A Revolução Industrial do século XVIII de forma estritamente isolada.",
-        "E": "O embate ideológico bipolar entre os Estados Unidos e a União Soviética no pós-Segunda Guerra."
+        "A": "A queda do Império Romano.",
+        "B": "A expansão do feudalismo europeu.",
+        "C": "O nacionalismo, o imperialismo, a corrida armamentista e o sistema de alianças militares.",
+        "D": "A Revolução Industrial do século XVIII, exclusivamente.",
+        "E": "A Guerra Fria entre Estados Unidos e União Soviética."
       },
       "gabarito": "C"
     },
@@ -401,132 +397,135 @@
       "numero": 22,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Geografia",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2024_q90_satelite.png",
       "texto_apoio": {
-        "titulo": "Urbanização e Periferização",
-        "conteudo": "A metrópole brasileira cresceu em ritmo acelerado e desordenado. A ausência de políticas habitacionais eficazes empurrou milhões de trabalhadores para encostas de morros e várzeas desprovidas de infraestrutura sanitária e transporte digno.",
-        "fonte": "SANTOS, M. Por uma outra Globalização: do pensamento único à consciência universal. São Paulo: Record, 2000. p. 104-106."
+        "titulo": "TEXTO I e TEXTO II",
+        "conteudo": "Imagens de satélite registrando a evolução temporal da ocupação em área costeira (Fonte: Google Earth, 2023).",
+        "fonte": "Disponível em: https://earth.google.com. Acesso em: 13 out. 2023."
       },
-      "enunciado": "O processo de segregação socioespacial analisado por Milton Santos resulta prioritariamente da:",
+      "enunciado": "A comparação entre as imagens de satélite indica a ocorrência de um processo de",
       "alternativas": {
-        "A": "distribuição equitativa de saneamento e transporte público nas capitais.",
-        "B": "mercantilização desregulada do solo associada à omissão histórica do poder público.",
-        "C": "recusa voluntária dos cidadãos em residir nos centros metropolitanos.",
-        "D": "abundância de investimentos estatais nas vilas e periferias urbanas.",
-        "E": "preservação ecológica estrita das bacias hidrográficas urbanas."
+        "A": "conservação de lugares afetivos.",
+        "B": "aumento de áreas desertificadas.",
+        "C": "redefinição de fronteiras nacionais.",
+        "D": "artificialização do espaço geográfico.",
+        "E": "mudança da dinâmica macroclimática."
       },
-      "gabarito": "B"
+      "gabarito": "D"
     },
     {
       "numero": 23,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Geografia",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2023_q85_clima.png",
       "texto_apoio": {
-        "titulo": "Agropecuária e Impactos Ambientais",
-        "conteudo": "O avanço da fronteira agrícola sobre os biomas do Cerrado e da Amazônia impulsiona as exportações de commodities, mas gera preocupações relativas ao desmatamento, à perda de biodiversidade e à contaminação de lençóis freáticos pelo uso intensivo de defensivos agrícolas.",
-        "fonte": "ALENCAR, A.; STABILE, M. C. Agropecuária e Sustentabilidade Socioambiental no Cerrado Brasileiro. Brasília: Instituto de Pesquisa Ambiental da Amazônia (IPAM), 2021. p. 33-36."
+        "titulo": "Cenários de Aquecimento Global",
+        "conteudo": "Simulação de mudança da temperatura média anual e da pluviosidade média anual em relação ao período pré-industrial em três cenários de aquecimento global (1,5 °C, 2 °C e 4 °C).",
+        "fonte": "PIVETTA, M. O clima no Antropoceno. Pesquisa FAPESP, n. 307, set. 2021 (adaptado)."
       },
-      "enunciado": "O dilema contemporâneo associado à expansão do agronegócio no Brasil envolve o equilíbrio entre:",
+      "enunciado": "Com base nas simulações apresentadas para os diferentes cenários climáticos, a elevação da temperatura média global projeta para a maior parte do território brasileiro",
       "alternativas": {
-        "A": "o crescimento econômico exportador e a sustentabilidade socioambiental dos biomas.",
-        "B": "o retorno aos métodos de subsistência indígena e o fechamento do comércio externo.",
-        "C": "a erradicação das indústrias farmacêuticas e a preservação de nascentes fluviais.",
-        "D": "o confisco estatal da produção privada e a anulação dos títulos de posse.",
-        "E": "a eliminação das ferrovias de escoamento e a expansão de rodovias vicinais."
+        "A": "manutenção dos índices de umidade na bacia amazônica.",
+        "B": "aumento uniforme da precipitação nas regiões semiáridas.",
+        "C": "redução simultânea da pluviosidade e acentuado aquecimento térmico.",
+        "D": "estabilização térmica das médias sazonais no Centro-Oeste.",
+        "E": "reversão do estresse hídrico nos biomas subtropicais."
       },
-      "gabarito": "A"
+      "gabarito": "C"
     },
     {
       "numero": 24,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Geografia",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2023_q87_bordado.png",
       "texto_apoio": {
-        "titulo": "Matriz Energética Brasileira",
-        "conteudo": "O Brasil possui uma das matrizes elétricas mais limpas do mundo, com expressiva participação hidrelétrica, biomassa, eólica e solar. Contudo, períodos prolongados de estiagem decorrentes de anomalias climáticas impõem riscos de desabastecimento, obrigando o acionamento de usinas termelétricas fósseis mais poluentes e onerosas.",
-        "fonte": "EMPRESA DE PESQUISA ENERGÉTICA (EPE). Balanço Energético Nacional: Matriz Elétrica e Fontes Renováveis. Brasília: Ministério de Minas e Energia, 2023. p. 54-58."
+        "titulo": "Fotografia da avó bordada",
+        "conteudo": "Representação artística bordada definindo o Sertão através de vivências afetivas, memórias e saberes tradicionais.",
+        "fonte": "SCARELI, G. A máquina de costura e os fios da memória. Revista Brasileira de Pesquisa (Auto)Biográfica, n. 18, maio-ago. 2021."
       },
-      "enunciado": "Diante das oscilações no regime pluviométrico, a estratégia estruturante para conferir segurança e sustentabilidade ao sistema elétrico nacional consiste na:",
+      "enunciado": "A definição de Sertão descrita no bordado associa esse recorte espacial a",
       "alternativas": {
-        "A": "dependência exclusiva da queima de carvão mineral nas bacias carboníferas sulistas.",
-        "B": "diversificação das fontes renováveis não hidráulicas, como os parques solares e eólicos.",
-        "C": "suspensão total da transmissão inter-regional de energia nas linhas de alta tensão.",
-        "D": "proibição legal de investimentos privados no desenvolvimento de biocombustíveis.",
-        "E": "desativação imediata de reservatórios com múltiplos usos da água potável."
+        "A": "percursos e roteiros turísticos.",
+        "B": "trajetos e movimentos holísticos.",
+        "C": "vivências e itinerários socioafetivos.",
+        "D": "fronteiras e demarcações territoriais.",
+        "E": "profissões e interesses econômicos."
       },
-      "gabarito": "B"
+      "gabarito": "C"
     },
     {
       "numero": 25,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Geografia",
       "texto_apoio": {
-        "titulo": "Clima Urbano e Ilhas de Calor",
-        "conteudo": "A substituição da cobertura vegetal original por concreto, asfalto e edifícios altos modifica a absorção de calor e dificulta a circulação dos ventos nos centros urbanos, provocando temperaturas significativamente mais elevadas do que nas áreas rurais periféricas.",
-        "fonte": "LOMBARDO, M. A. Ilhas de Calor nas Metrópoles Brasileiras: o microclima urbano em questão. São Paulo: Hucitec, 1985 / Edição revista: Contexto, 2019. p. 62-65."
+        "titulo": "Expansão da Soja e Desmatamento",
+        "conteudo": "Alternativas logísticas estão servindo de instrumentos que ativam os mercados especuladores de terras nas diferentes regiões da Amazônia e constituem em indicadores utilizados por diferentes atores para defender ou denunciar o avanço da cultura da soja na região e, com ela, a retomada do desmatamento. É evidente que o crescimento do desmatamento tem a ver também com a expansão da soja, porém atribuir a ela o fator principal parece não totalmente correto. Parto da compreensão central de que a lógica que gera o desmatamento está articulada pelo tripé grileiros, madeireiros e pecuaristas.",
+        "fonte": "BERNARDES, J. A. et al. Geografias da soja: dinâmicas territoriais no bioma amazônico. Rio de Janeiro: Arquimedes, 2019 (adaptado)."
       },
-      "enunciado": "O fenômeno microclimático metropolitano caracterizado no texto é denominado:",
+      "enunciado": "De acordo com a perspectiva expressa no texto, a dinâmica recente de ocupação e degradação ambiental na Amazônia é impulsionada por um modelo associado à",
       "alternativas": {
-        "A": "inversão térmica estratificada.",
-        "B": "chuva ácida convectiva.",
-        "C": "ilha de calor urbana.",
-        "D": "arenização dos solos areníticos.",
-        "E": "eutrofização de cursos d'água fluviais."
+        "A": "presença de projetos de silvicultura comercial voltados à celulose.",
+        "B": "atuação consorciada de atividades tradicionais e especulação fundiária.",
+        "C": "exclusividade do monocultivo mecanizado na abertura inicial da mata.",
+        "D": "ausência completa de infraestrutura viária e escoamento fluvial.",
+        "E": "supremacia de pequenos agricultores familiares no avanço da fronteira."
       },
-      "gabarito": "C"
+      "gabarito": "B"
     },
     {
       "numero": 26,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Geografia",
       "texto_apoio": {
-        "titulo": "Transição Demográfica Brasileira",
-        "conteudo": "Os dados consolidados dos Censos Demográficos revelam a queda acentuada da taxa de fecundidade e o aumento contínuo da expectativa de vida ao nascer no Brasil. Essa transformação altera a estrutura da pirâmide etária do país, aproximando-a do perfil de países desenvolvidos.",
-        "fonte": "INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE). Transição Demográfica e o Envelhecimento Populacional no Brasil: Censo Demográfico. Rio de Janeiro: IBGE, 2023. p. 88-92."
+        "titulo": "Fronteiras e Refugiados",
+        "conteudo": "O que alicerça, portanto, o acolhimento de refugiados pelos Estados gira em torno da fronteira erguida entre inclusão e exclusão, admissão e rejeição, desejáveis e indesejáveis; ao mesmo tempo, enseja vulnerabilidade, indefinição e incerteza a esses migrantes internacionais forçados.",
+        "fonte": "MOREIRA, J. B. Refugiados no Brasil. REMHU: Revista Interdisciplinar da Mobilidade Humana, v. 22, n. 43, jul.-dez. 2014."
       },
-      "enunciado": "Uma consequência socioeconômica direta do processo demográfico retratado no texto é a:",
+      "enunciado": "A eliminação, para os refugiados, do tipo de fronteira descrita no texto necessita de políticas públicas de",
       "alternativas": {
-        "A": "expansão da demanda por vagas na educação infantil em escala desmedida.",
-        "B": "redução dos investimentos em tratamentos geriátricos e doenças crônicas.",
-        "C": "eliminação da necessidade de reformas nas políticas de previdência social.",
-        "D": "elevação da razão de dependência dos idosos e rediscussão do planejamento previdenciário e de saúde.",
-        "E": "proibição da migração de mão de obra jovem entre estados federados."
+        "A": "planejamento familiar.",
+        "B": "segregação territorial.",
+        "C": "homogeneização cultural.",
+        "D": "diferenciação étnico-racial.",
+        "E": "integração socioeconômica."
       },
-      "gabarito": "D"
+      "gabarito": "E"
     },
     {
       "numero": 27,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Filosofia",
       "texto_apoio": {
-        "titulo": "O Mito da Caverna",
-        "conteudo": "Na célebre alegoria platônica, os prisioneiros acorrentados tomam as sombras projetadas na parede como a única verdade existente. Libertar-se das amarras e sair em direção à luz do sol representa o doloroso processo pedagógico de superação do engano e conquista do conhecimento autêntico.",
-        "fonte": "PLATÃO. A República. Tradução de Maria Helena da Rocha Pereira. Lisboa: Fundação Calouste Gulbenkian, 2001. Livro VII, 514a-517c, p. 317-321."
+        "titulo": "TEXTO I e TEXTO II",
+        "conteudo": "TEXTO I:\nAristóteles entendia que a felicidade era diretamente ligada ao respeito pela própria natureza e, de certa maneira, a uma vida que tivesse na natureza de si mesma uma referência inabalável. Isso lhe permitiu formular o conceito de excelência. O que seria excelência? Seria, justamente, ao longo da vida, tirar de si mesmo, em forma de performance, de conduta, de comportamento, de disposição, o que a natureza permitiria de melhor.\n(COEN, M.; BARROS FILHO, C. A monja e o professor. Rio de Janeiro: Best Seller, 2018).\n\nTEXTO II:\nA noção de eudaimonia é central para a ética aristotélica. A eudaimonia é uma atividade e não um estado psicológico, pois é definida na Ética a Nicômaco como uma atividade da alma com base na virtude moral. A virtude moral é definida em termos de uma disposição diretamente ligada à deliberação, o que o leva a estudar a virtude intelectual que opera em seu interior, isto é, a prudência.\n(ZINGANO, M. Aristóteles: tratado da virtude moral. São Paulo: Discurso Editorial, 2008).",
+        "fonte": "ENEM 2024."
       },
-      "enunciado": "A passagem da escuridão para a luz descrita na alegoria platônica simboliza:",
+      "enunciado": "Na perspectiva da filosofia aristotélica apresentada nos textos, a realização plena da felicidade humana requer a",
       "alternativas": {
-        "A": "a aceitação conformista dos preconceitos herdados do senso comum.",
-        "B": "a busca reflexiva e crítica pela emancipação intelectual e pela verdade filosófica.",
-        "C": "a superioridade moral dos bens materiais sobre as reflexões teóricas.",
-        "D": "o isolamento egoísta do indivíduo que abandona a comunidade política.",
-        "E": "a rejeição definitiva a qualquer tipo de método dedutivo experimental."
+        "A": "supressão incondicional das inclinações naturais do indivíduo.",
+        "B": "busca utilitarista de bens materiais e privilégios honoríficos.",
+        "C": "prática contínua de virtudes balizadas pelo discernimento prudente.",
+        "D": "obediência cega aos dogmas religiosos instituídos na polis.",
+        "E": "acumulação passiva de conhecimentos puramente teóricos."
       },
-      "gabarito": "B"
+      "gabarito": "C"
     },
     {
       "numero": 28,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Filosofia",
       "texto_apoio": {
-        "titulo": "O Iluminismo e a Divisão dos Poderes",
-        "conteudo": "Para que não se possa abusar do poder, é preciso que, pela disposição das coisas, o poder freie o poder. Todas as coisas estariam perdidas se o mesmo homem ou o mesmo corpo exercesse os três poderes: o de fazer as leis, o de executar as resoluções públicas e o de julgar os crimes.",
-        "fonte": "MONTESQUIEU, C. Do Espírito das Leis. Tradução de Pedro Vieira Mota. São Paulo: Saraiva, 1997. Livro XI, cap. 6, p. 165-172."
+        "titulo": "Discurso do Método",
+        "conteudo": "Para começar com a maior exatidão possível, examinarei aqui muito atentamente se há alguma coisa no mundo que seja tão certa que seja impossível duvidar dela. Notando que nossos sentidos às vezes nos enganam, quis supor que não havia coisa alguma que fosse tal como eles nos fazem imaginar. E, porque há homens que se equivocam ao raciocinar, mesmo no tocante aos mais simples temas de geometria, rejeitei como falsas todas as razões que eu tivera antes por demonstrativas.",
+        "fonte": "DESCARTES, R. Discurso do método. São Paulo: Nova Cultural, 1999 (adaptado)."
       },
-      "enunciado": "O princípio da separação e harmonia entre os poderes formulado por Montesquieu tem por objetivo principal:",
+      "enunciado": "O método empregado pelo pensador na busca de uma certeza inabalável consiste em",
       "alternativas": {
-        "A": "garantir a supremacia absoluta do Poder Executivo sobre os demais órgãos estatais.",
-        "B": "impedir a concentração autoritária de autoridade e salvaguardar a liberdade civil dos cidadãos.",
-        "C": "subordinar a legislação constitucional aos interesses exclusivos da nobreza hereditária.",
-        "D": "reunir as decisões de governo nas mãos de cortes marciais permanentes.",
-        "E": "extinguir os mecanismos institucionais de freios e contrapesos republicanos."
+        "A": "aceitar as convicções da tradição escolástica como premissas irrefutáveis.",
+        "B": "utilizar a dúvida radical como instrumento para superar o engano e a ilusão.",
+        "C": "fundamentar a verdade na observação empírica direta proporcionada pelos sentidos.",
+        "D": "adotar o ceticismo permanente como fim supremo da investigação filosófica.",
+        "E": "subordinar os raciocínios lógicos às crenças religiosas consolidadas."
       },
       "gabarito": "B"
     },
@@ -535,113 +534,109 @@
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Filosofia",
       "texto_apoio": {
-        "titulo": "Ética e Responsabilidade",
-        "conteudo": "Age de tal modo que os efeitos de tua ação sejam compatíveis com a permanência de uma vida autenticamente humana sobre a Terra. O poderio técnico alcançado pelo homem exige um novo imperativo moral que contemple a sobrevivência das futuras gerações.",
-        "fonte": "JONAS, H. O Princípio Responsabilidade: ensaio de uma ética para a civilização tecnológica. Tradução de Marijane Lisboa. Rio de Janeiro: Contraponto/Editora PUC-Rio, 2006. p. 47-49."
+        "titulo": "Resposta à Pergunta: O que é o Esclarecimento?",
+        "conteudo": "O Esclarecimento (Aufklärung) é a saída do homem de sua menoridade, da qual ele próprio é culpado. A menoridade é a incapacidade de fazer uso de seu entendimento sem a direção de outro indivíduo. O homem é o próprio culpado dessa menoridade quando sua causa não reside na falta de entendimento, mas na falta de decisão e de coragem de servir-se de si mesmo sem a direção de outrem. Sapere aude! Tem coragem de fazer uso de teu próprio entendimento, tal é o lema do Esclarecimento.",
+        "fonte": "KANT, I. Textos Seletos. Petrópolis: Vozes, 1985 (adaptado)."
       },
-      "enunciado": "O imperativo ético formulado pelo filósofo Hans Jonas volta-se primordialmente para a:",
+      "enunciado": "Em seu ensaio, Kant define o Esclarecimento como um processo emancipatório que exige do ser humano o(a)",
       "alternativas": {
-        "A": "exploração irrestrita dos recursos naturais sem avaliação prévia de impactos ecológicos.",
-        "B": "responsabilidade moral do ser humano em preservar as condições de vida no planeta para o futuro.",
-        "C": "interrupção incondicional de qualquer modalidade de pesquisa científica ou farmacêutica.",
-        "D": "submissão das leis de biossegurança ao lucro imediatista dos conglomerados industriais.",
-        "E": "renúncia do poder público à fiscalização preventiva de desastres ecológicos."
+        "A": "recorrência aos princípios da fé para orientar as ações morais.",
+        "B": "submissão consciente aos preceitos emanados das autoridades tradicionais.",
+        "C": "autonomia intelectual conquistada pela coragem de pensar por si mesmo.",
+        "D": "aceitação acrítica das leis ditadas pelo soberano absolutista.",
+        "E": "renúncia ao saber científico em prol da contemplação mística."
       },
-      "gabarito": "B"
+      "gabarito": "C"
     },
     {
       "numero": 30,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Sociologia",
       "texto_apoio": {
-        "titulo": "Divisão Social do Trabalho",
-        "conteudo": "Nas sociedades industriais modernas, a crescente especialização das funções produtivas gera uma interdependência mútua entre os indivíduos, mecanismo que Émile Durkheim denominou de solidariedade orgânica.",
-        "fonte": "DURKHEIM, É. Da Divisão do Trabalho Social. Tradução de Eduardo Brandão. São Paulo: Martins Fontes, 1999. Livro I, cap. III, p. 132-138."
+        "titulo": "Injustiça Epistêmica e Preconceito Social",
+        "conteudo": "Os grupos dominantes são beneficiados em termos de credibilidade e podem, com isso, controlar falas de membros de outros grupos, descredibilizando seus testemunhos com base em concepções compartilhadas de preconceito de identidade (gênero e raça). Algumas formas de preconceito tornam as declarações das pessoas menos importantes devido ao seu pertencimento a determinado grupo social. Assim, um falante recebe menos credibilidade devido ao preconceito do ouvinte.",
+        "fonte": "KUHNEN, T. Resenha de The Power and Ethics of Knowing, de Miranda Fricker. Revista Princípios, n. 33, 2013."
       },
-      "enunciado": "Segundo a teoria sociológica de Durkheim, a coesão social nas sociedades complexas fundamenta-se na:",
+      "enunciado": "Com base na reflexão suscitada no texto, o preconceito de identidade é responsável por um tipo de injustiça",
       "alternativas": {
-        "A": "homogeneidade estrita de valores e crenças compartilhadas por todos os membros.",
-        "B": "complementaridade funcional gerada pela especialização técnica e divisão do trabalho.",
-        "C": "imposição coercitiva de regras sem legitimidade jurídica coletiva.",
-        "D": "ausência de instituições mediadoras entre a soberania individual e o Estado.",
-        "E": "extinção da dependência mútua entre os diferentes setores da economia."
+        "A": "estética, que normatiza os padrões corporais.",
+        "B": "sensorial, que privilegia as habilidades visuais.",
+        "C": "afetiva, que impede as expressões emocionais.",
+        "D": "epistêmica, que prejudica as trocas informacionais.",
+        "E": "econômica, que perpetua as desigualdades materiais."
       },
-      "gabarito": "B"
+      "gabarito": "D"
     },
     {
       "numero": 31,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Sociologia",
       "texto_apoio": {
-        "titulo": "Modernidade Líquida",
-        "conteudo": "Na era da modernidade líquida, os vínculos humanos tornam-se frágeis, fluidos e descartáveis. A incerteza constante e o medo da exclusão substituem os compromissos de longo prazo e as certezas sólidas de outrora.",
-        "fonte": "BAUMAN, Z. Modernidade Líquida. Tradução de Plínio Dentzien. Rio de Janeiro: Jorge Zahar Editor, 2001. p. 85-92."
+        "titulo": "Vigiar e Punir",
+        "conteudo": "A alma funciona no meu corpo como um elemento de controle. O homem de que nos falam e que nos convidam a libertar já é em si mesmo o efeito de uma sujeição bem mais profunda que ele. Uma alma o habita e o conduz à existência, que é ela mesma uma peça no domínio que o poder exerce sobre o corpo. A alma, efeito e instrumento de uma anatomia política; a alma, prisão do corpo.",
+        "fonte": "FOUCAULT, M. Vigiar e punir: nascimento da prisão. Petrópolis: Vozes, 1987 (adaptado)."
       },
-      "enunciado": "O conceito de liquidez formulado por Zygmunt Bauman diagnostica:",
+      "enunciado": "Nesse fragmento de Vigiar e Punir, a crítica foucaultiana explicita que o exercício do poder disciplinar nas instituições modernas atua pela",
       "alternativas": {
-        "A": "a estabilidade definitiva das relações afetivas e profissionais no século XXI.",
-        "B": "a superação dos padrões de consumo efêmero em favor da poupança duradoura.",
-        "C": "a fragilidade dos laços sociais e a precarização das certezas institucionais na contemporaneidade.",
-        "D": "o fim do isolamento individual com a expansão das redes sociais digitais.",
-        "E": "o fortalecimento incondicional das proteções sindicais e trabalhistas estatais."
+        "A": "eliminação sumária dos indivíduos transgressores da lei penal.",
+        "B": "internalização de normas e vigilância sobre os comportamentos.",
+        "C": "garantia irrestrita das liberdades civis nas sociedades democráticas.",
+        "D": "valorização da consciência moral desvinculada do controle social.",
+        "E": "restauração dos suplícios públicos como mecanismo exemplar de dissuasão."
       },
-      "gabarito": "C"
+      "gabarito": "B"
     },
     {
       "numero": 32,
       "area": "Ciências Humanas e suas Tecnologias",
       "disciplina": "Sociologia",
       "texto_apoio": {
-        "titulo": "Globalização e Homogeneização Cultural",
-        "conteudo": "Ao mesmo tempo em que a globalização dissemina padrões universais de consumo através do cinema e das redes digitais, verifica-se a reafirmação de identidades locais, religiosas e comunitárias em resistência à homogeneização cultural.",
-        "fonte": "HALL, S. A Identidade Cultural na Pós-Modernidade. Tradução de Tomaz Tadeu da Silva. Rio de Janeiro: DP&A Editora, 2006. p. 67-73."
+        "titulo": "Madres de Plaza de Mayo",
+        "conteudo": "Era uma vez um país, uma cidade, uma praça, algumas mães... Las Madres de Plaza de Mayo! Silenciosas, com lenços brancos na cabeça, rondavam a Praça de Maio. Incansáveis, caminharam por dias, meses, anos. Foram chamadas de loucas. Em silêncio, criaram um fato político, escancararam as entranhas da repressão, desafiaram o aparato militar e suas dores ecoaram pelo mundo. Como observou Oliveira, “à luz do dia, sob as janelas do ditador, sob chuva, sob sol, no silêncio entrecortado de gritos, faziam ouvir como que a alucinação de uma litania, que ecoou no país, na América Latina e além-mar”. Era impossível ignorá-las, estavam lá, sempre em silêncio, mas estavam lá.",
+        "fonte": "GONÇALVES, R. De antigas e novas loucas: Madres e Mães de Maio contra a violência de Estado. Lutas Sociais, n. 29, jul.-dez. 2012."
       },
-      "enunciado": "A dinâmica cultural da globalização caracterizada por Stuart Hall expressa:",
+      "enunciado": "Qual problema de âmbito nacional argentino o movimento social mencionado expôs ao mundo?",
       "alternativas": {
-        "A": "o desaparecimento irreversível de todas as línguas e tradições regionais.",
-        "B": "a coexistência contraditória entre tendências globalizantes e resistências de identidade local.",
-        "C": "a rejeição uniforme dos produtos tecnológicos nos países em desenvolvimento.",
-        "D": "a harmonização pacífica de todos os sistemas de crenças em escala planetária.",
-        "E": "o isolamento diplomático absoluto das nações ocidentais desenvolvidas."
+        "A": "Violação dos direitos humanos.",
+        "B": "Insegurança da juventude periférica.",
+        "C": "Naturalização de violências domésticas.",
+        "D": "Precarização do trabalho dos professores.",
+        "E": "Superlotação das instituições psiquiátricas."
       },
-      "gabarito": "B"
+      "gabarito": "A"
     },
     {
       "numero": 33,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Biologia",
-      "imagem": "banco_questoes/imagens/biologia_img_1.png",
+      "imagem": "simulado_2/banco_questoes/imagens/biologia_img_1.png",
       "texto_apoio": {
-        "titulo": "Sistema ABO e Compatibilidade Transfusional",
-        "conteudo": "A tabela indica as características dos tipos sanguíneos humanos no sistema ABO, onde o tipo O é o doador universal (não possui aglutinogênios A e B nas hemácias) e o tipo AB é o receptor universal (não possui aglutininas anti-A ou anti-B no plasma).",
-        "fonte": "JUNQUEIRA, L. C.; CARNEIRO, J. Biologia Celular e Tecidual: Sistema ABO e Imuno-hematologia. 9. ed. Rio de Janeiro: Guanabara Koogan, 2013. p. 215-218."
+        "titulo": "Tipos Sanguíneos",
+        "conteudo": "A tabela indica as características dos tipos sanguíneos X, Y e Z quanto à presença de aglutinogênios nas hemácias e aglutininas no plasma.",
+        "fonte": "Simulado Voa-Voa e Gabarita."
       },
-      "enunciado": "Em caso de necessidade clínica de transfusão sanguínea em um paciente, conclui-se corretamente que o indivíduo do grupo AB:",
+      "enunciado": "Em caso de necessidade clínica de transfusão sanguínea em um paciente com sangue do tipo Z, podem ser utilizados eritrócitos do tipo:",
       "alternativas": {
-        "A": "pode doar para pessoas de qualquer tipo sanguíneo e só recebe de O.",
-        "B": "não pode doar nem receber de nenhum outro grupo ABO.",
-        "C": "só pode receber de seu mesmo tipo e doa para todos.",
-        "D": "doa exclusivamente para os tipos A e B simultaneamente.",
-        "E": "não pode doar para os tipos A e B, mas pode receber sangue do tipo O."
+        "A": "Y, apenas.",
+        "B": "X, apenas.",
+        "C": "Z, apenas.",
+        "D": "X e Z, apenas.",
+        "E": "Y e Z, apenas."
       },
-      "gabarito": "E"
+      "gabarito": "B"
     },
     {
       "numero": 34,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Biologia",
-      "texto_apoio": {
-        "titulo": "Reações de Aglutinação",
-        "conteudo": "A segurança das transfusões de sangue baseia-se na compatibilidade entre os aglutinogênios presentes nas membranas das hemácias do doador e as aglutininas livres no plasma do receptor, prevenindo a destruição intravascular de glóbulos vermelhos.",
-        "fonte": "SILVERTHORN, D. U. Fisiologia Humana: uma abordagem integrada. 7. ed. Porto Alegre: Artmed, 2017. p. 534."
-      },
-      "enunciado": "Uma pessoa do grupo sanguíneo AB sofre uma hemorragia e necessita de transfusão de emergência. Para que não ocorra aglutinação com hemácias do receptor, o sangue do doador compatível pode ter, em seus glóbulos vermelhos e no plasma, respectivamente:\nI. Aglutininas anti-A e aglutininas anti-B.\nII. Aglutinogênio A e aglutininas anti-B.\nIII. Aglutinogênio B e aglutininas anti-A.\nSobre essas proposições, é correto afirmar que:",
+      "texto_apoio": null,
+      "enunciado": "Uma pessoa do grupo sanguíneo AB sofre uma hemorragia e necessita com urgência de transfusão sanguínea. No banco de sangue do hospital, verificou-se a indisponibilidade de sangue do mesmo grupo sanguíneo. Sabendo que o indivíduo é do grupo AB (receptor universal), a equipe médica pode utilizar sangue dos tipos:",
       "alternativas": {
-        "A": "Somente a proposição I está correta.",
-        "B": "Somente a proposição II está correta.",
-        "C": "Somente as proposições I e II estão corretas.",
-        "D": "Todas as proposições I, II e III estão corretas, pois o tipo AB recebe de O, A, B e AB.",
-        "E": "Todas as proposições estão incorretas."
+        "A": "Apenas do tipo O.",
+        "B": "Apenas do tipo A.",
+        "C": "Apenas do tipo B.",
+        "D": "Dos tipos A, B ou O.",
+        "E": "Nenhum tipo, sendo a transfusão inviável."
       },
       "gabarito": "D"
     },
@@ -649,18 +644,14 @@
       "numero": 35,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Biologia",
-      "texto_apoio": {
-        "titulo": "Metabolismo Celular e Desintoxicação",
-        "conteudo": "Os radicais livres que resultam de reações de oxidação nas células eucariontes são degradados pela enzima superóxido dismutase, gerando peróxido de hidrogênio (H₂O₂). Essa substância oxidante tóxica é decomposta pela enzima catalase no interior de uma organela citoplasmática específica.",
-        "fonte": "ALBERTS, B. et al. Biologia Molecular da Célula: peroxissomos e metabolismo do estresse oxidativo. 6. ed. Porto Alegre: Artmed, 2017. p. 678-682."
-      },
-      "enunciado": "A organela celular eucarionte onde ocorre a degradação da água oxigenada pela enzima catalase é denominada:",
+      "texto_apoio": null,
+      "enunciado": "A organela celular eucarionte onde ocorre a degradação da água oxigenada (H2O2), substância tóxica produzida em reações metabólicas celulares, pela ação da enzima catalase, é o:",
       "alternativas": {
-        "A": "peroxissomos.",
-        "B": "fagossomos.",
-        "C": "ribossomos.",
-        "D": "lisossomos.",
-        "E": "complexo golgiense."
+        "A": "Peroxissomo.",
+        "B": "Lisossomo.",
+        "C": "Complexo Golgiense.",
+        "D": "Ribossomo.",
+        "E": "Retículo endoplasmático liso."
       },
       "gabarito": "A"
     },
@@ -668,18 +659,14 @@
       "numero": 36,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Biologia",
-      "texto_apoio": {
-        "titulo": "Fisiologia do Esporte e Doping",
-        "conteudo": "A eritropoetina (EPO) é um hormônio endógeno secretado pelos rins que estimula a maturação e proliferação dos eritrócitos (hemácias). Formas recombinantes sintetizadas em laboratório foram proibidas pelo Comitê Olímpico Internacional, caracterizando doping no esporte de alta performance.",
-        "fonte": "MARTELLI, A. Eritropoetina no Esporte: mecanismos fisiológicos e impactos sobre a performance muscular. Perspectivas Online: Ciências Biológicas e da Saúde, Campos dos Goytacazes, v. 3, n. 10, p. 25-34, 2013."
-      },
-      "enunciado": "A vantagem fisiológica direta buscada por atletas com o uso desse doping é o aumento da eficiência no:",
+      "texto_apoio": null,
+      "enunciado": "A vantagem fisiológica direta buscada por atletas com o uso ilícito da eritropoetina sintética (EPO) como método de doping esportivo é o(a):",
       "alternativas": {
-        "A": "transporte de lipídios para elevação do gasto calórico.",
-        "B": "acúmulo de ATP plasmático para síntese proteica.",
-        "C": "transporte de oxigênio sanguíneo para maior geração aeróbica de ATP muscular.",
-        "D": "estímulo à hipertrofia mecânica das fibras musculares esqueléticas.",
-        "E": "combate a microlesões vasculares provocado pela vitamina C."
+        "A": "Elevação imediata da glicemia sanguínea.",
+        "B": "Redução acentuada da pressão arterial periférica.",
+        "C": "Aumento do transporte de oxigênio aos tecidos musculares.",
+        "D": "Aceleração da conversão de glicogênio em gordura corporal.",
+        "E": "Inibição completa da fadiga e da síntese de ácido láctico."
       },
       "gabarito": "C"
     },
@@ -688,17 +675,17 @@
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Biologia",
       "texto_apoio": {
-        "titulo": "Comunicação Química e Neuroendócrina",
-        "conteudo": "\"Rolou uma química entre nós!\". Essa expressão popular possui fundamentação biológica real, visto que a empatia, a atração e os sentimentos de afeto estão diretamente ligados a substâncias sinalizadoras secretadas no sangue por glândulas endócrinas.",
-        "fonte": "GUYTON, A. C.; HALL, J. E. Tratado de Fisiologia Médica: o sistema endócrino e a modulação neuroquímica do afeto. 13. ed. Rio de Janeiro: Elsevier, 2017. p. 945-948."
+        "titulo": "Neuroquímica do Afeto",
+        "conteudo": "As substâncias químicas conhecidas como o 'quarteto da felicidade' — dopamina, endorfina, serotonina e ocitocina — desempenham papéis biológicos essenciais na modulação do humor, da dor, da empatia e das conexões sociais humanas.",
+        "fonte": "GUYTON, A. C.; HALL, J. E. Tratado de Fisiologia Médica."
       },
-      "enunciado": "Essas substâncias reguladoras e moduladoras de emoções no organismo são denominadas:",
+      "enunciado": "Essas substâncias reguladoras e moduladoras de emoções no organismo atuam como:",
       "alternativas": {
-        "A": "vitaminas lipossolúveis.",
-        "B": "hormônios (como oxitocina e dopamina).",
-        "C": "ácidos nucleicos exógenos.",
-        "D": "anticorpos circulantes.",
-        "E": "polissacarídeos plasmáticos."
+        "A": "Nutrientes energéticos celulares.",
+        "B": "Neurotransmissores e hormônios.",
+        "C": "Enzimas digestivas intestinais.",
+        "D": "Anticorpos de defesa imunológica.",
+        "E": "Pigmentos biliares hepáticos."
       },
       "gabarito": "B"
     },
@@ -706,37 +693,33 @@
       "numero": 38,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Biologia",
-      "texto_apoio": {
-        "titulo": "Saúde Bucal e Microbiota",
-        "conteudo": "A cárie dental resulta da proliferação de bactérias que fermentam resíduos de carboidratos retidos nos dentes, liberando ácidos que desmineralizam o esmalte dentário. A escovação inadequada e a ingestão frequente de açúcares aceleram a formação da placa bacteriana.",
-        "fonte": "FEJERSKOV, O.; KIDD, E. Cárie Dentária: a doença e seu tratamento clínico. 2. ed. São Paulo: Santos Editora, 2011. p. 52-58."
-      },
-      "enunciado": "A etiologia do aparecimento de cáries dentárias descrita no texto aponta como fatores determinantes:",
+      "texto_apoio": null,
+      "enunciado": "A etiologia do aparecimento de cáries dentárias descrita no processo infeccioso bacteriano está diretamente associada à:",
       "alternativas": {
-        "A": "exclusivamente a carência crônica de cálcio e vitamina D no organismo.",
-        "B": "o consumo regular de xilitol associado a fluorose gengival.",
-        "C": "a ingestão involuntária de ácidos fracos produzidos pela digestão estomacal.",
-        "D": "o desgaste mecânico do esmalte provocado pelo uso de fios dentais sintéticos.",
-        "E": "a associação entre consumo excessivo de açúcares fermentáveis e higienização deficiente."
+        "A": "Produção de ácidos por bactérias a partir da fermentação de restos de açúcares.",
+        "B": "Deficiência congênita na síntese de colágeno na matriz óssea mandibular.",
+        "C": "Ação mecânica abrasiva da saliva durante a mastigação de sólidos.",
+        "D": "Absorção excessiva de flúor pelos tecidos dentários de sustentação.",
+        "E": "Falta de escovação matinal decorrente exclusivamente de causas genéticas."
       },
-      "gabarito": "E"
+      "gabarito": "A"
     },
     {
       "numero": 39,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Química",
       "texto_apoio": {
-        "titulo": "Química Industrial e Separação de Misturas",
-        "conteudo": "O magnésio metálico utilizado em ligas leves é produzido em um processo que envolve várias etapas e utiliza água do mar como matéria-prima. A primeira etapa desse processo consiste na reação entre o íon Mg²⁺ e hidróxido de cálcio, Ca(OH)₂, obtendo uma mistura aquosa que contém hidróxido de magnésio, Mg(OH)₂, pouco solúvel que precipita, e íons Ca²⁺ solúveis, de acordo com a equação química:\nMg²⁺ (aq) + Ca(OH)₂ (aq) → Mg(OH)₂ (s) + Ca²⁺ (aq)",
-        "fonte": "SHREVE, R. N.; BRINK, J. A. Indústrias de Processos Químicos: obtenção de magnésio a partir da água do mar. 4. ed. Rio de Janeiro: Guanabara Dois, 1980. p. 245-248."
+        "titulo": "Obtenção do Magnésio",
+        "conteudo": "O magnésio metálico utilizado em ligas leves é produzido em um processo que envolve várias etapas. Em uma delas, o íon magnésio presente na água do mar é precipitado na forma de hidróxido de magnésio, segundo a equação: Mg2+ (aq) + Ca(OH)2 (aq) -> Mg(OH)2 (s) + Ca2+ (aq).",
+        "fonte": "SHREVE, R. N. Indústrias de Processos Químicos."
       },
-      "enunciado": "O método de separação mais adequado para separar o precipitado sólido de Mg(OH)₂ da mistura líquida remanescente é a:",
+      "enunciado": "O método de separação mais adequado para separar o precipitado de Mg(OH)2 dessa mistura aquosa é a:",
       "alternativas": {
         "A": "Filtração.",
         "B": "Catação.",
-        "C": "Destilação simples.",
-        "D": "Dissolução fracionada.",
-        "E": "Evaporação total."
+        "C": "Destilação.",
+        "D": "Dissolução.",
+        "E": "Evaporação."
       },
       "gabarito": "A"
     },
@@ -744,13 +727,13 @@
       "numero": 40,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Química",
-      "imagem": "banco_questoes/imagens/quimica_img_1.png",
+      "imagem": "simulado_2/banco_questoes/imagens/quimica_img_1.png",
       "texto_apoio": {
-        "titulo": "Farmacologia Química e Ácido-Base",
-        "conteudo": "A nimesulida é um fármaco pouco solúvel em água, utilizado amplamente como anti-inflamatório, analgésico e antitérmico. Essa substância pode ser convertida em uma espécie eletricamente carregada, de muito maior solubilidade em meio aquoso, mediante o tratamento com uma base de Brönsted-Lowry, isto é, uma espécie química aceptor de prótons (H⁺).",
-        "fonte": "KOROLKOVAS, A. Dicionário de Fármacos: propriedades químicas e acidez da nimesulida. 2. ed. Rio de Janeiro: Guanabara Koogan, 2005. p. 612-615."
+        "titulo": "Estrutura da Nimesulida",
+        "conteudo": "A nimesulida é um fármaco pouco solúvel em água, utilizado como anti-inflamatório, analgésico e antipirético.",
+        "fonte": "Dicionário de Fármacos."
       },
-      "enunciado": "Na estrutura molecular desse fármaco apresentada na figura, o grupamento químico capaz de reagir e doar próton à base de Brönsted-Lowry é o grupo:",
+      "enunciado": "Na estrutura desse fármaco, o grupamento capaz de reagir com uma base de Brönsted-Lowry é o grupo:",
       "alternativas": {
         "A": "Sulfonamida.",
         "B": "Metila.",
@@ -765,17 +748,17 @@
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Química",
       "texto_apoio": {
-        "titulo": "Sinalização Química nas Abelhas e Isomeria",
-        "conteudo": "As abelhas utilizam a sinalização química para distinguir a abelha-rainha de uma operária, sendo capazes de reconhecer diferenças sutis entre moléculas orgânicas. A rainha produz o sinalizador químico conhecido como ácido 9-hidroxidec-2-enoico, enquanto as abelhas-operárias produzem ácido 10-hidroxidec-2-enoico.",
-        "fonte": "LE COUTEUR, P.; BURRESON, J. Os Botões de Napoleão: as 17 moléculas que mudaram a história. Tradução de Maria Luiza X. de A. Borges. Rio de Janeiro: Jorge Zahar, 2006. p. 182-184."
+        "titulo": "Sinalização Química em Abelhas",
+        "conteudo": "As abelhas utilizam a sinalização química para distinguir a abelha-rainha de uma operária. Os feromônios envolvidos apresentam fórmulas moleculares idênticas, mas configurações espaciais distintas ao redor de ligações duplas.",
+        "fonte": "LE COUTEUR, P.; BURRESON, J. Os Botões de Napoleão."
       },
-      "enunciado": "As moléculas dos sinalizadores químicos produzidas pelas abelhas rainha e operária apresentam caso típico de isomeria plana de:",
+      "enunciado": "As moléculas dos sinalizadores químicos produzidas pelas abelhas rainha e operária apresentam caso típico de isomeria espacial, que se diferencia pela:",
       "alternativas": {
-        "A": "função química.",
-        "B": "cadeia carbônica.",
-        "C": "posição da hidroxila.",
-        "D": "compensação (metameria).",
-        "E": "tautomeria ceto-enólica."
+        "A": "Fórmula molecular.",
+        "B": "Identificação dos tipos de ligação.",
+        "C": "Fórmula estrutural e arranjo espacial.",
+        "D": "Contagem do número de carbonos.",
+        "E": "Identificação dos grupos funcionais."
       },
       "gabarito": "C"
     },
@@ -783,16 +766,16 @@
       "numero": 42,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Química",
-      "imagem": "banco_questoes/imagens/quimica_img_2.png",
+      "imagem": "simulado_2/banco_questoes/imagens/quimica_img_2.png",
       "texto_apoio": {
-        "titulo": "Química Ambiental e Polaridade de Hormônios",
-        "conteudo": "Alguns hormônios sexuais esteroidais têm ganhado notável atenção ambiental devido à presença residual em águas e solos. Apresentam baixa polaridade global, mas sua solubilidade em água varia dependendo da quantidade de grupos polares hidroxila (-OH) presentes em sua estrutura molecular.",
-        "fonte": "VOLLHARDT, K. P. C.; SCHORE, N. E. Química Orgânica: estrutura e função dos esteroides biológicos. 6. ed. Porto Alegre: Bookman, 2013. p. 1102-1105."
+        "titulo": "Hormônios Esteroides",
+        "conteudo": "Alguns hormônios sexuais têm ganhado notável atenção devido a suas funções biológicas e estruturas moleculares esteroides.",
+        "fonte": "Química Orgânica e Biológica."
       },
-      "enunciado": "Entre as moléculas de estradiol (duas hidroxilas), estriol (três hidroxilas), estrona (uma hidroxila e uma carbonila), novestrol e noretindrona, a maior solubilidade em meio aquoso é verificada no:",
+      "enunciado": "Entre as moléculas de estradiol (duas hidroxilas), estriol (três hidroxilas), estrona (uma hidroxila e uma carbonila), novestrol e noretindrona, o hormônio que apresenta o maior número de grupos hidroxila (-OH) em sua estrutura é o:",
       "alternativas": {
         "A": "Estradiol.",
-        "B": "Estriol (devido ao maior número de hidroxilas que estabelecem ligações de hidrogênio com a água).",
+        "B": "Estriol.",
         "C": "Estrona.",
         "D": "Novestrol.",
         "E": "Noretindrona."
@@ -804,17 +787,17 @@
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Química",
       "texto_apoio": {
-        "titulo": "Tabela Periódica e Propriedades dos Elementos",
-        "conteudo": "Na mitologia grega, Nióbia era a filha de Tântalo, dois personagens conhecidos pelo sofrimento. Na química, o elemento de número atômico (Z) igual a 41 possui propriedades químicas e físicas tão parecidas com o elemento de número atômico 73 que chegaram a ser confundidos, recebendo os nomes de nióbio (Z = 41) e tântalo (Z = 73).",
-        "fonte": "KEAN, S. A Colher que Desaparece: e outras histórias reais de loucura, amor e morte a partir da tabela periódica. Tradução de Cláudio Carina. Rio de Janeiro: Zahar, 2011. p. 74-76."
+        "titulo": "Nióbio e Tântalo",
+        "conteudo": "Na mitologia grega, Nióbia era filha de Tântalo. Na química, os elementos nióbio (Nb) e tântalo (Ta) compartilham grande proximidade de propriedades e ocorrem com frequência associados nos mesmos minérios.",
+        "fonte": "KEAN, S. A Colher que Desaparece."
       },
-      "enunciado": "A notável semelhança entre as propriedades químicas e físicas desses dois elementos decorre do fato de:",
+      "enunciado": "A importância econômica e tecnológica desses elementos, pela notável similaridade de suas propriedades físico-químicas, está associada ao fato de:",
       "alternativas": {
-        "A": "possuírem configurações eletrônicas idênticas a gases nobres do mesmo período.",
-        "B": "pertencerem ambos à série dos actinídeos radioativos.",
-        "C": "terem elétrons de valência exclusivamente na camada mais interna K.",
-        "D": "pertencerem ao mesmo grupo vertical (família 5) da Tabela Periódica.",
-        "E": "estarem localizados na família dos metais alcalinoterrosos."
+        "A": "Terem elétrons no subnível f.",
+        "B": "Serem elementos de transição interna.",
+        "C": "Terem seus elétrons mais externos nos níveis 4 e 5, respectivamente.",
+        "D": "Pertencerem ao mesmo grupo na tabela periódica.",
+        "E": "Estarem localizados na família dos metais alcalinos e alcalinoterrosos."
       },
       "gabarito": "D"
     },
@@ -822,19 +805,18 @@
       "numero": 44,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Química",
-      "imagem": "banco_questoes/imagens/quimica_img_3.png",
       "texto_apoio": {
-        "titulo": "Cosmetologia Química e Ligações Intermoleculares",
-        "conteudo": "A pele humana, quando bem hidratada, adquire boa elasticidade e aspecto macio. Para evitar o ressecamento cutâneo, utilizam-se cremes hidratantes formulados com glicerina e polietilenoglicol, substâncias que possuem múltiplos grupos hidroxila (-OH).",
-        "fonte": "RIEGEL, E. R. Manual de Química Cosmética: agentes umectantes e pontes de hidrogênio cutâneas. São Paulo: Edgard Blücher, 2018. p. 134-138."
+        "titulo": "Hidratação Cutânea",
+        "conteudo": "A pele humana, quando bem hidratada, adquire elasticidade e aspecto macio. Os cremes hidratantes contêm agentes umectantes como a glicerina, que possuem múltiplas hidroxilas em sua estrutura.",
+        "fonte": "Manual de Química Cosmética."
       },
-      "enunciado": "A retenção de moléculas de água na superfície cutânea promovida por esses agentes umectantes ocorre principalmente por meio de:",
+      "enunciado": "A retenção de água na superfície da pele promovida por esses hidratantes é consequência da formação de:",
       "alternativas": {
-        "A": "ligações iônicas eletrostáticas.",
-        "B": "forças de dispersão de London.",
-        "C": "ligações covalentes apolares.",
-        "D": "interações dipolo induzido.",
-        "E": "ligações de hidrogênio com as moléculas de água."
+        "A": "Ligações iônicas.",
+        "B": "Forças de London.",
+        "C": "Ligações covalentes.",
+        "D": "Forças dipolo induzido.",
+        "E": "Ligações de hidrogênio."
       },
       "gabarito": "E"
     },
@@ -842,19 +824,15 @@
       "numero": 45,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Física",
-      "imagem": "banco_questoes/imagens/q45_campo_eletrico.png",
-      "texto_apoio": {
-        "titulo": "Eletrostática e Campo Elétrico",
-        "conteudo": "A interação eletrostática no vácuo é descrita pela lei de Coulomb. O potencial elétrico V gerado por uma carga puntiforme Q a uma distância d expressa a energia potencial elétrica por unidade de carga naquele ponto do espaço.",
-        "fonte": "TIPLER, P. A.; MOSCA, G. Física para Cientistas e Engenheiros: Eletricidade e Magnetismo. 6. ed. Rio de Janeiro: LTC, 2009. v. 2, p. 75-78."
-      },
-      "enunciado": "Uma carga puntiforme Q está fixa no vácuo; a uma distância d dela existe um ponto P, no qual é colocada uma carga de prova q₀, conforme ilustrado no esquema. Considerando esses dados fundamentais da eletrostática, verifica-se que no ponto P:",
+      "imagem": "simulado_2/banco_questoes/imagens/q45_campo_eletrico.png",
+      "texto_apoio": null,
+      "enunciado": "Uma carga puntiforme Q está fixa no espaço; a uma distância d dela existe um ponto P, no qual é colocada uma carga de prova positiva q0. A respeito dessa configuração eletrostática, é correto afirmar que:",
       "alternativas": {
-        "A": "o potencial elétrico devido a Q diminui com o inverso da distância d.",
-        "B": "a força elétrica tem direção sempre radial aproximando-se de Q.",
-        "C": "o campo elétrico depende exclusivamente do módulo da carga de prova q₀.",
-        "D": "o campo elétrico resultante no ponto P é necessariamente um vetor nulo.",
-        "E": "a energia potencial elétrica do sistema varia com o inverso do quadrado da distância d²."
+        "A": "O potencial elétrico devido a Q diminui com o inverso de d.",
+        "B": "A força elétrica tem direção radial e aproxima-se de Q se Q for positiva.",
+        "C": "O campo elétrico depende apenas do módulo da carga de prova q0.",
+        "D": "O campo elétrico no ponto P é necessariamente um vetor nulo.",
+        "E": "A energia potencial elétrica das cargas varia com o inverso do quadrado de d."
       },
       "gabarito": "A"
     },
@@ -862,37 +840,33 @@
       "numero": 46,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Física",
-      "texto_apoio": {
-        "titulo": "Processos de Eletrização",
-        "conteudo": "A conservação da carga elétrica é um dos princípios basilares da física. Corpos inicialmente neutros podem adquirir cargas líquidas não nulas quando submetidos aos processos de atrito, contato ou indução eletrostática.",
-        "fonte": "NUSSENZVEIG, H. M. Curso de Física Básica: Eletromagnetismo. São Paulo: Blucher, 2015. v. 3, p. 12-16."
-      },
-      "enunciado": "Em um laboratório de física, um professor realizou os três processos clássicos de eletrização. No final do primeiro processo, os pares de corpos utilizados ficaram eletrizados com cargas de sinais iguais. Já no final do segundo e do terceiro processos, os corpos utilizados ficaram com cargas de sinais diferentes. É possível que os processos de eletrização realizados tenham sido, respectivamente:",
+      "texto_apoio": null,
+      "enunciado": "Em um laboratório de física, um professor realizou os três processos clássicos de eletrização. No final do primeiro processo, os corpos ficaram com cargas de sinais opostos; no final do segundo, com cargas de mesmo sinal; e no terceiro, utilizou-se a aproximação de um indutor seguida de ligação à terra. Os processos foram, respectivamente:",
       "alternativas": {
         "A": "Indução, contato e atrito.",
         "B": "Contato, indução e atrito.",
-        "C": "Indução, atrito e contato.",
-        "D": "Atrito, contato e indução.",
-        "E": "Contato, atrito e contato."
+        "C": "Atrito, contato e indução.",
+        "D": "Atrito, indução e contato.",
+        "E": "Contato, atrito e indução."
       },
-      "gabarito": "B"
+      "gabarito": "C"
     },
     {
       "numero": 47,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Física",
       "texto_apoio": {
-        "titulo": "Sensação Térmica e Condução de Calor",
-        "conteudo": "É muito comum encostarmos a mão na maçaneta metálica de uma porta e termos a sensação de que ela está mais fria que o ambiente. Um fato semelhante ocorre se colocarmos uma faca com lâmina metálica e cabo de madeira dentro de um refrigerador. Após longo tempo, ao encostarmos uma mão na lâmina metálica e a outra no cabo de madeira, sentimos o metal mais frio.",
-        "fonte": "HALLIDAY, D.; RESNICK, R.; WALKER, J. Fundamentos de Física: Gravitação, Ondas e Termodinâmica. 10. ed. Rio de Janeiro: LTC, 2016. v. 2, p. 210-213."
+        "titulo": "Sensação Térmica ao Toque",
+        "conteudo": "É muito comum encostarmos a mão na maçaneta metálica de uma porta e termos a sensação de que ela está mais fria do que a madeira da mesma porta, mesmo estando ambas em equilíbrio térmico com o ambiente.",
+        "fonte": "Fundamentos de Termodinâmica."
       },
-      "enunciado": "Fisicamente, a sensação térmica relatada no texto é explicada pelo fato de que:",
+      "enunciado": "Fisicamente, a sensação térmica mencionada no texto é explicada pelo fato de que:",
       "alternativas": {
-        "A": "a madeira é uma boa fornecedora de calor e o metal um absorvedor perfeito.",
-        "B": "o metal absorve maior temperatura que a madeira quando em equilíbrio térmico.",
-        "C": "o fluxo de calor por condução térmica da mão para o metal é maior do que para a madeira.",
-        "D": "a madeira retém mais energia térmica interna do que o metal.",
-        "E": "o metal armazena quantidade maior de frio do que os materiais isolantes."
+        "A": "A madeira é melhor condutora de calor que o metal.",
+        "B": "O metal absorve mais temperatura do que a madeira.",
+        "C": "O fluxo de calor por condução da mão para o metal é mais rápido que para a madeira.",
+        "D": "A madeira retém mais energia térmica interna que a liga metálica.",
+        "E": "O metal armazena frio que é transferido para a mão do observador."
       },
       "gabarito": "C"
     },
@@ -901,36 +875,32 @@
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Física",
       "texto_apoio": {
-        "titulo": "Termodinâmica Industrial e Mudanças de Fase",
-        "conteudo": "Em uma indústria alimentícia, para produção de doce de leite, utiliza-se um tacho de parede oca com entrada para vapor de água a 120 °C e saída para água líquida em equilíbrio com o vapor a 100 °C. Ao passar pela parte oca do tacho, o vapor de água transforma-se em líquido, liberando energia. A parede metálica transfere essa energia para o interior do tacho, resultando na evaporação de água do produto.",
-        "fonte": "INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA (INEP). Exame Nacional do Ensino Médio (ENEM): Prova de Ciências da Natureza. Caderno Cinza, 2023. Questão 112."
+        "titulo": "Concentração de Doce de Leite",
+        "conteudo": "Em uma indústria alimentícia, para a produção de doce de leite, utiliza-se um tacho de concentração encamisado. O vapor de água saturado a 120 ºC circula pela camisa externa, transferindo calor para a mistura de leite e açúcar até que esta atinja a consistência desejada por evaporação da água.",
+        "fonte": "ENEM 2023."
       },
-      "enunciado": "No processo de concentração do doce de leite, a energia térmica transferida para o produto é proveniente:",
+      "enunciado": "No processo de concentração do produto, a energia térmica transferida pelo vapor é proveniente:",
       "alternativas": {
-        "A": "somente do calor latente de vaporização.",
-        "B": "somente do calor latente de condensação.",
-        "C": "do calor sensível de resfriamento e do calor latente de vaporização.",
-        "D": "do calor sensível de resfriamento e do calor latente de condensação.",
-        "E": "do calor latente de condensação somado ao calor latente de fusão."
+        "A": "Somente do calor latente de vaporização.",
+        "B": "Somente do calor latente de condensação.",
+        "C": "Do calor sensível e do calor latente de vaporização.",
+        "D": "Do calor sensível e do calor latente de condensação.",
+        "E": "Do calor latente de fusão do vapor superaquecido."
       },
-      "gabarito": "D"
+      "gabarito": "B"
     },
     {
       "numero": 49,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Física",
-      "texto_apoio": {
-        "titulo": "Calorimetria e Equilíbrio Térmico",
-        "conteudo": "Em um calorímetro ideal, a soma das quantidades de calor trocadas entre corpos a diferentes temperaturas é nula: ΣQ = 0. O calor sensível cedido pelos corpos mais quentes é integralmente absorvido pelos corpos mais frios até que se atinja a temperatura de equilíbrio.",
-        "fonte": "SEARS, F. W.; ZEMANSKY, M. W. Física II: Termodinâmica e Ondas. 12. ed. São Paulo: Pearson, 2008. p. 48-52."
-      },
-      "enunciado": "No preparo de uma bebida, misturam-se 150 g de café quente a 80 ºC com 50 g de leite a 20 ºC em um recipiente termicamente isolado. Considerando o calor específico de ambos os líquidos igual a 1,0 cal/(g·ºC) e desprezando trocas térmicas com o recipiente e com o ar, a temperatura final de equilíbrio térmico da mistura será de:",
+      "texto_apoio": null,
+      "enunciado": "No preparo de uma xícara de café com leite, são misturados 150 g de café quente a 90 ºC com 50 g de leite frio a 10 ºC em um recipiente de capacidade térmica desprezível. Considerando os calores específicos do café e do leite iguais a 1,0 cal/(g·ºC) e desprezando perdas para o ambiente, a temperatura final de equilíbrio térmico da mistura é de:",
       "alternativas": {
-        "A": "65 ºC",
-        "B": "50 ºC",
-        "C": "75 ºC",
-        "D": "80 ºC",
-        "E": "90 ºC"
+        "A": "70 ºC.",
+        "B": "65 ºC.",
+        "C": "75 ºC.",
+        "D": "80 ºC.",
+        "E": "85 ºC."
       },
       "gabarito": "A"
     },
@@ -938,180 +908,172 @@
       "numero": 50,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Física",
-      "imagem": "banco_questoes/imagens/q50_bicicleta_catraca.png",
-      "texto_apoio": {
-        "titulo": "Movimento Circular e Acoplamento Coaxial",
-        "conteudo": "Em elementos de máquinas que compartilham o mesmo eixo de rotação rígido (acoplamento coaxial), a velocidade angular ω é idêntica para todas as partes giratórias. Já a velocidade linear v de cada ponto da periferia é proporcional ao seu raio r: v = ω · r.",
-        "fonte": "RAMALHO, F.; FERRARO, N. G.; TOLEDO, P. A. Os Fundamentos da Física: Mecânica. 9. ed. São Paulo: Moderna, 2007. v. 1, p. 198-202."
-      },
-      "enunciado": "A catraca traseira de uma bicicleta possui 10 cm de diâmetro e está acoplada rigidamente ao mesmo eixo da roda traseira, cujo diâmetro mede 70 cm, conforme ilustrado na figura. Se a catraca girar com velocidade angular constante de 60 rad/s, a velocidade linear de deslocamento da bicicleta no solo plano é de:",
+      "imagem": "simulado_2/banco_questoes/imagens/q50_bicicleta_catraca.png",
+      "texto_apoio": null,
+      "enunciado": "A catraca traseira de uma bicicleta possui raio de 5 cm e está acoplada por uma corrente inextensível à coroa dianteira, que possui raio de 15 cm. Quando o ciclista pedala e a coroa dianteira gira com frequência constante de 20 rotações por minuto (rpm), a frequência de rotação da catraca traseira, em rpm, é igual a:",
       "alternativas": {
-        "A": "75,6 km/h",
-        "B": "60,0 km/h",
-        "C": "40,6 km/h",
-        "D": "80,3 km/h",
-        "E": "74,7 km/h"
+        "A": "40,0.",
+        "B": "60,0.",
+        "C": "75,0.",
+        "D": "80,0.",
+        "E": "90,0."
       },
-      "gabarito": "A"
+      "gabarito": "B"
     },
     {
       "numero": 51,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 0 - Introdução e Estratégias de Prova",
       "texto_apoio": {
-        "titulo": "Habilitação e Análise Comparativa de Preços",
-        "conteudo": "Para obtenção da Carteira Nacional de Habilitação (CNH), o candidato deve contratar aulas teóricas, aulas práticas e o aluguel do veículo para realização do exame prático. O planejamento financeiro exige a ponderação entre custos fixos e variáveis de cada centro de formação.",
-        "fonte": "INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA (INEP). ENEM 2025: Prova de Matemática e suas Tecnologias. Caderno 6 Cinza, Questão 180."
+        "titulo": "",
+        "conteudo": "Em um país, a primeira etapa para obtenção da carteira de motorista é a contratação de três produtos:\n• pacote com 20 aulas teóricas;\n• pacote com 10 aulas práticas;\n• aluguel do veículo para realização das aulas práticas.\n\nUma pessoa que pretende obter a carteira de motorista pesquisou o valor do aluguel do veículo e os valores de cada aula teórica e de cada aula prática em três autoescolas. O quadro apresenta esses valores:\n\nAutoescola | Aula Teórica (R$) | Aula Prática (R$) | Aluguel Veículo (R$)\nI | 10 | 80 | 400\nII | 30 | 50 | 200\nIII | 20 | 40 | 400\n\nEla contratará os três produtos numa mesma autoescola de modo que o custo total nessa primeira etapa seja o menor possível.",
+        "fonte": ""
       },
-      "enunciado": "Em um país, a primeira etapa para obtenção da carteira de motorista exige a contratação de três itens:\n• pacote com 20 aulas teóricas;\n• pacote com 10 aulas práticas;\n• aluguel do veículo para realização das aulas práticas.\nUma pessoa pesquisou esses valores em três autoescolas credenciadas:\n- Autoescola I: R$ 10 por aula teórica; R$ 80 por aula prática; R$ 400 pelo aluguel do veículo.\n- Autoescola II: R$ 30 por aula teórica; R$ 50 por aula prática; R$ 200 pelo aluguel do veículo.\n- Autoescola III: R$ 20 por aula teórica; R$ 40 por aula prática; R$ 400 pelo aluguel do veículo.\nEla contratará os três produtos em uma única autoescola, de modo que o custo total seja o menor possível. A autoescola que será contratada é a:",
+      "enunciado": "A autoescola que será contratada é a",
       "alternativas": {
         "A": "I, com o custo total de R$ 1 400,00.",
-        "B": "II, com o custo total de R$ 280,00.",
-        "C": "II, com o custo total de R$ 1 300,00.",
-        "D": "III, com o custo total de R$ 460,00.",
-        "E": "III, com o custo total de R$ 1 200,00."
+        "B": "II, com o custo total de R$ 1 300,00.",
+        "C": "II, com o custo total de R$ 1 500,00.",
+        "D": "III, com o custo total de R$ 1 200,00.",
+        "E": "III, com o custo total de R$ 1 600,00."
       },
-      "gabarito": "E"
+      "gabarito": "B"
     },
     {
       "numero": 52,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "imagem": "banco_questoes/imagens/q52_diagrama_venn.png",
-      "topico_aula": "Aula 1 - Conjuntos Numéricos e Diagramas de Venn",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q136_tabela.png",
       "texto_apoio": {
-        "titulo": "Pesquisa sobre Hábitos Digitais de Estudo",
-        "conteudo": "A teoria dos conjuntos permite analisar populações segmentadas por preferências. O princípio da inclusão-exclusão assegura a contagem exata dos elementos ao descontar a dupla contagem da interseção: n(A ∪ B) = n(A) + n(B) - n(A ∩ B).",
-        "fonte": "IEZZI, G.; MURAKAMI, C. Fundamentos de Matemática Elementar: Conjuntos e Funções. 8. ed. São Paulo: Atual, 2004. v. 1, p. 28-32."
+        "titulo": "",
+        "conteudo": "Na cantina de uma escola, há cinco alimentos vendidos em pacotes com diferentes quantidades de porções. As informações nutricionais contidas nos rótulos desses produtos estão indicadas nas imagens.\nUma estudante opta sempre pelo alimento com a menor quantidade total de sódio por pacote.",
+        "fonte": ""
       },
-      "enunciado": "Em uma pesquisa de opinião realizada com 1 000 estudantes de uma universidade sobre a utilização de recursos digitais de estudo, constatou-se que 620 estudantes utilizam regularmente livros digitais, 450 utilizam videoaulas gravadas e 210 estudantes utilizam simultaneamente ambos os recursos, como esquematizado no Diagrama de Venn. Sabendo que todos os 1 000 estudantes participaram da pesquisa, o número de estudantes entrevistados que não utilizam nenhum desses dois recursos digitais é igual a:",
+      "enunciado": "Qual desses produtos deve ser o escolhido pela estudante?",
       "alternativas": {
-        "A": "80",
-        "B": "140",
-        "C": "170",
-        "D": "210",
-        "E": "240"
+        "A": "Batata chips.",
+        "B": "Palitos salgados.",
+        "C": "Biscoito multigrãos.",
+        "D": "Biscoito de polvilho.",
+        "E": "Biscoito de água e sal."
       },
-      "gabarito": "B"
+      "gabarito": "A"
     },
     {
       "numero": 53,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 1 - Reta Numérica, Módulo e Intervalos",
       "texto_apoio": {
-        "titulo": "Intervalos e Módulo na Reta Real",
-        "conteudo": "Geometricamente, o valor absoluto |x - a| representa a distância métrica entre o número real x e o ponto de referência a na reta numérica. Inequações modulares da forma |x - a| > d definem conjuntos de valores cuja distância até a excede a tolerância d.",
-        "fonte": "DANTE, L. R. Matemática: Contexto & Aplicações. 3. ed. São Paulo: Ática, 2016. v. 1, p. 64-67."
+        "titulo": "",
+        "conteudo": "No atletismo, um grande desafio da prova de 100 metros rasos é a sua conclusão num tempo abaixo da marca de referência dos 10,00 segundos. Vários atletas já alcançaram esse feito. Em 2009, o jamaicano Usain Bolt estabeleceu o recorde mundial masculino dessa prova, com o tempo de 9,58 segundos.",
+        "fonte": ""
       },
-      "enunciado": "Um sensor meteorológico instalado em uma base científica polar possui um alarme programado para disparar sempre que a temperatura ambiente T, em graus Celsius, afasta-se de -5 °C por mais de 12 °C, ou seja, quando |T - (-5)| > 12. Os intervalos da reta real que representam as temperaturas nas quais o sistema de alarme será acionado correspondem a:",
+      "enunciado": "Qual é a diferença, em segundo, entre a marca de referência e a marca estabelecida por Usain Bolt em 2009?",
       "alternativas": {
-        "A": "[-17, 7]",
-        "B": "]-∞, -7[ U ]17, +∞[",
-        "C": "]-∞, -17[ U ]7, +∞[",
-        "D": "[-12, 12]",
-        "E": "]-17, 12["
+        "A": "0,02",
+        "B": "0,42",
+        "C": "0,52",
+        "D": "1,02",
+        "E": "1,42"
       },
-      "gabarito": "C"
+      "gabarito": "B"
     },
     {
       "numero": 54,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 2 - Aritmética e MMC",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q140_infografico.png",
       "texto_apoio": {
-        "titulo": "Periodicidade e Mínimo Múltiplo Comum",
-        "conteudo": "A sincronização de eventos que ocorrem em ciclos periódicos regulares e independentes baseia-se nas propriedades da divisibilidade aritmética. O instante de coincidência futura de múltiplos fenômenos periódicos é dado pelo Mínimo Múltiplo Comum (MMC) de seus períodos.",
-        "fonte": "LIMA, E. L. et al. A Matemática do Ensino Médio. 9. ed. Rio de Janeiro: SBM, 2006. v. 1, p. 82-86."
+        "titulo": "Perfil dos brasileiros nas redes sociais",
+        "conteudo": "A reportagem de uma revista abordou o uso de redes sociais pelos internautas brasileiros. Alguns dos dados apurados pela reportagem estão apresentados no infográfico.",
+        "fonte": "Disponível em: http://revistagalileu.globo.com. Acesso em: 22 out. 2015 (adaptado)."
       },
-      "enunciado": "Três linhas de ônibus urbanos, L1, L2 e L3, partem do mesmo terminal central. A linha L1 tem partidas a cada 15 minutos, a linha L2 parte a cada 20 minutos e a linha L3 parte a cada 25 minutos. Se exatamente às 6h00 da manhã ônibus dessas três linhas partiram simultaneamente do terminal, o próximo horário do mesmo dia em que ocorrerá nova partida simultânea das três linhas será às:",
+      "enunciado": "Segundo os dados do infográfico, ao se escolher aleatoriamente um internauta brasileiro no período ao qual se refere a reportagem, a probabilidade de ele ser um homem que acessa alguma rede social é",
       "alternativas": {
-        "A": "8h30",
-        "B": "9h00",
-        "C": "10h15",
-        "D": "11h00",
-        "E": "12h30"
+        "A": "30 / 90",
+        "B": "36 / 100",
+        "C": "40 / 100",
+        "D": "40 / 90",
+        "E": "46 / 90"
       },
-      "gabarito": "D"
+      "gabarito": "B"
     },
     {
       "numero": 55,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 2 - Aritmética e Expressões Numéricas",
       "texto_apoio": {
-        "titulo": "Logística e Controle de Perdas de Combustível",
-        "conteudo": "No transporte rodoviário de granéis líquidos, as perdas técnicas decorrentes de aderência residual nas paredes do tanque e evaporação formam uma parcela constante que deve ser compensada no carregamento para que o volume líquido recebido atenda ao contrato.",
-        "fonte": "INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA (INEP). ENEM 2025: Prova de Matemática e suas Tecnologias. Caderno 6 Cinza, Questão 145."
+        "titulo": "",
+        "conteudo": "Uma distribuidora de combustível possui caminhões-tanque com capacidade de 30 000 litros cada. Em qualquer transporte realizado por esses caminhões, uma quantidade fixa de 200 litros de combustível fica retida na tubulação do tanque e não consegue ser descarregada no destino. Uma usina encomendou a essa distribuidora 149 000 litros de combustível. A distribuidora fará esse transporte utilizando apenas caminhões com seus tanques com carga máxima.",
+        "fonte": ""
       },
-      "enunciado": "Uma distribuidora de combustível possui caminhões-tanque com capacidade de 30 000 litros cada. Em qualquer transporte realizado por esses caminhões, um mesmo volume fixo de combustível é descartado, pois fica com impurezas retidas no fundo, independentemente da quantidade total transportada. Um posto encomendou 10 000 litros de gasolina dessa distribuidora, que enviou 10 200 litros, considerando o descarte. Mesmo assim, a quantidade entregue foi de 9 900 litros. Em um novo pedido, esse posto solicitou que fosse entregue exatamente o dobro do volume encomendado no pedido anterior (20 000 litros). Utilizando o mesmo caminhão, o volume mínimo de gasolina, em litro, que a distribuidora deverá enviar para garantir essa nova entrega é:",
+      "enunciado": "Qual é a quantidade mínima de viagens de caminhões-tanque que a distribuidora deverá fazer para entregar todo o combustível encomendado?",
       "alternativas": {
-        "A": "20 100",
-        "B": "20 200",
-        "C": "20 300",
-        "D": "20 400",
-        "E": "20 600"
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7",
+        "E": "8"
       },
-      "gabarito": "C"
+      "gabarito": "B"
     },
     {
       "numero": 56,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 3 - Frações I: Equivalência e Comparação",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q151_setores.png",
       "texto_apoio": {
-        "titulo": "Comparação de Razões e Desempenho",
-        "conteudo": "O ordenamento de números fracionários com denominadores distintos requer a redução a um denominador comum pelo MMC ou a conversão para representação decimal correspondente, preservando a relação de ordem dos números racionais.",
-        "fonte": "GIOVANNI, J. R.; BONJORNO, J. R. Matemática Completa: Ensino Médio. 2. ed. São Paulo: FTD, 2010. p. 44-47."
+        "titulo": "",
+        "conteudo": "Uma escola de idiomas oferece cursos de inglês, espanhol, francês e alemão. Os gráficos apresentam a distribuição percentual das matrículas, por idioma, em 2023, e a distribuição da quantidade de matrículas, por idioma, em 2024.\nPara planejar as atividades de 2025, o gerente da escola estimou que o total de matrículas será o mesmo de 2024, e a distribuição percentual das matrículas, por idioma, será igual à registrada em 2023.",
+        "fonte": ""
       },
-      "enunciado": "Cinco estudantes participaram de um simulado preparatório para o vestibular. Ao conferirem o desempenho, verificou-se que cada um acertou a seguinte fração do total de questões da prova: Artur acertou 7/10 da prova; Bernardo acertou 3/4; Caio acertou 4/5; Daniel acertou 5/8; e Eduardo acertou 13/20. O estudante que obteve o maior rendimento (maior fração de acertos) foi:",
+      "enunciado": "Segundo essa estimativa, o número de matrículas no curso de francês para o ano de 2025 será",
       "alternativas": {
-        "A": "Artur.",
-        "B": "Bernardo.",
-        "C": "Caio.",
-        "D": "Daniel.",
-        "E": "Eduardo."
+        "A": "2.",
+        "B": "12.",
+        "C": "20.",
+        "D": "22.",
+        "E": "40."
       },
-      "gabarito": "C"
+      "gabarito": "E"
     },
     {
       "numero": 57,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 3 - Frações I: Soma e Subtração",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q152_controle.png",
       "texto_apoio": {
-        "titulo": "Gestão de Recursos Hídricos e Consumo",
-        "conteudo": "A quantificação fracionária do consumo acumulado de insumos requer a soma de partes de um todo unificado. A determinação do volume remanescente é obtida subtraindo-se a fração consumida total da unidade inteira (1).",
-        "fonte": "SMOLE, K. S.; DINIZ, M. I. Matemática: Ensino Médio. 6. ed. São Paulo: Saraiva, 2013. v. 1, p. 55-58."
+        "titulo": "",
+        "conteudo": "O controle remoto de um carrinho de brinquedo vem equipado com uma tela que ajusta automaticamente a escala empregada na exibição de cada deslocamento. A tela apresenta a imagem do deslocamento, a escala utilizada na geração dessa imagem e o comprimento desse deslocamento, em centímetro, em conformidade com a escala empregada. As figuras representam a tela do controle remoto exibindo os dados de cinco deslocamentos realizados por esse carrinho.",
+        "fonte": ""
       },
-      "enunciado": "Um reservatório comunitário de água potável estava completamente cheio. No turno matutino, a comunidade utilizou 1/4 da capacidade total da água armazenada. No turno vespertino, foram consumidos mais 2/5 da capacidade total do reservatório. A fração da capacidade total de água que ainda restou no reservatório ao término do dia é igual a:",
+      "enunciado": "A opção que indica o deslocamento de maior comprimento realizado pelo carrinho de brinquedo é",
       "alternativas": {
-        "A": "3/20",
-        "B": "7/20",
-        "C": "9/20",
-        "D": "11/20",
-        "E": "13/20"
+        "A": "I.",
+        "B": "II.",
+        "C": "III.",
+        "D": "IV.",
+        "E": "V."
       },
-      "gabarito": "B"
+      "gabarito": "C"
     },
     {
       "numero": 58,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 4 - Frações II: Fração de Quantidade",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q154_barras.png",
       "texto_apoio": {
-        "titulo": "Planejamento Financeiro Familiar",
-        "conteudo": "Nas aplicações de matemática financeira cotidiana, a operação 'fração de uma sobra' é modelada matematicamente pela multiplicação direta entre os operadores fracionários sucessivos que incidem sobre o montante remanescente.",
-        "fonte": "PAIVA, M. Matemática: Paiva. 2. ed. São Paulo: Moderna, 2013. v. 1, p. 72-74."
+        "titulo": "Estoque e demanda por livros",
+        "conteudo": "Uma livraria comercializa livros dos seguintes gêneros literários: ficção científica, autoajuda, romance e biografia. O gráfico apresenta o estoque dos livros que essa livraria tem, por gênero literário e por nacionalidade do autor, bem como a demanda por gênero literário, obtida por meio de uma enquete feita com seus clientes habituais.\nO gerente da livraria fará a encomenda de novos exemplares somente do gênero cuja quantidade em estoque seja insuficiente para atender a demanda constatada pela enquete.",
+        "fonte": ""
       },
-      "enunciado": "Um trabalhador destina mensalmente 1/3 do seu salário líquido para o pagamento do aluguel de sua residência. Do valor restante após quitar o aluguel, ele reserva 3/5 para as despesas com alimentação e supermercado. A fração do salário líquido total desse trabalhador que sobra após o pagamento do aluguel e da alimentação é igual a:",
+      "enunciado": "O gênero de livro do qual o gerente deverá encomendar mais exemplares é",
       "alternativas": {
-        "A": "1/5",
-        "B": "2/15",
-        "C": "4/15",
-        "D": "7/15",
-        "E": "8/15"
+        "A": "ficção, pois é o que apresenta maior demanda.",
+        "B": "biografia, pois é o gênero que tem a menor demanda.",
+        "C": "autoajuda, pois a quantidade em estoque é inferior à demanda.",
+        "D": "biografia, pois é o gênero que tem a menor quantidade de livros em estoque.",
+        "E": "romance, pois é o que tem a maior quantidade de livros em estoque."
       },
       "gabarito": "C"
     },
@@ -1119,79 +1081,76 @@
       "numero": 59,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 4 - Frações II: Dízimas Periódicas",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q156_malha.png",
       "texto_apoio": {
-        "titulo": "Frações Geratrizes de Dízimas Compostas",
-        "conteudo": "Números decimais infinitos periódicos (dízimas periódicas) são números racionais expressíveis na forma a/b com a, b ∈ Z e b ≠ 0. O cálculo da fração geratriz de dízimas compostas elimina a repetição periódica multiplicando a equação por potências de 10.",
-        "fonte": "ÁVILA, G. Introdução à Análise Matemática. 2. ed. São Paulo: Edgard Blücher, 1999. p. 14-17."
+        "titulo": "",
+        "conteudo": "Os quadrados em cinza na figura representam os quarteirões de uma parte do bairro onde moram João e seu amigo. O quadrado pequeno (A), pintado em preto e localizado no canto superior esquerdo de um quadrado maior, indica a casa do amigo de João. João também mora em uma casa de esquina, mas na extremidade nordeste de um quarteirão. Para chegar à casa de seu amigo, ao sair de casa, João deve caminhar pelo quarteirão onde mora na direção oeste, dobrar à direita, caminhar por três quarteirões na direção norte e dobrar à esquerda. A casa de seu amigo fica no segundo quarteirão a oeste.",
+        "fonte": ""
       },
-      "enunciado": "Em um processo industrial de embalagem, o tempo de ciclo de uma máquina é registrado como exatamente 1,2333... minutos (uma dízima periódica composta). Para ajustar o painel de comando, esse número deve ser inserido na forma de fração ordinária irredutível a/b. A soma dos termos (a + b) dessa fração irredutível é igual a:",
+      "enunciado": "O quarteirão onde se encontra a casa de João é representado pelo quadrado com a letra",
       "alternativas": {
-        "A": "47",
-        "B": "53",
-        "C": "67",
-        "D": "71",
-        "E": "90"
+        "A": "P.",
+        "B": "Q.",
+        "C": "R.",
+        "D": "S.",
+        "E": "T."
       },
-      "gabarito": "C"
+      "gabarito": "A"
     },
     {
       "numero": 60,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 5 - Porcentagem: Cálculos Percentuais",
       "texto_apoio": {
-        "titulo": "Concentração e Diluição de Soluções",
-        "conteudo": "Em processos laboratoriais de purificação, a remoção seletiva do solvente ou de um componente majoritário altera a proporção relativa dos constituintes, mesmo mantendo absolutamente invariante a massa do soluto minoritário.",
-        "fonte": "INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA (INEP). ENEM 2025: Prova de Matemática e suas Tecnologias. Caderno 6 Cinza, Questão 144."
+        "titulo": "",
+        "conteudo": "Em um laboratório, um recipiente contém 10 litros de uma solução composta apenas pelas substâncias S1 e S2. Dessa solução, 99,95% do volume é composto pela substância S1. Deseja-se que a proporção de S1 nessa solução seja reduzida para 99,5% do volume total. Para isso, o laboratorista irá evaporar apenas a substância S1.",
+        "fonte": ""
       },
-      "enunciado": "Em um laboratório, um recipiente contém 10 litros de uma solução composta apenas pelas substâncias S1 e S2. Dessa solução, 99,95% é de S1. Uma quantidade de S1 será retirada dessa solução, mantendo inalterada a quantidade inicial de S2, de modo que 99,90% da nova solução resultante seja de S1. A quantidade de S1, em litro, que será retirada é:",
+      "enunciado": "Quantos litros da substância S1 devem ser evaporados dessa solução?",
       "alternativas": {
-        "A": "0,0050",
-        "B": "0,0100",
-        "C": "0,5000",
-        "D": "4,9775",
-        "E": "5,0000"
+        "A": "0,045",
+        "B": "9,000",
+        "C": "9,950",
+        "D": "9,955",
+        "E": "9,995"
       },
-      "gabarito": "E"
+      "gabarito": "B"
     },
     {
       "numero": 61,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 5 - Porcentagem: Variação Percentual",
       "texto_apoio": {
-        "titulo": "Economia Circular e Custos Industriais",
-        "conteudo": "A substituição de polímeros virgens derivados de petróleo por resinas recicladas pós-consumo proporciona drástica redução no custo fabril unitário e nas emissões de carbono, atendendo a metas corporativas de sustentabilidade e lucratividade.",
-        "fonte": "INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA (INEP). ENEM 2025: Prova de Matemática e suas Tecnologias. Caderno 6 Cinza, Questão 157."
+        "titulo": "",
+        "conteudo": "Uma empresa produziu, em um determinado mês, 110 toneladas de plástico a partir de derivados de petróleo e 80 toneladas a partir de plásticos reciclados. O custo para reciclar uma tonelada de plástico é de R$ 500,00, que equivale a 5% do custo para produzir a mesma quantidade de plástico a partir de derivados de petróleo. Para o mês seguinte, a meta dessa empresa é produzir a mesma quantidade de plástico que foi produzida nesse mês, mas com redução de, pelo menos, 50% no custo de produção.",
+        "fonte": ""
       },
-      "enunciado": "Uma empresa produziu, em um determinado mês, 110 toneladas de plástico a partir de derivados de petróleo e 80 toneladas a partir de plásticos reciclados. O custo para reciclar uma tonelada de plástico é de R$ 500,00, que equivale a 5% do custo para produzir a mesma quantidade a partir de petróleo virgem. Para o mês seguinte, a meta da empresa é produzir o mesmo total de 190 toneladas, mas com redução de, pelo menos, 50% no custo total de produção. Para atingir a meta, a quantidade mínima de toneladas de plástico que devem ser produzidas a partir da reciclagem é:",
+      "enunciado": "Para que no mês seguinte a empresa atinja a meta, a quantidade mínima de toneladas de plástico que devem ser produzidas a partir de reciclagem deverá ser",
       "alternativas": {
-        "A": "135",
-        "B": "140",
-        "C": "155",
-        "D": "160",
-        "E": "175"
+        "A": "135.",
+        "B": "140.",
+        "C": "155.",
+        "D": "160.",
+        "E": "175."
       },
-      "gabarito": "B"
+      "gabarito": "D"
     },
     {
       "numero": 62,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 6 - Grandezas e Medidas: Sistema Métrico",
       "texto_apoio": {
-        "titulo": "Equivalência de Volume e Capacidade",
-        "conteudo": "No Sistema Internacional de Unidades (SI), a relação fundamental entre as grandezas de volume geométrico e capacidade de líquidos estabelece que um decímetro cúbico (1 dm³) equivale a exatamente um litro (1 L) e, por consequência, 1 cm³ equivale a 1 mL.",
-        "fonte": "INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA (INEP). ENEM 2025: Prova de Matemática e suas Tecnologias. Caderno 6 Cinza, Questão 164."
+        "titulo": "",
+        "conteudo": "O dono de uma sorveteria armazena sorvete em potes de 20 000 cm³. Ele serve o sorvete em taças, em porções de 250 mL.",
+        "fonte": ""
       },
-      "enunciado": "O dono de uma sorveteria armazena sorvete em potes industriais com capacidade de 20 000 cm³ cada. Ele serve o sorvete aos clientes em taças individuais, em porções de 250 mL. A quantidade máxima de taças completas que ele consegue servir a partir de um único pote cheio de sorvete é:",
+      "enunciado": "A quantidade de taças que ele consegue servir a partir de um pote cheio de sorvete é",
       "alternativas": {
-        "A": "5",
-        "B": "8",
-        "C": "50",
-        "D": "80",
-        "E": "800"
+        "A": "5.",
+        "B": "8.",
+        "C": "50.",
+        "D": "80.",
+        "E": "800."
       },
       "gabarito": "D"
     },
@@ -1199,79 +1158,77 @@
       "numero": 63,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 6 - Grandezas e Medidas: Cálculo de Área",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q167_caixa.png",
       "texto_apoio": {
-        "titulo": "Geometria Plana e Paginação de Pisos",
-        "conteudo": "O cálculo de materiais de acabamento na construção civil exige a conversão para unidades de mesma grandeza métrica e o arredondamento superior quando as peças são comercializadas em caixas com quantitativo fechado.",
-        "fonte": "DOLCE, O.; POMPEO, J. N. Fundamentos de Matemática Elementar: Geometria Plana. 9. ed. São Paulo: Atual, 2013. v. 9, p. 182-186."
+        "titulo": "",
+        "conteudo": "Uma caixa de descarga, acoplada a um vaso sanitário, tem a forma de paralelepípedo reto retângulo cujas dimensões internas da base são 2,5 dm e 1,5 dm. Nessa caixa há uma boia que interrompe o abastecimento quando a altura da coluna de água atinge 2 dm, conforme a figura.\nA cada acionamento da descarga, todo o volume de água contida na caixa é despejado no vaso. Para reduzir o volume de água despejado a cada acionamento, uma pessoa colocará, no interior dessa caixa, garrafas de 300 mL, cheias de areia e tampadas, de modo a ficarem submersas quando o abastecimento for interrompido.\nPara garantir o funcionamento eficiente, o mínimo de água despejada a cada acionamento deve ser de 5 L.",
+        "fonte": ""
       },
-      "enunciado": "Um construtor precisa revestir o piso retangular de um salão de festas que mede 4,8 metros de comprimento por 3,6 metros de largura. Ele utilizará lajotas cerâmicas quadradas com 30 centímetros de lado. Sabendo que essas lajotas são vendidas exclusivamente em caixas fechadas contendo 25 unidades cada e desconsiderando as perdas por cortes e rejuntes, a quantidade mínima de caixas de lajotas que deve ser adquirida para cobrir todo o piso é:",
+      "enunciado": "A quantidade máxima de garrafas que serão colocadas nessa caixa, garantindo um funcionamento eficiente, é igual a",
       "alternativas": {
-        "A": "6 caixas.",
-        "B": "7 caixas.",
-        "C": "8 caixas.",
-        "D": "9 caixas.",
-        "E": "10 caixas."
+        "A": "10.",
+        "B": "8.",
+        "C": "4.",
+        "D": "3.",
+        "E": "2."
       },
-      "gabarito": "C"
+      "gabarito": "B"
     },
     {
       "numero": 64,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 7 - Razão e Proporção: Regra de Três Composta",
       "texto_apoio": {
-        "titulo": "Dimensionamento de Produção e Homem-Hora",
-        "conteudo": "A relação entre a quantidade de operários, o tempo diário de jornada e a produção total resulta em uma proporção direta com a grandeza homogênea composta homem-hora (h-homem), mantida fixa a produtividade técnica por hora trabalhada.",
-        "fonte": "INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA (INEP). ENEM 2025: Prova de Matemática e suas Tecnologias. Caderno 6 Cinza, Questão 148."
+        "titulo": "",
+        "conteudo": "Uma fábrica de tijolos ecológicos com 3 funcionários, cada um trabalhando 6 horas diárias, produz 720 unidades por dia. Para atender a uma demanda urgente de 2 400 tijolos em apenas 2 dias de produção, a fábrica decidiu contratar mais funcionários, aumentando a jornada de trabalho diária de todos para 8 horas.",
+        "fonte": ""
       },
-      "enunciado": "Uma fábrica de tijolos ecológicos com 3 funcionários, cada um trabalhando 6 horas diárias, produz 720 unidades por dia. Para atender ao crescimento da demanda por esse tipo de tijolo, essa fábrica passou a ter 5 funcionários, cada um trabalhando 9 horas por dia, aumentando, assim, sua capacidade de produção. Todos os funcionários produzem igual quantidade de tijolos a cada hora. O número de tijolos fabricados diariamente após esse aumento da capacidade de produção é:",
+      "enunciado": "Quantos novos funcionários, com a mesma produtividade dos atuais, deverão ser contratados para cumprir o prazo estabelecido?",
       "alternativas": {
-        "A": "800",
-        "B": "1 080",
-        "C": "1 200",
-        "D": "1 800",
-        "E": "2 520"
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5",
+        "E": "6"
       },
-      "gabarito": "D"
+      "gabarito": "A"
     },
     {
       "numero": 65,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 7 - Razão e Proporção: Escalas",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q161_areia.png",
       "texto_apoio": {
-        "titulo": "Escala Numérica em Projetos e Cartografia",
-        "conteudo": "A escala de uma representação gráfica define a razão linear constante entre a distância medida no desenho (d) e a distância real correspondente (D), expressas obrigatoriamente na mesma unidade de medida: E = d / D.",
-        "fonte": "INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA (INEP). ENEM 2025: Prova de Matemática e suas Tecnologias. Caderno 6 Cinza, Questão 161."
+        "titulo": "",
+        "conteudo": "Um artista, que costuma fazer desenhos com areia na praia, pediu a um banhista que fizesse um pequeno desenho, que serviria de esboço para uma grande obra de arte a ser feita na areia. Esse desenho está representado na figura.\nApós a conclusão, a obra de arte obtida manteve as mesmas proporções do desenho feito pelo banhista, sendo que as medidas indicadas na figura (20 cm) foram ampliadas para 30 m.",
+        "fonte": ""
       },
-      "enunciado": "Um artista que costuma fazer esculturas de areia na praia pediu a um banhista que fizesse um esboço que serviria de modelo. No papel, a principal dimensão linear desenhada media 20 centímetros. Após a conclusão, a obra de arte esculpida na areia manteve as mesmas proporções do desenho, sendo que a dimensão correspondente foi ampliada para exatamente 30 metros. Em qual escala o desenho no papel representa a obra de arte esculpida?",
+      "enunciado": "Em qual escala esse desenho representa a obra de arte?",
       "alternativas": {
         "A": "1 : 1,5",
-        "B": "1 : 15",
-        "C": "1 : 100",
-        "D": "1 : 150",
-        "E": "1 : 1 500"
+        "B": "1 : 2,25",
+        "C": "1 : 10",
+        "D": "1 : 100",
+        "E": "1 : 150"
       },
-      "gabarito": "D"
+      "gabarito": "E"
     },
     {
       "numero": 66,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 7 - Razão e Proporção: Grandezas Proporcionais",
       "texto_apoio": {
-        "titulo": "Grandezas Derivadas e Análise Dimensional",
-        "conteudo": "As leis físicas formulam definições de novas grandezas mediante operações algébricas de razão e produto de grandezas fundamentais. A determinação da unidade dimensional segue rigorosamente a operação matemática estabelecida na definição.",
-        "fonte": "INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA (INEP). ENEM 2025: Prova de Matemática e suas Tecnologias. Caderno 6 Cinza, Questão 177."
+        "titulo": "",
+        "conteudo": "A luminância de um objeto é a grandeza que descreve a quantidade de luz produzida ou refletida por sua superfície. Ela está definida como a razão entre a intensidade luminosa, medida em candela (cd), e o quadrado da distância do objeto até o foco de luz, medida em metro (m).",
+        "fonte": ""
       },
-      "enunciado": "A luminância de um objeto é a grandeza que descreve a quantidade de luz produzida ou refletida por sua superfície. Ela está definida formalmente como a razão entre a intensidade luminosa da fonte, medida em candela (cd), e o quadrado da distância do objeto até o foco de luz, medida em metro (m). A unidade de medida da luminância no Sistema Internacional é:",
+      "enunciado": "A unidade de medida da luminância de um objeto é",
       "alternativas": {
         "A": "cd / m²",
         "B": "m / cd²",
         "C": "cd / m",
         "D": "m / cd",
-        "E": "m² / cd"
+        "E": "m / cd"
       },
       "gabarito": "A"
     },
@@ -1279,73 +1236,70 @@
       "numero": 67,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 8 - Matemática Financeira: Lucro e Prejuízo",
       "texto_apoio": {
-        "titulo": "Equação de Lucro e Formação de Preço",
-        "conteudo": "Na gestão de negócios de serviços recorrentes, o resultado operacional (lucro líquido) resulta da diferença entre a receita total auferida e o somatório dos custos fixos estruturais e custos variáveis proporcionais à capacidade ocupada.",
-        "fonte": "INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA (INEP). ENEM 2025: Prova de Matemática e suas Tecnologias. Caderno 6 Cinza, Questão 163."
+        "titulo": "",
+        "conteudo": "Um estacionamento possui 120 vagas para veículos, e todas essas vagas estão ocupadas. Cada cliente paga uma mensalidade para utilizar uma vaga, que é calculada com base nas despesas mensais do estacionamento e no lucro pretendido. As despesas mensais do estacionamento são: R$ 14 240,00 com manutenção mais R$ 36,00 de seguro por veículo. O lucro do estacionamento é determinado pela diferença do valor arrecadado com as mensalidades pelas despesas efetuadas. A partir do mês seguinte, o valor do seguro por veículo aumentará em 20%, e as despesas com manutenção permanecerão sem alterações. Com isso, o dono do estacionamento reajustará as mensalidades para obter um lucro mensal de R$ 10 000,00. Apesar desse reajuste, todas as vagas continuarão ocupadas.",
+        "fonte": ""
       },
-      "enunciado": "Um estacionamento possui 120 vagas para veículos e todas estão ocupadas. Cada cliente paga uma mensalidade calculada com base nas despesas mensais e no lucro pretendido. As despesas são: R$ 14 240,00 com manutenção mais R$ 36,00 de seguro por veículo. O lucro é a diferença entre a receita arrecadada e as despesas totais. A partir do próximo mês, o seguro por veículo aumentará em 20%, e a manutenção permanecerá inalterada. Para que o proprietário obtenha um lucro mensal de R$ 10 000,00 mantendo todas as vagas ocupadas, o valor reajustado da mensalidade de cada cliente será:",
+      "enunciado": "O valor, em real, da nova mensalidade que cada cliente deverá pagar para que o proprietário atinja o lucro pretendido é de:",
       "alternativas": {
-        "A": "R$ 185,60",
-        "B": "R$ 226,09",
-        "C": "R$ 245,20",
-        "D": "R$ 268,93",
-        "E": "R$ 285,60"
+        "A": "180,00.",
+        "B": "195,00.",
+        "C": "210,00.",
+        "D": "245,20.",
+        "E": "260,00."
       },
-      "gabarito": "C"
+      "gabarito": "D"
     },
     {
       "numero": 68,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 8 - Matemática Financeira: Juros Simples",
       "texto_apoio": {
-        "titulo": "Juros Reais sobre o Saldo Devedor Financiado",
-        "conteudo": "Nas vendas a prazo com entrada, o valor da entrada não é financiado, pois é pago no ato. A taxa de juros da operação incide exclusivamente sobre o saldo devedor remanescente (Capital = Valor à vista - Entrada): i = Juros / Capital Financiado.",
-        "fonte": "ASSAF NETO, A. Matemática Financeira e suas Aplicações. 12. ed. São Paulo: Atlas, 2012. p. 38-42."
+        "titulo": "",
+        "conteudo": "A final de um campeonato de futebol foi disputada em 2 tempos regulamentares, de 45 minutos cada, sem acréscimos, com uma prorrogação de 30 minutos, também sem acréscimos. Um jogador entrou no início do segundo tempo, com um equipamento para medir a distância percorrida durante sua participação no jogo. Ao final do segundo tempo regulamentar, esse jogador havia percorrido 4,5 km. Ele manteve na prorrogação a mesma velocidade média que havia mantido no segundo tempo regulamentar.",
+        "fonte": ""
       },
-      "enunciado": "Um consumidor pretende adquirir um televisor cujo preço à vista é de R$ 1 500,00. A loja oferece a opção de pagamento a prazo em duas parcelas: uma entrada de R$ 300,00 no ato da compra e uma parcela única final de R$ 1 320,00 a ser paga 30 dias após a compra. A taxa de juros simples mensal cobrada pela loja sobre o saldo financiado nessa operação é de:",
+      "enunciado": "A distância percorrida por esse jogador durante sua participação na partida, em quilômetro, foi",
       "alternativas": {
-        "A": "8%",
-        "B": "10%",
-        "C": "12%",
-        "D": "15%",
-        "E": "20%"
+        "A": "4,5.",
+        "B": "6,0.",
+        "C": "7,5.",
+        "D": "9,0.",
+        "E": "12,0."
       },
-      "gabarito": "B"
+      "gabarito": "C"
     },
     {
       "numero": 69,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aula 9 - Potenciação e Notação Científica",
+      "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q179_grafico.png",
       "texto_apoio": {
-        "titulo": "Ordens de Grandeza na Escala Nanométrica",
-        "conteudo": "A notação científica padroniza números excessivamente grandes ou pequenos no formato N = a × 10ⁿ, onde 1 ≤ a < 10 e n ∈ Z. A divisão entre grandezas na escala microscópica opera subtraindo os expoentes das potências de base 10: 10ᵃ / 10ᵇ = 10ᵃ⁻ᵇ.",
-        "fonte": "TIPLER, P. A.; LLEWELLYN, R. A. Física Moderna: nanotecnologia e ordens de grandeza. 5. ed. Rio de Janeiro: LTC, 2010. p. 11-14."
+        "titulo": "",
+        "conteudo": "Uma pessoa tem um carro bicombustível, que funciona a gás natural veicular (GNV) e a gasolina. O rendimento do carro, medido em km/m³, no caso do gás, ou medido em km/L, no caso da gasolina, depende, entre outros fatores, da velocidade, em km/h, em que o carro trafega. Essa relação está em conformidade com estes gráficos.\nDurante um feriado, essa pessoa realizou uma viagem de 240 km. Para obter uma estimativa de gasto de combustível, assuma que em todo o trajeto se manteve uma velocidade constante de 60 km/h. Considere que, durante metade do caminho, foi utilizado apenas GNV e, na outra metade, apenas gasolina. O que foi pago pelo metro cúbico de GNV e pelo litro de gasolina correspondeu, respectivamente, a R$ 2,00 e a R$ 3,00.",
+        "fonte": ""
       },
-      "enunciado": "Na biologia molecular, o diâmetro transversal médio de uma molécula de DNA é de aproximadamente 2 nanômetros (2 nm), enquanto a espessura média de um fio de cabelo humano é de cerca de 0,08 milímetros. Sabendo que 1 nm equivale a 10⁻⁹ metros e 1 mm equivale a 10⁻³ metros, a razão entre a medida do diâmetro do DNA e a espessura do fio de cabelo humano, expressa em notação científica, é igual a:",
+      "enunciado": "Qual foi a diferença, em real, entre os gastos totais com gasolina e com GNV?",
       "alternativas": {
-        "A": "2,5 × 10⁻⁴",
-        "B": "2,5 × 10⁻⁵",
-        "C": "4,0 × 10⁻⁴",
-        "D": "4,0 × 10⁻⁵",
-        "E": "1,6 × 10⁻⁶"
+        "A": "4",
+        "B": "8",
+        "C": "14",
+        "D": "21",
+        "E": "30"
       },
-      "gabarito": "B"
+      "gabarito": "D"
     },
     {
       "numero": 70,
       "area": "Matemática e suas Tecnologias",
       "disciplina": "Matemática",
-      "topico_aula": "Aulas 10 a 12 - Álgebra e Equações do 1º Grau",
       "texto_apoio": {
-        "titulo": "Modelagem Algébrica de Parcelamento",
-        "conteudo": "A divisão de um capital fixo em quantidades distintas de parcelas mensais modela uma relação inversamente proporcional entre o número de prestações e o valor individual de cada prestação, resultando em uma equação racional redutível.",
-        "fonte": "INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA (INEP). ENEM 2025: Prova de Matemática e suas Tecnologias. Caderno 6 Cinza, Questão 172."
+        "titulo": "",
+        "conteudo": "Um carro que custa 60 mil reais é comercializado por uma revendedora que oferece duas opções de pagamento, todas sem entrada e sem juros:\n• opção 1: pagamento em n parcelas iguais;\n• opção 2: pagamento em 6 parcelas a mais do que na opção 1 e, com isso, o valor de cada parcela se torna R$ 500,00 menor do que o valor da parcela na opção 1.\nNas duas opções de pagamento, o valor total a ser pago pelo carro é o mesmo.",
+        "fonte": ""
       },
-      "enunciado": "Um carro que custa 60 mil reais é comercializado por uma revendedora que oferece duas opções de pagamento sem entrada e sem juros:\n• opção 1: pagamento em n parcelas iguais;\n• opção 2: pagamento em 6 parcelas a mais do que na opção 1 e, com isso, o valor de cada parcela se torna R$ 500,00 menor do que na opção 1.\nNas duas opções de pagamento, o valor total a ser pago pelo carro é exatamente o mesmo.\nQual é a quantidade n de parcelas contidas na opção 1 de pagamento?",
+      "enunciado": "Qual é a quantidade n de parcelas contidas na opção 1 de pagamento?",
       "alternativas": {
         "A": "18",
         "B": "24",

@@ -6,18 +6,17 @@ calcula total de acertos, aproveitamento percentual e consolida os resultados em
 
 import os
 import sys
-
-# Garante que a raiz do projeto esteja no PYTHONPATH
-ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if ROOT_DIR not in sys.path:
-    sys.path.insert(0, ROOT_DIR)
-
 import glob
 import json
 import re
 import pandas as pd
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
-from core.omr_engine import processar_cartao
+
+# Suporta importação relativa ou absoluta
+try:
+    from app.core.omr_engine import processar_cartao
+except ImportError:
+    from core.omr_engine import processar_cartao
 
 
 def ordenacao_natural(texto):
@@ -25,8 +24,16 @@ def ordenacao_natural(texto):
     return [int(c) if c.isdigit() else c.lower() for c in re.split(r'(\d+)', texto)]
 
 
-def carregar_gabarito_oficial(caminho_questoes="banco_questoes/questoes.json"):
+def carregar_gabarito_oficial(caminho_questoes=None):
     """Extrai o gabarito oficial das 70 questões do banco de dados da prova."""
+    if caminho_questoes is None:
+        if os.path.exists("simulado_2/banco_questoes/questoes.json"):
+            caminho_questoes = "simulado_2/banco_questoes/questoes.json"
+        elif os.path.exists("banco_questoes/questoes.json"):
+            caminho_questoes = "banco_questoes/questoes.json"
+        else:
+            raise FileNotFoundError("Arquivo de questões não encontrado.")
+
     if not os.path.exists(caminho_questoes):
         raise FileNotFoundError(f"Arquivo de questões não encontrado em '{caminho_questoes}'")
 
@@ -98,7 +105,6 @@ def formatar_excel(caminho_excel):
     wb = openpyxl.load_workbook(caminho_excel)
     ws = wb.active
 
-    # Estilos
     header_fill = PatternFill(start_color="0C2340", end_color="0C2340", fill_type="solid")
     header_font = Font(name="Calibri", size=10, bold=True, color="FFFFFF")
     kpi_fill = PatternFill(start_color="00A4E4", end_color="00A4E4", fill_type="solid")
@@ -113,7 +119,6 @@ def formatar_excel(caminho_excel):
 
     center_align = Alignment(horizontal="center", vertical="center")
 
-    # Formata cabeçalho
     for col_idx in range(1, ws.max_column + 1):
         cell = ws.cell(row=1, column=col_idx)
         cell.alignment = center_align
@@ -126,13 +131,11 @@ def formatar_excel(caminho_excel):
             cell.fill = header_fill
             cell.font = header_font
 
-    # Formata células de dados
     for row in ws.iter_rows(min_row=2, max_row=ws.max_row, min_col=1, max_col=ws.max_column):
         for cell in row:
             cell.alignment = center_align
             cell.border = thin_border
 
-    # Ajusta largura das colunas
     for col in ws.columns:
         max_len = max(len(str(cell.value or '')) for cell in col)
         col_letter = col[0].column_letter
@@ -141,7 +144,7 @@ def formatar_excel(caminho_excel):
     wb.save(caminho_excel)
 
 
-def corrigir_pasta_cartoes(pasta_cartoes="cartoes", caminho_questoes="banco_questoes/questoes.json", caminho_saida="resultado.xlsx"):
+def corrigir_pasta_cartoes(pasta_cartoes="cartoes", caminho_questoes=None, caminho_saida="resultado.xlsx"):
     """
     Processa todos os cartões da pasta, corrige contra o gabarito oficial e salva a planilha consolidada.
     """
@@ -177,6 +180,9 @@ def corrigir_pasta_cartoes(pasta_cartoes="cartoes", caminho_questoes="banco_ques
         pasta_debug = "debug"
     os.makedirs(pasta_debug, exist_ok=True)
 
+    linhas_tabela = []
+    totais_acertos = []
+
     for idx, caminho in enumerate(arquivos):
         nome_cartao = os.path.splitext(os.path.basename(caminho))[0]
         try:
@@ -189,7 +195,6 @@ def corrigir_pasta_cartoes(pasta_cartoes="cartoes", caminho_questoes="banco_ques
                 "% Acerto": f"{metricas['porcentagem']}%",
             }
 
-            # Adiciona cada questão de 1 a 70
             for q_num in range(1, 71):
                 resp_info = metricas["detalhes"].get(q_num, {})
                 registro[str(q_num)] = resp_info.get("resposta", "EM_BRANCO")
@@ -216,7 +221,7 @@ def corrigir_pasta_cartoes(pasta_cartoes="cartoes", caminho_questoes="banco_ques
         media_acertos = round(sum(totais_acertos) / float(len(totais_acertos)), 1)
         print(f"\n[OK] Concluido! Planilha consolidada salva em: '{caminho_saida}'")
         print(f"[ESTATISTICA] Media de acertos da turma: {media_acertos}/70 ({round(media_acertos/70.0*100, 1)}%)")
-        print(f"[DEBUG] Imagens com marcacoes salvas na pasta 'debug/'.")
+        print(f"[DEBUG] Imagens com marcacoes salvas na pasta '{pasta_debug}'.")
         return df_resultado
 
     return None
