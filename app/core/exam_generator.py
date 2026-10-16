@@ -890,8 +890,8 @@ def build_two_column_question(q, styles, col_width, area_header=None):
                     if draw_h > 155:
                         draw_h = 155
                         draw_w = draw_h / aspect
-                elif draw_h > 210:
-                    draw_h = 210
+                elif draw_h > 150:
+                    draw_h = 150
                     draw_w = draw_h / aspect
                 rl_img.drawWidth = draw_w
                 rl_img.drawHeight = draw_h

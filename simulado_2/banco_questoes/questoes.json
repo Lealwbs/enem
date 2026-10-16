@@ -609,7 +609,7 @@
       "numero": 33,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Física",
-      "imagem": "simulado_2/banco_questoes/imagens/q50_bicicleta_catraca.png",
+      "imagem": "simulado_2/banco_questoes/imagens/q33_bicicleta_corrente.png",
       "texto_apoio": null,
       "enunciado": "A catraca traseira de uma bicicleta possui raio de 5 cm e está acoplada por uma corrente inextensível à coroa dianteira, que possui raio de 15 cm. Quando o ciclista pedala e a coroa dianteira gira com frequência constante de 20 rotações por minuto (rpm), a frequência de rotação da catraca traseira, em rpm, é igual a:",
       "alternativas": {
@@ -656,7 +656,7 @@
       "numero": 36,
       "area": "Ciências da Natureza e suas Tecnologias",
       "disciplina": "Química",
-      "imagem": "simulado_2/banco_questoes/imagens/quimica_img_1.png",
+      "imagem": "simulado_2/banco_questoes/imagens/image1.png",
       "texto_apoio": {
         "titulo": "Estrutura da Nimesulida",
         "conteudo": "A nimesulida é um fármaco pouco solúvel em água, utilizado como anti-inflamatório, analgésico e antipirético.",
@@ -820,7 +820,8 @@
         "D": "Forças dipolo induzido.",
         "E": "Ligações de hidrogênio."
       },
-      "gabarito": "E"
+      "gabarito": "E",
+      "imagem": "simulado_2/banco_questoes/imagens/image3.png"
     },
     {
       "numero": 45,
@@ -1033,17 +1034,17 @@
       "disciplina": "Matemática",
       "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q140_infografico.png",
       "texto_apoio": {
-        "titulo": "",
-        "conteudo": "O infográfico apresenta a distribuição percentual de usuários de uma rede social digital por faixa etária e por gênero em determinado mês.",
-        "fonte": ""
+        "titulo": "Perfil dos brasileiros nas redes sociais",
+        "conteudo": "A reportagem de uma revista abordou o uso de redes sociais pelos internautas brasileiros. Alguns dos dados apurados pela reportagem estão apresentados no infográfico.",
+        "fonte": "Disponível em: http://revistagalileu.globo.com. Acesso em: 22 out. 2015 (adaptado)."
       },
-      "enunciado": "Segundo os dados do infográfico, ao se escolher aleatoriamente um usuário dessa rede social, a probabilidade de ele ser uma mulher com idade de 25 a 34 anos é",
+      "enunciado": "Segundo os dados do infográfico, ao se escolher aleatoriamente um internauta brasileiro no período ao qual se refere a reportagem, a probabilidade de ele ser um homem que acessa alguma rede social é",
       "alternativas": {
-        "A": "0,148.",
-        "B": "0,154.",
-        "C": "0,302.",
-        "D": "0,446.",
-        "E": "0,510."
+        "A": "30/90",
+        "B": "36/100",
+        "C": "40/100",
+        "D": "40/90",
+        "E": "46/90"
       },
       "gabarito": "B",
       "habilidade": "H28 - Resolver situação-problema que envolva interpretação de gráficos e probabilidade.",
@@ -1203,17 +1204,17 @@
       "disciplina": "Matemática",
       "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q154_barras.png",
       "texto_apoio": {
-        "titulo": "",
-        "conteudo": "O gerente de uma livraria registrou a quantidade de exemplares vendidos dos cinco gêneros literários mais procurados em sua loja durante o primeiro semestre de 2024. Com base no sucesso de vendas, ele planeja fazer uma nova encomenda no segundo semestre, priorizando o gênero que teve o maior percentual de crescimento de vendas entre o primeiro e o segundo trimestre.",
-        "fonte": ""
+        "titulo": "Estoque e demanda por livros",
+        "conteudo": "Uma livraria comercializa livros dos seguintes gêneros literários: ficção científica, autoajuda, romance e biografia. O gráfico apresenta o estoque dos livros que essa livraria tem, por gênero literário e por nacionalidade do autor, bem como a demanda por gênero literário, obtida por meio de uma enquete feita com seus clientes habituais.",
+        "fonte": "ENEM 2025 Oficial."
       },
-      "enunciado": "O gênero de livro do qual o gerente deverá encomendar mais exemplares é",
+      "enunciado": "O gerente da livraria fará a encomenda de novos exemplares somente do gênero cuja quantidade em estoque seja insuficiente para atender a demanda constatada pela enquete.\nO gênero de livro do qual o gerente deverá encomendar mais exemplares é",
       "alternativas": {
-        "A": "Ficção científica.",
-        "B": "Biografia.",
-        "C": "Romance.",
-        "D": "Autoajuda.",
-        "E": "Suspense."
+        "A": "ficção, pois é o que apresenta maior demanda.",
+        "B": "biografia, pois é o gênero que tem a menor demanda.",
+        "C": "autoajuda, pois a quantidade em estoque é inferior à demanda.",
+        "D": "biografia, pois é o gênero que tem a menor quantidade de livros em estoque.",
+        "E": "romance, pois é o que apresenta o menor estoque de livros de autores brasileiros."
       },
       "gabarito": "C",
       "habilidade": "H27 - Interpretar dados estatísticos apresentados em gráfico de colunas.",
@@ -1331,17 +1332,17 @@
       "disciplina": "Matemática",
       "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q179_grafico.png",
       "texto_apoio": {
-        "titulo": "",
-        "conteudo": "O proprietário de um veículo bicombustível (gasolina e gás natural veicular - GNV) registrou em um gráfico o rendimento médio do automóvel, em quilômetro por unidade de combustível consumida, para cada um dos combustíveis.\nEm uma viagem de 600 km, ele utilizou exclusivamente GNV na primeira metade do percurso e exclusivamente gasolina na segunda metade. O preço do metro cúbico de GNV foi R$ 4,50 e o do litro de gasolina foi R$ 6,00.",
-        "fonte": ""
+        "titulo": "Rendimento Veicular",
+        "conteudo": "Uma pessoa tem um carro bicombustível, que funciona a gás natural veicular (GNV) e a gasolina. O rendimento do carro, medido em km/m³, no caso do gás, ou medido em km/L, no caso da gasolina, depende, entre outros fatores, da velocidade, em km/h, em que o carro trafega. Essa relação está em conformidade com estes gráficos.\nDurante um feriado, essa pessoa realizou uma viagem de 240 km. Para obter uma estimativa de gasto de combustível, assuma que em todo o trajeto se manteve uma velocidade constante de 60 km/h. Considere que, durante metade do caminho, foi utilizado apenas GNV e, na outra metade, apenas gasolina. O que foi pago pelo metro cúbico de GNV e pelo litro de gasolina correspondeu, respectivamente, a R$ 2,00 e a R$ 3,00.",
+        "fonte": "ENEM 2025 Oficial."
       },
-      "enunciado": "Qual foi a diferença, em real, entre os gastos totais com gasolina e com GNV nessa viagem?",
+      "enunciado": "Qual foi a diferença, em real, entre os gastos totais com gasolina e com GNV?",
       "alternativas": {
-        "A": "15,00",
-        "B": "25,00",
-        "C": "35,00",
-        "D": "40,00",
-        "E": "50,00"
+        "A": "4",
+        "B": "8",
+        "C": "14",
+        "D": "21",
+        "E": "30"
       },
       "gabarito": "D",
       "habilidade": "H16 - Resolver situação-problema envolvendo grandezas financeiras e rendimento.",
