@@ -164,7 +164,7 @@ class AlternativeBadgeFlowable(Flowable):
     def __init__(self, letter):
         super().__init__()
         self.letter = letter
-        self.width = 10.2
+        self.width = 12.6
         self.height = 9.5
 
     def wrap(self, availWidth, availHeight):
@@ -288,44 +288,47 @@ def draw_cover_background(canv, doc):
     canv.line(MARGIN_LEFT + 4, top_y - 6, PAGE_W - MARGIN_RIGHT - 4, top_y - 6)
 
     # Título Institucional Superior
-    canv.setFont(FONT_BOLD, 14.5)
+    canv.setFont(FONT_BOLD, 15)
     canv.setFillColor(colors.black)
-    canv.drawCentredString(PAGE_W / 2.0, PAGE_H - 64, "2º SIMULADO UNIFICADO")
+    canv.drawCentredString(PAGE_W / 2.0, PAGE_H - 58, "2º SIMULADO UNIFICADO")
 
-    canv.setFont(FONT_BOLD, 10.5)
+    canv.setFont(FONT_BOLD, 10.8)
     canv.setFillColor(colors.HexColor("#222222"))
-    canv.drawCentredString(PAGE_W / 2.0, PAGE_H - 79, "COLETIVO VOA VOA & PREPARATÓRIO GABARITA")
+    canv.drawCentredString(PAGE_W / 2.0, PAGE_H - 74, "COLETIVO VOA VOA & PREPARATÓRIO GABARITA")
 
-    # 4 Linhas de Subtítulo Oficiais
+    # 4 Linhas de Subtítulo Oficiais com maior respiro e fonte ampliada
     subtitles = [
         "PROVA DE LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO",
         "PROVA DE CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS",
         "PROVA DE CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS",
         "PROVA DE MATEMÁTICA E SUAS TECNOLOGIAS",
     ]
-    canv.setFont(FONT_BOLD, 7.5)
-    canv.setFillColor(colors.HexColor("#333333"))
+    canv.setFont(FONT_BOLD, 8.4)
+    canv.setFillColor(colors.HexColor("#2b2b2b"))
     y_sub = PAGE_H - 95
     for s in subtitles:
         canv.drawCentredString(PAGE_W / 2.0, y_sub, s)
-        y_sub -= 10.5
+        y_sub -= 13.0
 
-    # Card ENEM Central em Alto Contraste
-    card_y = y_sub - 58
+    # Espaço ampliado de respiro após "PROVA DE MATEMÁTICA E SUAS TECNOLOGIAS"
     card_h = 66
+    card_y = y_sub - 18 - card_h
     canv.setStrokeColor(colors.black)
     canv.setLineWidth(1.2)
     canv.setFillColor(colors.white)
     canv.roundRect(MARGIN_LEFT + 10, card_y, USABLE_W - 20, card_h, 5, fill=1, stroke=1)
 
+    # Marca "enem 2026" com proximidade refinada (formando um bloco único)
+    enem_x = MARGIN_LEFT + 36
     canv.setFont(FONT_BOLD, 36)
     canv.setFillColor(colors.black)
-    canv.drawString(MARGIN_LEFT + 36, card_y + 18, "enem")
+    canv.drawString(enem_x, card_y + 18, "enem")
+    w_enem = canv.stringWidth("enem", FONT_BOLD, 36)
 
     ano = str(metadados.get("ano", "2026"))
     canv.setFont(FONT_NORMAL, 36)
     canv.setFillColor(colors.HexColor("#444444"))
-    canv.drawString(MARGIN_LEFT + 144, card_y + 18, ano)
+    canv.drawString(enem_x + w_enem + 6, card_y + 18, ano)
 
     # Divisória vertical no card
     canv.setStrokeColor(colors.black)
@@ -343,51 +346,51 @@ def draw_cover_background(canv, doc):
 
     # Caixa da Frase de Segurança
     frase_y = card_y - 68
-    frase_h = 60
+    frase_h = 58
     canv.setStrokeColor(colors.black)
     canv.setLineWidth(0.9)
     canv.roundRect(MARGIN_LEFT + 10, frase_y, USABLE_W - 20, frase_h, 4, fill=0, stroke=1)
 
-    canv.setFont(FONT_BOLD, 7.5)
+    canv.setFont(FONT_BOLD, 7.8)
     canv.setFillColor(colors.black)
     canv.drawCentredString(PAGE_W / 2.0, frase_y + frase_h - 13, "ATENÇÃO: transcreva no espaço apropriado do seu CARTÃO-RESPOSTA,")
-    canv.setFont(FONT_NORMAL, 7.5)
-    canv.drawCentredString(PAGE_W / 2.0, frase_y + frase_h - 23, "com sua caligrafia usual, considerando as letras maiúsculas e minúsculas, a seguinte frase:")
+    canv.setFont(FONT_NORMAL, 7.8)
+    canv.drawCentredString(PAGE_W / 2.0, frase_y + frase_h - 24, "com sua caligrafia usual, considerando as letras maiúsculas e minúsculas, a seguinte frase:")
 
     # Tarja preta com a frase de segurança
     frase = metadados.get("frase_seguranca", "A persistência constrói o conhecimento e abre caminhos para o futuro.")
     f_box_w = USABLE_W - 60
     f_box_h = 22
     f_box_x = MARGIN_LEFT + 30
-    f_box_y = frase_y + 8
+    f_box_y = frase_y + 7
     canv.setFillColor(colors.black)
     canv.roundRect(f_box_x, f_box_y, f_box_w, f_box_h, 3, fill=1, stroke=0)
-    canv.setFont(FONT_BOLD, 8.8)
+    canv.setFont(FONT_BOLD, 9.0)
     canv.setFillColor(colors.white)
     canv.drawCentredString(PAGE_W / 2.0, f_box_y + 6.5, frase)
 
-    # Bloco das Instruções Oficiais
+    # Bloco das Instruções Oficiais Ampliado e Confortável
     inst_y = MARGIN_BOTTOM + 20
-    inst_h = frase_y - inst_y - 8
+    inst_h = frase_y - inst_y - 10
     canv.setStrokeColor(colors.HexColor("#333333"))
     canv.setLineWidth(0.8)
     canv.setFillColor(colors.HexColor("#FAFAFA"))
     canv.roundRect(MARGIN_LEFT + 10, inst_y, USABLE_W - 20, inst_h, 4, fill=1, stroke=1)
 
-    canv.setFont(FONT_BOLD, 9.0)
+    canv.setFont(FONT_BOLD, 9.8)
     canv.setFillColor(colors.black)
-    canv.drawCentredString(PAGE_W / 2.0, inst_y + inst_h - 14, "LEIA ATENTAMENTE AS INSTRUÇÕES SEGUINTES:")
+    canv.drawCentredString(PAGE_W / 2.0, inst_y + inst_h - 18, "LEIA ATENTAMENTE AS INSTRUÇÕES SEGUINTES:")
 
     instrucoes = [
         ("1. Este CADERNO DE QUESTÕES contém 70 questões numeradas de 01 a 70 e a Proposta de Redação,", True),
         ("   dispostas da seguinte maneira:", True),
         ("   a) questões de número 01 a 16, relativas à área de Linguagens, Códigos e suas Tecnologias;", False),
+        ("      ATENÇÃO: as questões de 01 a 05 são relativas à Língua Inglesa.", False),
         ("   b) questões de número 17 a 32, relativas à área de Ciências Humanas e suas Tecnologias;", False),
         ("   c) questões de número 33 a 50, relativas à área de Ciências da Natureza e suas Tecnologias;", False),
         ("   d) questões de número 51 a 70, relativas à área de Matemática e suas Tecnologias;", False),
         ("   e) Proposta de Redação e Folha de Rascunho da Redação ao final deste caderno,", False),
         ("      e Folha de Redação Definitiva e Cartão-Resposta em folhas avulsas.", False),
-        ("   ATENÇÃO: as questões de 01 a 05 são relativas à Língua Inglesa.", False),
         ("2. Confira se a quantidade e a ordem das questões deste caderno estão de acordo com as instruções.", True),
         ("3. Preencha o CARTÃO-RESPOSTA e a FOLHA DE REDAÇÃO exclusivamente com caneta esferográfica de", True),
         ("   tinta PRETA (tubo transparente). É ESTRITAMENTE PROIBIDO O USO DE CANETA AZUL,", False),
@@ -396,27 +399,27 @@ def draw_cover_background(canv, doc):
         ("5. O tempo disponível para a realização das 70 questões e da proposta de redação é de cinco horas.", True),
         ("6. Reserve tempo suficiente para preencher o CARTÃO-RESPOSTA e a FOLHA DE REDAÇÃO definitiva.", True),
         ("   Os rascunhos e marcações neste caderno NÃO serão considerados na avaliação.", False),
-        ("7. Quando terminar as provas, entregue ao aplicador este CADERNO DE QUESTÕES, o CARTÃO-RESPOSTA", True),
-        ("   e a FOLHA DE REDAÇÃO.", False),
+        ("7. Quando terminar as provas, entregue ao aplicador o CARTÃO-RESPOSTA e a FOLHA DE REDAÇÃO.", True),
+        ("   Você poderá levar este CADERNO DE QUESTÕES para casa ao término da prova.", False),
     ]
 
-    curr_y = inst_y + inst_h - 26
+    curr_y = inst_y + inst_h - 35
     for linha, is_title in instrucoes:
         if is_title:
-            curr_y -= 3.0
-            canv.setFont(FONT_BOLD, 7.2)
+            curr_y -= 5.5
+            canv.setFont(FONT_BOLD, 7.8)
             canv.setFillColor(colors.black)
         else:
-            canv.setFont(FONT_NORMAL, 6.9)
+            canv.setFont(FONT_NORMAL, 7.5)
             canv.setFillColor(colors.HexColor("#222222"))
         canv.drawString(MARGIN_LEFT + 20, curr_y, linha)
-        curr_y -= 9.4
+        curr_y -= 12.2
 
     # Rodapé da Capa
     footer_y = MARGIN_BOTTOM + 5.0
     canv.setFont(FONT_BOLD, 7.8)
     canv.setFillColor(colors.black)
-    canv.drawString(MARGIN_LEFT + 6, footer_y, "COLETIVO VOA VOA • GABARITA")
+    canv.drawString(MARGIN_LEFT + 6, footer_y, "COLETIVO VOA VOA • PREPARATÓRIO GABARITA")
     canv.drawRightString(PAGE_W - MARGIN_RIGHT - 6, footer_y, "2º SIMULADO ENEM 2026")
 
     canv.restoreState()
@@ -708,6 +711,118 @@ def get_two_column_styles():
     return styles
 
 
+def format_question_support_content(conteudo_raw, body_style, col_width):
+    """
+    Processa o texto de apoio da questão:
+    - Se houver dados tabulares delimitados por '|', gera uma Table formatada padrão ENEM
+      (com cabeçalho sombreado, bordas e alinhamento centralizado).
+    - Para textos normais, gera parágrafos limpos.
+    """
+    if not conteudo_raw:
+        return []
+
+    if "|" not in conteudo_raw:
+        conteudo_san = sanitize_for_reportlab(conteudo_raw)
+        return [Paragraph(conteudo_san, body_style)]
+
+    lines = [l.strip() for l in conteudo_raw.split("\n")]
+    elements = []
+    text_chunk = []
+    table_lines = []
+
+    def flush_text():
+        if text_chunk:
+            full_txt = "\n".join(text_chunk).strip()
+            if full_txt:
+                elements.append(Paragraph(sanitize_for_reportlab(full_txt), body_style))
+                elements.append(Spacer(1, 2))
+            text_chunk.clear()
+
+    def flush_table():
+        if table_lines:
+            rows = []
+            for r in table_lines:
+                clean_r = r.strip()
+                if clean_r.startswith("|"):
+                    clean_r = clean_r[1:]
+                if clean_r.endswith("|"):
+                    clean_r = clean_r[:-1]
+                cols = [c.strip() for c in clean_r.split("|")]
+                # Ignora divisórias markdown tipo ---|---
+                if all(set(c).issubset({"-", ":", " "}) for c in cols):
+                    continue
+                rows.append(cols)
+
+            if rows:
+                num_cols = max(len(r) for r in rows)
+                for r in rows:
+                    while len(r) < num_cols:
+                        r.append("")
+
+                hdr_style = ParagraphStyle(
+                    "TblHdr",
+                    fontName=FONT_BOLD,
+                    fontSize=6.8,
+                    leading=8.2,
+                    textColor=colors.black,
+                    alignment=1
+                )
+                cell_style = ParagraphStyle(
+                    "TblCell",
+                    fontName=FONT_NORMAL,
+                    fontSize=6.5,
+                    leading=8.0,
+                    textColor=colors.HexColor("#111111"),
+                    alignment=1
+                )
+
+                table_data = []
+                for row_idx, r in enumerate(rows):
+                    row_cells = []
+                    style = hdr_style if row_idx == 0 else cell_style
+                    for cell_txt in r:
+                        row_cells.append(Paragraph(sanitize_for_reportlab(cell_txt), style))
+                    table_data.append(row_cells)
+
+                col_lens = []
+                for c_idx in range(num_cols):
+                    lens = [len(r[c_idx]) for r in rows]
+                    col_lens.append(max(lens) + 6)
+                total_len = max(sum(col_lens), 1)
+
+                tbl_w = min(col_width * 0.94, 235.0)
+                col_widths = [(l / total_len) * tbl_w for l in col_lens]
+
+                t = Table(table_data, colWidths=col_widths, hAlign='CENTER')
+                t.setStyle(TableStyle([
+                    ('GRID', (0, 0), (-1, -1), 0.6, colors.HexColor("#333333")),
+                    ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor("#EEEEEE")),
+                    ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+                    ('TOPPADDING', (0, 0), (-1, -1), 1.5),
+                    ('BOTTOMPADDING', (0, 0), (-1, -1), 1.5),
+                    ('LEFTPADDING', (0, 0), (-1, -1), 3),
+                    ('RIGHTPADDING', (0, 0), (-1, -1), 3),
+                ]))
+                elements.append(Spacer(1, 2))
+                elements.append(t)
+                elements.append(Spacer(1, 4))
+            table_lines.clear()
+
+    for line in lines:
+        if "|" in line:
+            flush_text()
+            table_lines.append(line)
+        else:
+            if table_lines:
+                flush_table()
+            if line:
+                text_chunk.append(line)
+
+    flush_text()
+    flush_table()
+    return elements
+
+
 def build_two_column_question(q, styles, col_width, area_header=None):
     """
     Constrói os flowables de uma questão em 2 colunas:
@@ -748,8 +863,10 @@ def build_two_column_question(q, styles, col_width, area_header=None):
             elements.append(Paragraph(titulo_limpo, styles["TextSupportTitle"]))
 
         if texto_apoio.get("conteudo"):
-            conteudo_san = sanitize_for_reportlab(texto_apoio["conteudo"])
-            elements.append(Paragraph(conteudo_san, body_style))
+            content_flowables = format_question_support_content(
+                texto_apoio["conteudo"], body_style, col_width
+            )
+            elements.extend(content_flowables)
 
     # 4. Imagem de Apoio (se houver, vem ANTES da fonte)
     img_path = q.get("imagem")
@@ -797,10 +914,10 @@ def build_two_column_question(q, styles, col_width, area_header=None):
     elements.append(Paragraph(enun_san, prompt_style))
     elements.append(Spacer(1, 2))
 
-    # 7. Alternativas de A a E
+    # 7. Alternativas de A a E com micro-espaço refinado
     alts = q.get("alternativas") or q.get("alts") or {}
     table_data = []
-    badge_w = 10.6
+    badge_w = 12.6
     text_w = col_width - badge_w
 
     for letter in ["A", "B", "C", "D", "E"]:
