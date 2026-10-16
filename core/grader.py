@@ -145,6 +145,12 @@ def corrigir_pasta_cartoes(pasta_cartoes="cartoes", caminho_questoes="banco_ques
     """
     Processa todos os cartões da pasta, corrige contra o gabarito oficial e salva a planilha consolidada.
     """
+    if pasta_cartoes == "cartoes" and not os.path.exists("cartoes"):
+        if os.path.exists("simulado_2/cartoes"):
+            pasta_cartoes = "simulado_2/cartoes"
+        elif os.path.exists("simulado_1/cartoes_digitalizados"):
+            pasta_cartoes = "simulado_1/cartoes_digitalizados"
+
     gabarito = carregar_gabarito_oficial(caminho_questoes)
 
     padroes = [os.path.join(pasta_cartoes, f"*{ext}") for ext in [".jpg", ".jpeg", ".png", ".JPG", ".JPEG", ".PNG"]]
@@ -163,13 +169,18 @@ def corrigir_pasta_cartoes(pasta_cartoes="cartoes", caminho_questoes="banco_ques
     print(f"Gabarito Oficial carregado: {len(gabarito)} questões.")
     print(f"=======================================================\n")
 
-    linhas_tabela = []
-    totais_acertos = []
+    if "simulado_1" in pasta_cartoes:
+        pasta_debug = os.path.join("simulado_1", "debug_omr")
+    elif "simulado_2" in pasta_cartoes:
+        pasta_debug = os.path.join("simulado_2", "debug_omr")
+    else:
+        pasta_debug = "debug"
+    os.makedirs(pasta_debug, exist_ok=True)
 
     for idx, caminho in enumerate(arquivos):
         nome_cartao = os.path.splitext(os.path.basename(caminho))[0]
         try:
-            df_resp, metodo = processar_cartao(caminho, salvar_debug=True, pasta_debug="debug")
+            df_resp, metodo = processar_cartao(caminho, salvar_debug=True, pasta_debug=pasta_debug)
             metricas = avaliar_aluno(df_resp, gabarito)
 
             registro = {

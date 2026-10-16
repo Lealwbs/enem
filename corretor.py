@@ -507,7 +507,14 @@ def processar_lote(pasta_imagens="cartoes", salvar_individual=False, salvar_debu
 
 
 if __name__ == "__main__":
-    pasta_padrao = "cartoes" if os.path.exists("cartoes") else "cards" if os.path.exists("cards") else "."
+    if os.path.exists("cartoes"):
+        pasta_padrao = "cartoes"
+    elif os.path.exists("simulado_1/cartoes_digitalizados"):
+        pasta_padrao = "simulado_1/cartoes_digitalizados"
+    elif os.path.exists("cards"):
+        pasta_padrao = "cards"
+    else:
+        pasta_padrao = "."
 
     parser = argparse.ArgumentParser(description="Corretor Automatico de Cartoes-Resposta OMR (70 Questoes)")
     parser.add_argument("--imagem",      type=str, default=None,             help="Processar apenas uma imagem especifica")

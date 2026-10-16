@@ -1,24 +1,27 @@
 """
 ================================================================================
 Simulado Coletivo • Gerador de Cartão-Resposta (Gabarito OMR) 70 Questões em PDF
-Modelo oficial estilo ENEM com 4 marcadores fiduciais quadrados pretos delimitando
-EXCLUSIVAMENTE o bloco das 70 questões para máxima precisão de leitura óptica (OMR).
+Modelo oficial estilo ENEM otimizado para impressão P&B e máxima legibilidade:
+- Sem código de barras, sem '* 010175BR1 *', sem '1º DIA' e sem subtítulo redundante.
+- Sem CPF, sem Data de Nascimento, sem Assinatura e sem Transcrição de Frase da capa.
+- Campo de Nome Completo em caixa única para escrita manual normal (sem quadradinhos).
+- Instruções de preenchimento modernas e 100% em Preto e Branco com exemplos visuais.
+- 4 Marcadores fiduciais nos cantos da grade de 70 questões para homografia precisa OMR.
+- Painel de Avaliação da Banca no rodapé baseado no boletim de desempenho (Média,
+  Linguagens 16Q, Humanas 16Q, Natureza 18Q, Matemática 20Q e Redação com 5 competências).
+- Suporte para geração do Cartão em Branco e do Cartão com Gabarito Oficial preenchido.
 ================================================================================
 """
 
 import os
+import json
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
-from reportlab.graphics.barcode import code128
 from reportlab.lib import colors
 
-# Dimensões da página A4 em pontos (595.27 x 841.89)
 PAGE_WIDTH, PAGE_HEIGHT = A4
 
-# Configuração dos marcadores fiduciais (quadrados pretos ao redor das questões)
 FIDUCIAL_SIZE = 16.0
-
-# Dimensões e espaçamentos da grade de respostas
 GRID_MARGIN_X = 36.0
 GRID_W = PAGE_WIDTH - 2 * GRID_MARGIN_X
 GAP_COLUMNS = 10.0
@@ -31,7 +34,6 @@ BUBBLE_RADIUS = 5.0
 OPT_DX = 15.8
 OPTIONS = ["A", "B", "C", "D", "E"]
 
-# Definição das colunas de questões
 COLUMNS_DEF = [
     {"start": 1, "end": 18, "title": "QUESTÕES 01 a 18"},
     {"start": 19, "end": 36, "title": "QUESTÕES 19 a 36"},
@@ -40,155 +42,114 @@ COLUMNS_DEF = [
 ]
 
 
-def draw_header(c, metadados):
-    """Desenha o cabeçalho superior do cartão-resposta."""
-    # Código de barras superior
-    codigo_caderno = metadados.get("codigo_caderno", "010175BR1")
-    barcode = code128.Code128(codigo_caderno, barWidth=1.0, barHeight=22)
-    barcode.drawOn(c, (PAGE_WIDTH - barcode.width) / 2.0, PAGE_HEIGHT - 38)
+def draw_clean_header(c, is_gabarito=False):
+    """Desenha cabeçalho limpo, sem códigos de barras ou textos redundantes."""
+    start_y = PAGE_HEIGHT - 38
 
-    # Número do código abaixo do barcode
-    c.setFont("Helvetica-Bold", 8)
-    c.setFillColor(colors.black)
-    c.drawCentredString(PAGE_WIDTH / 2.0, PAGE_HEIGHT - 48, f"* {codigo_caderno} *")
-
-    # Título principal
     c.setFont("Helvetica-Bold", 19)
-    c.setFillColor(colors.HexColor("#0c2340"))  # Azul escuro ENEM
-    c.drawString(GRID_MARGIN_X, PAGE_HEIGHT - 66, "CARTÃO-RESPOSTA")
+    c.setFillColor(colors.black)
+    titulo = "GABARITO OFICIAL — 70 QUESTÕES" if is_gabarito else "CARTÃO-RESPOSTA"
+    c.drawString(GRID_MARGIN_X, start_y, titulo)
 
-    # Linha decorativa abaixo do título
-    c.setStrokeColor(colors.HexColor("#00a4e4"))
-    c.setLineWidth(2.5)
-    c.line(GRID_MARGIN_X, PAGE_HEIGHT - 71, GRID_MARGIN_X + 220, PAGE_HEIGHT - 71)
+    c.setFont("Helvetica-Bold", 8.5)
+    c.setFillColor(colors.HexColor("#444444"))
+    c.drawString(GRID_MARGIN_X, start_y - 12, "EXAME NACIONAL DO ENSINO MÉDIO • 2º SIMULADO PREPARATÓRIO")
 
-    # Subtítulo
-    c.setFont("Helvetica", 8.2)
-    c.setFillColor(colors.HexColor("#333333"))
-    subtitulo = metadados.get("subtitulo", "SIMULADO COLETIVO • EXAME NACIONAL DO ENSINO MÉDIO - 70 QUESTÕES")
-    c.drawString(GRID_MARGIN_X, PAGE_HEIGHT - 82, subtitulo.upper())
-
-    # Badge do Dia (lado direito)
-    dia_box_x = PAGE_WIDTH - GRID_MARGIN_X - 85
-    dia_box_y = PAGE_HEIGHT - 82
-    c.setStrokeColor(colors.HexColor("#0c2340"))
+    # Linha divisória preta de alto contraste
+    c.setStrokeColor(colors.black)
     c.setLineWidth(1.2)
-    c.roundRect(dia_box_x, dia_box_y, 85, 28, 4, fill=0)
+    c.line(GRID_MARGIN_X, start_y - 18, GRID_MARGIN_X + GRID_W, start_y - 18)
 
-    c.setFont("Helvetica-Bold", 11)
-    c.setFillColor(colors.HexColor("#0c2340"))
-    dia_texto = metadados.get("dia", "1º DIA")
-    c.drawCentredString(dia_box_x + 42.5, dia_box_y + 9, dia_texto)
+    return start_y - 24
 
 
-def draw_candidate_info(c, start_y):
-    """Desenha a caixa de dados do participante (Nome, CPF, Data Nasc, Assinatura, Frase)."""
+def draw_candidate_name_field(c, start_y, is_gabarito=False):
+    """Desenha campo de nome contínuo para escrita normal sem quadradinhos."""
     box_x = GRID_MARGIN_X
     box_w = GRID_W
-    box_h = 92
+    box_h = 24.0
     box_y = start_y - box_h
 
-    # Borda do painel
-    c.setStrokeColor(colors.HexColor("#888888"))
-    c.setLineWidth(0.7)
-    c.setFillColor(colors.HexColor("#fafafa"))
-    c.roundRect(box_x, box_y, box_w, box_h, 4, fill=1, stroke=1)
-
-    # Nome Completo
-    c.setFont("Helvetica-Bold", 7.8)
-    c.setFillColor(colors.HexColor("#222222"))
-    c.drawString(box_x + 8, box_y + box_h - 13, "Nome Completo:")
-
-    # Quadrículas para letras do nome
-    num_boxes = 33
-    b_start_x = box_x + 8
-    b_y = box_y + box_h - 29
-    b_size = 13.5
-    c.setStrokeColor(colors.HexColor("#999999"))
-    c.setLineWidth(0.5)
-    for i in range(num_boxes):
-        c.rect(b_start_x + i * (b_size + 1.2), b_y, b_size, b_size)
-
-    # Linha 2: CPF / Data Nasc / Assinatura
-    row2_y = box_y + 36
     c.setFont("Helvetica-Bold", 7.5)
-    c.drawString(box_x + 8, row2_y + 15, "CPF / Inscrição:")
-    for i in range(11):
-        c.rect(box_x + 8 + i * 13, row2_y, 12, 12)
+    c.setFillColor(colors.black)
+    c.drawString(box_x, start_y, "NOME COMPLETO DO PARTICIPANTE:")
 
-    dn_x = box_x + 165
-    c.drawString(dn_x, row2_y + 15, "Data de Nascimento:")
-    for i in range(8):
-        c.rect(dn_x + i * 13, row2_y, 12, 12)
+    # Caixa contínua de escrita
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(0.8)
+    c.setFillColor(colors.white)
+    c.rect(box_x, box_y, box_w, box_h, fill=1, stroke=1)
 
-    ass_x = box_x + 285
-    ass_w = box_w - 295
-    c.drawString(ass_x, row2_y + 15, "Assinatura do Participante:")
-    c.setStrokeColor(colors.HexColor("#444444"))
-    c.setDash([2, 2], 0)
-    c.line(ass_x, row2_y + 2, ass_x + ass_w, row2_y + 2)
-    c.setDash([], 0)
+    if is_gabarito:
+        c.setFont("Helvetica-Bold", 10.5)
+        c.setFillColor(colors.black)
+        c.drawString(box_x + 10, box_y + 7, "GABARITO OFICIAL DEFINITIVO — 2º SIMULADO PREPARATÓRIO ENEM")
+    else:
+        c.setFont("Helvetica-Oblique", 7.5)
+        c.setFillColor(colors.HexColor("#777777"))
+        c.drawString(box_x + 8, box_y + 8, "(Escreva seu nome legível a caneta esferográfica preta)")
 
-    # Linha 3: Frase de segurança
-    row3_y = box_y + 7
-    c.setFont("Helvetica-Bold", 7.5)
-    c.drawString(box_x + 8, row3_y + 15, "Transcreva a frase da capa do seu caderno com caligrafia usual:")
-    c.setStrokeColor(colors.HexColor("#777777"))
-    c.line(box_x + 8, row3_y + 3, box_x + box_w - 8, row3_y + 3)
-
-    return box_y
+    return box_y - 6
 
 
-def draw_instructions_bar(c, start_y):
-    """Desenha barra com instruções de preenchimento e exemplos visuais."""
+def draw_instructions_bw(c, start_y):
+    """Desenha barra de instruções elegante, compacta e 100% em Preto e Branco."""
     bar_x = GRID_MARGIN_X
     bar_w = GRID_W
-    bar_h = 38
-    bar_y = start_y - bar_h - 6
+    bar_h = 32.0
+    bar_y = start_y - bar_h
 
-    c.setStrokeColor(colors.HexColor("#00a4e4"))
-    c.setFillColor(colors.HexColor("#f0f8fd"))
+    # Borda fina preta e fundo cinza muito suave
+    c.setStrokeColor(colors.HexColor("#444444"))
+    c.setFillColor(colors.HexColor("#F8F8F8"))
     c.setLineWidth(0.7)
-    c.roundRect(bar_x, bar_y, bar_w, bar_h, 3, fill=1, stroke=1)
+    c.rect(bar_x, bar_y, bar_w, bar_h, fill=1, stroke=1)
 
-    c.setFont("Helvetica-Bold", 7.5)
-    c.setFillColor(colors.HexColor("#0c2340"))
-    c.drawString(bar_x + 8, bar_y + bar_h - 11, "INSTRUÇÕES DE PREENCHIMENTO:")
-
-    c.setFont("Helvetica", 7.0)
-    c.setFillColor(colors.HexColor("#333333"))
-    c.drawString(bar_x + 8, bar_y + bar_h - 22, "• Utilize apenas caneta esferográfica de tinta preta fabricada em material transparente.")
-    c.drawString(bar_x + 8, bar_y + bar_h - 32, "• Preencha completamente o círculo da opção desejada. A correção óptica analisa apenas a área dos 4 quadrados.")
-
-    # Exemplos visuais à direita
-    ex_x = bar_x + bar_w - 150
+    # Título das instruções
     c.setFont("Helvetica-Bold", 7.2)
-    c.drawString(ex_x, bar_y + bar_h - 13, "EXEMPLOS:")
-
-    c.setFont("Helvetica", 6.8)
-    c.drawString(ex_x, bar_y + bar_h - 26, "Correto:")
     c.setFillColor(colors.black)
-    c.circle(ex_x + 40, bar_y + bar_h - 24, 4.5, fill=1, stroke=1)
+    c.drawString(bar_x + 8, bar_y + bar_h - 10, "INSTRUÇÕES DE PREENCHIMENTO:")
 
-    c.drawString(ex_x + 60, bar_y + bar_h - 26, "Incorreto:")
+    # Texto das instruções
+    c.setFont("Helvetica", 6.3)
+    c.setFillColor(colors.HexColor("#222222"))
+    c.drawString(bar_x + 8, bar_y + bar_h - 19, "• Preencha completamente a bolha da opção escolhida utilizando caneta esferográfica de tinta preta transparente.")
+    c.drawString(bar_x + 8, bar_y + bar_h - 27, "• Não utilize corretivo nem amasse esta folha. A leitura óptica analisa exclusivamente o espaço entre os 4 marcadores.")
+
+    # Exemplos visuais P&B à direita
+    ex_x = bar_x + bar_w - 145
+    c.setFont("Helvetica-Bold", 6.8)
+    c.drawString(ex_x, bar_y + bar_h - 11, "EXEMPLOS:")
+
+    # Correto
+    c.setFont("Helvetica", 6.3)
+    c.drawString(ex_x, bar_y + bar_h - 23, "Correto:")
+    c.setFillColor(colors.black)
+    c.circle(ex_x + 36, bar_y + bar_h - 21, 4.2, fill=1, stroke=1)
+
+    # Incorreto
+    c.drawString(ex_x + 55, bar_y + bar_h - 23, "Incorreto:")
     c.setFillColor(colors.white)
-    c.circle(ex_x + 105, bar_y + bar_h - 24, 4.5, fill=0, stroke=1)
-    c.line(ex_x + 102, bar_y + bar_h - 27, ex_x + 108, bar_y + bar_h - 21)
-    c.line(ex_x + 102, bar_y + bar_h - 21, ex_x + 108, bar_y + bar_h - 27)
+    c.circle(ex_x + 95, bar_y + bar_h - 21, 4.2, fill=0, stroke=1)
+    c.line(ex_x + 92, bar_y + bar_h - 24, ex_x + 98, bar_y + bar_h - 18)
+    c.line(ex_x + 92, bar_y + bar_h - 18, ex_x + 98, bar_y + bar_h - 24)
 
-    return bar_y
+    c.circle(ex_x + 115, bar_y + bar_h - 21, 4.2, fill=0, stroke=1)
+    c.circle(ex_x + 115, bar_y + bar_h - 21, 1.8, fill=1, stroke=1)
+
+    return bar_y - 6
 
 
-def draw_bubble_grid(c, start_y):
+def draw_bubble_grid(c, start_y, gabarito_oficial=None):
     """
-    Desenha o grid de 70 questões em 4 colunas com 4 marcadores quadrados pretos
-    delimitando EXCLUSIVAMENTE a área de questões para o alinhamento OMR.
+    Desenha o grid de 70 questões com 4 marcadores fiduciais pretos nos cantos.
+    Se gabarito_oficial for fornecido, preenche as bolhas corretas de preto com letra branca.
     """
-    cy_top = start_y - 8
+    cy_top = start_y
     col_content_h = MAX_ROWS * ROW_H + 8
     col_content_y = cy_top - HEADER_H - col_content_h
 
-    # 4 MARCADORES QUADRADOS PRETOS NOS CANTOS DA ÁREA DE QUESTÕES
+    # 4 MARCADORES QUADRADOS PRETOS NOS CANTOS DA ÁREA DE QUESTÕES (OMR)
     fid_left_x = GRID_MARGIN_X - 22.0
     fid_right_x = GRID_MARGIN_X + GRID_W + 6.0
     fid_top_y = cy_top - FIDUCIAL_SIZE
@@ -196,16 +157,11 @@ def draw_bubble_grid(c, start_y):
 
     c.setFillColor(colors.black)
     c.setStrokeColor(colors.black)
-    # Top-Left
     c.rect(fid_left_x, fid_top_y, FIDUCIAL_SIZE, FIDUCIAL_SIZE, fill=1, stroke=0)
-    # Top-Right
     c.rect(fid_right_x, fid_top_y, FIDUCIAL_SIZE, FIDUCIAL_SIZE, fill=1, stroke=0)
-    # Bottom-Left
     c.rect(fid_left_x, fid_bottom_y, FIDUCIAL_SIZE, FIDUCIAL_SIZE, fill=1, stroke=0)
-    # Bottom-Right
     c.rect(fid_right_x, fid_bottom_y, FIDUCIAL_SIZE, FIDUCIAL_SIZE, fill=1, stroke=0)
 
-    # Coordenadas exatas dos centros dos marcadores para o OMR
     fiducials_centers = {
         "TL": (fid_left_x + FIDUCIAL_SIZE / 2.0, fid_top_y + FIDUCIAL_SIZE / 2.0),
         "TR": (fid_right_x + FIDUCIAL_SIZE / 2.0, fid_top_y + FIDUCIAL_SIZE / 2.0),
@@ -221,15 +177,15 @@ def draw_bubble_grid(c, start_y):
     for col_idx, col_def in enumerate(COLUMNS_DEF):
         cx = GRID_MARGIN_X + col_idx * (COL_W + GAP_COLUMNS)
 
-        # Cabeçalho da coluna
-        c.setFillColor(colors.HexColor("#0c2340"))
-        c.roundRect(cx, cy_top - HEADER_H, COL_W, HEADER_H, 2.5, fill=1, stroke=0)
+        # Cabeçalho da coluna (P&B alto contraste)
+        c.setFillColor(colors.black)
+        c.rect(cx, cy_top - HEADER_H, COL_W, HEADER_H, fill=1, stroke=0)
         c.setFont("Helvetica-Bold", 8)
         c.setFillColor(colors.white)
         c.drawCentredString(cx + COL_W / 2.0, cy_top - HEADER_H + 5.5, col_def["title"])
 
         # Fundo e borda suave da coluna
-        c.setStrokeColor(colors.HexColor("#d0d7de"))
+        c.setStrokeColor(colors.HexColor("#555555"))
         c.setLineWidth(0.6)
         c.setFillColor(colors.white)
         c.rect(cx, col_content_y, COL_W, col_content_h, fill=1, stroke=1)
@@ -242,125 +198,222 @@ def draw_bubble_grid(c, start_y):
             q_num = start_q + r
             row_y = cy_top - HEADER_H - 14 - r * ROW_H
 
-            # Linha zebrada sutil para leitura visual confortável
+            # Linha zebrada sutil para facilitar visualização
             if r % 2 == 1:
-                c.setFillColor(colors.HexColor("#f8fafc"))
+                c.setFillColor(colors.HexColor("#F6F6F6"))
                 c.rect(cx + 1, row_y - ROW_H / 2.0 + 1, COL_W - 2, ROW_H - 2, fill=1, stroke=0)
 
             # Número da questão
             c.setFont("Helvetica-Bold", 8.5)
-            c.setFillColor(colors.HexColor("#0c2340"))
+            c.setFillColor(colors.black)
             c.drawString(cx + 5, row_y - 3, f"{q_num:02d}")
 
             # Bolinhas das alternativas (A a E)
             first_opt_x = cx + 33.0
             geometry["questions"][q_num] = {}
 
+            resp_correta = (gabarito_oficial.get(q_num, "") or "").strip().upper() if gabarito_oficial else ""
+
             for opt_idx, opt_letter in enumerate(OPTIONS):
                 bx = first_opt_x + opt_idx * OPT_DX
                 by = row_y
 
+                is_correct_opt = (opt_letter == resp_correta)
+
                 c.setStrokeColor(colors.black)
                 c.setLineWidth(0.8)
-                c.setFillColor(colors.white)
-                c.circle(bx, by, BUBBLE_RADIUS, fill=1, stroke=1)
 
-                c.setFont("Helvetica-Bold", 7.0)
-                c.setFillColor(colors.black)
-                c.drawCentredString(bx, by - 2.4, opt_letter)
+                if is_correct_opt:
+                    # Gabarito: bolha totalmente preenchida de preto com letra branca
+                    c.setFillColor(colors.black)
+                    c.circle(bx, by, BUBBLE_RADIUS, fill=1, stroke=1)
+                    c.setFont("Helvetica-Bold", 7.0)
+                    c.setFillColor(colors.white)
+                    c.drawCentredString(bx, by - 2.4, opt_letter)
+                else:
+                    # Cartão normal: bolha branca com borda preta e letra preta
+                    c.setFillColor(colors.white)
+                    c.circle(bx, by, BUBBLE_RADIUS, fill=1, stroke=1)
+                    c.setFont("Helvetica-Bold", 7.0)
+                    c.setFillColor(colors.black)
+                    c.drawCentredString(bx, by - 2.4, opt_letter)
 
-                # Salva a coordenada geométrica absoluta
                 geometry["questions"][q_num][opt_letter] = (bx, by, BUBBLE_RADIUS)
 
     return col_content_y, geometry
 
 
-def draw_evaluation_box(c, start_y):
-    """Desenha a caixa de resultado da banca avaliadora abaixo das questões."""
-    sub_q_y = start_y - 12
-    c.setFont("Helvetica-Bold", 7.2)
-    c.setFillColor(colors.HexColor("#555555"))
-    c.drawCentredString(
-        PAGE_WIDTH / 2.0,
-        sub_q_y,
-        "▲ ÁREA DE RESPOSTAS — CORREÇÃO ELETRÔNICA (OMR) EXCLUSIVA ENTRE OS 4 MARCADORES QUADRADOS ▲"
-    )
+def draw_evaluator_panel(c, start_y, is_gabarito=False):
+    """
+    Desenha o Painel de Correção / Avaliação da Banca no rodapé,
+    baseado na estrutura do boletim de desempenho (Média, Linguagens 16Q,
+    Humanas 16Q, Natureza 18Q, Matemática 20Q e Redação com as 5 Competências).
+    Espaço vazio para preenchimento manual pelo corretor ou preenchido no gabarito oficial.
+    """
+    panel_x = GRID_MARGIN_X
+    panel_w = GRID_W
+    panel_h = 88.0
+    panel_y = start_y - panel_h - 4
 
-    box_x = GRID_MARGIN_X
-    box_w = GRID_W
-    banca_box_y = sub_q_y - 74
-    banca_box_h = 64
+    # 1. Borda externa e fundo
+    c.setStrokeColor(colors.black)
+    c.setLineWidth(1.0)
+    c.setFillColor(colors.white)
+    c.rect(panel_x, panel_y, panel_w, panel_h, fill=1, stroke=1)
 
-    c.setStrokeColor(colors.HexColor("#999999"))
+    # 2. Faixa superior do painel: Título + Alerta ao estudante
+    header_h = 16.0
+    c.setFillColor(colors.black)
+    c.rect(panel_x, panel_y + panel_h - header_h, panel_w, header_h, fill=1, stroke=0)
+
+    c.setFont("Helvetica-Bold", 7.5)
+    c.setFillColor(colors.white)
+    c.drawString(panel_x + 8, panel_y + panel_h - 11.5, "PAINEL DE CORREÇÃO — USO EXCLUSIVO DO PROFESSOR / AVALIADOR")
+
+    c.setFont("Helvetica-Bold", 6.5)
+    c.setFillColor(colors.HexColor("#EEEEEE"))
+    c.drawRightString(panel_x + panel_w - 8, panel_y + panel_h - 11.5, "⚠️ ATENÇÃO: NÃO PREENCHER ESTE CAMPO (RESERVADO À CORREÇÃO)")
+
+    # 3. Divisão em 2 colunas principais:
+    # Esquerda: Prova Objetiva (Média, Linguagens, Humanas, Natureza, Matemática) -> largura 355pt
+    # Direita: Redação (Nota Total e 5 Competências) -> largura 168pt
+    obj_w = 355.0
+    red_x = panel_x + obj_w
+    red_w = panel_w - obj_w
+
+    c.setStrokeColor(colors.black)
     c.setLineWidth(0.8)
-    c.setFillColor(colors.HexColor("#fafafa"))
-    c.roundRect(box_x, banca_box_y, box_w, banca_box_h, 4, fill=1, stroke=1)
+    c.line(red_x, panel_y, red_x, panel_y + panel_h - header_h)
 
-    c.setFont("Helvetica-Bold", 8.0)
-    c.setFillColor(colors.HexColor("#0c2340"))
-    c.drawString(box_x + 10, banca_box_y + banca_box_h - 14, "USO EXCLUSIVO DA BANCA AVALIADORA / RESULTADO FINAL")
+    # ==========================
+    # LADO ESQUERDO: OBJETIVA
+    # ==========================
+    cols_obj = [
+        {"title": "Média / Geral", "qtd": "70", "w": 75.0},
+        {"title": "Linguagens",    "qtd": "16", "w": 70.0},
+        {"title": "Humanas",       "qtd": "16", "w": 70.0},
+        {"title": "Natureza",      "qtd": "18", "w": 70.0},
+        {"title": "Matemática",    "qtd": "20", "w": 70.0},
+    ]
 
-    c.setStrokeColor(colors.HexColor("#cccccc"))
-    c.line(box_x + 10, banca_box_y + banca_box_h - 18, box_x + box_w - 10, banca_box_y + banca_box_h - 18)
+    table_top_y = panel_y + panel_h - header_h
+    row_title_h = 16.0
+    row_data_h = 18.0
 
-    # Campos de preenchimento de nota
-    c.setFont("Helvetica-Bold", 8.0)
-    c.setFillColor(colors.HexColor("#222222"))
-    c.drawString(box_x + 20, banca_box_y + 24, "TOTAL DE ACERTOS:")
-    c.rect(box_x + 130, banca_box_y + 14, 60, 24)
-    c.setFont("Helvetica", 8.0)
-    c.drawString(box_x + 196, banca_box_y + 22, "/ 70 questões")
+    # Cabeçalho das matérias objetivas
+    curr_x = panel_x
+    for col in cols_obj:
+        w_c = col["w"]
+        # Fundo do cabeçalho
+        c.setFillColor(colors.HexColor("#EAEAEA"))
+        c.rect(curr_x, table_top_y - row_title_h, w_c, row_title_h, fill=1, stroke=1)
+        c.setFont("Helvetica-Bold", 7.2)
+        c.setFillColor(colors.black)
+        c.drawCentredString(curr_x + w_c / 2.0, table_top_y - 11.5, col["title"])
+        curr_x += w_c
 
-    c.setFont("Helvetica-Bold", 8.0)
-    c.drawString(box_x + 265, banca_box_y + 24, "APROVEITAMENTO:")
-    c.rect(box_x + 365, banca_box_y + 14, 55, 24)
-    c.drawString(box_x + 426, banca_box_y + 22, "%")
+    # Linha: Nota / Escore
+    c.setFont("Helvetica-Bold", 6.8)
+    c.setFillColor(colors.black)
+    c.drawString(panel_x + 4, table_top_y - row_title_h - 12, "Nota:")
 
-    c.setFont("Helvetica", 7.0)
-    c.drawString(box_x + 10, banca_box_y + 5, "Visto do Aplicador / Responsável: _________________________________________________")
+    # Linha: Acertos
+    c.drawString(panel_x + 4, table_top_y - row_title_h - row_data_h - 12, "Acertos:")
+
+    # Linha: Qtde. Questões
+    c.drawString(panel_x + 4, table_top_y - row_title_h - 2 * row_data_h - 11, "Questões:")
+
+    curr_x = panel_x
+    for col in cols_obj:
+        w_c = col["w"]
+        # Caixas da linha Nota
+        c.setStrokeColor(colors.HexColor("#888888"))
+        c.rect(curr_x + 3, table_top_y - row_title_h - row_data_h + 2, w_c - 6, row_data_h - 4, fill=0)
+
+        # Caixas da linha Acertos
+        c.rect(curr_x + 3, table_top_y - row_title_h - 2 * row_data_h + 2, w_c - 6, row_data_h - 4, fill=0)
+
+        # Texto da linha Qtde. de Questões
+        c.setFont("Helvetica", 7.0)
+        c.setFillColor(colors.black)
+        c.drawCentredString(curr_x + w_c / 2.0, table_top_y - row_title_h - 2 * row_data_h - 11, col["qtd"])
+
+        if is_gabarito:
+            c.setFont("Helvetica-Bold", 8.0)
+            c.drawCentredString(curr_x + w_c / 2.0, table_top_y - row_title_h - row_data_h + 6, "1000")
+            c.drawCentredString(curr_x + w_c / 2.0, table_top_y - row_title_h - 2 * row_data_h + 6, col["qtd"])
+
+        curr_x += w_c
+
+    # ==========================
+    # LADO DIREITO: REDAÇÃO
+    # ==========================
+    # Cabeçalho da Redação
+    c.setFillColor(colors.HexColor("#EAEAEA"))
+    c.rect(red_x, table_top_y - row_title_h, red_w, row_title_h, fill=1, stroke=1)
+    c.setFont("Helvetica-Bold", 7.5)
+    c.setFillColor(colors.black)
+    c.drawCentredString(red_x + red_w / 2.0, table_top_y - 11.5, "Nota Total Redação: [        / 1000]")
+
+    if is_gabarito:
+        c.drawCentredString(red_x + red_w / 2.0, table_top_y - 11.5, "Nota Total Redação: [ 1000 / 1000 ]")
+
+    # 5 Competências da Redação em 2 colunas
+    comp_start_y = table_top_y - row_title_h - 11
+    comps = [
+        ("Comp. 1 (Norma Culta):", 0, 0),
+        ("Comp. 2 (Tema/Estrutura):", 0, 12),
+        ("Comp. 3 (Argumentação):", 0, 24),
+        ("Comp. 4 (Coesão Língua):", 85, 0),
+        ("Comp. 5 (Intervenção):", 85, 12),
+    ]
+
+    c.setFont("Helvetica", 6.0)
+    c.setFillColor(colors.black)
+    for lbl, dx, dy in comps:
+        cy_pos = comp_start_y - dy
+        c.drawString(red_x + 6 + dx, cy_pos, lbl)
+        c.setStrokeColor(colors.HexColor("#777777"))
+        c.rect(red_x + 6 + dx + 54, cy_pos - 2, 22, 9, fill=0)
+        if is_gabarito:
+            c.drawCentredString(red_x + 6 + dx + 65, cy_pos, "200")
+
+    # Linha para Visto do Corretor
+    visto_y = panel_y + 4
+    c.setFont("Helvetica", 6.2)
+    c.setFillColor(colors.black)
+    c.drawString(panel_x + 8, visto_y, "Visto do Corretor / Avaliador: _______________________________________________")
+    c.drawString(red_x + 8, visto_y, "Data da Correção: _____ / _____ / 2026")
 
 
-def draw_footer(c):
-    """Desenha o rodapé institucional."""
-    c.setFont("Helvetica", 7)
-    c.setFillColor(colors.HexColor("#777777"))
-    c.drawString(GRID_MARGIN_X, 24, "SIMULADO COLETIVO • MODELO OFICIAL ENEM 70 QUESTÕES • LEITURA ÓPTICA AUTOMATIZADA (OMR)")
-    c.drawRightString(PAGE_WIDTH - GRID_MARGIN_X, 24, "PÁGINA 1 / 1")
-
-
-def gerar_cartao_resposta_pdf(caminho_saida="provas_geradas/Cartao_Resposta_70Q.pdf", metadados=None):
-    """Gera o arquivo PDF completo do Cartão-Resposta de 70 questões."""
-    if metadados is None:
-        metadados = {
-            "titulo_exame": "EXAME NACIONAL DO ENSINO MÉDIO",
-            "subtitulo": "SIMULADO COLETIVO • EXAME NACIONAL DO ENSINO MÉDIO - 70 QUESTÕES",
-            "dia": "1º DIA",
-            "codigo_caderno": "010175BR1"
-        }
-
+def gerar_cartao_resposta_pdf(caminho_saida="provas_geradas/Cartao_Resposta_70Q.pdf", gabarito_oficial=None):
+    """
+    Gera o arquivo PDF do Cartão-Resposta OMR oficial (70 questões).
+    Se gabarito_oficial for passado, gera o Cartão com o Gabarito Oficial preenchido.
+    """
     os.makedirs(os.path.dirname(os.path.abspath(caminho_saida)), exist_ok=True)
     c = canvas.Canvas(caminho_saida, pagesize=A4)
 
-    # 1. Cabeçalho
-    draw_header(c, metadados)
+    is_gabarito = (gabarito_oficial is not None and len(gabarito_oficial) > 0)
 
-    # 2. Painel do candidato
-    y_after_cand = draw_candidate_info(c, start_y=PAGE_HEIGHT - 88)
+    # 1. Cabeçalho limpo sem código de barras nem textos redundantes
+    y_after_head = draw_clean_header(c, is_gabarito=is_gabarito)
 
-    # 3. Barra de instruções
-    y_after_inst = draw_instructions_bar(c, start_y=y_after_cand)
+    # 2. Campo de Nome contínuo (sem quadradinhos)
+    y_after_cand = draw_candidate_name_field(c, start_y=y_after_head, is_gabarito=is_gabarito)
 
-    # 4. Grid das 70 questões com os 4 marcadores quadrados pretos exclusivos
-    bottom_grid_y, geometry = draw_bubble_grid(c, start_y=y_after_inst)
+    # 3. Barra de instruções elegante e 100% P&B com exemplos visuais
+    y_after_inst = draw_instructions_bw(c, start_y=y_after_cand)
 
-    # 5. Painel da banca avaliadora abaixo das questões
-    draw_evaluation_box(c, start_y=bottom_grid_y)
+    # 4. Grid das 70 questões delimitado exclusivamente pelos 4 marcadores quadrados pretos
+    bottom_grid_y, geometry = draw_bubble_grid(c, start_y=y_after_inst, gabarito_oficial=gabarito_oficial)
 
-    # 6. Rodapé
-    draw_footer(c)
+    # 5. Painel de Correção / Avaliação da Banca no rodapé
+    draw_evaluator_panel(c, start_y=bottom_grid_y, is_gabarito=is_gabarito)
 
     c.save()
-    print(f"Cartão-Resposta gerado com sucesso em: {caminho_saida}")
+    tipo = "GABARITO OFICIAL" if is_gabarito else "CARTÃO EM BRANCO"
+    print(f"[OK] {tipo} gerado em: {caminho_saida}")
     return geometry
 
 

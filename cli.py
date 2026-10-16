@@ -115,12 +115,14 @@ Exemplos de uso:
 
     # Comando: gerar-tudo
     p_tudo = subparsers.add_parser("gerar-tudo", help="Gera Prova, Cartão-Resposta e Redação de uma só vez")
+    p_tudo.add_argument("--simulado", type=int, choices=[1, 2], default=None, help="Seleciona o simulado específico (1 ou 2)")
     p_tudo.add_argument("--questoes", default="banco_questoes/questoes.json", help="Caminho do JSON com as questões")
     p_tudo.add_argument("--pasta-saida", default="provas_geradas", help="Pasta para salvar os PDFs")
     p_tudo.set_defaults(func=cmd_gerar_tudo)
 
     # Comando: corrigir
     p_corrigir = subparsers.add_parser("corrigir", help="Lê e corrige cartões-resposta usando visão computacional")
+    p_corrigir.add_argument("--simulado", type=int, choices=[1, 2], default=None, help="Seleciona o simulado específico para correção (1 ou 2)")
     p_corrigir.add_argument("--pasta-cartoes", default="cartoes", help="Pasta com as fotos/scans dos cartões")
     p_corrigir.add_argument("--questoes", default="banco_questoes/questoes.json", help="Caminho do JSON com as questões e gabarito")
     p_corrigir.add_argument("--saida", default="resultado.xlsx", help="Caminho da planilha de resultados")
@@ -131,6 +133,22 @@ Exemplos de uso:
         sys.exit(0)
 
     args = parser.parse_args()
+
+    # Aplica configurações específicas do simulado se fornecido
+    if hasattr(args, "simulado") and args.simulado is not None:
+        if args.comando == "corrigir":
+            if args.simulado == 1:
+                args.pasta_cartoes = "simulado_1/cartoes_digitalizados"
+                args.saida = "simulado_1/resultado_correcao.xlsx"
+            elif args.simulado == 2:
+                args.pasta_cartoes = "simulado_2/cartoes"
+                args.questoes = "simulado_2/banco_questoes/questoes.json"
+                args.saida = "simulado_2/resultado_correcao.xlsx"
+        elif args.comando in ("gerar-tudo", "gerar-prova"):
+            if args.simulado == 2:
+                args.questoes = "simulado_2/banco_questoes/questoes.json"
+                if hasattr(args, "pasta_saida"):
+                    args.pasta_saida = "simulado_2/provas_geradas"
     if hasattr(args, "func"):
         args.func(args)
     else:

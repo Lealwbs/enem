@@ -7,30 +7,38 @@ Uma suíte completa em Python para **geração automatizada de simulados e exame
 ## 🌟 Principais Recursos e Diferenciais
 
 1. **Caderno de Provas Estilo ENEM em 2 Colunas (`Prova_Completa.pdf`):**
-   - **Diagramação em 2 Colunas:** Layout oficial com divisor vertical, aproveitamento máximo do espaço e formato compacto.
+   - **Diagramação em 2 Colunas:** Layout oficial com divisor vertical, aproveitamento máximo do espaço e formato compacto (17 páginas completas para 70 questões + Redação + Folha de Rascunho).
    - **Caderno Branco (P&B):** Desenvolvido especificamente para cópia e impressão monocromática (sem fundos ciano/azul pesados que gastam toner).
    - **Margens de Segurança:** Margens generosas (>= 36pt / 12.7mm) que garantem que nenhuma questão seja cortada na impressão.
-   - **Cabeçalhos e Questões Limpos:** Sem códigos internos aleatórios (ex: `010175AZ1P12`) ou títulos artificiais como `(Item 06)`. Divisor estilizado `QUESTÃO XX`.
-   - **Alternativas em Destaque:** Círculos pretos com letras brancas (A, B, C, D, E) de alto contraste.
+   - **Cabeçalhos e Questões Limpos:** Sem códigos internos aleatórios ou títulos artificiais como `(Item 06)`. Divisor estilizado `QUESTÃO XX`.
+   - **Alternativas Oficiais:** Círculos vazados contornados em preto com letras pretas no centro (A, B, C, D, E), idênticos aos cadernos oficiais do ENEM.
+   - **Fontes e Citações ABNT:** Todas as questões com textos de apoio possuem fontes e bibliografias completas e detalhadas.
+   - **Diagramas e Figuras Técnicas:** Gráficos, esquemas químicos, biológicos e elétricos diagramados e otimizados em escala de cinza.
    - **Proposta de Redação ao Final:** Página dedicada após as 70 questões, com o tema *"A urgência para a inclusão de pessoas neurodiversas no Brasil"* e textos motivadores I, II e III.
    - **Folha de Rascunho da Redação:** 30 linhas pautadas com marca d'água diagonal *"RASCUNHO DA REDAÇÃO"*, localizada estritamente na última página do caderno.
 
-2. **Cartão-Resposta OMR 70 Questões (`Cartao_Resposta_70Q.pdf`):**
-   - **4 Marcadores Fiduciais nos Cantos:** Permite correção de perspectiva e homografia via visão computacional, funcionando mesmo com fotos inclinadas tiradas por celular.
-   - **Identificação do Aluno:** Campos para Nome, Inscrição/CPF, Data de Nascimento, Assinatura e Transcrição da Frase da Capa.
-   - **Alinhamento Geométrico Rigoroso:** 4 blocos de questões perfeitamente alinhados (Q01-18, Q19-36, Q37-54 e Q55-70).
+2. **Cartão-Resposta OMR 70 Questões (`Cartao_Resposta_70Q.pdf` e `Cartao_Resposta_Gabarito_Oficial.pdf`):**
+   - **Design Limpo e Focado:** Sem códigos de barras redundantes, sem `* 010175BR1 *`, sem `1º DIA`, sem CPF, sem Data de Nascimento e sem transcrição de frase.
+   - **Identificação do Aluno:** Campo único contínuo para Nome Completo com escrita manual natural (sem quadradinhos limitadores).
+   - **Instruções 100% P&B:** Guia visual de preenchimento moderno em preto e branco com exemplos de marcação correta e incorreta.
+   - **4 Marcadores Fiduciais nos Cantos:** Permite correção de perspectiva e homografia via visão computacional OpenCV com **100% de precisão**.
+   - **Painel de Avaliação da Banca:** Área de preenchimento exclusivo do corretor no rodapé contendo:
+     - Bloco Objetivo: Média Geral (70Q), Linguagens (16Q), Ciências Humanas (16Q), Ciências da Natureza (18Q) e Matemática (20Q).
+     - Bloco da Redação: Nota Total (0 a 1000) e caixas individuais para as Competências 1 a 5 (0 a 200 pts cada).
+   - **Geração Dupla:** Exportação tanto do Cartão em Branco para os alunos quanto do Cartão Preenchido com o Gabarito Oficial para a banca.
 
 3. **Folha Oficial de Redação (`Folha_Redacao_Oficial.pdf`):**
-   - Baseada fielmente no modelo oficial do ENEM, sem poluição visual ou códigos desconhecidos (removido o número estranho "029" e QRs redundantes).
-   - **Espaçamento de Linhas Ampliado (21pt):** Mais espaço vertical e conforto para escrita caligráfica do estudante.
-   - 30 linhas pautadas e numeradas de 1 a 30 com delimitação de margens.
+   - **Instruções Oficiais do ENEM:** Contém o conjunto completo de instruções regulamentares para a prova de redação.
+   - **Campo de Nome Contínuo:** Espaço amplo e linear para preenchimento normal à mão.
+   - **Espaçamento de Linhas Otimizado (21.6pt):** 30 linhas pautadas e numeradas de 1 a 30 com área máxima para desenvolvimento textual legível.
+   - **Visual Limpo:** Removidos títulos e rodapés redundantes.
 
 4. **Motor OMR & Corretor Automático Híbrido:**
    - **Detecção Geométrica via Homografia:** Detecção dos 4 cantos fiduciais nos cartões novos com **100% de precisão**.
-   - **Fallback Morfológico:** Mantém compatibilidade com cartões antigos ou recortados sem marcadores fiduciais.
+   - **Fallback Morfológico:** Mantém compatibilidade com cartões legados ou recortados sem marcadores fiduciais.
    - **Correção Instantânea:** Compara as marcações com o gabarito oficial definido em `banco_questoes/questoes.json`.
    - **Auditoria Visual:** Gera imagens em `debug/` com círculos indicando acertos (verde), erros (vermelho) e rasuras (amarelo).
-   - **Relatório no Excel (`resultado.xlsx`):** Planilha com total de acertos, nota percentual e detalhamento questão a questão.
+   - **Relatório no Excel:** Planilha com total de acertos, nota percentual e detalhamento questão a questão.
 
 ---
 
@@ -38,30 +46,38 @@ Uma suíte completa em Python para **geração automatizada de simulados e exame
 
 ```
 omr-exam-grader/ (Simulado Coletivo)
-├── cli.py                     # CLI unificada do sistema (gerar-tudo, corrigir, etc.)
+├── cli.py                     # CLI unificada (gerar-tudo, gerar-prova, corrigir, etc.)
 ├── core/                      # Módulos centrais do sistema
 │   ├── exam_generator.py      # Gerador do Caderno de Questões (2 Colunas, Caderno Branco)
 │   ├── answer_sheet_generator.py # Gerador do Cartão-Resposta OMR 70Q com fiduciais
 │   ├── essay_sheet_generator.py  # Gerador da Folha Oficial de Redação (linhas ampliadas)
 │   ├── omr_engine.py          # Motor de leitura óptica OMR (homografia + fallback)
 │   └── grader.py              # Avaliador contra gabarito e exportador Excel
-├── banco_questoes/            # Banco de questões estruturado
+├── simulado_1/                # Arquivos da aplicação e correção do 1º Simulado
+│   ├── cartoes_digitalizados/ # Scans (.jpg e .pdf) dos cartões preenchidos
+│   ├── redacoes_digitalizadas/# Redações manuscritas dos estudantes
+│   ├── debug_omr/             # Imagens com marcações visuais da leitura OMR
+│   ├── gabarito_digitado.xlsx # Conferência digitada das respostas
+│   ├── resultado_correcao.xlsx# Planilha consolidada com notas e gabaritos
+│   └── README.md              # Documentação e histórico do 1º Simulado
+├── simulado_2/                # Material completo do 2º Simulado (70 questões)
+│   ├── documentos_professores/# Documentos originais organizados e renomeados
+│   ├── banco_questoes/        # questoes.json com as 70 questões na matriz exata e imagens
+│   ├── provas_geradas/        # PDFs prontos: Caderno, Cartão em Branco, Gabarito e Redação
+│   ├── Gabarito_Oficial_Simulado_2.xlsx # Planilha do Gabarito Oficial e conteúdos
+│   └── README.md              # Documentação detalhada da matriz de conteúdos
+├── banco_questoes/            # Banco de questões ativo para geração padrão
 │   ├── questoes.json          # 70 questões completas, redação e gabarito oficial
-│   ├── README.md              # Guia para edição e inclusão de novas questões
-│   └── imagens/               # Estruturas químicas e ilustrações das questões
-├── provas_geradas/            # PDFs finais gerados prontos para impressão/aplicação
+│   ├── imagens/               # Diagramas técnicos e esquemas das questões
+│   └── README.md              # Guia para edição e inclusão de novas questões
+├── provas_geradas/            # PDFs finais ativos gerados prontos para impressão
 │   ├── Prova_Completa.pdf     # Caderno completo (Capa, 70Q em 2 colunas, Redação e Rascunho)
-│   ├── Cartao_Resposta_70Q.pdf# Folha de respostas OMR de 70 questões
+│   ├── Cartao_Resposta_70Q.pdf# Folha de respostas OMR de 70 questões (em branco)
+│   ├── Cartao_Resposta_Gabarito_Oficial.pdf # Cartão com gabarito preenchido
 │   └── Folha_Redacao_Oficial.pdf # Folha oficial para transcrição da redação
-├── questoes_2/                # Arquivos brutos fornecidos (Word e PDF originais)
-│   └── README.md              # Documentação das fontes originais por matéria
-├── referencias_enem/          # Modelos oficiais de referência do ENEM (cadernos, folhas)
+├── referencias_enem/          # Cadernos oficiais de referência do ENEM (2018 a 2025)
 │   └── README.md              # Documentação dos materiais de referência
-├── scripts/                   # Utilitários de processamento e compilação
-│   └── parse_and_build_banco.py # Script extrator dos documentos originais para o banco
-├── cartoes/                   # Amostras de cartões preenchidos para teste de correção
-├── debug/                     # Imagens com demarcações visuais da correção OMR
-└── resultado.xlsx             # Planilha consolidada com notas e gabarito dos alunos
+└── scripts/                   # Utilitários de processamento e compilação
 ```
 
 ---

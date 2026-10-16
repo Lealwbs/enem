@@ -22,6 +22,7 @@ from reportlab.platypus import (
 from reportlab.pdfgen import canvas
 
 PAGE_W, PAGE_H = A4
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MARGIN_LEFT = 36.0
 MARGIN_RIGHT = 36.0
 MARGIN_TOP = 42.0
@@ -64,7 +65,7 @@ class QuestionHeaderFlowable(Flowable):
 
 
 class AlternativeBadgeFlowable(Flowable):
-    """Desenha a bolinha preta com a letra branca em negrito (A, B, C, D, E)."""
+    """Desenha a bolinha vazada (apenas contorno preto com letra preta), estilo prova oficial do ENEM."""
     def __init__(self, letter):
         super().__init__()
         self.letter = letter
@@ -79,10 +80,12 @@ class AlternativeBadgeFlowable(Flowable):
         cx = 6.5
         cy = 4.5
         r = 5.2
-        self.canv.setFillColor(colors.black)
-        self.canv.circle(cx, cy, r, fill=1, stroke=0)
-        self.canv.setFont("Helvetica-Bold", 6.8)
+        self.canv.setStrokeColor(colors.black)
+        self.canv.setLineWidth(0.8)
         self.canv.setFillColor(colors.white)
+        self.canv.circle(cx, cy, r, fill=1, stroke=1)
+        self.canv.setFont("Helvetica-Bold", 6.8)
+        self.canv.setFillColor(colors.black)
         self.canv.drawCentredString(cx, cy - 2.2, self.letter)
         self.canv.restoreState()
 
@@ -482,17 +485,32 @@ def build_two_column_question(q, styles, col_width):
 
     # Imagem de apoio (se houver)
     img_path = q.get("imagem")
-    if img_path and os.path.exists(img_path):
-        try:
-            rl_img = RLImage(img_path)
-            max_w = col_width * 0.90
-            aspect = rl_img.imageHeight / float(rl_img.imageWidth)
-            rl_img.drawWidth = max_w
-            rl_img.drawHeight = max_w * aspect
-            elements.append(rl_img)
-            elements.append(Spacer(1, 3))
-        except Exception:
-            pass
+    if img_path:
+        candidatos = [
+            img_path,
+            os.path.join(ROOT_DIR, img_path),
+            os.path.join(ROOT_DIR, "banco_questoes", img_path),
+            os.path.join(ROOT_DIR, "banco_questoes", "imagens", os.path.basename(img_path)),
+            os.path.join(ROOT_DIR, "simulado_2", "banco_questoes", img_path),
+            os.path.join(ROOT_DIR, "simulado_2", "banco_questoes", "imagens", os.path.basename(img_path)),
+        ]
+        real_img_path = next((p for p in candidatos if p and os.path.exists(p)), None)
+        if real_img_path:
+            try:
+                rl_img = RLImage(real_img_path)
+                max_w = col_width * 0.94
+                aspect = rl_img.imageHeight / float(rl_img.imageWidth)
+                draw_w = min(max_w, rl_img.imageWidth * 0.65)
+                draw_h = draw_w * aspect
+                if draw_h > 125:
+                    draw_h = 125
+                    draw_w = draw_h / aspect
+                rl_img.drawWidth = draw_w
+                rl_img.drawHeight = draw_h
+                elements.append(rl_img)
+                elements.append(Spacer(1, 3))
+            except Exception:
+                pass
 
     # Enunciado
     elements.append(Paragraph(q["enunciado"], styles["QuestionPrompt"]))
