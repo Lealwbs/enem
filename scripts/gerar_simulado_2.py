@@ -125,10 +125,10 @@ def main():
     os.makedirs(pasta_old, exist_ok=True)
 
     caminho_json = os.path.join(ROOT_DIR, "simulado_2", "banco_questoes", "questoes.json")
-    caminho_prova = os.path.join(pasta_resultado, "Caderno_Questoes_70Q.pdf")
-    caminho_unificada = os.path.join(pasta_resultado, "Cartao_Resposta_e_Redacao_Frente_Verso.pdf")
-    caminho_gabarito_pdf = os.path.join(pasta_resultado, "Gabarito_Oficial_Preenchido_Frente_Verso.pdf")
-    caminho_gabarito_xlsx = os.path.join(pasta_resultado, "Gabarito_Oficial_Simulado_2.xlsx")
+    caminho_prova = os.path.join(pasta_resultado, "Caderno_Questoes.pdf")
+    caminho_unificada = os.path.join(pasta_resultado, "Cartao_Resposta.pdf")
+    caminho_gabarito_pdf = os.path.join(pasta_resultado, "Gabarito_Simulado_2.pdf")
+    caminho_gabarito_xlsx = os.path.join(pasta_resultado, "Gabarito_Simulado_2.xlsx")
 
     # 2. Carrega ou compila o JSON do simulado
     if not os.path.exists(caminho_json):

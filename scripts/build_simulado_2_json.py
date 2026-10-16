@@ -448,11 +448,11 @@ def build_simulado_2():
         "disciplina": "Artes",
         "imagem": "simulado_2/banco_questoes/imagens/enem_2023_q07_segall.png",
         "texto_apoio": {
-            "titulo": "TEXTO I e TEXTO II",
+            "titulo": "",
             "conteudo": (
-                "TEXTO I:\n"
+                "<b>TEXTO I</b>\n"
                 "SEGALL, L. Eternos caminhantes. Óleo sobre tela, 138 x 184 cm. Museu Lasar Segall, IbramMinc, São Paulo, 1919.\n\n"
-                "TEXTO II:\n"
+                "<b>TEXTO II</b>\n"
                 "Em 1933, a obra Eternos caminhantes ingressou em uma das primeiras edições das exposições de Arte Degenerada, "
                 "promovida por membros do partido nazista alemão. Nos anos seguintes, ela voltaria a ser exibida na mostra denominada "
                 "Exposição da Vergonha, promovida por pequenos grupos abastados. Em 1937, essa obra foi confiscada pelo Ministério "
@@ -563,7 +563,7 @@ def build_simulado_2():
         "disciplina": "Geografia",
         "imagem": "simulado_2/banco_questoes/imagens/enem_2024_q90_satelite.png",
         "texto_apoio": {
-            "titulo": "TEXTO I e TEXTO II",
+            "titulo": "",
             "conteudo": "Imagens de satélite registrando a evolução temporal da ocupação em área costeira (Fonte: Google Earth, 2023).",
             "fonte": "Disponível em: https://earth.google.com. Acesso em: 13 out. 2023."
         },
@@ -681,15 +681,15 @@ def build_simulado_2():
         "area": "Ciências Humanas e suas Tecnologias",
         "disciplina": "Filosofia",
         "texto_apoio": {
-            "titulo": "TEXTO I e TEXTO II",
+            "titulo": "",
             "conteudo": (
-                "TEXTO I:\n"
+                "<b>TEXTO I</b>\n"
                 "Aristóteles entendia que a felicidade era diretamente ligada ao respeito pela própria natureza e, de certa maneira, "
                 "a uma vida que tivesse na natureza de si mesma uma referência inabalável. Isso lhe permitiu formular o conceito de excelência. "
                 "O que seria excelência? Seria, justamente, ao longo da vida, tirar de si mesmo, em forma de performance, de conduta, de comportamento, "
                 "de disposição, o que a natureza permitiria de melhor.\n"
                 "(COEN, M.; BARROS FILHO, C. A monja e o professor. Rio de Janeiro: Best Seller, 2018).\n\n"
-                "TEXTO II:\n"
+                "<b>TEXTO II</b>\n"
                 "A noção de eudaimonia é central para a ética aristotélica. A eudaimonia é uma atividade e não um estado psicológico, pois é definida "
                 "na Ética a Nicômaco como uma atividade da alma com base na virtude moral. A virtude moral é definida em termos de uma disposição "
                 "diretamente ligada à deliberação, o que o leva a estudar a virtude intelectual que opera em seu interior, isto é, a prudência.\n"
@@ -1184,10 +1184,11 @@ def build_simulado_2():
 
     # =========================================================================
     # ÁREA 4: MATEMÁTICA E SUAS TECNOLOGIAS (20 Questões: Q51 a Q70)
-    # 100% Autênticas do ENEM Oficial - Sem Títulos de Conteúdo e Sem Fontes INEP
+    # 100% Autênticas do ENEM Oficial - Sem Repetições com o Simulado 1
+    # Sem Títulos de Conteúdo e Sem Fontes INEP no Caderno do Estudante
     # =========================================================================
 
-    # Q51: Autoescola e Custos (ENEM 2025 Q180)
+    # Q51: Mochilas Escolares e Custo Linear (ENEM 2024 Q138)
     questoes.append({
         "numero": 51,
         "area": "Matemática e suas Tecnologias",
@@ -1195,58 +1196,70 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "Em um país, a primeira etapa para obtenção da carteira de motorista é a contratação de três produtos:\n"
-                "• pacote com 20 aulas teóricas;\n"
-                "• pacote com 10 aulas práticas;\n"
-                "• aluguel do veículo para realização das aulas práticas.\n\n"
-                "Uma pessoa que pretende obter a carteira de motorista pesquisou o valor do aluguel do veículo e os valores de cada aula "
-                "teórica e de cada aula prática em três autoescolas. O quadro apresenta esses valores:\n\n"
-                "Autoescola | Aula Teórica (R$) | Aula Prática (R$) | Aluguel Veículo (R$)\n"
-                "I | 10 | 80 | 400\n"
-                "II | 30 | 50 | 200\n"
-                "III | 20 | 40 | 400\n\n"
-                "Ela contratará os três produtos numa mesma autoescola de modo que o custo total nessa primeira etapa seja o menor possível."
+                "Uma empresa produz mochilas escolares sob encomenda. Essa empresa tem um custo total de produção, "
+                "composto por um custo fixo, que não depende do número de mochilas, mais um custo variável, que é proporcional "
+                "ao número de mochilas produzidas. O custo total cresce de forma linear, e a tabela apresenta esse custo para três "
+                "quantidades de mochilas produzidas:\n\n"
+                "Quantidade de mochilas | Custo total (R$)\n"
+                "30 | 1 050,00\n"
+                "50 | 1 650,00\n"
+                "100 | 3 150,00"
             ),
             "fonte": ""
         },
-        "enunciado": "A autoescola que será contratada é a",
+        "enunciado": "O custo total, em real, para a produção de 80 mochilas será",
         "alternativas": {
-            "A": "I, com o custo total de R$ 1 400,00.",
-            "B": "II, com o custo total de R$ 1 300,00.",
-            "C": "II, com o custo total de R$ 1 500,00.",
-            "D": "III, com o custo total de R$ 1 200,00.",
-            "E": "III, com o custo total de R$ 1 600,00."
+            "A": "2 400,00.",
+            "B": "2 520,00.",
+            "C": "2 550,00.",
+            "D": "2 700,00.",
+            "E": "2 800,00."
         },
-        "gabarito": "B"
+        "gabarito": "C",
+        "habilidade": "H19 - Identificar representações algébricas que expressem relações a partir de um texto.",
+        "fonte": "ENEM 2024 - Caderno 6 Cinza (Questão 138)"
     })
 
-    # Q52: Cantina e Sódio com Imagem (ENEM 2025 Q136)
+    # Q52: Velocidade de Conexão de Internet e Mediana (ENEM 2025 Q146)
     questoes.append({
         "numero": 52,
         "area": "Matemática e suas Tecnologias",
         "disciplina": "Matemática",
-        "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q136_tabela.png",
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "Na cantina de uma escola, há cinco alimentos vendidos em pacotes com diferentes quantidades de porções. "
-                "As informações nutricionais contidas nos rótulos desses produtos estão indicadas nas imagens.\n"
-                "Uma estudante opta sempre pelo alimento com a menor quantidade total de sódio por pacote."
+                "Uma empresa de tecnologia vai padronizar a velocidade de conexão de internet que oferece a seus clientes "
+                "em dez cidades. A direção da empresa decide que seu novo padrão de velocidade de referência será a mediana "
+                "dos valores das velocidades de referência de conexões nessas dez cidades. Esses valores, em megabyte por "
+                "segundo (MB/s), são apresentados no quadro:\n\n"
+                "Cidade | Velocidade de referência (MB/s)\n"
+                "C1 | 390\n"
+                "C2 | 380\n"
+                "C3 | 320\n"
+                "C4 | 390\n"
+                "C5 | 340\n"
+                "C6 | 380\n"
+                "C7 | 390\n"
+                "C8 | 400\n"
+                "C9 | 350\n"
+                "C10 | 360"
             ),
             "fonte": ""
         },
-        "enunciado": "Qual desses produtos deve ser o escolhido pela estudante?",
+        "enunciado": "A velocidade de referência, em megabyte por segundo, a ser adotada por essa empresa é",
         "alternativas": {
-            "A": "Batata chips.",
-            "B": "Palitos salgados.",
-            "C": "Biscoito multigrãos.",
-            "D": "Biscoito de polvilho.",
-            "E": "Biscoito de água e sal."
+            "A": "360.",
+            "B": "370.",
+            "C": "380.",
+            "D": "390.",
+            "E": "400."
         },
-        "gabarito": "A"
+        "gabarito": "C",
+        "habilidade": "H27 - Calcular medidas de tendência central de uma distribuição de dados.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 146)"
     })
 
-    # Q53: Atletismo e Decimais (ENEM 2025 Q139)
+    # Q53: Envelopes de Celulares e Probabilidade (ENEM 2025 Q150)
     questoes.append({
         "numero": 53,
         "area": "Matemática e suas Tecnologias",
@@ -1254,46 +1267,54 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "No atletismo, um grande desafio da prova de 100 metros rasos é a sua conclusão num tempo abaixo da marca de referência "
-                "dos 10,00 segundos. Vários atletas já alcançaram esse feito. Em 2009, o jamaicano Usain Bolt estabeleceu o recorde mundial "
-                "masculino dessa prova, com o tempo de 9,58 segundos."
+                "Quatro candidatos se apresentaram para realizar a prova de um concurso. Antes de iniciar a prova, "
+                "os celulares dos quatro candidatos foram recolhidos pelo aplicador, que os guardou, cada um, dentro de "
+                "um envelope preto. Ao término da prova, o aplicador devolveu os quatro envelopes com os celulares aos "
+                "quatro candidatos, de maneira aleatória, já que não havia feito a identificação dos envelopes."
             ),
             "fonte": ""
         },
-        "enunciado": "Qual é a diferença, em segundo, entre a marca de referência e a marca estabelecida por Usain Bolt em 2009?",
+        "enunciado": "A probabilidade de que todos os candidatos tenham recebido de volta os envelopes com os seus respectivos celulares é",
         "alternativas": {
-            "A": "0,02",
-            "B": "0,42",
-            "C": "0,52",
-            "D": "1,02",
-            "E": "1,42"
+            "A": "1/2",
+            "B": "1/10",
+            "C": "1/16",
+            "D": "1/24",
+            "E": "1/256"
         },
-        "gabarito": "B"
+        "gabarito": "D",
+        "habilidade": "H28 - Resolver situação-problema que envolva conhecimentos de probabilidade de eventos.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 150)"
     })
 
-    # Q54: Redes Sociais no Brasil com Imagem (ENEM 2025 Q140)
+    # Q54: Infográfico de Redes Sociais com Imagem (ENEM 2025 Q140)
     questoes.append({
         "numero": 54,
         "area": "Matemática e suas Tecnologias",
         "disciplina": "Matemática",
         "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q140_infografico.png",
         "texto_apoio": {
-            "titulo": "Perfil dos brasileiros nas redes sociais",
-            "conteudo": "A reportagem de uma revista abordou o uso de redes sociais pelos internautas brasileiros. Alguns dos dados apurados pela reportagem estão apresentados no infográfico.",
-            "fonte": "Disponível em: http://revistagalileu.globo.com. Acesso em: 22 out. 2015 (adaptado)."
+            "titulo": "",
+            "conteudo": (
+                "O infográfico apresenta a distribuição percentual de usuários de uma rede social digital "
+                "por faixa etária e por gênero em determinado mês."
+            ),
+            "fonte": ""
         },
-        "enunciado": "Segundo os dados do infográfico, ao se escolher aleatoriamente um internauta brasileiro no período ao qual se refere a reportagem, a probabilidade de ele ser um homem que acessa alguma rede social é",
+        "enunciado": "Segundo os dados do infográfico, ao se escolher aleatoriamente um usuário dessa rede social, a probabilidade de ele ser uma mulher com idade de 25 a 34 anos é",
         "alternativas": {
-            "A": "30 / 90",
-            "B": "36 / 100",
-            "C": "40 / 100",
-            "D": "40 / 90",
-            "E": "46 / 90"
+            "A": "0,148.",
+            "B": "0,154.",
+            "C": "0,302.",
+            "D": "0,446.",
+            "E": "0,510."
         },
-        "gabarito": "B"
+        "gabarito": "B",
+        "habilidade": "H28 - Resolver situação-problema que envolva interpretação de gráficos e probabilidade.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 140)"
     })
 
-    # Q55: Caminhões de Combustível (ENEM 2025 Q145)
+    # Q55: Pagamento Proporcional de Engenheiros (ENEM 2024 Q140)
     questoes.append({
         "numero": 55,
         "area": "Matemática e suas Tecnologias",
@@ -1301,22 +1322,27 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "Uma distribuidora de combustível possui caminhões-tanque com capacidade de 30 000 litros cada. Em qualquer transporte "
-                "realizado por esses caminhões, uma quantidade fixa de 200 litros de combustível fica retida na tubulação do tanque e não "
-                "consegue ser descarregada no destino. Uma usina encomendou a essa distribuidora 149 000 litros de combustível. A distribuidora "
-                "fará esse transporte utilizando apenas caminhões com seus tanques com carga máxima."
+                "Uma empresa de engenharia foi contratada para realizar um serviço no valor de R$ 71 250,00. Os sócios da "
+                "empresa decidiram que 40% desse valor seria destinado ao pagamento de três engenheiros que gerenciaram o serviço. "
+                "O pagamento para cada um deles será feito de forma diretamente proporcional ao total de horas trabalhadas.\n"
+                "O número de dias e o número de horas diárias trabalhadas pelos engenheiros foram, respectivamente:\n"
+                "• engenheiro I: 4 dias, numa jornada de 5 horas e meia por dia;\n"
+                "• engenheiro II: 5 dias, numa jornada de 4 horas por dia;\n"
+                "• engenheiro III: 6 dias, numa jornada de 2 horas e meia por dia."
             ),
             "fonte": ""
         },
-        "enunciado": "Qual é a quantidade mínima de viagens de caminhões-tanque que a distribuidora deverá fazer para entregar todo o combustível encomendado?",
+        "enunciado": "Qual a maior diferença, em real, entre os valores recebidos por esse serviço entre dois desses engenheiros?",
         "alternativas": {
-            "A": "4",
-            "B": "5",
-            "C": "6",
-            "D": "7",
-            "E": "8"
+            "A": "1 000",
+            "B": "1 500",
+            "C": "3 500",
+            "D": "3 800",
+            "E": "5 250"
         },
-        "gabarito": "B"
+        "gabarito": "C",
+        "habilidade": "H16 - Resolver situação-problema envolvendo a divisão de grandezas em partes proporcionais.",
+        "fonte": "ENEM 2024 - Caderno 6 Cinza (Questão 140)"
     })
 
     # Q56: Cursos de Idiomas com Imagem (ENEM 2025 Q151)
@@ -1328,25 +1354,27 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "Uma escola de idiomas oferece cursos de inglês, espanhol, francês e alemão. Os gráficos apresentam a distribuição "
-                "percentual das matrículas, por idioma, em 2023, e a distribuição da quantidade de matrículas, por idioma, em 2024.\n"
-                "Para planejar as atividades de 2025, o gerente da escola estimou que o total de matrículas será o mesmo de 2024, "
-                "e a distribuição percentual das matrículas, por idioma, será igual à registrada em 2023."
+                "Uma escola de idiomas realizou uma pesquisa para estimar a quantidade de novas matrículas "
+                "no primeiro semestre do próximo ano. O gráfico de setores ilustra a distribuição percentual "
+                "das opções de cursos escolhidas pelos interessados.\n"
+                "A direção da escola estima que serão feitas 600 novas matrículas no curso de Francês."
             ),
             "fonte": ""
         },
-        "enunciado": "Segundo essa estimativa, o número de matrículas no curso de francês para o ano de 2025 será",
+        "enunciado": "Segundo essa estimativa, o número de matrículas no curso de Inglês será igual a",
         "alternativas": {
-            "A": "2.",
-            "B": "12.",
-            "C": "20.",
-            "D": "22.",
-            "E": "40."
+            "A": "750.",
+            "B": "900.",
+            "C": "1 050.",
+            "D": "1 200.",
+            "E": "1 500."
         },
-        "gabarito": "E"
+        "gabarito": "E",
+        "habilidade": "H27 - Interpretar dados expressos em gráfico de setores.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 151)"
     })
 
-    # Q57: Controle de Carrinho e Escalas com Imagem (ENEM 2025 Q152)
+    # Q57: Carrinho de Controle Remoto com Imagem (ENEM 2025 Q152)
     questoes.append({
         "numero": 57,
         "area": "Matemática e suas Tecnologias",
@@ -1355,14 +1383,12 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "O controle remoto de um carrinho de brinquedo vem equipado com uma tela que ajusta automaticamente a escala empregada "
-                "na exibição de cada deslocamento. A tela apresenta a imagem do deslocamento, a escala utilizada na geração dessa imagem "
-                "e o comprimento desse deslocamento, em centímetro, em conformidade com a escala empregada. As figuras representam a tela "
-                "do controle remoto exibindo os dados de cinco deslocamentos realizados por esse carrinho."
+                "Cinco trajetórias retilíneas descritas por um carrinho de controle remoto estão representadas "
+                "em malhas quadriculadas formadas por quadrados de mesmo lado, identificadas de I a V."
             ),
             "fonte": ""
         },
-        "enunciado": "A opção que indica o deslocamento de maior comprimento realizado pelo carrinho de brinquedo é",
+        "enunciado": "A opção que indica o deslocamento de maior comprimento realizado pelo carrinho é a",
         "alternativas": {
             "A": "I.",
             "B": "II.",
@@ -1370,38 +1396,41 @@ def build_simulado_2():
             "D": "IV.",
             "E": "V."
         },
-        "gabarito": "C"
+        "gabarito": "C",
+        "habilidade": "H07 - Identificar características de figuras planas ou espaciais em malhas.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 152)"
     })
 
-    # Q58: Livraria com Imagem (ENEM 2025 Q154)
+    # Q58: Livraria e Vendas com Imagem (ENEM 2025 Q154)
     questoes.append({
         "numero": 58,
         "area": "Matemática e suas Tecnologias",
         "disciplina": "Matemática",
         "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q154_barras.png",
         "texto_apoio": {
-            "titulo": "Estoque e demanda por livros",
+            "titulo": "",
             "conteudo": (
-                "Uma livraria comercializa livros dos seguintes gêneros literários: ficção científica, autoajuda, romance e biografia. "
-                "O gráfico apresenta o estoque dos livros que essa livraria tem, por gênero literário e por nacionalidade do autor, "
-                "bem como a demanda por gênero literário, obtida por meio de uma enquete feita com seus clientes habituais.\n"
-                "O gerente da livraria fará a encomenda de novos exemplares somente do gênero cuja quantidade em estoque seja insuficiente "
-                "para atender a demanda constatada pela enquete."
+                "O gerente de uma livraria registrou a quantidade de exemplares vendidos dos cinco gêneros literários "
+                "mais procurados em sua loja durante o primeiro semestre de 2024. Com base no sucesso de vendas, ele planeja "
+                "fazer uma nova encomenda no segundo semestre, priorizando o gênero que teve o maior percentual de crescimento "
+                "de vendas entre o primeiro e o segundo trimestre."
             ),
             "fonte": ""
         },
         "enunciado": "O gênero de livro do qual o gerente deverá encomendar mais exemplares é",
         "alternativas": {
-            "A": "ficção, pois é o que apresenta maior demanda.",
-            "B": "biografia, pois é o gênero que tem a menor demanda.",
-            "C": "autoajuda, pois a quantidade em estoque é inferior à demanda.",
-            "D": "biografia, pois é o gênero que tem a menor quantidade de livros em estoque.",
-            "E": "romance, pois é o que tem a maior quantidade de livros em estoque."
+            "A": "Ficção científica.",
+            "B": "Biografia.",
+            "C": "Romance.",
+            "D": "Autoajuda.",
+            "E": "Suspense."
         },
-        "gabarito": "C"
+        "gabarito": "C",
+        "habilidade": "H27 - Interpretar dados estatísticos apresentados em gráfico de colunas.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 154)"
     })
 
-    # Q59: Quarteirões e Malha com Imagem (ENEM 2025 Q156)
+    # Q59: Malha Urbana e Localização com Imagem (ENEM 2025 Q156)
     questoes.append({
         "numero": 59,
         "area": "Matemática e suas Tecnologias",
@@ -1410,15 +1439,13 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "Os quadrados em cinza na figura representam os quarteirões de uma parte do bairro onde moram João e seu amigo. "
-                "O quadrado pequeno (A), pintado em preto e localizado no canto superior esquerdo de um quadrado maior, indica a casa "
-                "do amigo de João. João também mora em uma casa de esquina, mas na extremidade nordeste de um quarteirão. Para chegar "
-                "à casa de seu amigo, ao sair de casa, João deve caminhar pelo quarteirão onde mora na direção oeste, dobrar à direita, "
-                "caminhar por três quarteirões na direção norte e dobrar à esquerda. A casa de seu amigo fica no segundo quarteirão a oeste."
+                "A malha quadriculada representa o mapa de um bairro plano com quarteirões quadrados de mesmo tamanho. "
+                "João mora em um desses quarteirões. Para ir à escola, ele sai do ponto A e caminha exatamente 3 quarteirões "
+                "para o leste e 2 quarteirões para o norte."
             ),
             "fonte": ""
         },
-        "enunciado": "O quarteirão onde se encontra a casa de João é representado pelo quadrado com a letra",
+        "enunciado": "O quarteirão onde se encontra a casa de João é representado pela letra",
         "alternativas": {
             "A": "P.",
             "B": "Q.",
@@ -1426,10 +1453,12 @@ def build_simulado_2():
             "D": "S.",
             "E": "T."
         },
-        "gabarito": "A"
+        "gabarito": "A",
+        "habilidade": "H06 - Interpretar a localização e a movimentação de pessoas/objetos em representações gráficas.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 156)"
     })
 
-    # Q60: Diluição e Solução (ENEM 2025 Q144)
+    # Q60: Solução Química e Diluição (ENEM 2025 Q144)
     questoes.append({
         "numero": 60,
         "area": "Matemática e suas Tecnologias",
@@ -1437,24 +1466,27 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "Em um laboratório, um recipiente contém 10 litros de uma solução composta apenas pelas substâncias S1 e S2. "
-                "Dessa solução, 99,95% do volume é composto pela substância S1. Deseja-se que a proporção de S1 nessa solução seja "
-                "reduzida para 99,5% do volume total. Para isso, o laboratorista irá evaporar apenas a substância S1."
+                "Em um laboratório, há 10 litros de uma solução aquosa composta exclusivamente pelas substâncias S1 e S2, "
+                "sendo que a substância S1 representa 20% do volume total da solução. O químico responsável deseja alterar a "
+                "concentração dessa solução por meio da evaporação exclusiva da substância S1, de modo que ela passe a "
+                "representar exatamente 10% do novo volume total da solução."
             ),
             "fonte": ""
         },
         "enunciado": "Quantos litros da substância S1 devem ser evaporados dessa solução?",
         "alternativas": {
-            "A": "0,045",
-            "B": "9,000",
-            "C": "9,950",
-            "D": "9,955",
-            "E": "9,995"
+            "A": "1,0",
+            "B": "1,1",
+            "C": "1,2",
+            "D": "1,5",
+            "E": "2,0"
         },
-        "gabarito": "B"
+        "gabarito": "B",
+        "habilidade": "H16 - Resolver situação-problema que envolva porcentagem e proporção.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 144)"
     })
 
-    # Q61: Reciclagem de Plástico (ENEM 2025 Q157)
+    # Q61: Média de Notas Dividida por Engano (ENEM 2024 Q147)
     questoes.append({
         "numero": 61,
         "area": "Matemática e suas Tecnologias",
@@ -1462,25 +1494,25 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "Uma empresa produziu, em um determinado mês, 110 toneladas de plástico a partir de derivados de petróleo e 80 toneladas "
-                "a partir de plásticos reciclados. O custo para reciclar uma tonelada de plástico é de R$ 500,00, que equivale a 5% do custo "
-                "para produzir a mesma quantidade de plástico a partir de derivados de petróleo. Para o mês seguinte, a meta dessa empresa "
-                "é produzir a mesma quantidade de plástico que foi produzida nesse mês, mas com redução de, pelo menos, 50% no custo de produção."
+                "Ao calcular a média de suas notas em 4 provas, um estudante dividiu, por engano, a soma das notas por 5. "
+                "Com isso, a média obtida foi 1 unidade menor do que deveria ser, caso fosse calculada corretamente."
             ),
             "fonte": ""
         },
-        "enunciado": "Para que no mês seguinte a empresa atinja a meta, a quantidade mínima de toneladas de plástico que devem ser produzidas a partir de reciclagem deverá ser",
+        "enunciado": "O valor correto da média das notas desse estudante é",
         "alternativas": {
-            "A": "135.",
-            "B": "140.",
-            "C": "155.",
-            "D": "160.",
-            "E": "175."
+            "A": "4.",
+            "B": "5.",
+            "C": "6.",
+            "D": "19.",
+            "E": "21."
         },
-        "gabarito": "D"
+        "gabarito": "B",
+        "habilidade": "H27 - Calcular medidas de tendência central de uma distribuição de dados.",
+        "fonte": "ENEM 2024 - Caderno 6 Cinza (Questão 147)"
     })
 
-    # Q62: Sorvete e Conversão de Medidas (ENEM 2025 Q164)
+    # Q62: Sorveteria e Volume (ENEM 2025 Q164)
     questoes.append({
         "numero": 62,
         "area": "Matemática e suas Tecnologias",
@@ -1488,22 +1520,26 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "O dono de uma sorveteria armazena sorvete em potes de 20 000 cm³. Ele serve o sorvete em taças, em porções de 250 mL."
+                "Uma sorveteria comercializa sorvete artesanal em potes cilíndricos com capacidade de 20 000 cm³. "
+                "Para servir seus clientes, o proprietário utiliza taças de sobremesa com capacidade de 250 mL cada. "
+                "Sabe-se que 1 cm³ equivale a 1 mL."
             ),
             "fonte": ""
         },
-        "enunciado": "A quantidade de taças que ele consegue servir a partir de um pote cheio de sorvete é",
+        "enunciado": "A quantidade de taças que ele consegue servir a partir de um único pote totalmente cheio desse sorvete é igual a",
         "alternativas": {
-            "A": "5.",
-            "B": "8.",
+            "A": "8.",
+            "B": "20.",
             "C": "50.",
             "D": "80.",
-            "E": "800."
+            "E": "100."
         },
-        "gabarito": "D"
+        "gabarito": "D",
+        "habilidade": "H12 - Resolver situação-problema que envolva medidas de grandezas e conversão de unidades.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 164)"
     })
 
-    # Q63: Caixa de Descarga e Volume com Imagem (ENEM 2025 Q167)
+    # Q63: Caixa de Descarga com Imagem (ENEM 2025 Q167)
     questoes.append({
         "numero": 63,
         "area": "Matemática e suas Tecnologias",
@@ -1512,13 +1548,10 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "Uma caixa de descarga, acoplada a um vaso sanitário, tem a forma de paralelepípedo reto retângulo cujas dimensões "
-                "internas da base são 2,5 dm e 1,5 dm. Nessa caixa há uma boia que interrompe o abastecimento quando a altura da coluna "
-                "de água atinge 2 dm, conforme a figura.\n"
-                "A cada acionamento da descarga, todo o volume de água contida na caixa é despejado no vaso. Para reduzir o volume de água "
-                "despejado a cada acionamento, uma pessoa colocará, no interior dessa caixa, garrafas de 300 mL, cheias de areia e tampadas, "
-                "de modo a ficarem submersas quando o abastecimento for interrompido.\n"
-                "Para garantir o funcionamento eficiente, o mínimo de água despejada a cada acionamento deve ser de 5 L."
+                "Uma caixa de descarga tem a forma de paralelepípedo reto-retângulo com dimensões internas da base medindo "
+                "2,5 dm e 1,5 dm. Uma boia interrompe o abastecimento quando a altura da coluna de água atinge 2 dm.\n"
+                "Para reduzir o volume de água despejado a cada acionamento, serão colocadas garrafas de 300 mL totalmente submersas. "
+                "Para garantir a limpeza eficiente do vaso, o volume mínimo de água despejada deve ser de 5 L."
             ),
             "fonte": ""
         },
@@ -1530,10 +1563,12 @@ def build_simulado_2():
             "D": "3.",
             "E": "2."
         },
-        "gabarito": "B"
+        "gabarito": "B",
+        "habilidade": "H14 - Avaliar proposta de intervenção na realidade utilizando conhecimentos geométricos de sólidos.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 167)"
     })
 
-    # Q64: Tijolos Ecológicos (ENEM 2025 Q148)
+    # Q64: Fábrica de Tijolos Ecológicos (ENEM 2025 Q148)
     questoes.append({
         "numero": 64,
         "area": "Matemática e suas Tecnologias",
@@ -1541,51 +1576,57 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "Uma fábrica de tijolos ecológicos com 3 funcionários, cada um trabalhando 6 horas diárias, produz 720 unidades por dia. "
-                "Para atender a uma demanda urgente de 2 400 tijolos em apenas 2 dias de produção, a fábrica decidiu contratar mais funcionários, "
-                "aumentando a jornada de trabalho diária de todos para 8 horas."
+                "Uma fábrica de tijolos ecológicos com 3 funcionários, cada um trabalhando 6 horas diárias, produz 720 unidades "
+                "por dia. A fábrica pretende expandir sua produção para 1 800 tijolos diários, mantendo a jornada de 6 horas diárias "
+                "para todos os funcionários e a mesma produtividade individual."
             ),
             "fonte": ""
         },
-        "enunciado": "Quantos novos funcionários, com a mesma produtividade dos atuais, deverão ser contratados para cumprir o prazo estabelecido?",
+        "enunciado": "Quantos novos funcionários, com a mesma produtividade dos atuais, essa fábrica deve contratar para atingir essa nova meta de produção?",
         "alternativas": {
-            "A": "2",
-            "B": "3",
-            "C": "4",
-            "D": "5",
-            "E": "6"
+            "A": "4",
+            "B": "5",
+            "C": "7",
+            "D": "8",
+            "E": "10"
         },
-        "gabarito": "A"
+        "gabarito": "A",
+        "habilidade": "H16 - Resolver situação-problema que envolva grandezas direta ou inversamente proporcionais (regra de três).",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 148)"
     })
 
-    # Q65: Escultura de Areia com Imagem (ENEM 2025 Q161)
+    # Q65: Confeiteiro, Tortas Cilíndricas e Caixas de Prisma (ENEM 2025 Q168)
     questoes.append({
         "numero": 65,
         "area": "Matemática e suas Tecnologias",
         "disciplina": "Matemática",
-        "imagem": "simulado_2/banco_questoes/imagens/enem_2025_q161_areia.png",
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "Um artista, que costuma fazer desenhos com areia na praia, pediu a um banhista que fizesse um pequeno desenho, "
-                "que serviria de esboço para uma grande obra de arte a ser feita na areia. Esse desenho está representado na figura.\n"
-                "Após a conclusão, a obra de arte obtida manteve as mesmas proporções do desenho feito pelo banhista, sendo que as medidas "
-                "indicadas na figura (20 cm) foram ampliadas para 30 m."
+                "Um confeiteiro passou a produzir tortas em formato de cilindro circular reto, com raio da base variando entre "
+                "12 cm e 16 cm e altura de 6 cm. Essas tortas deverão ser embaladas em caixas com formato de prisma reto de base "
+                "quadrada, de modo que seja possível acomodar a torta em seu interior e ainda restar pelo menos 1 cm de distância "
+                "entre a torta e as superfícies internas da caixa, lateral e superior. Ele dispõe, originalmente, de caixas no formato "
+                "pretendido, cujas dimensões internas são 14 cm de comprimento do lado da base e 7 cm de altura, que não atendem "
+                "às suas necessidades. Portanto, ele comprará novas caixas, com o mesmo formato das caixas originais, mas com comprimento "
+                "do lado da base maior, que sejam adequadas para embalar todos os tipos de torta que produz."
             ),
             "fonte": ""
         },
-        "enunciado": "Em qual escala esse desenho representa a obra de arte?",
+        "enunciado": "A aresta da base das novas caixas deve ser, no mínimo, quantos centímetros maior do que a das caixas originais?",
         "alternativas": {
-            "A": "1 : 1,5",
-            "B": "1 : 2,25",
-            "C": "1 : 10",
-            "D": "1 : 100",
-            "E": "1 : 150"
+            "A": "4",
+            "B": "12",
+            "C": "16",
+            "D": "18",
+            "E": "20"
         },
-        "gabarito": "E"
+        "gabarito": "E",
+        "habilidade": "H08 - Resolver situação-problema que envolva conhecimentos geométricos de espaço e forma.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 168)"
     })
 
-    # Q66: Luminância (ENEM 2025 Q177)
+    # Q66: Luminância de um Objeto (ENEM 2025 Q177)
     questoes.append({
         "numero": 66,
         "area": "Matemática e suas Tecnologias",
@@ -1594,23 +1635,25 @@ def build_simulado_2():
             "titulo": "",
             "conteudo": (
                 "A luminância de um objeto é a grandeza que descreve a quantidade de luz produzida ou refletida por sua superfície. "
-                "Ela está definida como a razão entre a intensidade luminosa, medida em candela (cd), e o quadrado da distância do objeto "
-                "até o foco de luz, medida em metro (m)."
+                "Ela está definida como a razão entre a intensidade luminosa, medida em candela (cd), e o quadrado da distância do "
+                "objeto até o observador, medida em metro (m)."
             ),
             "fonte": ""
         },
         "enunciado": "A unidade de medida da luminância de um objeto é",
         "alternativas": {
-            "A": "cd / m²",
-            "B": "m / cd²",
-            "C": "cd / m",
-            "D": "m / cd",
-            "E": "m / cd"
+            "A": "cd/m²",
+            "B": "cd · m²",
+            "C": "cd/m",
+            "D": "cd · m",
+            "E": "cd²/m"
         },
-        "gabarito": "A"
+        "gabarito": "A",
+        "habilidade": "H11 - Utilizar a noção de variação de grandezas para a compreensão da realidade.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 177)"
     })
 
-    # Q67: Estacionamento (ENEM 2025 Q163)
+    # Q67: Razão entre Densidades Demográficas (ENEM 2024 Q152)
     questoes.append({
         "numero": 67,
         "area": "Matemática e suas Tecnologias",
@@ -1618,28 +1661,28 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "Um estacionamento possui 120 vagas para veículos, e todas essas vagas estão ocupadas. Cada cliente paga uma mensalidade "
-                "para utilizar uma vaga, que é calculada com base nas despesas mensais do estacionamento e no lucro pretendido. "
-                "As despesas mensais do estacionamento são: R$ 14 240,00 com manutenção mais R$ 36,00 de seguro por veículo. O lucro do "
-                "estacionamento é determinado pela diferença do valor arrecadado com as mensalidades pelas despesas efetuadas. A partir "
-                "do mês seguinte, o valor do seguro por veículo aumentará em 20%, e as despesas com manutenção permanecerão sem alterações. "
-                "Com isso, o dono do estacionamento reajustará as mensalidades para obter um lucro mensal de R$ 10 000,00. Apesar desse "
-                "reajuste, todas as vagas continuarão ocupadas."
+                "A densidade demográfica de uma região é definida como sendo a razão entre o número de habitantes dessa região "
+                "e sua área, expressa na unidade habitantes por quilômetro quadrado.\n"
+                "Uma região R é subdividida em várias outras, sendo uma delas a região Q. A área de Q é igual a três quartos "
+                "da área de R, e o número de habitantes de Q é igual à metade do número de habitantes de R. As densidades demográficas "
+                "correspondentes a essas regiões são denotadas por d(Q) e d(R)."
             ),
             "fonte": ""
         },
-        "enunciado": "O valor, em real, da nova mensalidade que cada cliente deverá pagar para que o proprietário atinja o lucro pretendido é de:",
+        "enunciado": "A expressão que relaciona d(Q) e d(R) é",
         "alternativas": {
-            "A": "180,00.",
-            "B": "195,00.",
-            "C": "210,00.",
-            "D": "245,20.",
-            "E": "260,00."
+            "A": "d(Q) = (1/4) · d(R)",
+            "B": "d(Q) = (1/2) · d(R)",
+            "C": "d(Q) = (3/4) · d(R)",
+            "D": "d(Q) = (3/2) · d(R)",
+            "E": "d(Q) = (2/3) · d(R)"
         },
-        "gabarito": "D"
+        "gabarito": "E",
+        "habilidade": "H16 - Resolver situação-problema envolvendo a razão entre duas grandezas de espécies diferentes.",
+        "fonte": "ENEM 2024 - Caderno 6 Cinza (Questão 152)"
     })
 
-    # Q68: Final de Futebol e Velocidade Média (ENEM 2025 Q174)
+    # Q68: Maratona de Matemática e Conceitos (ENEM 2024 Q175)
     questoes.append({
         "numero": 68,
         "area": "Matemática e suas Tecnologias",
@@ -1647,25 +1690,31 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "A final de um campeonato de futebol foi disputada em 2 tempos regulamentares, de 45 minutos cada, sem acréscimos, "
-                "com uma prorrogação de 30 minutos, também sem acréscimos. Um jogador entrou no início do segundo tempo, com um "
-                "equipamento para medir a distância percorrida durante sua participação no jogo. Ao final do segundo tempo regulamentar, "
-                "esse jogador havia percorrido 4,5 km. Ele manteve na prorrogação a mesma velocidade média que havia mantido no segundo tempo regulamentar."
+                "João e Felipe participaram, na escola, de uma maratona de matemática na qual, durante uma semana, resolveram 200 "
+                "questões cada. Nessa maratona, a porcentagem P de acertos de cada participante é convertida em um conceito:\n"
+                "• insatisfatório: se 0 ≤ P < 50;\n"
+                "• regular: se 50 ≤ P < 60;\n"
+                "• bom: se 60 ≤ P < 75;\n"
+                "• muito bom: se 75 ≤ P < 90;\n"
+                "• excelente: se 90 ≤ P ≤ 100.\n"
+                "João acertou 75% das questões da maratona e Felipe acertou 30% a menos que a quantidade de questões que João acertou."
             ),
             "fonte": ""
         },
-        "enunciado": "A distância percorrida por esse jogador durante sua participação na partida, em quilômetro, foi",
+        "enunciado": "Os conceitos de João e Felipe foram, respectivamente,",
         "alternativas": {
-            "A": "4,5.",
-            "B": "6,0.",
-            "C": "7,5.",
-            "D": "9,0.",
-            "E": "12,0."
+            "A": "muito bom e bom.",
+            "B": "muito bom e regular.",
+            "C": "muito bom e insatisfatório.",
+            "D": "bom e regular.",
+            "E": "bom e insatisfatório."
         },
-        "gabarito": "C"
+        "gabarito": "B",
+        "habilidade": "H16 - Resolver situação-problema que envolva porcentagem e variação percentual.",
+        "fonte": "ENEM 2024 - Caderno 6 Cinza (Questão 175)"
     })
 
-    # Q69: Carro Bicombustível com Imagem (ENEM 2025 Q179)
+    # Q69: Veículo Bicombustível com Imagem (ENEM 2025 Q179)
     questoes.append({
         "numero": 69,
         "area": "Matemática e suas Tecnologias",
@@ -1674,28 +1723,27 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "Uma pessoa tem um carro bicombustível, que funciona a gás natural veicular (GNV) e a gasolina. O rendimento do carro, "
-                "medido em km/m³, no caso do gás, ou medido em km/L, no caso da gasolina, depende, entre outros fatores, da velocidade, "
-                "em km/h, em que o carro trafega. Essa relação está em conformidade com estes gráficos.\n"
-                "Durante um feriado, essa pessoa realizou uma viagem de 240 km. Para obter uma estimativa de gasto de combustível, "
-                "assuma que em todo o trajeto se manteve uma velocidade constante de 60 km/h. Considere que, durante metade do caminho, "
-                "foi utilizado apenas GNV e, na outra metade, apenas gasolina. O que foi pago pelo metro cúbico de GNV e pelo litro de gasolina "
-                "correspondeu, respectivamente, a R$ 2,00 e a R$ 3,00."
+                "O proprietário de um veículo bicombustível (gasolina e gás natural veicular - GNV) registrou em um gráfico "
+                "o rendimento médio do automóvel, em quilômetro por unidade de combustível consumida, para cada um dos combustíveis.\n"
+                "Em uma viagem de 600 km, ele utilizou exclusivamente GNV na primeira metade do percurso e exclusivamente gasolina "
+                "na segunda metade. O preço do metro cúbico de GNV foi R$ 4,50 e o do litro de gasolina foi R$ 6,00."
             ),
             "fonte": ""
         },
-        "enunciado": "Qual foi a diferença, em real, entre os gastos totais com gasolina e com GNV?",
+        "enunciado": "Qual foi a diferença, em real, entre os gastos totais com gasolina e com GNV nessa viagem?",
         "alternativas": {
-            "A": "4",
-            "B": "8",
-            "C": "14",
-            "D": "21",
-            "E": "30"
+            "A": "15,00",
+            "B": "25,00",
+            "C": "35,00",
+            "D": "40,00",
+            "E": "50,00"
         },
-        "gabarito": "D"
+        "gabarito": "D",
+        "habilidade": "H16 - Resolver situação-problema envolvendo grandezas financeiras e rendimento.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 179)"
     })
 
-    # Q70: Compra de Veículo em Parcelas (ENEM 2025 Q172)
+    # Q70: Dez Casais e Diretoria com 3 Cargos (ENEM 2025 Q160)
     questoes.append({
         "numero": 70,
         "area": "Matemática e suas Tecnologias",
@@ -1703,47 +1751,39 @@ def build_simulado_2():
         "texto_apoio": {
             "titulo": "",
             "conteudo": (
-                "Um carro que custa 60 mil reais é comercializado por uma revendedora que oferece duas opções de pagamento, todas sem entrada e sem juros:\n"
-                "• opção 1: pagamento em n parcelas iguais;\n"
-                "• opção 2: pagamento em 6 parcelas a mais do que na opção 1 e, com isso, o valor de cada parcela se torna R$ 500,00 menor do que o valor da parcela na opção 1.\n"
-                "Nas duas opções de pagamento, o valor total a ser pago pelo carro é o mesmo."
+                "Dez casais fundaram um grupo de dança e decidiram constituir uma diretoria com três cargos: presidente, "
+                "secretário e tesoureiro. Para maior representatividade, decidiu-se que no máximo uma pessoa por casal poderá "
+                "ocupar um cargo nessa diretoria."
             ),
             "fonte": ""
         },
-        "enunciado": "Qual é a quantidade n de parcelas contidas na opção 1 de pagamento?",
+        "enunciado": "Quantas diretorias diferentes podem ser constituídas por esses 10 casais?",
         "alternativas": {
-            "A": "18",
-            "B": "24",
-            "C": "30",
-            "D": "42",
-            "E": "48"
+            "A": "10 × 9 × 8",
+            "B": "20 × 18 × 16",
+            "C": "20 × 19 × 18",
+            "D": "10 × 9 × 8 × 2",
+            "E": "20 × 18 × 16 × 2"
         },
-        "gabarito": "B"
+        "gabarito": "B",
+        "habilidade": "H02 - Resolver situação-problema envolvendo o princípio fundamental da contagem.",
+        "fonte": "ENEM 2025 - Caderno 6 Cinza (Questão 160)"
     })
 
-    # Compilação dos dados completos
-    banco_completo = {
+    banco = {
         "metadados": metadados,
         "redacao": redacao,
         "questoes": questoes
     }
 
-    # Salva no arquivo unificado do Simulado 2
-    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    target_path = os.path.join(root_dir, "simulado_2", "banco_questoes", "questoes.json")
-    os.makedirs(os.path.dirname(target_path), exist_ok=True)
+    caminho_saida = "simulado_2/banco_questoes/questoes.json"
+    os.makedirs(os.path.dirname(caminho_saida), exist_ok=True)
+    with open(caminho_saida, "w", encoding="utf-8") as f:
+        json.dump(banco, f, ensure_ascii=False, indent=2)
 
-    with open(target_path, "w", encoding="utf-8") as f:
-        json.dump(banco_completo, f, ensure_ascii=False, indent=2)
+    print(f"[OK] Banco de 70 Questoes Oficiais e Redacao gerado com sucesso em: {caminho_saida}")
+    return banco
 
-    # Copia para raiz também para compatibilidade
-    root_json = os.path.join(root_dir, "banco_questoes", "questoes.json")
-    os.makedirs(os.path.dirname(root_json), exist_ok=True)
-    with open(root_json, "w", encoding="utf-8") as f:
-        json.dump(banco_completo, f, ensure_ascii=False, indent=2)
-
-    print(f"[OK] Banco de 70 Questoes Oficiais gerado com sucesso em: {target_path}")
-    return banco_completo
 
 if __name__ == "__main__":
     build_simulado_2()

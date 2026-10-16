@@ -29,7 +29,7 @@ def draw_essay_fiducials(c):
 
 
 def draw_essay_compact_header(c, start_y, is_model=False):
-    """Desenha cabeçalho oficial da folha de redação."""
+    """Desenha cabeçalho oficial da folha de redação (sem caixa de instruções e sem placeholders)."""
     box_x = FIDUCIAL_MARGIN + 20
     box_w = PAGE_WIDTH - 2 * (FIDUCIAL_MARGIN + 20)
 
@@ -43,13 +43,13 @@ def draw_essay_compact_header(c, start_y, is_model=False):
     c.drawRightString(box_x + box_w, start_y + 1, "2º SIMULADO UNIFICADO • COLETIVO VOA VOA & GABARITA")
 
     # 2. Campo para Nome Completo do Participante
-    name_label_y = start_y - 18
-    c.setFont("Helvetica-Bold", 7.0)
+    name_label_y = start_y - 24.0
+    c.setFont("Helvetica-Bold", 7.2)
     c.setFillColor(colors.black)
     c.drawString(box_x, name_label_y, "NOME COMPLETO DO PARTICIPANTE:")
 
-    name_box_y = name_label_y - 18
-    name_box_h = 18.0
+    name_box_y = name_label_y - 20
+    name_box_h = 20.0
     c.setStrokeColor(colors.HexColor("#333333"))
     c.setLineWidth(0.8)
     c.setFillColor(colors.white)
@@ -58,50 +58,10 @@ def draw_essay_compact_header(c, start_y, is_model=False):
     if is_model:
         c.setFont("Helvetica-Bold", 8.5)
         c.setFillColor(colors.black)
-        c.drawString(box_x + 8, name_box_y + 5, "FOLHA MODELO OFICIAL — VERSO DO CARTÃO-RESPOSTA")
-    else:
-        c.setFont("Helvetica-Oblique", 7.0)
-        c.setFillColor(colors.HexColor("#888888"))
-        c.drawString(box_x + 8, name_box_y + 5, "(Escreva seu nome legível exclusivamente a caneta esferográfica preta)")
+        c.drawString(box_x + 8, name_box_y + 6, "FOLHA MODELO OFICIAL — VERSO DO CARTÃO-RESPOSTA")
 
-    # 3. Caixa de Instruções Oficiais da Redação
-    inst_box_y = name_box_y - 42
-    inst_box_h = 36.0
+    return name_box_y - 14.0
 
-    c.setStrokeColor(colors.HexColor("#555555"))
-    c.setLineWidth(0.6)
-    c.setFillColor(colors.HexColor("#F9F9F9"))
-    c.rect(box_x, inst_box_y, box_w, inst_box_h, fill=1, stroke=1)
-
-    # Faixa lateral "INSTRUÇÕES"
-    c.saveState()
-    c.translate(box_x + 9, inst_box_y + 4)
-    c.rotate(90)
-    c.setFont("Helvetica-Bold", 6.2)
-    c.setFillColor(colors.black)
-    c.drawString(0, 0, "INSTRUÇÕES")
-    c.restoreState()
-
-    c.setStrokeColor(colors.HexColor("#777777"))
-    c.setLineWidth(0.5)
-    c.line(box_x + 13, inst_box_y, box_x + 13, inst_box_y + inst_box_h)
-
-    # Textos oficiais do ENEM em 2 colunas
-    col1_x = box_x + 18
-    col2_x = box_x + 258
-
-    c.setFont("Helvetica", 6.0)
-    c.setFillColor(colors.HexColor("#222222"))
-
-    c.drawString(col1_x, inst_box_y + 25, "• Escreva sua redação com caneta esferográfica de tinta preta transparente.")
-    c.drawString(col1_x, inst_box_y + 15, "• Não utilize corretivo ou borracha. Em caso de erro, risque com um traço simples.")
-    c.drawString(col1_x, inst_box_y + 5, "• Escreva com letra legível. Não será avaliado texto escrito fora das 30 linhas.")
-
-    c.drawString(col2_x, inst_box_y + 25, "• Respeite os direitos humanos e não se identifique no espaço do texto.")
-    c.drawString(col2_x, inst_box_y + 15, "• Redação com até 7 linhas será considerada 'em branco' (nota zero).")
-    c.drawString(col2_x, inst_box_y + 5, "• Textos que fujam ao tema ou desobedeçam ao padrão dissertativo serão zerados.")
-
-    return inst_box_y - 10
 
 
 def draw_essay_30_lines(c, start_y):

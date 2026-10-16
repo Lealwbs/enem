@@ -23,7 +23,7 @@ from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import (
     BaseDocTemplate, PageTemplate, Frame, Paragraph, Spacer, Table, TableStyle,
-    PageBreak, KeepTogether, Image as RLImage, Flowable, NextPageTemplate
+    PageBreak, KeepTogether, Image as RLImage, Flowable, NextPageTemplate, FrameBreak
 )
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
@@ -158,28 +158,28 @@ class QuestionHeaderFlowable(Flowable):
 
 
 class AlternativeBadgeFlowable(Flowable):
-    """Desenha a bolinha vazada (apenas contorno preto com letra preta), estilo oficial ENEM."""
+    """Desenha a bolinha vazada alinhada exatamente com a caixa alta da primeira linha de texto."""
     def __init__(self, letter):
         super().__init__()
         self.letter = letter
-        self.width = 14
-        self.height = 12
+        self.width = 13.5
+        self.height = 9.5
 
     def wrap(self, availWidth, availHeight):
         return self.width, self.height
 
     def draw(self):
         self.canv.saveState()
-        cx = 6.5
-        cy = 4.5
-        r = 5.2
+        cx = 5.5
+        cy = 4.8
+        r = 4.6
         self.canv.setStrokeColor(colors.black)
-        self.canv.setLineWidth(0.8)
+        self.canv.setLineWidth(0.7)
         self.canv.setFillColor(colors.white)
         self.canv.circle(cx, cy, r, fill=1, stroke=1)
-        self.canv.setFont(FONT_BOLD, 6.8)
+        self.canv.setFont(FONT_BOLD, 6.2)
         self.canv.setFillColor(colors.black)
-        self.canv.drawCentredString(cx, cy - 2.2, self.letter)
+        self.canv.drawCentredString(cx, cy - 2.1, self.letter)
         self.canv.restoreState()
 
 
@@ -233,10 +233,11 @@ class DraftWatermarkFlowable(Flowable):
 def draw_cover_background(canv, doc):
     """
     Desenha a Capa Oficial do Caderno Branco com alto padrão visual:
-    - Sem cortes nas margens superiores.
-    - Título refinado: 2º SIMULADO UNIFICADO COLETIVO VOA VOA & PREPARATÓRIO GABARITA.
-    - Divisão das 4 áreas + Redação explicitada com exatidão nas instruções.
-    - Alerta rigoroso: Uso exclusivo de caneta preta (proibido azul).
+    - Topo com código de barras simulado |||||| | |||||||| |||| | ||||| 01 centralizado
+    - CADERNO 1 | BRANCO à esquerda e SIMULADO UNIFICADO à direita
+    - Título refinado: 2º SIMULADO UNIFICADO COLETIVO VOA VOA & PREPARATÓRIO GABARITA
+    - 4 linhas de subtítulo oficiais completas
+    - Instruções oficiais completas com o aviso explícito de caneta preta obrigatória
     """
     canv.saveState()
     metadados = getattr(doc, "metadados", {})
@@ -248,141 +249,150 @@ def draw_cover_background(canv, doc):
     canv.setLineWidth(0.6)
     canv.rect(MARGIN_LEFT - 1, MARGIN_BOTTOM - 1, USABLE_W + 2, USABLE_H + 2, fill=0, stroke=1)
 
-    # Topo da Capa: Identificação limpa sem cortes
-    top_y = PAGE_H - MARGIN_TOP + 14
-    canv.setFont(FONT_BOLD, 9.5)
+    # Topo da Capa: Identificação limpa com código de barras simulado
+    top_y = PAGE_H - MARGIN_TOP + 12
+    canv.setFont(FONT_BOLD, 8.8)
     canv.setFillColor(colors.black)
     canv.drawString(MARGIN_LEFT + 6, top_y, "CADERNO 1 | BRANCO")
 
-    # Badge direito: 70 QUESTÕES
-    badge_w = 90
-    badge_h = 20
-    badge_x = PAGE_W - MARGIN_RIGHT - badge_w - 4
-    badge_y = top_y - 5
-    canv.setFillColor(colors.black)
-    canv.roundRect(badge_x, badge_y, badge_w, badge_h, 3, fill=1, stroke=0)
-    canv.setFont(FONT_BOLD, 9.5)
-    canv.setFillColor(colors.white)
-    canv.drawCentredString(badge_x + badge_w / 2.0, badge_y + 6, "70 QUESTÕES")
+    canv.setFont("Courier-Bold", 10.0)
+    canv.drawCentredString(PAGE_W / 2.0, top_y, "|||||| | |||||||| |||| | ||||| 01")
+
+    canv.setFont(FONT_BOLD, 8.8)
+    canv.drawRightString(PAGE_W - MARGIN_RIGHT - 6, top_y, "SIMULADO UNIFICADO")
+
+    canv.setStrokeColor(colors.black)
+    canv.setLineWidth(0.8)
+    canv.line(MARGIN_LEFT + 4, top_y - 6, PAGE_W - MARGIN_RIGHT - 4, top_y - 6)
 
     # Título Institucional Superior
-    canv.setFont(FONT_BOLD, 15)
+    canv.setFont(FONT_BOLD, 14.5)
     canv.setFillColor(colors.black)
-    canv.drawCentredString(PAGE_W / 2.0, PAGE_H - 74, "2º SIMULADO UNIFICADO")
+    canv.drawCentredString(PAGE_W / 2.0, PAGE_H - 64, "2º SIMULADO UNIFICADO")
 
-    canv.setFont(FONT_BOLD, 11)
+    canv.setFont(FONT_BOLD, 10.5)
     canv.setFillColor(colors.HexColor("#222222"))
-    canv.drawCentredString(PAGE_W / 2.0, PAGE_H - 91, "COLETIVO VOA VOA & PREPARATÓRIO GABARITA")
+    canv.drawCentredString(PAGE_W / 2.0, PAGE_H - 79, "COLETIVO VOA VOA & PREPARATÓRIO GABARITA")
 
-    canv.setFont(FONT_NORMAL, 8.5)
-    canv.setFillColor(colors.HexColor("#444444"))
-    canv.drawCentredString(PAGE_W / 2.0, PAGE_H - 105, "PROVA DE LINGUAGENS, CIÊNCIAS HUMANAS, NATUREZA, MATEMÁTICA E REDAÇÃO")
+    # 4 Linhas de Subtítulo Oficiais
+    subtitles = [
+        "PROVA DE LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO",
+        "PROVA DE CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS",
+        "PROVA DE CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS",
+        "PROVA DE MATEMÁTICA E SUAS TECNOLOGIAS",
+    ]
+    canv.setFont(FONT_BOLD, 7.5)
+    canv.setFillColor(colors.HexColor("#333333"))
+    y_sub = PAGE_H - 95
+    for s in subtitles:
+        canv.drawCentredString(PAGE_W / 2.0, y_sub, s)
+        y_sub -= 10.5
 
     # Card ENEM Central em Alto Contraste
-    card_y = PAGE_H - 192
-    card_h = 72
+    card_y = y_sub - 58
+    card_h = 66
     canv.setStrokeColor(colors.black)
     canv.setLineWidth(1.2)
     canv.setFillColor(colors.white)
     canv.roundRect(MARGIN_LEFT + 10, card_y, USABLE_W - 20, card_h, 5, fill=1, stroke=1)
 
-    canv.setFont(FONT_BOLD, 38)
+    canv.setFont(FONT_BOLD, 36)
     canv.setFillColor(colors.black)
-    canv.drawString(MARGIN_LEFT + 36, card_y + 20, "enem")
+    canv.drawString(MARGIN_LEFT + 36, card_y + 18, "enem")
 
     ano = str(metadados.get("ano", "2026"))
-    canv.setFont(FONT_NORMAL, 38)
+    canv.setFont(FONT_NORMAL, 36)
     canv.setFillColor(colors.HexColor("#444444"))
-    canv.drawString(MARGIN_LEFT + 150, card_y + 20, ano)
+    canv.drawString(MARGIN_LEFT + 144, card_y + 18, ano)
 
     # Divisória vertical no card
     canv.setStrokeColor(colors.black)
     canv.setLineWidth(1.2)
-    canv.line(MARGIN_LEFT + USABLE_W - 130, card_y + 10, MARGIN_LEFT + USABLE_W - 130, card_y + card_h - 10)
+    canv.line(MARGIN_LEFT + USABLE_W - 130, card_y + 8, MARGIN_LEFT + USABLE_W - 130, card_y + card_h - 8)
 
     # Identificação do Caderno à direita do card
     canv.setFont(FONT_BOLD, 8.0)
     canv.setFillColor(colors.black)
-    canv.drawCentredString(MARGIN_LEFT + USABLE_W - 70, card_y + 50, "CADERNO")
+    canv.drawCentredString(MARGIN_LEFT + USABLE_W - 70, card_y + 45, "CADERNO")
     canv.setFont(FONT_BOLD, 22)
-    canv.drawCentredString(MARGIN_LEFT + USABLE_W - 70, card_y + 25, "1")
-    canv.setFont(FONT_BOLD, 10.0)
-    canv.drawCentredString(MARGIN_LEFT + USABLE_W - 70, card_y + 11, "BRANCO")
+    canv.drawCentredString(MARGIN_LEFT + USABLE_W - 70, card_y + 22, "1")
+    canv.setFont(FONT_BOLD, 9.5)
+    canv.drawCentredString(MARGIN_LEFT + USABLE_W - 70, card_y + 9, "BRANCO")
 
     # Caixa da Frase de Segurança
-    frase_y = card_y - 78
-    frase_h = 66
+    frase_y = card_y - 68
+    frase_h = 60
     canv.setStrokeColor(colors.black)
     canv.setLineWidth(0.9)
     canv.roundRect(MARGIN_LEFT + 10, frase_y, USABLE_W - 20, frase_h, 4, fill=0, stroke=1)
 
-    canv.setFont(FONT_BOLD, 7.8)
+    canv.setFont(FONT_BOLD, 7.5)
     canv.setFillColor(colors.black)
-    canv.drawCentredString(PAGE_W / 2.0, frase_y + frase_h - 14, "ATENÇÃO: transcreva no espaço apropriado do seu CARTÃO-RESPOSTA,")
-    canv.setFont(FONT_NORMAL, 7.8)
-    canv.drawCentredString(PAGE_W / 2.0, frase_y + frase_h - 25, "com sua caligrafia usual, considerando as letras maiúsculas e minúsculas, a seguinte frase:")
+    canv.drawCentredString(PAGE_W / 2.0, frase_y + frase_h - 13, "ATENÇÃO: transcreva no espaço apropriado do seu CARTÃO-RESPOSTA,")
+    canv.setFont(FONT_NORMAL, 7.5)
+    canv.drawCentredString(PAGE_W / 2.0, frase_y + frase_h - 23, "com sua caligrafia usual, considerando as letras maiúsculas e minúsculas, a seguinte frase:")
 
     # Tarja preta com a frase de segurança
     frase = metadados.get("frase_seguranca", "A persistência constrói o conhecimento e abre caminhos para o futuro.")
     f_box_w = USABLE_W - 60
-    f_box_h = 23
+    f_box_h = 22
     f_box_x = MARGIN_LEFT + 30
-    f_box_y = frase_y + 9
+    f_box_y = frase_y + 8
     canv.setFillColor(colors.black)
     canv.roundRect(f_box_x, f_box_y, f_box_w, f_box_h, 3, fill=1, stroke=0)
-    canv.setFont(FONT_BOLD, 9.0)
+    canv.setFont(FONT_BOLD, 8.8)
     canv.setFillColor(colors.white)
-    canv.drawCentredString(PAGE_W / 2.0, f_box_y + 7.0, frase)
+    canv.drawCentredString(PAGE_W / 2.0, f_box_y + 6.5, frase)
 
     # Bloco das Instruções Oficiais
-    inst_y = MARGIN_BOTTOM + 25
-    inst_h = frase_y - inst_y - 10
+    inst_y = MARGIN_BOTTOM + 20
+    inst_h = frase_y - inst_y - 8
     canv.setStrokeColor(colors.HexColor("#333333"))
     canv.setLineWidth(0.8)
     canv.setFillColor(colors.HexColor("#FAFAFA"))
     canv.roundRect(MARGIN_LEFT + 10, inst_y, USABLE_W - 20, inst_h, 4, fill=1, stroke=1)
 
-    canv.setFont(FONT_BOLD, 9.5)
+    canv.setFont(FONT_BOLD, 9.0)
     canv.setFillColor(colors.black)
-    canv.drawCentredString(PAGE_W / 2.0, inst_y + inst_h - 16, "LEIA ATENTAMENTE AS INSTRUÇÕES SEGUINTES:")
+    canv.drawCentredString(PAGE_W / 2.0, inst_y + inst_h - 14, "LEIA ATENTAMENTE AS INSTRUÇÕES SEGUINTES:")
 
     instrucoes = [
-        ("1. COMPOSIÇÃO DESTE CADERNO DE QUESTÕES (70 Itens + Redação):", True),
-        ("   • Linguagens, Códigos e suas Tecnologias: Questões 01 a 16", False),
-        ("   • Ciências Humanas e suas Tecnologias: Questões 17 a 32", False),
-        ("   • Proposta de Redação e Rascunho: Localizada no MEIO do caderno (após a Questão 32)", False),
-        ("   • Ciências da Natureza e suas Tecnologias: Questões 33 a 50", False),
-        ("   • Matemática e suas Tecnologias: Questões 51 a 70", False),
-        ("2. OBRIGATORIEDADE DE CANETA PRETA (PROIBIDO CANETA AZUL):", True),
-        ("   • Preencha o CARTÃO-RESPOSTA e a FOLHA DE REDAÇÃO exclusivamente com caneta esferográfica de", False),
-        ("     tinta preta (fabricada em material transparente). É ESTRITAMENTE PROIBIDO O USO DE CANETA AZUL,", False),
-        ("     lápis, grafite, borracha ou qualquer tipo de corretivo líquido/fita.", False),
-        ("3. DURAÇÃO E TEMPO DE PROVA:", True),
-        ("   • O tempo total disponível para a realização das 70 questões e da redação é de cinco horas.", False),
-        ("4. MARCAÇÃO DAS ALTERNATIVAS:", True),
-        ("   • Para cada questão objetiva, são apresentadas 5 alternativas (A, B, C, D e E). Apenas uma é correta.", False),
-        ("   • Preencha completamente a bolha no cartão. Marcações neste caderno NÃO serão computadas na nota.", False),
-        ("5. TRANSCRIÇÃO DA REDAÇÃO:", True),
-        ("   • Apenas o texto transcrito com caneta preta na FOLHA DE REDAÇÃO definitiva será corrigido.", False),
-        ("6. DEVOLUÇÃO:", True),
-        ("   • Ao concluir o exame, entregue ao fiscal este CADERNO, o CARTÃO-RESPOSTA e a FOLHA DE REDAÇÃO.", False),
+        ("1. Este CADERNO DE QUESTÕES contém 70 questões numeradas de 01 a 70 e a Proposta de Redação,", True),
+        ("   dispostas da seguinte maneira:", True),
+        ("   a) questões de número 01 a 16, relativas à área de Linguagens, Códigos e suas Tecnologias;", False),
+        ("   b) questões de número 17 a 32, relativas à área de Ciências Humanas e suas Tecnologias;", False),
+        ("   c) questões de número 33 a 50, relativas à área de Ciências da Natureza e suas Tecnologias;", False),
+        ("   d) questões de número 51 a 70, relativas à área de Matemática e suas Tecnologias;", False),
+        ("   e) Proposta de Redação no caderno de questões, Folha de Rascunho da Redação ao final do", False),
+        ("      caderno, e Folha de Redação Definitiva e Cartão-Resposta em folhas avulsas.", False),
+        ("   ATENÇÃO: as questões de 01 a 05 são relativas à Língua Inglesa.", False),
+        ("2. Confira se a quantidade e a ordem das questões deste caderno estão de acordo com as instruções.", True),
+        ("3. Preencha o CARTÃO-RESPOSTA e a FOLHA DE REDAÇÃO exclusivamente com caneta esferográfica de", True),
+        ("   tinta PRETA (tubo transparente). É ESTRITAMENTE PROIBIDO O USO DE CANETA AZUL,", False),
+        ("   lápis, borracha ou corretivo líquido/fita.", False),
+        ("4. Para cada uma das questões objetivas, são apresentadas 5 alternativas. Apenas uma responde corretamente.", True),
+        ("5. O tempo disponível para a realização das 70 questões e da proposta de redação é de cinco horas.", True),
+        ("6. Reserve tempo suficiente para preencher o CARTÃO-RESPOSTA e a FOLHA DE REDAÇÃO definitiva.", True),
+        ("   Os rascunhos e marcações neste caderno NÃO serão considerados na avaliação.", False),
+        ("7. Quando terminar as provas, entregue ao aplicador este CADERNO DE QUESTÕES, o CARTÃO-RESPOSTA", True),
+        ("   e a FOLHA DE REDAÇÃO.", False),
     ]
 
-    curr_y = inst_y + inst_h - 32
+    curr_y = inst_y + inst_h - 26
     for linha, is_title in instrucoes:
         if is_title:
-            curr_y -= 4
-            canv.setFont(FONT_BOLD, 7.6)
+            curr_y -= 3.0
+            canv.setFont(FONT_BOLD, 7.2)
             canv.setFillColor(colors.black)
         else:
-            canv.setFont(FONT_NORMAL, 7.2)
+            canv.setFont(FONT_NORMAL, 6.9)
             canv.setFillColor(colors.HexColor("#222222"))
-        canv.drawString(MARGIN_LEFT + 24, curr_y, linha)
-        curr_y -= 11.2
+        canv.drawString(MARGIN_LEFT + 20, curr_y, linha)
+        curr_y -= 9.4
 
     # Rodapé da Capa
-    footer_y = MARGIN_BOTTOM + 7.0
-    canv.setFont(FONT_BOLD, 8)
+    footer_y = MARGIN_BOTTOM + 5.0
+    canv.setFont(FONT_BOLD, 7.8)
     canv.setFillColor(colors.black)
     canv.drawString(MARGIN_LEFT + 6, footer_y, "COLETIVO VOA VOA • GABARITA")
     canv.drawRightString(PAGE_W - MARGIN_RIGHT - 6, footer_y, "2º SIMULADO ENEM 2026")
@@ -539,6 +549,33 @@ def get_two_column_styles():
             textColor=colors.HexColor("#111111"),
             alignment=4,
         ),
+        "EnglishBody": ParagraphStyle(
+            "EnglishBody",
+            fontName=FONT_NORMAL,
+            fontSize=7.2,
+            leading=8.8,
+            textColor=colors.HexColor("#111111"),
+            alignment=4,
+            spaceAfter=2,
+        ),
+        "EnglishPrompt": ParagraphStyle(
+            "EnglishPrompt",
+            fontName=FONT_NORMAL,
+            fontSize=7.4,
+            leading=9.2,
+            textColor=colors.black,
+            alignment=4,
+            spaceAfter=2,
+            spaceBefore=1,
+        ),
+        "EnglishAlt": ParagraphStyle(
+            "EnglishAlt",
+            fontName=FONT_NORMAL,
+            fontSize=7.2,
+            leading=8.8,
+            textColor=colors.HexColor("#111111"),
+            alignment=4,
+        ),
         "EssayMainTitle": ParagraphStyle(
             "EssayMainTitle",
             fontName=FONT_BOLD,
@@ -608,6 +645,11 @@ def build_two_column_question(q, styles, col_width, area_header=None):
     # 3. Texto de Apoio
     texto_apoio = q.get("texto_apoio")
     is_matematica = (q.get("area", "").lower().startswith("matem") or q.get("disciplina", "").lower().startswith("matem"))
+    is_english = q.get("numero") in [1, 2, 3, 4, 5]
+
+    body_style = styles["EnglishBody"] if is_english else styles["TextSupportBody"]
+    prompt_style = styles["EnglishPrompt"] if is_english else styles["QuestionPrompt"]
+    alt_style = styles["EnglishAlt"] if is_english else styles["AlternativeText"]
 
     titulo_limpo = None
     if texto_apoio and isinstance(texto_apoio, dict):
@@ -622,7 +664,7 @@ def build_two_column_question(q, styles, col_width, area_header=None):
 
         if texto_apoio.get("conteudo"):
             conteudo_san = sanitize_for_reportlab(texto_apoio["conteudo"])
-            elements.append(Paragraph(conteudo_san, styles["TextSupportBody"]))
+            elements.append(Paragraph(conteudo_san, body_style))
 
     # 4. Imagem de Apoio (se houver, vem ANTES da fonte)
     img_path = q.get("imagem")
@@ -639,11 +681,15 @@ def build_two_column_question(q, styles, col_width, area_header=None):
                 rl_img = RLImage(real_img_path)
                 max_w = col_width * 0.96
                 aspect = rl_img.imageHeight / float(rl_img.imageWidth)
-                draw_w = min(max_w, rl_img.imageWidth * 0.70)
+                draw_w = max_w
                 draw_h = draw_w * aspect
-                # Limite de altura máxima para não estourar a coluna
-                if draw_h > 120:
-                    draw_h = 120
+                # Limite de altura para a Q02 (para caber no Page 2) ou limite geral amplo
+                if q.get("numero") == 2:
+                    if draw_h > 60:
+                        draw_h = 60
+                        draw_w = draw_h / aspect
+                elif draw_h > 210:
+                    draw_h = 210
                     draw_w = draw_h / aspect
                 rl_img.drawWidth = draw_w
                 rl_img.drawHeight = draw_h
@@ -663,7 +709,7 @@ def build_two_column_question(q, styles, col_width, area_header=None):
 
     # 6. Enunciado (Prompt)
     enun_san = sanitize_for_reportlab(q.get("enunciado", ""))
-    elements.append(Paragraph(enun_san, styles["QuestionPrompt"]))
+    elements.append(Paragraph(enun_san, prompt_style))
     elements.append(Spacer(1, 2))
 
     # 7. Alternativas de A a E
@@ -676,7 +722,7 @@ def build_two_column_question(q, styles, col_width, area_header=None):
         alt_raw = alts.get(letter, "")
         alt_san = sanitize_for_reportlab(alt_raw)
         badge = AlternativeBadgeFlowable(letter)
-        para = Paragraph(alt_san, styles["AlternativeText"])
+        para = Paragraph(alt_san, alt_style)
         table_data.append([badge, para])
 
     t = Table(table_data, colWidths=[badge_w, text_w])
@@ -684,14 +730,165 @@ def build_two_column_question(q, styles, col_width, area_header=None):
         ('VALIGN', (0, 0), (-1, -1), 'TOP'),
         ('LEFTPADDING', (0, 0), (-1, -1), 0),
         ('RIGHTPADDING', (0, 0), (-1, -1), 0),
-        ('TOPPADDING', (0, 0), (-1, -1), 1),
-        ('BOTTOMPADDING', (0, 0), (-1, -1), 1.5),
+        ('TOPPADDING', (0, 0), (-1, -1), 0.5),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 0.8),
     ]))
     elements.append(t)
-    elements.append(Spacer(1, 7))
+    # Espaçador compacto para as 5 de inglês caberem na pág 2
+    spacer_h = 2.5 if is_english else 6.0
+    elements.append(Spacer(1, spacer_h))
 
     return KeepTogether(elements)
 
+
+def build_essay_proposal_two_columns(redacao, styles, col_width):
+    """
+    Constrói a Proposta de Redação em 2 colunas com todos os textos motivadores e imagens.
+    """
+    elements = []
+    tema = redacao.get("tema", "A urgência para a inclusão de pessoas neurodiversas no Brasil")
+    inst_geral = redacao.get("instrucoes", "")
+
+    # Banner Oficial da Proposta
+    elements.append(Paragraph("PROPOSTA DE REDAÇÃO", styles["AreaBanner"]))
+    elements.append(Spacer(1, 2))
+
+    # Instrução geral
+    elements.append(Paragraph(sanitize_for_reportlab(inst_geral), styles["EssayInst"]))
+    elements.append(Spacer(1, 3))
+
+    textos = redacao.get("textos_motivadores", [])
+
+    # Texto I
+    if len(textos) > 0:
+        t1 = textos[0]
+        c1 = [Paragraph(f"<b>{t1.get('titulo', 'TEXTO I')}</b>", styles["MotivatingTitle"])]
+        if t1.get("conteudo"):
+            c1.append(Paragraph(sanitize_for_reportlab(t1["conteudo"]), styles["MotivatingBody"]))
+        if t1.get("fonte"):
+            c1.append(Paragraph(sanitize_for_reportlab(t1["fonte"]), styles["TextSupportSource"]))
+        t1_table = Table([[c1]], colWidths=[col_width])
+        t1_table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor("#FAFAFA")),
+            ('BOX', (0, 0), (-1, -1), 0.5, colors.HexColor("#CCCCCC")),
+            ('TOPPADDING', (0, 0), (-1, -1), 3),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 3),
+            ('LEFTPADDING', (0, 0), (-1, -1), 5),
+            ('RIGHTPADDING', (0, 0), (-1, -1), 5),
+        ]))
+        elements.append(t1_table)
+        elements.append(Spacer(1, 4))
+
+    # Texto II (Infográfico)
+    if len(textos) > 1:
+        t2 = textos[1]
+        c2 = [Paragraph(f"<b>{t2.get('titulo', 'TEXTO II')}</b>", styles["MotivatingTitle"])]
+        t2_img = t2.get("imagem")
+        if t2_img:
+            cand = [t2_img, os.path.join(ROOT_DIR, t2_img)]
+            p = next((x for x in cand if os.path.exists(x)), None)
+            if p:
+                try:
+                    img = RLImage(p)
+                    aspect = img.imageHeight / float(img.imageWidth)
+                    img.drawWidth = col_width - 12
+                    img.drawHeight = img.drawWidth * aspect
+                    if img.drawHeight > 135:
+                        img.drawHeight = 135
+                        img.drawWidth = 135 / aspect
+                    c2.append(img)
+                    c2.append(Spacer(1, 2))
+                except Exception:
+                    pass
+        if t2.get("fonte"):
+            c2.append(Paragraph(sanitize_for_reportlab(t2["fonte"]), styles["TextSupportSource"]))
+        t2_table = Table([[c2]], colWidths=[col_width])
+        t2_table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor("#FAFAFA")),
+            ('BOX', (0, 0), (-1, -1), 0.5, colors.HexColor("#CCCCCC")),
+            ('TOPPADDING', (0, 0), (-1, -1), 3),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 3),
+            ('LEFTPADDING', (0, 0), (-1, -1), 5),
+            ('RIGHTPADDING', (0, 0), (-1, -1), 5),
+        ]))
+        elements.append(t2_table)
+        elements.append(FrameBreak())
+
+    # Texto III
+    if len(textos) > 2:
+        t3 = textos[2]
+        c3 = [Paragraph(f"<b>{t3.get('titulo', 'TEXTO III')}</b>", styles["MotivatingTitle"])]
+        if t3.get("conteudo"):
+            c3.append(Paragraph(sanitize_for_reportlab(t3["conteudo"]), styles["MotivatingBody"]))
+        if t3.get("fonte"):
+            c3.append(Paragraph(sanitize_for_reportlab(t3["fonte"]), styles["TextSupportSource"]))
+        t3_table = Table([[c3]], colWidths=[col_width])
+        t3_table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor("#FAFAFA")),
+            ('BOX', (0, 0), (-1, -1), 0.5, colors.HexColor("#CCCCCC")),
+            ('TOPPADDING', (0, 0), (-1, -1), 3),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 3),
+            ('LEFTPADDING', (0, 0), (-1, -1), 5),
+            ('RIGHTPADDING', (0, 0), (-1, -1), 5),
+        ]))
+        elements.append(t3_table)
+        elements.append(Spacer(1, 4))
+
+    # Texto IV (Quebra-cabeça + texto)
+    if len(textos) > 3:
+        t4 = textos[3]
+        c4 = [Paragraph(f"<b>{t4.get('titulo', 'TEXTO IV')}</b>", styles["MotivatingTitle"])]
+        t4_img = t4.get("imagem")
+        if t4_img:
+            cand = [t4_img, os.path.join(ROOT_DIR, t4_img)]
+            p = next((x for x in cand if os.path.exists(x)), None)
+            if p:
+                try:
+                    img = RLImage(p)
+                    aspect = img.imageHeight / float(img.imageWidth)
+                    img.drawWidth = col_width - 12
+                    img.drawHeight = img.drawWidth * aspect
+                    if img.drawHeight > 110:
+                        img.drawHeight = 110
+                        img.drawWidth = 110 / aspect
+                    c4.append(img)
+                    c4.append(Spacer(1, 2))
+                except Exception:
+                    pass
+        if t4.get("conteudo"):
+            c4.append(Paragraph(sanitize_for_reportlab(t4["conteudo"]), styles["MotivatingBody"]))
+        if t4.get("fonte"):
+            c4.append(Paragraph(sanitize_for_reportlab(t4["fonte"]), styles["TextSupportSource"]))
+        t4_table = Table([[c4]], colWidths=[col_width])
+        t4_table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor("#FAFAFA")),
+            ('BOX', (0, 0), (-1, -1), 0.5, colors.HexColor("#CCCCCC")),
+            ('TOPPADDING', (0, 0), (-1, -1), 3),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 3),
+            ('LEFTPADDING', (0, 0), (-1, -1), 5),
+            ('RIGHTPADDING', (0, 0), (-1, -1), 5),
+        ]))
+        elements.append(t4_table)
+        elements.append(Spacer(1, 4))
+
+    # Caixa de Destaque da Proposta de Redação com o Tema
+    box_theme = [
+        Paragraph("<b>PROPOSTA DE REDAÇÃO</b>", styles["MotivatingTitle"]),
+        Spacer(1, 2),
+        Paragraph(f"Com base nos textos motivadores e em seus conhecimentos, redija um texto dissertativo-argumentativo sobre o tema: <b>&ldquo;{tema.upper()}&rdquo;</b>.", styles["MotivatingBody"])
+    ]
+    theme_table = Table([[box_theme]], colWidths=[col_width])
+    theme_table.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor("#EEEEEE")),
+        ('BOX', (0, 0), (-1, -1), 1.0, colors.black),
+        ('TOPPADDING', (0, 0), (-1, -1), 5),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 5),
+        ('LEFTPADDING', (0, 0), (-1, -1), 6),
+        ('RIGHTPADDING', (0, 0), (-1, -1), 6),
+    ]))
+    elements.append(theme_table)
+
+    return elements
 
 def gerar_prova_pdf(caminho_questoes="simulado_2/banco_questoes/questoes.json", caminho_saida="simulado_2/resultado/Caderno_Questoes_70Q.pdf"):
     """
@@ -760,106 +957,42 @@ def gerar_prova_pdf(caminho_questoes="simulado_2/banco_questoes/questoes.json", 
         51: "MATEMÁTICA E SUAS TECNOLOGIAS • QUESTÕES DE 51 A 70",
     }
 
-    # 2. Questões de 1 a 70 intercalando a Redação após a Questão 32
+    # 2. Questões de 1 a 70 intercalando a Proposta de Redação no MEIO (após Q32) e Rascunho no FINAL (após Q70)
     for q in questoes:
         q_num = q["numero"]
         header_text = area_headers.get(q_num)
 
-        # Adiciona a questão em 2 colunas (com o banner incorporado se for a 1ª da área)
+        # Adiciona a questão em 2 colunas
         story.append(build_two_column_question(q, styles, COL_W, area_header=header_text))
 
-        # Quando termina Ciências Humanas (Q32), insere a PROPOSTA DE REDAÇÃO e RASCUNHO no meio da prova!
+        # As primeiras 5 questões (Inglês) ficam na Página 2; Q06 inicia na Página 3
+        if q_num == 5:
+            story.append(PageBreak())
+
+        # Ao término de Ciências Humanas (Q32), insere a PROPOSTA DE REDAÇÃO em 2 colunas no meio da prova!
         if q_num == 32 and redacao:
-            story.append(NextPageTemplate('Single'))
+            story.append(PageBreak())
+            story.extend(build_essay_proposal_two_columns(redacao, styles, COL_W))
             story.append(PageBreak())
 
-            # --- PÁGINA DA PROPOSTA DE REDAÇÃO ---
-            story.append(Paragraph("PROPOSTA DE REDAÇÃO", styles["EssayMainTitle"]))
+    # 3. FOLHA DE RASCUNHO DA REDAÇÃO no FINAL da prova (após a Q70), estilo ENEM oficial!
+    if redacao:
+        story.append(NextPageTemplate('Single'))
+        story.append(PageBreak())
+        story.append(Paragraph("FOLHA DE RASCUNHO DA REDAÇÃO", styles["EssayMainTitle"]))
 
-            tema = redacao.get("tema", "A urgência para a inclusão de pessoas neurodiversas no Brasil")
-            inst_geral = redacao.get("instrucoes", "")
-            texto_inst_full = (
-                f"{sanitize_for_reportlab(inst_geral)}<br/><br/>"
-                f"<b>PROPOSTA DE REDAÇÃO: &ldquo;{tema.upper()}&rdquo;</b>"
-            )
-            story.append(Paragraph(texto_inst_full, styles["EssayInst"]))
-            story.append(Spacer(1, 4))
-
-            # Caixa destacada do Tema
-            theme_table = Table([[Paragraph(f"TEMA: <b>{tema.upper()}</b>", styles["ThemeBox"])]], colWidths=[USABLE_W])
-            theme_table.setStyle(TableStyle([
-                ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor("#EEEEEE")),
-                ('BOX', (0, 0), (-1, -1), 1.0, colors.black),
-                ('TOPPADDING', (0, 0), (-1, -1), 4),
-                ('BOTTOMPADDING', (0, 0), (-1, -1), 4),
-            ]))
-            story.append(theme_table)
-            story.append(Spacer(1, 6))
-
-            # Textos Motivadores (I a IV)
-            for t in redacao.get("textos_motivadores", []):
-                card_content = []
-                card_content.append(Paragraph(sanitize_for_reportlab(t.get("titulo", "TEXTO")), styles["MotivatingTitle"]))
-
-                # Imagem do motivador (se houver)
-                t_img = t.get("imagem")
-                if t_img:
-                    cand_paths = [t_img, os.path.join(ROOT_DIR, t_img)]
-                    real_t_img = next((p for p in cand_paths if os.path.exists(p)), None)
-                    if real_t_img:
-                        try:
-                            rl_mot_img = RLImage(real_t_img)
-                            aspect_mot = rl_mot_img.imageHeight / float(rl_mot_img.imageWidth)
-                            max_mot_w = min(USABLE_W - 30, 240.0)
-                            rl_mot_img.drawWidth = max_mot_w
-                            rl_mot_img.drawHeight = max_mot_w * aspect_mot
-                            if rl_mot_img.drawHeight > 130:
-                                rl_mot_img.drawHeight = 130
-                                rl_mot_img.drawWidth = 130 / aspect_mot
-                            card_content.append(rl_mot_img)
-                            card_content.append(Spacer(1, 2))
-                        except Exception:
-                            pass
-
-                if t.get("conteudo"):
-                    card_content.append(Paragraph(sanitize_for_reportlab(t["conteudo"]), styles["MotivatingBody"]))
-
-                if t.get("fonte"):
-                    card_content.append(Paragraph(sanitize_for_reportlab(t["fonte"]), styles["TextSupportSource"]))
-
-                card_table = Table([[card_content]], colWidths=[USABLE_W])
-                card_table.setStyle(TableStyle([
-                    ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor("#FAFAFA")),
-                    ('BOX', (0, 0), (-1, -1), 0.6, colors.HexColor("#CCCCCC")),
-                    ('TOPPADDING', (0, 0), (-1, -1), 4),
-                    ('BOTTOMPADDING', (0, 0), (-1, -1), 3),
-                    ('LEFTPADDING', (0, 0), (-1, -1), 8),
-                    ('RIGHTPADDING', (0, 0), (-1, -1), 8),
-                ]))
-                story.append(card_table)
-                story.append(Spacer(1, 4))
-
-            # --- PÁGINA DA FOLHA DE RASCUNHO DA REDAÇÃO ---
-            story.append(PageBreak())
-            story.append(Paragraph("FOLHA DE RASCUNHO DA REDAÇÃO", styles["EssayMainTitle"]))
-
-            inst_rascunho_completa = (
-                "<b>INSTRUÇÕES PARA O RASCUNHO DA REDAÇÃO:</b><br/>"
-                "1. O rascunho da redação deve ser feito exclusivamente no espaço pautado a seguir.<br/>"
-                "2. O texto definitivo DEVE ser transcrito a caneta preta na FOLHA DE REDAÇÃO oficial (até 30 linhas).<br/>"
-                "3. A redação que apresentar cópia dos textos da Proposta terá o número de linhas copiadas desconsiderado.<br/>"
-                "4. <b>Receberá nota zero a redação que:</b> tiver até 7 linhas escritas; fugir ao tema proposto ou não atender "
-                "ao padrão dissertativo-argumentativo; apresentar parte deliberadamente desconectada do tema; ou contiver "
-                "qualquer identificação (nome, assinatura ou rubrica) fora do campo oficial."
-            )
-            story.append(Paragraph(inst_rascunho_completa, styles["EssayInst"]))
-            story.append(Spacer(1, 4))
-            story.append(DraftWatermarkFlowable(USABLE_W, height=520))
-
-            # Retorna para o template de 2 colunas para continuar com Natureza e Matemática
-            story.append(NextPageTemplate('TwoCol'))
-            story.append(PageBreak())
-
+        inst_rascunho = (
+            "<b>INSTRUÇÕES PARA O RASCUNHO DA REDAÇÃO:</b><br/>"
+            "1. O rascunho da redação deve ser feito exclusivamente no espaço pautado a seguir.<br/>"
+            "2. O texto definitivo DEVE ser transcrito a caneta preta na FOLHA DE REDAÇÃO oficial (até 30 linhas).<br/>"
+            "3. A redação que apresentar cópia dos textos da Proposta terá o número de linhas copiadas desconsiderado.<br/>"
+            "4. <b>Receberá nota zero a redação que:</b> tiver até 7 linhas escritas; fugir ao tema proposto ou não atender "
+            "ao padrão dissertativo-argumentativo; apresentar parte deliberadamente desconectada do tema; ou contiver "
+            "qualquer identificação fora do campo oficial."
+        )
+        story.append(Paragraph(inst_rascunho, styles["EssayInst"]))
+        story.append(Spacer(1, 4))
+        story.append(DraftWatermarkFlowable(USABLE_W, height=530))
     doc.build(story)
     print(f"[OK] Caderno de Prova Oficial (70Q + Redacao no meio) gerado em: {caminho_saida}")
 

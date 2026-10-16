@@ -36,12 +36,13 @@ def gerar_folha_unificada_pdf(
     geometry = render_answer_sheet_on_canvas(c, is_gabarito=is_gabarito, gabarito_oficial=gabarito_oficial)
     c.showPage()
 
-    # --- PÁGINA 2: FOLHA DE REDAÇÃO ---
-    render_essay_sheet_on_canvas(c, is_model=is_gabarito)
-    c.showPage()
+    # --- PÁGINA 2: FOLHA DE REDAÇÃO (Apenas para o caderno do aluno, não para o gabarito oficial) ---
+    if not is_gabarito:
+        render_essay_sheet_on_canvas(c, is_model=False)
+        c.showPage()
 
     c.save()
-    tipo = "GABARITO OFICIAL FRENTE E VERSO" if is_gabarito else "CARTÃO E REDAÇÃO FRENTE E VERSO"
+    tipo = "GABARITO OFICIAL DEFINITIVO (1 PÁGINA)" if is_gabarito else "CARTÃO E REDAÇÃO FRENTE E VERSO (2 PÁGINAS)"
     print(f"[OK] {tipo} gerado em: {caminho_saida}")
     return geometry
 

@@ -57,17 +57,17 @@ def draw_clean_header(c, is_gabarito=False):
     c.setLineWidth(1.0)
     c.line(GRID_MARGIN_X, start_y - 16, GRID_MARGIN_X + GRID_W, start_y - 16)
 
-    return start_y - 22
+    return start_y - 28.0
 
 
 def draw_candidate_name_field(c, start_y, is_gabarito=False):
-    """Desenha campo contínuo para o nome do participante."""
+    """Desenha campo contínuo para o nome do participante (sem placeholders)."""
     box_x = GRID_MARGIN_X
     box_w = GRID_W
-    box_h = 20.0
+    box_h = 22.0
     box_y = start_y - box_h
 
-    c.setFont("Helvetica-Bold", 7.0)
+    c.setFont("Helvetica-Bold", 7.2)
     c.setFillColor(colors.black)
     c.drawString(box_x, start_y, "NOME COMPLETO DO PARTICIPANTE:")
 
@@ -79,41 +79,10 @@ def draw_candidate_name_field(c, start_y, is_gabarito=False):
     if is_gabarito:
         c.setFont("Helvetica-Bold", 9.5)
         c.setFillColor(colors.black)
-        c.drawString(box_x + 10, box_y + 5.5, "FOLHA DE RESPOSTAS PADRÃO — GABARITO OFICIAL")
-    else:
-        c.setFont("Helvetica-Oblique", 7.0)
-        c.setFillColor(colors.HexColor("#777777"))
-        c.drawString(box_x + 8, box_y + 6, "(Escreva seu nome legível em letras de forma a caneta esferográfica preta)")
+        c.drawString(box_x + 10, box_y + 6.5, "FOLHA DE RESPOSTAS PADRÃO — GABARITO OFICIAL")
 
     return box_y - 12.0
 
-
-def draw_frase_seguranca_field(c, start_y, is_gabarito=False):
-    """Desenha campo para transcrição da frase de segurança da capa."""
-    box_x = GRID_MARGIN_X
-    box_w = GRID_W
-    box_h = 19.0
-    box_y = start_y - box_h
-
-    c.setFont("Helvetica-Bold", 6.8)
-    c.setFillColor(colors.black)
-    c.drawString(box_x, start_y, "TRANSCRIÇÃO DA FRASE (Conforme instrução da capa do Caderno de Questões):")
-
-    c.setStrokeColor(colors.black)
-    c.setLineWidth(0.8)
-    c.setFillColor(colors.white)
-    c.rect(box_x, box_y, box_w, box_h, fill=1, stroke=1)
-
-    if is_gabarito:
-        c.setFont("Helvetica-Bold", 8.0)
-        c.setFillColor(colors.black)
-        c.drawString(box_x + 10, box_y + 5.5, "A persistência constrói o conhecimento e abre caminhos para o futuro.")
-    else:
-        c.setFont("Helvetica-Oblique", 6.8)
-        c.setFillColor(colors.HexColor("#888888"))
-        c.drawString(box_x + 8, box_y + 5.5, "(Transcreva aqui, com sua caligrafia usual, a frase contida na capa da prova)")
-
-    return box_y - 10.0
 
 
 def draw_instructions_bw(c, start_y):
@@ -278,42 +247,38 @@ def draw_bubble_grid(c, start_y, gabarito_oficial=None):
     return grid_bottom_y, geometry
 
 
-def draw_signature_field(c, start_y):
-    """Desenha campo de assinatura do participante no espaço intermediário."""
-    box_x = GRID_MARGIN_X
-    box_w = GRID_W
-    line_y = start_y - 28.0
-
-    c.setFont("Helvetica-Bold", 7.0)
+def draw_extra_fiducials(c, bottom_grid_y, panel_top_y):
+    """Desenha marcadores pretos adicionais para máxima precisão de correção OMR."""
     c.setFillColor(colors.black)
-    c.drawString(box_x, line_y + 12.0, "ASSINATURA DO PARTICIPANTE:")
-
     c.setStrokeColor(colors.black)
-    c.setLineWidth(0.8)
-    c.line(box_x + 130.0, line_y + 12.0, box_x + box_w, line_y + 12.0)
+    
+    # 1. Marcadores nas laterais intermediárias entre o gabarito e o painel
+    mid_gap_y = (bottom_grid_y + panel_top_y) / 2.0 - SMALL_FIDUCIAL / 2.0
+    c.rect(GRID_MARGIN_X - FIDUCIAL_SIZE - 1.0, mid_gap_y, SMALL_FIDUCIAL, SMALL_FIDUCIAL, fill=1, stroke=0)
+    c.rect(GRID_MARGIN_X + GRID_W + 1.0, mid_gap_y, SMALL_FIDUCIAL, SMALL_FIDUCIAL, fill=1, stroke=0)
 
-    c.setFont("Helvetica-Oblique", 6.2)
-    c.setFillColor(colors.HexColor("#777777"))
-    c.drawString(box_x + 132.0, line_y + 3.0, "(Assine com caneta preta. A assinatura fora deste campo poderá desclassificar o exame.)")
+    # 2. Marcadores inferiores nos cantos extremos da página
+    bot_y = 10.0
+    c.rect(GRID_MARGIN_X - FIDUCIAL_SIZE - 1.0, bot_y, SMALL_FIDUCIAL, SMALL_FIDUCIAL, fill=1, stroke=0)
+    c.rect(GRID_MARGIN_X + GRID_W + 1.0, bot_y, SMALL_FIDUCIAL, SMALL_FIDUCIAL, fill=1, stroke=0)
 
-    # Marcador auxiliar alinhado com a assinatura
-    c.setFillColor(colors.black)
-    c.rect(GRID_MARGIN_X - FIDUCIAL_SIZE - 1.0, line_y + 8.0, SMALL_FIDUCIAL, SMALL_FIDUCIAL, fill=1, stroke=0)
-    c.rect(GRID_MARGIN_X + GRID_W + 1.0, line_y + 8.0, SMALL_FIDUCIAL, SMALL_FIDUCIAL, fill=1, stroke=0)
-
-    return line_y - 10.0
+    # 3. Marcadores de referência horizontal na margem inferior
+    marker_w = 6.0
+    for col_idx in range(4):
+        cx = GRID_MARGIN_X + col_idx * (COL_W + GAP_COLUMNS) + COL_W / 2.0 - marker_w / 2.0
+        c.rect(cx, bot_y, marker_w, marker_w, fill=1, stroke=0)
 
 
 def draw_clean_evaluator_panel(c, is_gabarito=False):
     """
     Desenha o Painel de Desempenho no rodapé inferior da folha,
     com amplo espaçamento em relação ao gabarito, layout moderno e limpo,
-    sem 'USO EXCLUSIVO DO PROFESSOR' e sem vistos/datas.
+    sem textos de 'USO EXCLUSIVO', sem vistos e sem datas.
     """
     panel_x = GRID_MARGIN_X
     panel_w = GRID_W
-    panel_h = 64.0
-    panel_y = 20.0  # Ancorado no rodapé inferior da página
+    panel_h = 62.0
+    panel_y = 18.0  # Ancorado no rodapé inferior da página
 
     # Marcadores fiduciais laterais no painel
     c.setFillColor(colors.black)
@@ -350,8 +315,8 @@ def draw_clean_evaluator_panel(c, is_gabarito=False):
     ]
 
     table_top_y = panel_y + panel_h - header_h
-    row_h_title = 16.0
-    row_h_data = 16.0
+    row_h_title = 15.0
+    row_h_data = 15.0
 
     curr_x = panel_x
     for col in cols:
@@ -366,7 +331,7 @@ def draw_clean_evaluator_panel(c, is_gabarito=False):
         c.drawCentredString(curr_x + w / 2.0, table_top_y - 8.5, col["title"])
         c.setFont("Helvetica", 5.6)
         c.setFillColor(colors.HexColor("#444444"))
-        c.drawCentredString(curr_x + w / 2.0, table_top_y - 14.0, col["sub"])
+        c.drawCentredString(curr_x + w / 2.0, table_top_y - 13.5, col["sub"])
 
         # Linha 1 de pontuação
         c.setStrokeColor(colors.HexColor("#777777"))
@@ -380,34 +345,41 @@ def draw_clean_evaluator_panel(c, is_gabarito=False):
             c.setFont("Helvetica-Bold", 7.5)
             c.setFillColor(colors.black)
             if col["title"] == "REDAÇÃO":
-                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - row_h_data + 5.5, "1000 pts")
-                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - 2 * row_h_data + 6.5, "Nota Máxima")
+                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - row_h_data + 5.0, "1000 pts")
+                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - 2 * row_h_data + 6.0, "Nota Máxima")
             else:
-                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - row_h_data + 5.5, f"{col['total']} / {col['total']}")
-                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - 2 * row_h_data + 6.5, "100% Acerto")
+                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - row_h_data + 5.0, f"{col['total']} / {col['total']}")
+                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - 2 * row_h_data + 6.0, "100% Acerto")
         else:
             c.setFont("Helvetica", 6.0)
             c.setFillColor(colors.HexColor("#888888"))
             if col["title"] == "REDAÇÃO":
-                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - row_h_data + 5.5, "Nota: _____ / 1000")
-                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - 2 * row_h_data + 6.5, "Faixa: ___________")
+                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - row_h_data + 5.0, "Nota: _____ / 1000")
+                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - 2 * row_h_data + 6.0, "Faixa: ___________")
             else:
-                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - row_h_data + 5.5, f"Acertos: ___ / {col['total']}")
-                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - 2 * row_h_data + 6.5, "%: _____________")
+                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - row_h_data + 5.0, f"Acertos: ___ / {col['total']}")
+                c.drawCentredString(curr_x + w / 2.0, table_top_y - row_h_title - 2 * row_h_data + 6.0, "%: _____________")
 
         curr_x += w
 
 
 def render_answer_sheet_on_canvas(c, is_gabarito=False, gabarito_oficial=None):
-    """Renderiza a página completa do Cartão-Resposta no objeto canvas fornecido."""
+    """Renderiza a página completa do Cartão-Resposta com espaçamento e sem assinatura/frase."""
     y_head = draw_clean_header(c, is_gabarito=is_gabarito)
     y_cand = draw_candidate_name_field(c, start_y=y_head, is_gabarito=is_gabarito)
-    y_fras = draw_frase_seguranca_field(c, start_y=y_cand, is_gabarito=is_gabarito)
-    y_inst = draw_instructions_bw(c, start_y=y_fras)
+    
+    # Espaço generoso antes das instruções
+    y_inst = draw_instructions_bw(c, start_y=y_cand - 6.0)
 
-    bottom_grid_y, geometry = draw_bubble_grid(c, start_y=y_inst, gabarito_oficial=gabarito_oficial)
-    draw_signature_field(c, start_y=bottom_grid_y)
+    # Espaço de respiro antes de começar a grade de questões
+    grid_start_y = y_inst - 16.0
+    bottom_grid_y, geometry = draw_bubble_grid(c, start_y=grid_start_y, gabarito_oficial=gabarito_oficial)
+
+    # Painel de desempenho no rodapé e fiduciais adicionais
+    panel_top_y = 18.0 + 62.0
+    draw_extra_fiducials(c, bottom_grid_y=bottom_grid_y, panel_top_y=panel_top_y)
     draw_clean_evaluator_panel(c, is_gabarito=is_gabarito)
+
     return geometry
 
 
