@@ -37,10 +37,10 @@ QUESTIONS_WARP_H = 920
 WARP_PAD = 35.0
 
 # Coordenadas de referência no PDF dos centros dos 4 marcadores das questões:
-TL_X, TL_Y = 22.0, 601.89
-TR_X, TR_Y = 573.27, 601.89
-BL_X, BL_Y = 22.0, 266.89
-BR_X, BR_Y = 573.27, 266.89
+TL_X, TL_Y = 28.5, 564.195
+TR_X, TR_Y = 566.776, 564.195
+BL_X, BL_Y = 28.5, 246.195
+BR_X, BR_Y = 566.776, 246.195
 SPAN_X = TR_X - TL_X
 SPAN_Y = TL_Y - BL_Y
 
@@ -119,11 +119,13 @@ def get_canonical_bubble_coordinates():
     retificada (QUESTIONS_WARP_W x QUESTIONS_WARP_H) delimitada exclusivamente
     pelos 4 marcadores pretos nos cantos das questões.
     """
-    GRID_MARGIN_X = 36.0
-    COL_W = 123.3175
-    GAP_COLUMNS = 10.0
+    GRID_MARGIN_X = 40.0
+    PAGE_WIDTH = 595.276
+    GRID_W = PAGE_WIDTH - 2 * GRID_MARGIN_X
+    GAP_COLUMNS = 8.0
+    COL_W = (GRID_W - 3 * GAP_COLUMNS) / 4.0
     ROW_H = 18.0
-    OPT_DX = 15.8
+    OPT_DX = 15.6
 
     col_defs = [
         {"start": 1, "end": 18},
@@ -135,14 +137,14 @@ def get_canonical_bubble_coordinates():
     coords = {}
     for col_idx, col_def in enumerate(col_defs):
         cx = GRID_MARGIN_X + col_idx * (COL_W + GAP_COLUMNS)
-        first_opt_x = cx + 33.0
+        first_opt_x = cx + 30.0
         start_q = col_def["start"]
         end_q = col_def["end"]
         num_q = end_q - start_q + 1
 
         for r in range(num_q):
             q_num = start_q + r
-            by = 576.89 - r * ROW_H
+            by = 552.695 - r * ROW_H
             coords[q_num] = {}
             for opt_idx, opt_letter in enumerate(OPCOES):
                 bx = first_opt_x + opt_idx * OPT_DX
