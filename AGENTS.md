@@ -22,5 +22,5 @@ Este repositório gerencia materiais pedagógicos, listas de exercícios e o sis
      ```
 
 4. **Continuidade Curricular e Mapeamento:**
-   - Consulte sempre o histórico em `D:\PreEnem\Prestacao_Contas\Painel_Status_Geral.md` antes de gerar novas parcelas para evitar sobreposição ou omissão de conteúdos.
+   - Consulte sempre o histórico em `D:\Code\enem\Prestacao_Contas\Painel_Status_Geral.md` antes de gerar novas parcelas para evitar sobreposição ou omissão de conteúdos.
    - Siga o cronograma de 26 aulas para Matemática e a matriz curricular para Linguagens.

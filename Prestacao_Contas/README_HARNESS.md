@@ -6,10 +6,10 @@ Este documento descreve a infraestrutura completa de dados, regras, agentes e pr
 
 ## 1. Estrutura de Pastas e Dados Armazenados
 
-Toda a memória operacional e os documentos estão estruturados em `D:\PreEnem\Prestacao_Contas\`:
+Toda a memória operacional e os documentos estão estruturados em `D:\Code\enem\Prestacao_Contas\`:
 
 ```
-D:\PreEnem\Prestacao_Contas\
+D:\Code\enem\Prestacao_Contas\
 ├── Painel_Status_Geral.md                   <-- Dashboard unificado de status e próximas ações
 ├── README_HARNESS.md                        <-- Este manual de operação do sistema
 │
@@ -46,7 +46,7 @@ D:\PreEnem\Prestacao_Contas\
 ## 2. Componentes do Harness no Antigravity
 
 ### 2.1. Regras do Workspace (`AGENTS.md`)
-* Arquivos ativos: `D:\PreEnem\AGENTS.md` e `D:\Code\coletivo\AGENTS.md`.
+* Arquivo ativo: `D:\Code\enem\AGENTS.md`.
 * Função: Carregamento permanente de diretrizes de redação (prosa contínua, tom formal acadêmico, foco estritamente pedagógico sem custos de terceiros, proibição estrita de marcadores no corpo descritivo).
 
 ### 2.2. Skill Especializada (`cpop-prestacao-contas`)

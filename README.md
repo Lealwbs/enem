@@ -1,49 +1,62 @@
-# 🎯 Coletivo • Sistema Integrado de Criação de Provas Estilo ENEM e Correção OMR
+# 🎯 ENEM • Sistema Integrado de Provas, Exercícios e Gestão Pedagógica
 
-Sistema completo desenvolvido para o **Coletivo Voa Voa & Preparatório Gabarita** para:
-1. **Geração Automatizada de Provas e Exames:** Caderno completo padrão ENEM (Caderno Branco, layout 2 colunas, proposta de redação no meio, rascunho de 30 linhas e tipografia TrueType).
-2. **Folha Unificada Frente e Verso:** Cartão-Resposta OMR (Página 1) + Folha Oficial de Redação (Página 2) em um único arquivo PDF otimizado para impressão duplex.
-3. **Correção Automática por Visão Computacional (OMR):** Motor óptico com correção de iluminação, alinhamento por marcadores fiduciais (homografia) e fallback morfológico robusto.
+Repositório central do **Coletivo Voa Voa & Preparatório Gabarita** para:
+1. **Listas de Exercícios:** Cadernos de exercícios (01 a 10) diagramados no padrão ENEM em coluna dupla e página única, com editáveis Word (.docx), PDFs prontos para impressão para ambas as instituições e gabaritos completos.
+2. **Geração Automatizada de Provas e Simulados:** Caderno completo padrão ENEM (layout 2 colunas, proposta de redação no meio, rascunho de 30 linhas e tipografia TrueType).
+3. **Folha Unificada Frente e Verso:** Cartão-Resposta OMR (Página 1) + Folha Oficial de Redação (Página 2) em um único arquivo PDF otimizado para impressão duplex.
+4. **Correção Automática por Visão Computacional (OMR):** Motor óptico com correção de iluminação, alinhamento por marcadores fiduciais (homografia) e fallback morfológico robusto.
+5. **Acervo de Provas Oficiais:** 39 provas do 2º Dia do ENEM (2009-2025) Caderno Cinza e referências com gabaritos.
+6. **Prestação de Contas CPOP 2026:** Relatórios pedagógicos estruturados para a Bolsa Cursinhos Populares (Linguagens e Matemática).
 
 ---
 
 ## 📁 Arquitetura do Repositório
 
 ```
-omr-exam-grader/
-├── app/                                # Pacote principal da aplicação
+enem/
+├── app/                                # Pacote principal da aplicação OMR e CLI
 │   ├── __init__.py
 │   ├── __main__.py                     # Permite executar via: python -m app
-│   ├── cli.py                          # CLI com subcomandos (gerar-tudo, gerar-prova, corrigir, etc.)
-│   ├── corretor.py                     # Motor OMR direto para calibração e leitura em lote
-│   └── core/                           # Módulos centrais do sistema
-│       ├── __init__.py
+│   ├── cli.py                          # CLI unificada (gerar-tudo, gerar-prova, corrigir, etc.)
+│   ├── corretor.py                     # Motor OMR para calibração e leitura em lote
+│   └── core/                           # Módulos centrais (geradores de prova, OMR, grader)
 │       ├── exam_generator.py           # Geração do Caderno de Questões (2 Colunas, Caderno Branco)
 │       ├── answer_sheet_generator.py   # Renderizador do Cartão-Resposta 70Q com marcadores OMR
 │       ├── essay_sheet_generator.py    # Renderizador da Folha Oficial de Redação (30 linhas)
 │       ├── unified_sheet_generator.py  # Gerador do PDF Unificado Frente e Verso (Duplex)
-│       ├── omr_engine.py               # Motor OMR (visão computacional, homografia e OpenCV)
+│       ├── omr_engine.py               # Motor OMR (visão computacional e homografia)
 │       └── grader.py                   # Comparador contra gabarito e gerador de relatórios Excel
-├── scripts/                            # Scripts executáveis de automação
-│   ├── gerar_simulado_2.py             # Script master que executa e valida todo o 2º Simulado
-│   ├── build_simulado_2_json.py        # Compilador das 70 questões autênticas e proposta de redação
-│   └── .archive/                       # Scripts legados e utilitários arquivados
-├── simulado_1/                         # Histórico e aplicação do 1º Simulado
+├── exercicios/                         # Listas de Exercícios (01 a 10)
+│   ├── docx/                           # Editáveis Word sem logomarca (Exercício 01 a 10)
+│   ├── pdf_coletivo_voa_voa/           # PDFs oficiais de 1 página (Coletivo Voa Voa)
+│   ├── pdf_preparatorio_gabarita/      # PDFs oficiais de 1 página (Preparatório Gabarita)
+│   ├── respostas/                      # Gabaritos e resoluções completas (DOCX e PDF)
+│   ├── recortes_enem/                  # Figuras e questões autênticas recortadas do ENEM
+│   └── templates/                      # Modelos oficiais Word e folha de presença
+├── identidade_visual/                  # Logotipos institucionais em alta resolução
+│   ├── coletivo_voa_voa/               # Logos oficiais do Coletivo Voa Voa
+│   └── preparatorio_gabarita/          # Logos oficiais do Preparatório Gabarita
+├── prestacao_contas/                   # Registros pedagógicos do CPOP 2026
+│   ├── linguagens/                     # Eixo Linguagens (Profª Cleonice Leal)
+│   ├── matematica/                     # Eixo Matemática (Profº Ítalo Leal)
+│   └── templates_e_diretrizes/         # Diretrizes e modelos oficiais CPOP
+├── provas_enem/                        # Acervo oficial do ENEM
+│   ├── caderno_cinza_segundo_dia/      # 39 provas oficiais do 2º Dia (2009 a 2025)
+│   └── referencias_oficiais/           # Provas de referência, cartões e redações oficiais
+├── scripts/                            # Scripts utilitários de automação
+│   ├── gerar_simulado_2.py             # Script master que executa e valida o 2º Simulado
+│   ├── build_simulado_2_json.py        # Compilador das 70 questões autênticas
+│   └── .archive/                       # Scripts legados arquivados
+├── simulado_1/                         # 1º Simulado ENEM (cadernos, matérias originais, OMR)
 │   ├── cartoes_digitalizados/          # Scans (.jpg e .pdf) dos cartões preenchidos
+│   ├── materias_originais/             # Questões submetidas pelos professores
 │   ├── redacoes_digitalizadas/         # Redações manuscritas dos estudantes
 │   ├── debug_omr/                      # Auditoria visual com acertos e erros marcados
-│   ├── gabarito_digitado.xlsx          # Conferência manual de gabaritos
 │   └── resultado_correcao.xlsx         # Planilha de notas consolidada
-├── simulado_2/                         # Material Oficial do 2º Simulado (70 Questões)
-│   ├── banco_questoes/                 # questoes.json oficial e imagens originais extraídas
-│   ├── documentos_professores/         # Provas e matrizes originais enviadas pelos professores
-│   └── resultado/                      # Entregáveis finais prontos para aplicação e impressão
-│       ├── Caderno_Questoes_70Q.pdf    # Caderno de Prova estilo ENEM (16 páginas com capa e redação)
-│       ├── Cartao_Resposta_e_Redacao_Frente_Verso.pdf # Folha Unificada pronta para impressão frente/verso
-│       ├── Gabarito_Oficial_Preenchido_Frente_Verso.pdf # Gabarito Oficial preenchido frente e verso
-│       ├── Gabarito_Oficial_Simulado_2.xlsx # Planilha formatada com habilidades, áreas e gabarito
-│       └── .old/                       # Versões legadas/anteriores arquivadas
-└── referencias_enem/                   # Cadernos oficiais de referência do ENEM (2018 a 2025)
+└── simulado_2/                         # 2º Simulado ENEM Oficial (70 Questões)
+    ├── banco_questoes/                 # questoes.json oficial e imagens extraídas
+    ├── documentos_professores/         # Provas e matrizes originais enviadas
+    └── resultado/                      # Entregáveis finais prontos para aplicação
 ```
 
 ---

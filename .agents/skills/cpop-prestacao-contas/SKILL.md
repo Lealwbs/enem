@@ -16,11 +16,11 @@ Esta skill capacita o agente a gerar relatórios oficiais de prestação de cont
 ## 1. Mapeamento de Arquivos de Referência
 
 Antes de redigir qualquer relatório, consulte os arquivos consolidados:
-* **Painel Geral de Status:** `D:\PreEnem\Prestacao_Contas\Painel_Status_Geral.md`
-* **Cronograma de Matemática (26 Aulas):** `D:\PreEnem\Prestacao_Contas\Matematica\00_Contexto_e_Cronograma\Cronograma_Oficial_26_Aulas.md`
-* **Plano de Ensino de Linguagens:** `D:\PreEnem\Prestacao_Contas\Linguagens\00_Contexto_e_Plano_Ensino\Plano_Ensino_Linguagens.md`
-* **Template do Formulário CPOP:** `D:\PreEnem\Prestacao_Contas\Templates_e_Diretrizes\Template_Formulario_CPOP.md`
-* **Regras de Estilo:** `D:\PreEnem\Prestacao_Contas\Templates_e_Diretrizes\Regras_de_Redacao_e_Estilo.md`
+* **Painel Geral de Status:** `D:\Code\enem\Prestacao_Contas\Painel_Status_Geral.md`
+* **Cronograma de Matemática (26 Aulas):** `D:\Code\enem\Prestacao_Contas\Matematica\00_Contexto_e_Cronograma\Cronograma_Oficial_26_Aulas.md`
+* **Plano de Ensino de Linguagens:** `D:\Code\enem\Prestacao_Contas\Linguagens\00_Contexto_e_Plano_Ensino\Plano_Ensino_Linguagens.md`
+* **Template do Formulário CPOP:** `D:\Code\enem\Prestacao_Contas\Templates_e_Diretrizes\Template_Formulario_CPOP.md`
+* **Regras de Estilo:** `D:\Code\enem\Prestacao_Contas\Templates_e_Diretrizes\Regras_de_Redacao_e_Estilo.md`
 
 ---
 
@@ -35,7 +35,7 @@ Antes de redigir qualquer relatório, consulte os arquivos consolidados:
 * **Para Matemática:**
   - Consulte a tabela de 26 aulas no cronograma oficial.
   - Selecione as aulas correspondentes à parcela (ex: Parcela 5 = Aulas 11 a 14).
-  - Associe as listas de exercícios disponíveis em `D:\PreEnem\Exercícios PDF Preparatório Gabarita` (ex: `Exercício 08`, `09`, `10`).
+  - Associe as listas de exercícios disponíveis em `D:\Code\enem\exercicios\pdf_preparatorio_gabarita` (ex: `Exercício 08`, `09`, `10`).
 * **Para Linguagens:**
   - Consulte o Plano de Ensino e identifique o eixo do ciclo (ex: Gêneros Textuais, Funções da Linguagem, Morfossintaxe/Sintaxe do Período Simples, etc.).
   - Mapeie as atividades pedagógicas aplicadas na Unidade Jardim Laguna e o nome dos arquivos PDF.
@@ -57,6 +57,6 @@ Redija a prestação rigorosamente na estrutura do template oficial:
 
 ### Passo 4: Registro e Atualização da Memória
 1. Salve o arquivo gerado na pasta correspondente:
-   - Para Linguagens: `D:\PreEnem\Prestacao_Contas\Linguagens\Parcelas\Parcela_[XX]_[Identificador].md`
-   - Para Matemática: `D:\PreEnem\Prestacao_Contas\Matematica\Parcelas\Parcela_[XX]_[Identificador].md`
-2. Atualize o status da parcela no arquivo `D:\PreEnem\Prestacao_Contas\Painel_Status_Geral.md`.
+   - Para Linguagens: `D:\Code\enem\Prestacao_Contas\Linguagens\Parcelas\Parcela_[XX]_[Identificador].md`
+   - Para Matemática: `D:\Code\enem\Prestacao_Contas\Matematica\Parcelas\Parcela_[XX]_[Identificador].md`
+2. Atualize o status da parcela no arquivo `D:\Code\enem\Prestacao_Contas\Painel_Status_Geral.md`.

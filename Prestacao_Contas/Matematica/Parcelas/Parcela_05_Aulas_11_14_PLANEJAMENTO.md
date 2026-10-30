@@ -18,9 +18,9 @@
 
 ## 2. Materiais Didáticos Associados Disponíveis
 
-* `Exercício_08_-_Matemática_-_Preparatório_Gabarita.pdf` *(Localizado em D:\PreEnem\Exercícios PDF Preparatório Gabarita)*
-* `Exercício_09_-_Matemática_-_Preparatório_Gabarita.pdf` *(Localizado em D:\PreEnem\Exercícios PDF Preparatório Gabarita)*
-* `Exercício_10_-_Matemática_-_Preparatório_Gabarita.pdf` *(Localizado em D:\PreEnem\Exercícios PDF Preparatório Gabarita)*
+* `Exercício 08 - Matemática - Preparatório Gabarita.pdf` *(Localizado em D:\Code\enem\exercicios\pdf_preparatorio_gabarita)*
+* `Exercício 09 - Matemática - Preparatório Gabarita.pdf` *(Localizado em D:\Code\enem\exercicios\pdf_preparatorio_gabarita)*
+* `Exercício 10 - Matemática - Preparatório Gabarita.pdf` *(Localizado em D:\Code\enem\exercicios\pdf_preparatorio_gabarita)*
 * *Foto Presencial:* Registro fotográfico de sala da turma correspondente ao período (Julho/Agosto 2026).
 
 ---
