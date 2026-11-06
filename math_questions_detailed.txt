@@ -1,0 +1,208 @@
+============================================================
+QUESTAO 51 - Matemática - Gabarito Atual: C - Fonte: ENEM 2024 - Caderno 6 Cinza (Questão 140)
+Texto de apoio: {'titulo': '', 'conteudo': 'Uma empresa de engenharia foi contratada para realizar um serviço no valor de R$ 71 250,00. Os sócios da empresa decidiram que 40% desse valor seria destinado ao pagamento de três engenheiros que gerenciaram o serviço. O pagamento para cada um deles será feito de forma diretamente proporcional ao total de horas trabalhadas.\nO número de dias e o número de horas diárias trabalhadas pelos engenheiros foram, respectivamente:\n• engenheiro I: 4 dias, numa jornada de 5 horas e meia por dia;\n• engenheiro II: 5 dias, numa jornada de 4 horas por dia;\n• engenheiro III: 6 dias, numa jornada de 2 horas e meia por dia.', 'fonte': ''}
+Enunciado: Qual a maior diferença, em real, entre os valores recebidos por esse serviço entre dois desses engenheiros?
+Alternativas:
+  A: 1 000
+  B: 1 500
+  C: 3 500
+  D: 3 800
+  E: 5 250
+============================================================
+QUESTAO 52 - Matemática - Gabarito Atual: B - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 160)
+Texto de apoio: {'titulo': '', 'conteudo': 'Dez casais fundaram um grupo de dança e decidiram constituir uma diretoria com três cargos: presidente, secretário e tesoureiro. Para maior representatividade, decidiu-se que no máximo uma pessoa por casal poderá ocupar um cargo nessa diretoria.', 'fonte': ''}
+Enunciado: Quantas diretorias diferentes podem ser constituídas por esses 10 casais?
+Alternativas:
+  A: 10 × 9 × 8
+  B: 20 × 18 × 16
+  C: 20 × 19 × 18
+  D: 10 × 9 × 8 × 2
+  E: 20 × 18 × 16 × 2
+============================================================
+QUESTAO 53 - Matemática - Gabarito Atual: C - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 152)
+Imagem: simulado_2/banco_questoes/imagens/enem_2025_q152_controle.png
+Texto de apoio: {'titulo': '', 'conteudo': 'Cinco trajetórias retilíneas descritas por um carrinho de controle remoto estão representadas em malhas quadriculadas formadas por quadrados de mesmo lado, identificadas de I a V.', 'fonte': ''}
+Enunciado: A opção que indica o deslocamento de maior comprimento realizado pelo carrinho é a
+Alternativas:
+  A: I.
+  B: II.
+  C: III.
+  D: IV.
+  E: V.
+============================================================
+QUESTAO 54 - Matemática - Gabarito Atual: D - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 164)
+Texto de apoio: {'titulo': '', 'conteudo': 'Uma sorveteria comercializa sorvete artesanal em potes cilíndricos com capacidade de 20 000 cm³. Para servir seus clientes, o proprietário utiliza taças de sobremesa com capacidade de 250 mL cada. Sabe-se que 1 cm³ equivale a 1 mL.', 'fonte': ''}
+Enunciado: A quantidade de taças que ele consegue servir a partir de um único pote totalmente cheio desse sorvete é igual a
+Alternativas:
+  A: 8.
+  B: 20.
+  C: 50.
+  D: 80.
+  E: 100.
+============================================================
+QUESTAO 55 - Matemática - Gabarito Atual: B - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 167)
+Imagem: simulado_2/banco_questoes/imagens/enem_2025_q167_caixa.png
+Texto de apoio: {'titulo': '', 'conteudo': 'Uma caixa de descarga tem a forma de paralelepípedo reto-retângulo com dimensões internas da base medindo 2,5 dm e 1,5 dm. Uma boia interrompe o abastecimento quando a altura da coluna de água atinge 2 dm.\nPara reduzir o volume de água despejado a cada acionamento, serão colocadas garrafas de 300 mL totalmente submersas. Para garantir a limpeza eficiente do vaso, o volume mínimo de água despejada deve ser de 5 L.', 'fonte': ''}
+Enunciado: A quantidade máxima de garrafas que serão colocadas nessa caixa, garantindo um funcionamento eficiente, é igual a
+Alternativas:
+  A: 10.
+  B: 8.
+  C: 4.
+  D: 3.
+  E: 2.
+============================================================
+QUESTAO 56 - Matemática - Gabarito Atual: B - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 140)
+Imagem: simulado_2/banco_questoes/imagens/enem_2025_q140_infografico.png
+Texto de apoio: {'titulo': 'Perfil dos brasileiros nas redes sociais', 'conteudo': 'A reportagem de uma revista abordou o uso de redes sociais pelos internautas brasileiros. Alguns dos dados apurados pela reportagem estão apresentados no infográfico.', 'fonte': 'Disponível em: http://revistagalileu.globo.com. Acesso em: 22 out. 2015 (adaptado).'}
+Enunciado: Segundo os dados do infográfico, ao se escolher aleatoriamente um internauta brasileiro no período ao qual se refere a reportagem, a probabilidade de ele ser um homem que acessa alguma rede social é
+Alternativas:
+  A: 30/90
+  B: 36/100
+  C: 40/100
+  D: 40/90
+  E: 46/90
+============================================================
+QUESTAO 57 - Matemática - Gabarito Atual: B - Fonte: ENEM 2024 - Caderno 6 Cinza (Questão 175)
+Texto de apoio: {'titulo': '', 'conteudo': 'João e Felipe participaram, na escola, de uma maratona de matemática na qual, durante uma semana, resolveram 200 questões cada. Nessa maratona, a porcentagem P de acertos de cada participante é convertida em um conceito:\n• insatisfatório: se 0 ≤ P < 50;\n• regular: se 50 ≤ P < 60;\n• bom: se 60 ≤ P < 75;\n• muito bom: se 75 ≤ P < 90;\n• excelente: se 90 ≤ P ≤ 100.\nJoão acertou 75% das questões da maratona e Felipe acertou 30% a menos que a quantidade de questões que João acertou.', 'fonte': ''}
+Enunciado: Os conceitos de João e Felipe foram, respectivamente,
+Alternativas:
+  A: muito bom e bom.
+  B: muito bom e regular.
+  C: muito bom e insatisfatório.
+  D: bom e regular.
+  E: bom e insatisfatório.
+============================================================
+QUESTAO 58 - Matemática - Gabarito Atual: E - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 151)
+Imagem: simulado_2/banco_questoes/imagens/enem_2025_q151_setores.png
+Texto de apoio: {'titulo': '', 'conteudo': 'Uma escola de idiomas realizou uma pesquisa para estimar a quantidade de novas matrículas no primeiro semestre do próximo ano. O gráfico de setores ilustra a distribuição percentual das opções de cursos escolhidas pelos interessados.\nA direção da escola estima que serão feitas 600 novas matrículas no curso de Francês.', 'fonte': ''}
+Enunciado: Segundo essa estimativa, o número de matrículas no curso de Inglês será igual a
+Alternativas:
+  A: 750.
+  B: 900.
+  C: 1 050.
+  D: 1 200.
+  E: 1 500.
+============================================================
+QUESTAO 59 - Matemática - Gabarito Atual: E - Fonte: ENEM 2024 - Caderno 6 Cinza (Questão 152)
+Texto de apoio: {'titulo': '', 'conteudo': 'A densidade demográfica de uma região é definida como sendo a razão entre o número de habitantes dessa região e sua área, expressa na unidade habitantes por quilômetro quadrado.\nUma região R é subdividida em várias outras, sendo uma delas a região Q. A área de Q é igual a três quartos da área de R, e o número de habitantes de Q é igual à metade do número de habitantes de R. As densidades demográficas correspondentes a essas regiões são denotadas por d(Q) e d(R).', 'fonte': ''}
+Enunciado: A expressão que relaciona d(Q) e d(R) é
+Alternativas:
+  A: d(Q) = (1/4) · d(R)
+  B: d(Q) = (1/2) · d(R)
+  C: d(Q) = (3/4) · d(R)
+  D: d(Q) = (3/2) · d(R)
+  E: d(Q) = (2/3) · d(R)
+============================================================
+QUESTAO 60 - Matemática - Gabarito Atual: C - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 146)
+Texto de apoio: {'titulo': '', 'conteudo': 'Uma empresa de tecnologia vai padronizar a velocidade de conexão de internet que oferece a seus clientes em dez cidades. A direção da empresa decide que seu novo padrão de velocidade de referência será a mediana dos valores das velocidades de referência de conexões nessas dez cidades. Esses valores, em megabyte por segundo (MB/s), são apresentados no quadro:\n\nCidade | Velocidade de referência (MB/s)\nC1 | 390\nC2 | 380\nC3 | 320\nC4 | 390\nC5 | 340\nC6 | 380\nC7 | 390\nC8 | 400\nC9 | 350\nC10 | 360', 'fonte': ''}
+Enunciado: A velocidade de referência, em megabyte por segundo, a ser adotada por essa empresa é
+Alternativas:
+  A: 360.
+  B: 370.
+  C: 380.
+  D: 390.
+  E: 400.
+============================================================
+QUESTAO 61 - Matemática - Gabarito Atual: B - Fonte: ENEM 2024 - Caderno 6 Cinza (Questão 147)
+Texto de apoio: {'titulo': '', 'conteudo': 'Ao calcular a média de suas notas em 4 provas, um estudante dividiu, por engano, a soma das notas por 5. Com isso, a média obtida foi 1 unidade menor do que deveria ser, caso fosse calculada corretamente.', 'fonte': ''}
+Enunciado: O valor correto da média das notas desse estudante é
+Alternativas:
+  A: 4.
+  B: 5.
+  C: 6.
+  D: 19.
+  E: 21.
+============================================================
+QUESTAO 62 - Matemática - Gabarito Atual: A - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 148)
+Texto de apoio: {'titulo': '', 'conteudo': 'Uma fábrica de tijolos ecológicos com 3 funcionários, cada um trabalhando 6 horas diárias, produz 720 unidades por dia. A fábrica pretende expandir sua produção para 1 800 tijolos diários, mantendo a jornada de 6 horas diárias para todos os funcionários e a mesma produtividade individual.', 'fonte': ''}
+Enunciado: Quantos novos funcionários, com a mesma produtividade dos atuais, essa fábrica deve contratar para atingir essa nova meta de produção?
+Alternativas:
+  A: 4
+  B: 5
+  C: 7
+  D: 8
+  E: 10
+============================================================
+QUESTAO 63 - Matemática - Gabarito Atual: D - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 150)
+Texto de apoio: {'titulo': '', 'conteudo': 'Quatro candidatos se apresentaram para realizar a prova de um concurso. Antes de iniciar a prova, os celulares dos quatro candidatos foram recolhidos pelo aplicador, que os guardou, cada um, dentro de um envelope preto. Ao término da prova, o aplicador devolveu os quatro envelopes com os celulares aos quatro candidatos, de maneira aleatória, já que não havia feito a identificação dos envelopes.', 'fonte': ''}
+Enunciado: A probabilidade de que todos os candidatos tenham recebido de volta os envelopes com os seus respectivos celulares é
+Alternativas:
+  A: 1/2
+  B: 1/10
+  C: 1/16
+  D: 1/24
+  E: 1/256
+============================================================
+QUESTAO 64 - Matemática - Gabarito Atual: C - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 154)
+Imagem: simulado_2/banco_questoes/imagens/enem_2025_q154_barras.png
+Texto de apoio: {'titulo': 'Estoque e demanda por livros', 'conteudo': 'Uma livraria comercializa livros dos seguintes gêneros literários: ficção científica, autoajuda, romance e biografia. O gráfico apresenta o estoque dos livros que essa livraria tem, por gênero literário e por nacionalidade do autor, bem como a demanda por gênero literário, obtida por meio de uma enquete feita com seus clientes habituais.', 'fonte': 'ENEM 2025 Oficial.'}
+Enunciado: O gerente da livraria fará a encomenda de novos exemplares somente do gênero cuja quantidade em estoque seja insuficiente para atender a demanda constatada pela enquete.
+O gênero de livro do qual o gerente deverá encomendar mais exemplares é
+Alternativas:
+  A: ficção, pois é o que apresenta maior demanda.
+  B: biografia, pois é o gênero que tem a menor demanda.
+  C: autoajuda, pois a quantidade em estoque é inferior à demanda.
+  D: biografia, pois é o gênero que tem a menor quantidade de livros em estoque.
+  E: romance, pois é o que apresenta o menor estoque de livros de autores brasileiros.
+============================================================
+QUESTAO 65 - Matemática - Gabarito Atual: C - Fonte: ENEM 2024 - Caderno 6 Cinza (Questão 138)
+Texto de apoio: {'titulo': '', 'conteudo': 'Uma empresa produz mochilas escolares sob encomenda. Essa empresa tem um custo total de produção, composto por um custo fixo, que não depende do número de mochilas, mais um custo variável, que é proporcional ao número de mochilas produzidas. O custo total cresce de forma linear, e a tabela apresenta esse custo para três quantidades de mochilas produzidas:\n\nQuantidade de mochilas | Custo total (R$)\n30 | 1 050,00\n50 | 1 650,00\n100 | 3 150,00', 'fonte': ''}
+Enunciado: O custo total, em real, para a produção de 80 mochilas será
+Alternativas:
+  A: 2 400,00.
+  B: 2 520,00.
+  C: 2 550,00.
+  D: 2 700,00.
+  E: 2 800,00.
+============================================================
+QUESTAO 66 - Matemática - Gabarito Atual: A - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 177)
+Texto de apoio: {'titulo': '', 'conteudo': 'A luminância de um objeto é a grandeza que descreve a quantidade de luz produzida ou refletida por sua superfície. Ela está definida como a razão entre a intensidade luminosa, medida em candela (cd), e o quadrado da distância do objeto até o observador, medida em metro (m).', 'fonte': ''}
+Enunciado: A unidade de medida da luminância de um objeto é
+Alternativas:
+  A: cd/m²
+  B: cd · m²
+  C: cd/m
+  D: cd · m
+  E: cd²/m
+============================================================
+QUESTAO 67 - Matemática - Gabarito Atual: A - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 156)
+Imagem: simulado_2/banco_questoes/imagens/enem_2025_q156_malha.png
+Texto de apoio: {'titulo': '', 'conteudo': 'A malha quadriculada representa o mapa de um bairro plano com quarteirões quadrados de mesmo tamanho. João mora em um desses quarteirões. Para ir à escola, ele sai do ponto A e caminha exatamente 3 quarteirões para o leste e 2 quarteirões para o norte.', 'fonte': ''}
+Enunciado: O quarteirão onde se encontra a casa de João é representado pela letra
+Alternativas:
+  A: P.
+  B: Q.
+  C: R.
+  D: S.
+  E: T.
+============================================================
+QUESTAO 68 - Matemática - Gabarito Atual: E - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 168)
+Texto de apoio: {'titulo': '', 'conteudo': 'Um confeiteiro passou a produzir tortas em formato de cilindro circular reto, com raio da base variando entre 12 cm e 16 cm e altura de 6 cm. Essas tortas deverão ser embaladas em caixas com formato de prisma reto de base quadrada, de modo que seja possível acomodar a torta em seu interior e ainda restar pelo menos 1 cm de distância entre a torta e as superfícies internas da caixa, lateral e superior. Ele dispõe, originalmente, de caixas no formato pretendido, cujas dimensões internas são 14 cm de comprimento do lado da base e 7 cm de altura, que não atendem às suas necessidades. Portanto, ele comprará novas caixas, com o mesmo formato das caixas originais, mas com comprimento do lado da base maior, que sejam adequadas para embalar todos os tipos de torta que produz.', 'fonte': ''}
+Enunciado: A aresta da base das novas caixas deve ser, no mínimo, quantos centímetros maior do que a das caixas originais?
+Alternativas:
+  A: 4
+  B: 12
+  C: 16
+  D: 18
+  E: 20
+============================================================
+QUESTAO 69 - Matemática - Gabarito Atual: B - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 144)
+Texto de apoio: {'titulo': '', 'conteudo': 'Em um laboratório, há 10 litros de uma solução aquosa composta exclusivamente pelas substâncias S1 e S2, sendo que a substância S1 representa 20% do volume total da solução. O químico responsável deseja alterar a concentração dessa solução por meio da evaporação exclusiva da substância S1, de modo que ela passe a representar exatamente 10% do novo volume total da solução.', 'fonte': ''}
+Enunciado: Quantos litros da substância S1 devem ser evaporados dessa solução?
+Alternativas:
+  A: 1,0
+  B: 1,1
+  C: 1,2
+  D: 1,5
+  E: 2,0
+============================================================
+QUESTAO 70 - Matemática - Gabarito Atual: D - Fonte: ENEM 2025 - Caderno 6 Cinza (Questão 179)
+Imagem: simulado_2/banco_questoes/imagens/enem_2025_q179_grafico.png
+Texto de apoio: {'titulo': 'Rendimento Veicular', 'conteudo': 'Uma pessoa tem um carro bicombustível, que funciona a gás natural veicular (GNV) e a gasolina. O rendimento do carro, medido em km/m³, no caso do gás, ou medido em km/L, no caso da gasolina, depende, entre outros fatores, da velocidade, em km/h, em que o carro trafega. Essa relação está em conformidade com estes gráficos.\nDurante um feriado, essa pessoa realizou uma viagem de 240 km. Para obter uma estimativa de gasto de combustível, assuma que em todo o trajeto se manteve uma velocidade constante de 60 km/h. Considere que, durante metade do caminho, foi utilizado apenas GNV e, na outra metade, apenas gasolina. O que foi pago pelo metro cúbico de GNV e pelo litro de gasolina correspondeu, respectivamente, a R$ 2,00 e a R$ 3,00.', 'fonte': 'ENEM 2025 Oficial.'}
+Enunciado: Qual foi a diferença, em real, entre os gastos totais com gasolina e com GNV?
+Alternativas:
+  A: 4
+  B: 8
+  C: 14
+  D: 21
+  E: 30

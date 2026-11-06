@@ -1,0 +1,313 @@
+============================================================
+QUESTAO 1 - Língua Estrangeira (Inglês) - Gabarito Atual: D
+Texto: {'titulo': 'Things We Carry on the Sea', 'conteudo': 'We carry tears in our eyes: good-bye father, good-bye mother\nWe carry soil in small bags: may home never fade in our hearts\nWe carry carnage of mining, droughts, floods, genocides\nWe carry dust of our families and neighbors incinerated in mushroom clouds\nWe carry our islands sinking under the sea\nWe carry our hands, feet, bones, hearts and best minds for a new life\nWe carry diplomas: medicine, engineer, nurse, education, math, poetry, even if they mean nothing to the other shore\nWe carry railroads, plantations, laundromats, bodegas, taco trucks, farms, factories, nursing homes, hospitals, schools, temples... built on our ancestors’ backs\nWe carry old homes along the spine, new dreams in our chests\nWe carry yesterday, today and tomorrow\nWe’re orphans of the wars forced upon us\nWe’re refugees of the sea rising from industrial wastes\nAnd we carry our mother tongues\n[...]\nAs we drift... in our rubber boats... from shore... to shore... to shore...', 'fonte': 'PING, W. Disponível em: https://poets.org. Acesso em: 1 jun. 2023 (fragmento).'}
+Enunciado: Ao retratar a trajetória de refugiados, o poema recorre à imagem de viagem marítima para destacar o(a)
+Alternativas:
+  A: risco de choques culturais.
+  B: impacto do ensino de história.
+  C: importância da luta ambiental.
+  D: existência de experiências plurais.
+  E: necessidade de capacitação profissional.
+============================================================
+QUESTAO 2 - Língua Estrangeira (Inglês) - Gabarito Atual: B
+Imagem: simulado_2/banco_questoes/imagens/enem_2023_q02_cartoon.png
+Texto: {'titulo': '', 'conteudo': '“Oh, you’ll love working here. Nobody treats you any differently just because of your age, race, or gender.”', 'fonte': 'Disponível em: www.cartoonstock.com. Acesso em: 25 out. 2021.'}
+Enunciado: Ao retratar o ambiente de trabalho em um escritório, esse cartum tem por objetivo
+Alternativas:
+  A: criticar um padrão de vestimenta.
+  B: destacar a falta de diversidade.
+  C: indicar um modo de interação.
+  D: elogiar um modelo de organização.
+  E: salientar o espírito de cooperação.
+============================================================
+QUESTAO 3 - Língua Estrangeira (Inglês) - Gabarito Atual: A
+Texto: {'titulo': 'Spanglish', 'conteudo': 'pues estoy creando Spanglish\nbi-cultural systems\nscientific lexicographical\ninter-textual integrations\ntwo expressions\nexistentially wired\ntwo dominant languages\ncontinentally abrazándose\nin colloquial combate\nimperio spanglish emerges\nsobre territorio bi-lingual\nlas novelas mexicanas\nmixing with radiorocknroll\nimmigrant/migrant\nnasal mispronouncements\nhip-hop, street salsa, spanish pop\nstandard english classroom\nwith computer technicalities\nspanglish is literally perfect', 'fonte': 'LAVIERA, T. Benedición: The Complete Poetry of Tato Laviera. Houston: Arte Público Press, 2014.'}
+Enunciado: Nesse poema de Tato Laviera, o eu lírico celebra e destaca uma
+Alternativas:
+  A: convergência linguístico-cultural geradora de novas identidades.
+  B: perda irreparável da pureza vocabular dos idiomas clássicos.
+  C: rejeição categórica à língua inglesa pelos falantes hispânicos.
+  D: impossibilidade prática de comunicação em territórios de fronteira.
+  E: superioridade gramatical dos dialetos regionais sobre a norma culta.
+============================================================
+QUESTAO 4 - Língua Estrangeira (Inglês) - Gabarito Atual: C
+Texto: {'titulo': 'Food Waste Awareness', 'conteudo': 'Food waste is a far greater problem than many realize. In fact, if food waste were a country, it would be the third largest emitter of greenhouse gases in the world, behind only China and the United States.\nWhen food is discarded, all the energy, water, and resources that went into producing, packaging, and transporting it are also wasted. Furthermore, when food decomposes in landfills, it produces methane, a potent gas that accelerates global climate change.\nReducing food waste is one of the most effective and accessible actions we can take to combat food insecurity and preserve planetary boundaries.', 'fonte': 'Disponível em: https://www.worldwildlife.org. Acesso em: 10 set. 2023 (adaptado).'}
+Enunciado: Ao comparar o desperdício de alimentos a um dos maiores emissores de gases de efeito estufa, o texto busca
+Alternativas:
+  A: minimizar o papel dos países industrializados na crise climática global.
+  B: propor a extinção de subsídios públicos à produção agrícola comercial.
+  C: alertar a sociedade sobre a gravidade e o impacto socioambiental do descarte de comida.
+  D: recomendar a eliminação de embalagens plásticas na conservação de produtos perecíveis.
+  E: responsabilizar exclusivamente os hábitos dos consumidores finais pelo aquecimento global.
+============================================================
+QUESTAO 5 - Língua Estrangeira (Inglês) - Gabarito Atual: D
+Texto: {'titulo': 'Devotions upon Emergent Occasions', 'conteudo': "No man is an island, entire of itself;\nevery man is a piece of the continent, a part of the main.\nIf a clod be washed away by the sea, Europe is the less,\nas well as if a promontory were, as well as if a manor of thy friend's or of thine own were:\nany man's death diminishes me, because I am involved in mankind,\nand therefore never send to know for whom the bell tolls;\nit tolls for thee.", 'fonte': 'DONNE, J. Devotions upon Emergent Occasions and Seated Thoughts. Oxford: Oxford University Press, 1987.'}
+Enunciado: Nessa famosa meditação do poeta John Donne, a metáfora 'No man is an island' é empregada para expressar o princípio da
+Alternativas:
+  A: independência individual perante as coerções do Estado moderno.
+  B: fragilidade dos acordos diplomáticos entre as potências soberanas.
+  C: superioridade dos laços familiares sobre as obrigações comunitárias.
+  D: interconexão e responsabilidade mútua que unem todos os seres humanos.
+  E: necessidade de isolamento contemplativo para a elevação espiritual.
+============================================================
+QUESTAO 6 - Língua Portuguesa e Literatura - Gabarito Atual: B
+Enunciado: A adequação linguística de um texto depende, entre outros fatores, do emprego apropriado da norma-padrão e da precisão vocabular. Considere a frase a seguir: “Os alunos assistiram o documentário sobre Machado de Assis e aspiravam o sucesso no vestibular.” Assinale a alternativa que apresenta a reescrita desse período inteiramente conforme a norma-padrão da língua portuguesa.
+Alternativas:
+  A: Os alunos assistiram ao documentário sobre Machado de Assis e aspiravam o sucesso no vestibular.
+  B: Os alunos assistiram ao documentário sobre Machado de Assis e aspiravam ao sucesso no vestibular.
+  C: Os alunos assistiram o documentário sobre Machado de Assis e aspiravam ao sucesso no vestibular.
+  D: Os alunos assistiram o documentário sobre Machado de Assis e aspiravam pelo sucesso no vestibular.
+  E: Os alunos assistiram a documentário sobre Machado de Assis e aspiravam de sucesso no vestibular.
+============================================================
+QUESTAO 7 - Língua Portuguesa e Literatura - Gabarito Atual: C
+Enunciado: Na língua portuguesa, alguns verbos apresentam comportamento particular em construções de concordância, especialmente nas orações sem sujeito ou com voz passiva sintética. Assinale a alternativa em que a concordância verbal está empregada corretamente.
+Alternativas:
+  A: Aluga-se casas no Engenho Novo para famílias que buscam tranquilidade.
+  B: Fazem dez anos que o narrador decidiu reconstruir a casa de sua infância.
+  C: Trata-se de memórias construídas a partir de impressões subjetivas.
+  D: Podem haver diferentes interpretações para o comportamento de Capitu.
+  E: Devem fazer muitos anos que a velha casa de Matacavalos desapareceu.
+============================================================
+QUESTAO 8 - Artes - Gabarito Atual: B
+Texto: {'titulo': 'A arte de Luís Otávio Burnier', 'conteudo': 'Para Burnier, o trabalho do ator consistia no desvelamento de matrizes corporais arcaicas e expressivas. Pesquisador incansável da mímica e das técnicas orientais e ocidentais de representação, fundou o LUME (Núcleo Interdisciplinar de Pesquisas Teatrais da Unicamp), onde investigava a expressividade do movimento puro, despido de artifícios puramente cenográficos, fazendo do próprio corpo do ator a matriz viva e dramática da cena.', 'fonte': 'BURNIER, L. O. A Arte de Ator: da máscara à mímica corporal. Campinas: Editora da Unicamp, 2001.'}
+Enunciado: A concepção cênica e corporal analisada no fragmento fundamenta a pesquisa teatral contemporânea a partir da
+Alternativas:
+  A: subordinação das ações corporais aos efeitos de iluminação e figurinos de época.
+  B: centralidade do corpo do ator como instrumento primordial de criação poética e dramática.
+  C: reprodução estrita e convencional dos gestos cotidianos da burguesia oitocentista.
+  D: valorização da oratória clássica e declamação em detrimento da movimentação física.
+  E: dependência de recursos multimídia digitais na composição das atmosferas do palco.
+============================================================
+QUESTAO 9 - Artes - Gabarito Atual: A
+Imagem: simulado_2/banco_questoes/imagens/enem_2023_q07_segall.png
+Texto: {'titulo': '', 'conteudo': '<b>TEXTO I</b>\nSEGALL, L. Eternos caminhantes. Óleo sobre tela, 138 x 184 cm. Museu Lasar Segall, IbramMinc, São Paulo, 1919.\n\n<b>TEXTO II</b>\nEm 1933, a obra Eternos caminhantes ingressou em uma das primeiras edições das exposições de Arte Degenerada, promovida por membros do partido nazista alemão. Nos anos seguintes, ela voltaria a ser exibida na mostra denominada Exposição da Vergonha, promovida por pequenos grupos abastados. Em 1937, essa obra foi confiscada pelo Ministério da Propaganda daquele país, na grande ação nacional-socialista contra a “Arte Degenerada”.', 'fonte': 'SCHWARTZ, J. Perseguição à Arte Moderna em tempos de guerra. São Paulo: Museu Lasar Segall, 2018 (adaptado).'}
+Enunciado: Quase cinquenta obras de Lasar Segall foram confiscadas pelo regime totalitário alemão na primeira metade do século XX, entre elas a obra Eternos caminhantes, considerada degenerada por
+Alternativas:
+  A: representar uma estética tida como inconveniente para o ideário político vigente.
+  B: manifestar um posicionamento político-cultural concebido por grupos de oposição.
+  C: expressar a cultura artística por meio da representação parcial do corpo humano.
+  D: apresentar uma composição que antecipa o imaginário artístico germânico.
+  E: estimular discussões sobre o papel da arte na construção coletiva de cultura.
+============================================================
+QUESTAO 10 - Língua Portuguesa e Literatura - Gabarito Atual: B
+Enunciado: A ambiguidade ocorre quando uma construção linguística possibilita mais de uma interpretação para o mesmo enunciado. Assinale a alternativa em que a frase apresenta ambiguidade estrutural decorrente da organização de seus termos.
+Alternativas:
+  A: O narrador observava atentamente os movimentos de Capitu durante o jantar.
+  B: Bentinho encontrou o amigo preocupado perto da antiga casa de Matacavalos.
+  C: O advogado leu os documentos no escritório antes do início da audiência.
+  D: Machado de Assis escreveu romances que retratam a elite daquela época.
+  E: Os leitores debateram os detalhes do enredo na biblioteca da universidade.
+============================================================
+QUESTAO 11 - Educação Física - Gabarito Atual: C
+Texto: {'titulo': 'Indústria do Fitness e Cultura Corporal', 'conteudo': 'Existe uma indústria que comercializa o fitness; o Brasil é o segundo maior mercado de academias no mundo, com um número crescente de estabelecimentos e produtos voltados ao aprimoramento físico. No entanto, essa expansão mercantil frequentemente promove um culto obsessivo à padronização estética corporal, associando saúde exclusivamente a silhuetas hipertrofiadas ou excessivamente magras, transformando o exercício físico em mercadoria e imperativo estético punitivo.', 'fonte': 'SOARES, C. L. Educação Física, Corpo e Cultura: a mercantilização do fitness no Brasil. Campinas: Autores Associados, 2020.'}
+Enunciado: A abordagem crítica da cultura fitness apresentada no texto alerta a sociedade para o fato de que:
+Alternativas:
+  A: a prática regular de exercícios físicos em academias deve ser desaconselhada pelas diretrizes médicas.
+  B: o acesso às academias de ginástica é universal e desprovido de qualquer barreira socioeconômica no país.
+  C: a mercantilização da atividade física pode reduzir a saúde integral a padrões estéticos padronizados e excludentes.
+  D: a busca pelo condicionamento cardiorrespiratório pleno independe de fatores sociais ou nutricionais.
+  E: o bem-estar biológico é privilégio exclusivo daqueles que consomem suplementação alimentar industrializada.
+============================================================
+QUESTAO 12 - Língua Portuguesa e Literatura - Gabarito Atual: B
+Texto: {'titulo': 'A memória e a escrita', 'conteudo': 'Agora que expliquei o título, passo a escrever o livro. Antes disso, porém, digamos os motivos que me põem a pena na mão. Vivo só, com um criado. A casa em que moro é própria; fi-la construir de propósito, levado de um desejo tão particular que me vexa imprimi-lo, mas vá lá. Um dia, há bastantes anos, lembrou-me reproduzir no Engenho Novo a casa em que me criei na antiga Rua de Matacavalos, dando-lhe o mesmo aspecto e economia daquela outra, que desapareceu.', 'fonte': 'ASSIS, M. Dom Casmurro. 1899.'}
+Enunciado: No fragmento, o narrador emprega a construção “os motivos que me põem a pena na mão”. Considerando as regras de colocação pronominal da norma-padrão da língua portuguesa, assinale a alternativa que apresenta uma reescrita correta do trecho, mantendo seu sentido original.
+Alternativas:
+  A: Os motivos que põem-me a pena na mão justificam a escrita do livro.
+  B: Os motivos pelos quais me ponho a escrever justificam a escrita do livro.
+  C: Os motivos que põem a pena na mão-me justificam a escrita do livro.
+  D: Os motivos que põem-na a pena na mão justificam a escrita do livro.
+  E: Os motivos pelos quais ponho-me a escrever justificam a escrita do livro.
+============================================================
+QUESTAO 13 - Língua Portuguesa e Literatura - Gabarito Atual: D
+Enunciado: A escolha de palavras e estruturas sintáticas pode eliminar ambiguidades e tornar o texto mais preciso e compreensível. Considere a frase a seguir: “O pesquisador examinou o retrato da jovem que estava guardado na gaveta.” Assinale a alternativa que reescreve a frase eliminando a ambiguidade e deixando explícito que quem estava na gaveta era o retrato.
+Alternativas:
+  A: O pesquisador examinou o retrato guardado na gaveta da jovem.
+  B: O pesquisador examinou o retrato da jovem, o qual estava guardado na gaveta.
+  C: O pesquisador examinou o retrato da jovem, que se encontrava na gaveta.
+  D: O pesquisador examinou, na gaveta onde estava guardado, o retrato da jovem.
+  E: O pesquisador examinou a jovem cujo retrato estava guardado na gaveta.
+============================================================
+QUESTAO 14 - Língua Portuguesa e Literatura - Gabarito Atual: E
+Enunciado: A concordância verbal estabelece a relação entre o verbo e o núcleo do sujeito. Em determinados contextos, a norma-padrão admite mais de uma forma de concordância. Assinale a alternativa em que a flexão verbal está em desacordo com as regras prescritas pela gramática normativa.
+Alternativas:
+  A: A maior parte dos críticos afirmaram que o romance apresenta caráter inovador.
+  B: Mais de um leitor considerou as reflexões do narrador excessivamente paranoicas.
+  C: Mais de um especialista e mais de um historiador discutiram a estrutura da narrativa.
+  D: A maioria dos episódios narrados ocorrem no Rio de Janeiro do século XIX.
+  E: Haviam muitas dúvidas entre os leitores a respeito da veracidade do relato.
+============================================================
+QUESTAO 15 - Língua Portuguesa e Literatura - Gabarito Atual: E
+Enunciado: A colocação dos pronomes oblíquos átonos varia conforme o contexto sintático e o registro de linguagem. Considerando as regras prescritas pela gramática normativa para o uso da próclise e da ênclise, assinale a alternativa em que a colocação pronominal está correta.
+Alternativas:
+  A: Me falaram que o romance machadiano retrata a sociedade carioca do século XIX.
+  B: Bentinho recordava-se dos fatos, porém não entregou-se totalmente às lembranças.
+  C: Quando trata-se de literatura realista, Machado de Assis destaca-se pela ironia.
+  D: Machado de Assis sempre dedicou-se à análise psicológica das personagens.
+  E: Em se tratando de memória ficcional, a perspectiva do narrador é determinante.
+============================================================
+QUESTAO 16 - Língua Portuguesa e Literatura - Gabarito Atual: C
+Enunciado: A regência verbal corresponde à relação estabelecida entre um verbo e seus complementos. Em textos de registro formal, essa relação deve observar as normas gramaticais consagradas. Assinale a alternativa que atende à norma-padrão da língua portuguesa quanto à regência verbal.
+Alternativas:
+  A: O narrador prefere recordar o passado do que viver o presente.
+  B: Bentinho sempre visava o bem-estar da família ao tomar decisões.
+  C: Machado de Assis procedeu a uma análise profunda da alma humana.
+  D: Os leitores assistiram o desenrolar dos fatos com desconfiança.
+  E: O advogado custou para entender os motivos que levaram à desconfiança.
+============================================================
+QUESTAO 17 - Sociologia - Gabarito Atual: D
+Texto: {'titulo': 'Injustiça Epistêmica e Preconceito Social', 'conteudo': 'Os grupos dominantes são beneficiados em termos de credibilidade e podem, com isso, controlar falas de membros de outros grupos, descredibilizando seus testemunhos com base em concepções compartilhadas de preconceito de identidade (gênero e raça). Algumas formas de preconceito tornam as declarações das pessoas menos importantes devido ao seu pertencimento a determinado grupo social. Assim, um falante recebe menos credibilidade devido ao preconceito do ouvinte.', 'fonte': 'KUHNEN, T. Resenha de The Power and Ethics of Knowing, de Miranda Fricker. Revista Princípios, n. 33, 2013.'}
+Enunciado: Com base na reflexão suscitada no texto, o preconceito de identidade é responsável por um tipo de injustiça
+Alternativas:
+  A: estética, que normatiza os padrões corporais.
+  B: sensorial, que privilegia as habilidades visuais.
+  C: afetiva, que impede as expressões emocionais.
+  D: epistêmica, que prejudica as trocas informacionais.
+  E: econômica, que perpetua as desigualdades materiais.
+============================================================
+QUESTAO 18 - Filosofia - Gabarito Atual: C
+Texto: {'titulo': '', 'conteudo': '<b>TEXTO I</b>\nAristóteles entendia que a felicidade era diretamente ligada ao respeito pela própria natureza e, de certa maneira, a uma vida que tivesse na natureza de si mesma uma referência inabalável. Isso lhe permitiu formular o conceito de excelência. O que seria excelência? Seria, justamente, ao longo da vida, tirar de si mesmo, em forma de performance, de conduta, de comportamento, de disposição, o que a natureza permitiria de melhor.\n(COEN, M.; BARROS FILHO, C. A monja e o professor. Rio de Janeiro: Best Seller, 2018).\n\n<b>TEXTO II</b>\nA noção de eudaimonia é central para a ética aristotélica. A eudaimonia é uma atividade e não um estado psicológico, pois é definida na Ética a Nicômaco como uma atividade da alma com base na virtude moral. A virtude moral é definida em termos de uma disposição diretamente ligada à deliberação, o que o leva a estudar a virtude intelectual que opera em seu interior, isto é, a prudência.\n(ZINGANO, M. Aristóteles: tratado da virtude moral. São Paulo: Discurso Editorial, 2008).', 'fonte': 'ENEM 2024.'}
+Enunciado: Na perspectiva da filosofia aristotélica apresentada nos textos, a realização plena da felicidade humana requer a
+Alternativas:
+  A: supressão incondicional das inclinações naturais do indivíduo.
+  B: busca utilitarista de bens materiais e privilégios honoríficos.
+  C: prática contínua de virtudes balizadas pelo discernimento prudente.
+  D: obediência cega aos dogmas religiosos instituídos na polis.
+  E: acumulação passiva de conhecimentos puramente teóricos.
+============================================================
+QUESTAO 19 - História - Gabarito Atual: C
+Enunciado: A Independência do Brasil, proclamada em 7 de setembro de 1822, esteve relacionada a diversos fatores políticos e econômicos. Sobre esse processo, assinale a alternativa correta:
+Alternativas:
+  A: Foi resultado exclusivamente de uma revolta popular contra a escravidão.
+  B: Ocorreu após a expulsão completa dos portugueses do território brasileiro.
+  C: D. Pedro declarou a independência em meio às pressões das Cortes portuguesas para que retornasse a Portugal.
+  D: A independência ocorreu sem conflitos ou resistência em nenhuma região do Brasil.
+  E: O Brasil tornou-se uma república imediatamente após a independência.
+============================================================
+QUESTAO 20 - Geografia - Gabarito Atual: D
+Imagem: simulado_2/banco_questoes/imagens/enem_2024_q90_satelite.png
+Texto: {'titulo': '', 'conteudo': 'Imagens de satélite registrando a evolução temporal da ocupação em área costeira (Fonte: Google Earth, 2023).', 'fonte': 'Disponível em: https://earth.google.com. Acesso em: 13 out. 2023.'}
+Enunciado: A comparação entre as imagens de satélite indica a ocorrência de um processo de
+Alternativas:
+  A: conservação de lugares afetivos.
+  B: aumento de áreas desertificadas.
+  C: redefinição de fronteiras nacionais.
+  D: artificialização do espaço geográfico.
+  E: mudança da dinâmica macroclimática.
+============================================================
+QUESTAO 21 - Geografia - Gabarito Atual: C
+Imagem: simulado_2/banco_questoes/imagens/enem_2023_q87_bordado.png
+Texto: {'titulo': 'Fotografia da avó bordada', 'conteudo': 'Representação artística bordada definindo o Sertão através de vivências afetivas, memórias e saberes tradicionais.', 'fonte': 'SCARELI, G. A máquina de costura e os fios da memória. Revista Brasileira de Pesquisa (Auto)Biográfica, n. 18, maio-ago. 2021.'}
+Enunciado: A definição de Sertão descrita no bordado associa esse recorte espacial a
+Alternativas:
+  A: percursos e roteiros turísticos.
+  B: trajetos e movimentos holísticos.
+  C: vivências e itinerários socioafetivos.
+  D: fronteiras e demarcações territoriais.
+  E: profissões e interesses econômicos.
+============================================================
+QUESTAO 22 - Filosofia - Gabarito Atual: C
+Texto: {'titulo': 'Resposta à Pergunta: O que é o Esclarecimento?', 'conteudo': 'O Esclarecimento (Aufklärung) é a saída do homem de sua menoridade, da qual ele próprio é culpado. A menoridade é a incapacidade de fazer uso de seu entendimento sem a direção de outro indivíduo. O homem é o próprio culpado dessa menoridade quando sua causa não reside na falta de entendimento, mas na falta de decisão e de coragem de servir-se de si mesmo sem a direção de outrem. Sapere aude! Tem coragem de fazer uso de teu próprio entendimento, tal é o lema do Esclarecimento.', 'fonte': 'KANT, I. Textos Seletos. Petrópolis: Vozes, 1985 (adaptado).'}
+Enunciado: Em seu ensaio, Kant define o Esclarecimento como um processo emancipatório que exige do ser humano o(a)
+Alternativas:
+  A: recorrência aos princípios da fé para orientar as ações morais.
+  B: submissão consciente aos preceitos emanados das autoridades tradicionais.
+  C: autonomia intelectual conquistada pela coragem de pensar por si mesmo.
+  D: aceitação acrítica das leis ditadas pelo soberano absolutista.
+  E: renúncia ao saber científico em prol da contemplação mística.
+============================================================
+QUESTAO 23 - História - Gabarito Atual: A
+Enunciado: No final do século XIX e início do século XX, as potências europeias intensificaram o processo de expansão imperialista sobre a África e a Ásia. Esse processo foi motivado principalmente por:
+Alternativas:
+  A: A busca por matérias-primas, mercados consumidores e áreas para investimentos de capital.
+  B: A defesa da independência política das colônias.
+  C: O abandono da competição econômica entre as potências europeias.
+  D: A igualdade política entre europeus e povos colonizados.
+  E: A redução da industrialização europeia.
+============================================================
+QUESTAO 24 - Filosofia - Gabarito Atual: B
+Texto: {'titulo': 'Discurso do Método', 'conteudo': 'Para começar com a maior exatidão possível, examinarei aqui muito atentamente se há alguma coisa no mundo que seja tão certa que seja impossível duvidar dela. Notando que nossos sentidos às vezes nos enganam, quis supor que não havia coisa alguma que fosse tal como eles nos fazem imaginar. E, porque há homens que se equivocam ao raciocinar, mesmo no tocante aos mais simples temas de geometria, rejeitei como falsas todas as razões que eu tivera antes por demonstrativas.', 'fonte': 'DESCARTES, R. Discurso do método. São Paulo: Nova Cultural, 1999 (adaptado).'}
+Enunciado: O método empregado pelo pensador na busca de uma certeza inabalável consiste em
+Alternativas:
+  A: aceitar as convicções da tradição escolástica como premissas irrefutáveis.
+  B: utilizar a dúvida radical como instrumento para superar o engano e a ilusão.
+  C: fundamentar a verdade na observação empírica direta proporcionada pelos sentidos.
+  D: adotar o ceticismo permanente como fim supremo da investigação filosófica.
+  E: subordinar os raciocínios lógicos às crenças religiosas consolidadas.
+============================================================
+QUESTAO 25 - Geografia - Gabarito Atual: E
+Texto: {'titulo': 'Fronteiras e Refugiados', 'conteudo': 'O que alicerça, portanto, o acolhimento de refugiados pelos Estados gira em torno da fronteira erguida entre inclusão e exclusão, admissão e rejeição, desejáveis e indesejáveis; ao mesmo tempo, enseja vulnerabilidade, indefinição e incerteza a esses migrantes internacionais forçados.', 'fonte': 'MOREIRA, J. B. Refugiados no Brasil. REMHU: Revista Interdisciplinar da Mobilidade Humana, v. 22, n. 43, jul.-dez. 2014.'}
+Enunciado: A eliminação, para os refugiados, do tipo de fronteira descrita no texto necessita de políticas públicas de
+Alternativas:
+  A: planejamento familiar.
+  B: segregação territorial.
+  C: homogeneização cultural.
+  D: diferenciação étnico-racial.
+  E: integração socioeconômica.
+============================================================
+QUESTAO 26 - História - Gabarito Atual: A
+Enunciado: O Segundo Reinado, período governado por D. Pedro II, foi marcado por importantes transformações econômicas no Brasil, destacando-se:
+Alternativas:
+  A: O crescimento da produção e exportação de café.
+  B: O fim imediato do trabalho escravo.
+  C: A ausência de conflitos militares externos.
+  D: A implantação do regime republicano.
+  E: O desaparecimento das atividades industriais no Brasil.
+============================================================
+QUESTAO 27 - Geografia - Gabarito Atual: C
+Imagem: simulado_2/banco_questoes/imagens/enem_2023_q85_clima.png
+Texto: {'titulo': 'Cenários de Aquecimento Global', 'conteudo': 'Simulação de mudança da temperatura média anual e da pluviosidade média anual em relação ao período pré-industrial em três cenários de aquecimento global (1,5 °C, 2 °C e 4 °C).', 'fonte': 'PIVETTA, M. O clima no Antropoceno. Pesquisa FAPESP, n. 307, set. 2021 (adaptado).'}
+Enunciado: Com base nas simulações apresentadas para os diferentes cenários climáticos, a elevação da temperatura média global projeta para a maior parte do território brasileiro
+Alternativas:
+  A: manutenção dos índices de umidade na bacia amazônica.
+  B: aumento uniforme da precipitação nas regiões semiáridas.
+  C: redução simultânea da pluviosidade e acentuado aquecimento térmico.
+  D: estabilização térmica das médias sazonais no Centro-Oeste.
+  E: reversão do estresse hídrico nos biomas subtropicais.
+============================================================
+QUESTAO 28 - História - Gabarito Atual: C
+Enunciado: A Primeira Guerra Mundial (1914–1918) foi resultado de um conjunto de fatores que aumentaram as tensões internacionais na Europa. Entre esses fatores, destacam-se:
+Alternativas:
+  A: A queda do Império Romano.
+  B: A expansão do feudalismo europeu.
+  C: O nacionalismo, o imperialismo, a corrida armamentista e o sistema de alianças militares.
+  D: A Revolução Industrial do século XVIII, exclusivamente.
+  E: A Guerra Fria entre Estados Unidos e União Soviética.
+============================================================
+QUESTAO 29 - Sociologia - Gabarito Atual: B
+Texto: {'titulo': 'Vigiar e Punir', 'conteudo': 'A alma funciona no meu corpo como um elemento de controle. O homem de que nos falam e que nos convidam a libertar já é em si mesmo o efeito de uma sujeição bem mais profunda que ele. Uma alma o habita e o conduz à existência, que é ela mesma uma peça no domínio que o poder exerce sobre o corpo. A alma, efeito e instrumento de uma anatomia política; a alma, prisão do corpo.', 'fonte': 'FOUCAULT, M. Vigiar e punir: nascimento da prisão. Petrópolis: Vozes, 1987 (adaptado).'}
+Enunciado: Nesse fragmento de Vigiar e Punir, a crítica foucaultiana explicita que o exercício do poder disciplinar nas instituições modernas atua pela
+Alternativas:
+  A: eliminação sumária dos indivíduos transgressores da lei penal.
+  B: internalização de normas e vigilância sobre os comportamentos.
+  C: garantia irrestrita das liberdades civis nas sociedades democráticas.
+  D: valorização da consciência moral desvinculada do controle social.
+  E: restauração dos suplícios públicos como mecanismo exemplar de dissuasão.
+============================================================
+QUESTAO 30 - História - Gabarito Atual: B
+Enunciado: Durante o Primeiro Reinado (1822–1831), o governo de D. Pedro I enfrentou diversas dificuldades políticas. Um dos principais marcos desse período foi:
+Alternativas:
+  A: A criação da República brasileira.
+  B: A elaboração e aprovação da Constituição de 1824.
+  C: A abolição da escravidão.
+  D: A Proclamação da República.
+  E: A Guerra do Paraguai.
+============================================================
+QUESTAO 31 - Sociologia - Gabarito Atual: A
+Texto: {'titulo': 'Madres de Plaza de Mayo', 'conteudo': 'Era uma vez um país, uma cidade, uma praça, algumas mães... Las Madres de Plaza de Mayo! Silenciosas, com lenços brancos na cabeça, rondavam a Praça de Maio. Incansáveis, caminharam por dias, meses, anos. Foram chamadas de loucas. Em silêncio, criaram um fato político, escancararam as entranhas da repressão, desafiaram o aparato militar e suas dores ecoaram pelo mundo. Como observou Oliveira, “à luz do dia, sob as janelas do ditador, sob chuva, sob sol, no silêncio entrecortado de gritos, faziam ouvir como que a alucinação de uma litania, que ecoou no país, na América Latina e além-mar”. Era impossível ignorá-las, estavam lá, sempre em silêncio, mas estavam lá.', 'fonte': 'GONÇALVES, R. De antigas e novas loucas: Madres e Mães de Maio contra a violência de Estado. Lutas Sociais, n. 29, jul.-dez. 2012.'}
+Enunciado: Qual problema de âmbito nacional argentino o movimento social mencionado expôs ao mundo?
+Alternativas:
+  A: Violação dos direitos humanos.
+  B: Insegurança da juventude periférica.
+  C: Naturalização de violências domésticas.
+  D: Precarização do trabalho dos professores.
+  E: Superlotação das instituições psiquiátricas.
+============================================================
+QUESTAO 32 - Geografia - Gabarito Atual: B
+Texto: {'titulo': 'Expansão da Soja e Desmatamento', 'conteudo': 'Alternativas logísticas estão servindo de instrumentos que ativam os mercados especuladores de terras nas diferentes regiões da Amazônia e constituem em indicadores utilizados por diferentes atores para defender ou denunciar o avanço da cultura da soja na região e, com ela, a retomada do desmatamento. É evidente que o crescimento do desmatamento tem a ver também com a expansão da soja, porém atribuir a ela o fator principal parece não totalmente correto. Parto da compreensão central de que a lógica que gera o desmatamento está articulada pelo tripé grileiros, madeireiros e pecuaristas.', 'fonte': 'BERNARDES, J. A. et al. Geografias da soja: dinâmicas territoriais no bioma amazônico. Rio de Janeiro: Arquimedes, 2019 (adaptado).'}
+Enunciado: De acordo com a perspectiva expressa no texto, a dinâmica recente de ocupação e degradação ambiental na Amazônia é impulsionada por um modelo associado à
+Alternativas:
+  A: presença de projetos de silvicultura comercial voltados à celulose.
+  B: atuação consorciada de atividades tradicionais e especulação fundiária.
+  C: exclusividade do monocultivo mecanizado na abertura inicial da mata.
+  D: ausência completa de infraestrutura viária e escoamento fluvial.
+  E: supremacia de pequenos agricultores familiares no avanço da fronteira.

@@ -1,0 +1,674 @@
+1º SIMULADO DO EXAME NACIONAL DO ENSINO MÉDIO
+PROVA DE LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO
+PROVA DE CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS
+PROVA DE CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS
+PROVA DE MATEMÁTICA E SUAS TECNOLOGIAS
+LEIA ATENTAMENTE AS INSTRUÇÕES SEGUINTES:
+1. Este CADERNO DE QUESTÕES contém 70 questões numeradas de 01 a 70 e a Proposta de Redação, dispostas da seguinte maneira:
+   a) questões de número 01 a 16, relativas à área de Linguagens, Códigos e suas Tecnologias;
+   b) questões de número 17 a 32, relativas à área de Ciências Humanas e suas Tecnologias;
+   c) questões de número 33 a 50, relativas à área de Ciências da Natureza e suas Tecnologias;
+   d) questões de número 51 a 70, relativas à área de Matemática e suas Tecnologias;
+   e) Proposta de Redação, Rascunho, Redação Oficial e Cartão-Resposta ao final do caderno.
+   ATENÇÃO: as questões de 01 a 05 são relativas à língua inglesa.
+2. Confira se a quantidade e a ordem das questões do seu CADERNO DE QUESTÕES estão de acordo com as instruções anteriores. Caso o caderno esteja incompleto, tenha defeito ou apresente qualquer divergência, comunique ao aplicador da sala.
+3. Para cada uma das questões objetivas, são apresentadas 5 opções. Apenas uma responde corretamente à questão.
+4. Reserve tempo suficiente para preencher o CARTÃO-RESPOSTA e a FOLHA DE REDAÇÃO definitiva. Somente serão corrigidas as redações transcritas na FOLHA DE REDAÇÃO oficial.
+5. Os rascunhos e as marcações assinaladas no CADERNO DE QUESTÕES não serão considerados na avaliação.
+6. Quando terminar as provas, acene para chamar o aplicador e entregue este CADERNO DE QUESTÕES e o CARTÃO-RESPOSTA/FOLHA DE REDAÇÃO.
+7. Você poderá deixar o local de prova somente após decorridas duas horas do início da aplicação e poderá levar seu CADERNO DE QUESTÕES nos 30 minutos que antecedem o término das provas.
+ LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS
+ Questões de 01 a 16 • Língua Estrangeira e Linguagens
+QUESTÃO 01 (Inglês)
+Remote Work
+More companies are adopting remote work policies. Employees are working from home and are organizing their schedules more flexibly. This shift is changing the traditional concept of the workplace, making it more dynamic and adaptable to individual needs.
+The use of “are working” suggests that remote work is:
+Ⓐ A past trend
+Ⓑ A temporary action happening now
+Ⓒ A future plan
+Ⓓ An obligation
+Ⓔ A completed historical fact
+QUESTÃO 02 (Inglês)
+Education Access
+In many regions of the world, there are still barriers to education. There is a lack of infrastructure, qualified teachers, and resources. These challenges highlight the importance of public policies aimed at reducing inequality.
+The text mainly emphasizes:
+Ⓐ The success of global education
+Ⓑ The lack of interest in education
+Ⓒ The existence of educational challenges
+Ⓓ The role of technology only
+Ⓔ The total absence of schools worldwide
+QUESTÃO 03 (Inglês)
+Personal Choices
+Young people today face many decisions about their future. Some choose traditional careers, while others prefer alternative paths. For many young people, choosing a traditional career is a decision influenced by social expectations. This choice may reflect the desire to follow a path that is considered safe and socially accepted.
+In the text, “that choice” refers to:
+Ⓐ Personal values
+Ⓑ Traditional careers
+Ⓒ Alternative paths
+Ⓓ Social expectations
+Ⓔ Modern technology
+QUESTÃO 04 (Inglês)
+Environmental Changes
+Climate change affects ecosystems around the world. Rising temperatures impact wildlife, and extreme weather events occur more frequently. Scientists warn that immediate action is necessary to prevent further damage.
+The use of simple present in the text indicates:
+Ⓐ Actions happening only in the past
+Ⓑ General truths and ongoing facts
+Ⓒ Temporary situations
+Ⓓ Personal opinions only
+Ⓔ Hypothetical future doubts
+QUESTÃO 05 (Inglês)
+Consumer Habits
+Buying a product today is not just about necessity; it is also about identity. The brands people choose often reflect their lifestyle and beliefs. A simple purchase can represent a deeper connection to certain values.
+The main idea of the text is that consumption:
+Ⓐ Is only about basic needs
+Ⓑ Has no social meaning
+Ⓒ Can express identity and values
+Ⓓ Is always unnecessary
+Ⓔ Damages individual personalities
+QUESTÃO 06 (Linguagens)
+Anúncio:
+“Sol? Sim, mas com proteção. O novo bloqueador solar SolarMax protege sua pele contra os raios UVA e UVB por até 8 horas, prevenindo o envelhecimento precoce. Fórmula dermatologicamente testada e resistente à água.”
+No texto publicitário, a linguagem é utilizada para apresentar as características técnicas e a eficácia de um produto. A função da linguagem que predomina nesse anúncio e o elemento da comunicação no qual ela se centra são, respectivamente:
+Ⓐ Função Emotiva – focada no Emissor.
+Ⓑ Função Fática – focada no Canal.
+Ⓒ Função Referencial – focada no Referente.
+Ⓓ Função Metalinguística – focada no Código.
+Ⓔ Função Conativa – focada no Receptor.
+QUESTÃO 07 (Linguagens)
+Anúncio de Empresa de Telefonia:
+“Falar engaja. Ouvir conecta. Compartilhar aproxima. Conheça nossos planos de internet e voz e fique mais perto de quem você ama.”
+O texto utiliza uma estrutura de paralelismo sintático (“Falar engaja. Ouvir conecta...”) para construir um ritmo agradável e persuasivo. Ao focar na sonoridade e na disposição das palavras para sensibilizar o cliente, o anúncio explora a função poética da linguagem. No contexto publicitário, essa função é utilizada para:
+Ⓐ afastar o interesse comercial e transformar a propaganda em pura literatura.
+Ⓑ ocultar as intenções de venda, enganando o consumidor sobre o preço do plano.
+Ⓒ tornar a mensagem mais memorável, estética e atraente para o público-alvo.
+Ⓓ explicar didaticamente o funcionamento das antenas de transmissão de sinal.
+Ⓔ restringir o entendimento do anúncio apenas a leitores que dominam a poesia clássica.
+QUESTÃO 08 (Linguagens)
+Depois de um bom jantar: feijão com carne-seca, orelha de porco e couve com angu, arroz mole engordurado, carne de vento assada no espeto, torresmo enxuto de toicinho da barriga, viradinho de milho verde e um prato de caldo de couve, jantar encerrado por um prato fundo de canjica com torrões de açúcar, Nhô Tomé saboreou o café forte e se estendeu na rede. A mão direita sob a cabeça, à guisa de travesseiro, o indefectível cigarro de palha entre as pontas do indicador e do polegar, envernizados pela fumaça, de unhas encanoadas e longas, ficou-se de pança para o ar, modorrento, a olhar para as ripas do telhado. Quem come e não deita, a comida não aproveita, pensava Nhô Tomé... E pôs-se a cochilar. A sua modorra durou pouco; Tia Policena, ao passar pela sala, bradou assombrada: — Êêh! Sinhô! Vai drumi agora? Não! Num presta... Dá pisadêra e póde morrê de ataque de cabeça! Despois do armoço num far-má... mais despois da janta?!”
+PIRES, Cornélio. Conversas ao pé do fogo. São Paulo: Imprensa Oficial do Estado SP, 1987.
+Nesse trecho, extraído de texto publicado originalmente em 1921, o narrador:
+Ⓐ apresenta, sem explicitar juízos de valor, costumes da época, descrevendo os pratos servidos no jantar e a atitude de Nhô Tomé e de Tia Policena.
+Ⓑ desvaloriza a norma culta da língua porque incorpora à narrativa usos próprios da linguagem regional das personagens.
+Ⓒ condena os hábitos descritos, dando voz a Tia Policena, que tenta impedir Nhô Tomé de deitar-se após as refeições.
+Ⓓ utiliza a diversidade sociocultural e linguística para demonstrar seu desrespeito às populações das zonas rurais do início do século XX.
+Ⓔ manifesta preconceito em relação a Tia Policena ao transcrever a fala dela com os erros próprios da região.
+QUESTÃO 09 (Linguagens)
+Quando o português chegou Debaixo de uma bruta chuva Vestiu o índio Que pena! Fosse uma manhã de Sol O índio tinha despido O português.
+(Oswald de Andrade. (Poesias reunidas. Rio de Janeiro: Civilização Brasileira, 1978.).
+O primitivismo observável no poema acima, de Oswald de Andrade, caracteriza de forma marcante:
+Ⓐ o regionalismo do Nordeste.  
+Ⓑ o concretismo paulista.  
+Ⓒ a poesia Pau-Brasil.  
+Ⓓ o simbolismo pré-modernista.  
+Ⓔ o tropicalismo baiano.
+QUESTÃO 10 (Linguagens) 
+A linguagem na ponta da língua tão fácil de falar e de entender. A linguagem na superfície estrelada de letras, sabe lá o que quer dizer? Professor Carlos Góis, ele é quem sabe, e vai desmatando as amazonas de minha ignorância. Figuras de gramática, esquipáticas, atropelam-me, aturdem-me, sequestram-me. Já esqueci a língua em que comia, em que pedia para ir lá fora, em que levava e dava pontapé, a língua, breve língua entrecortada do namoro com a priminha. O português são dois; o outro, mistério.
+
+(...) Penetra surdamente no reino das palavras. Lá estão os poemas que esperam ser escritos. (...) Chega mais perto e contempla as palavras. Cada uma tem mil faces secretas sob a face neutra e te pergunta, sem interesse pela resposta, pobre ou terrível, que lhe deres: trouxeste a chave?
+ANDRADE, Carlos Drummond de. A rosa do povo. Rio de Janeiro: Record, 1997.
+Esse fragmento poético ilustra o seguinte tema constante entre autores modernistas:
+Ⓐ a nostalgia do passado colonialista revisitado.
+Ⓑ a preocupação com o engajamento político e social da literatura.
+Ⓒ o trabalho quase artesanal com as palavras, despertando sentidos novos.
+Ⓓ a produção de sentidos herméticos na busca da perfeição poética.
+Ⓔ a contemplação da natureza brasileira na visão ufanista da pátria.
+QUESTÃO 11 (Linguagens)
+Bárbara entrou, enquanto o pai pegou da viola e passou ao patamar de pedra, à porta da esquerda. Era uma criaturinha leve e breve, saia bordada, chinelinha no pé. Não se lhe podia negar um corpo airoso. Os cabelos, apanhados no alto da cabeça por um pedaço de fita enxovalhada, faziam-lhe um solidéu natural, cuja borla era suprida por um raminho de arruda. Já vai nisto um pouco de sacerdotisa. O mistério estava nos olhos. Estes eram opacos, não sempre nem tanto que não fossem também lúcidos e agudos, e neste último estado eram igualmente compridos; tão compridos e tão agudos que entravam pela gente abaixo, revolviam o coração e tornavam cá fora, prontos para nova entrada e outro revolvimento. Não te minto dizendo que as duas sentiram tal ou qual fascinação. Bárbara interrogou-as; Natividade disse ao que vinha e entregou-lhe os retratos dos filhos e os cabelos cortados, por lhe haverem dito que bastava. — Basta, confirmou Bárbara. Os meninos são seus filhos? São.
+ASSIS, Machado de. Obra completa. Rio de Janeiro: Nova Aguilar, 1994.
+No relato da visita de duas mulheres ricas a uma vidente no Morro do Castelo, a ironia — um dos traços mais representativos da narrativa machadiana — consiste no:
+Ⓐ modo de vestir dos moradores do morro carioca.
+Ⓑ senso prático em relação às oportunidades de renda.
+Ⓒ mistério que cerca as clientes de práticas de vidência.
+Ⓓ misto de singeleza e astúcia dos gestos da personagem.
+Ⓔ interesse do narrador pelas figuras femininas ambíguas.
+QUESTÃO 12 (Linguagens)
+Caminhando contra o vento,
+Sem lenço e sem documento
+No sol de quase dezembro
+Eu vou
+O sol se reparte em crimes
+Espaçonaves, guerrilhas
+Em cardinales bonitas
+Eu vou
+Em caras de presidentes
+Em grandes beijos de amor
+Em dentes, pernas, bandeiras
+Bombas e Brigitte Bardot
+O sol nas bancas de revista
+Me enche de alegria e preguiça
+Quem lê tanta notícia
+Eu vou
+VELOSO, Caetano. Alegria, alegria. São Paulo: Phillips, 1967.
+É comum coexistirem sequências tipológicas em um mesmo gênero textual. Nesse fragmento, os tipos textuais que se destacam na organização temática são:
+Ⓐ descritivo e argumentativo, pois o enunciador detalha cada lugar por onde passa, argumentando contra a violência urbana.
+Ⓑ dissertativo e argumentativo, pois o enunciador apresenta seu ponto de vista sobre as notícias relativas à cidade.
+Ⓒ expositivo e injuntivo, pois o enunciador fala de seus estados físicos e psicológicos e interage com a mulher amada.
+Ⓓ narrativo e descritivo, pois o enunciador conta sobre suas andanças pelas ruas da cidade ao mesmo tempo que a descreve.
+Ⓔ narrativo e injuntivo, pois o enunciador ensina o interlocutor como andar pelas ruas da cidade contando sobre sua própria experiência.
+QUESTÃO 13 (Linguagens)
+Por que pronunciamos muitas palavras de um jeito diferente da escrita? Pode-se refletir sobre esse aspecto da língua com base em duas perspectivas. Na primeira delas, fala e escrita são dicotômicas, o que restringe o ensino da língua ao código. Daí vem o entendimento de que a escrita é mais complexa que a fala, e seu ensino restringe-se ao conhecimento das regras gramaticais, sem a preocupação com situações de uso. Outra abordagem permite encarar as diferenças como um produto distinto de duas modalidades da língua: a oral e a escrita. A questão é que nem sempre nos damos conta disso.
+S.O.S Português. Nova Escola, São Paulo: Abril, Ano XXV, nº 231, abr. 2010 (adaptado).
+O assunto tratado no fragmento é relativo à língua portuguesa e foi publicado em uma revista destinada a professores. Entre as características próprias desse tipo de texto, identificam-se as marcas linguísticas próprias do uso:
+Ⓐ regional, pela presença de léxico de determinada região do Brasil.
+Ⓑ literário, pela conformidade com as normas da gramática.
+Ⓒ técnico, por meio de expressões próprias de textos científicos.
+Ⓓ coloquial, por meio do registro de informalidade.
+Ⓔ informal, por meio de expressões próprias do registro científico.
+QUESTÃO 14 (Linguagens)
+KUCZYNSKI, P. Ilustração, 2008. Disponível em: http://capu.pl. Acesso em: 3 ago. 2012.
+O artista gráfico polonês Pawla Kuczynskiego nasceu em 1976 e recebeu diversos prêmios por suas ilustrações. Nessa obra, ao abordar o trabalho infantil, Kuczynskiego usa sua arte para:
+Ⓐ difundir a origem de marcantes diferenças sociais.
+Ⓑ estabelecer uma postura proativa da sociedade.
+Ⓒ provocar a reflexão sobre essa realidade.
+Ⓓ propor alternativas para solucionar esse problema.
+Ⓔ retratar como a questão é enfrentada em vários países do mundo.
+QUESTÃO 15 (Linguagens)
+O Marabaixo é uma expressão artístico-cultural formada nas tradições e na identificação cultural entre as comunidades negras do Amapá. O nome remonta às mortes de escravizados em navios negreiros que eram jogados na água. Em sua homenagem, hinos de lamento eram cantados mar abaixo, mar acima. Posteriormente, o Marabaixo se integrou à vivência das comunidades negras em um ciclo de danças, cantorias com tambores e festas religiosas, recebendo, em 2018, o título de Patrimônio Cultural do Brasil.
+Disponível em: http://portal.iphan.gov.br. Acesso em: 15 nov. 2021 (adaptado).
+A manifestação do Marabaixo se constituiu em expressão de arte e cultura, exercendo função de:
+Ⓐ ressignificar episódios dramáticos em novas práticas culturais.
+Ⓑ adaptar coreografias como imitação dos movimentos do mar.
+Ⓒ lembrar dos mortos no passado escravista como forma de lamento.
+Ⓓ perpetuar uma narrativa de apagamento dos fatos históricos traumáticos.
+Ⓔ ritualizar a passagem de atos fúnebres nas produções coletivas com espírito festivo.
+QUESTÃO 16 (Linguagens)
+TEXTO I: "No meio do caminho tinha uma pedra / tinha uma pedra no meio do caminho / tinha uma pedra..." (Carlos Drummond de Andrade)
+
+TEXTO II: "As lavadeiras de Mossoró, cada uma tem sua pedra no rio: cada pedra é herança de família, passando de mãe a filha, de filha a neta, como vão passando as águas no tempo... A lavadeira e a pedra formam ente especial, que se divide e se reúne ao sabor do trabalho." (Carlos Drummond de Andrade)
+Com base na leitura dos textos, é possível estabelecer uma relação entre forma e conteúdo da palavra "pedra", por meio da qual se observa:
+Ⓐ o emprego, em ambos os textos, do sentido conotativo da palavra "pedra".
+Ⓑ a identidade de significação, já que nos dois textos, "pedra" significa empecilho.
+Ⓒ a personificação de "pedra" que, em ambos os textos, adquire características animadas.
+Ⓓ o predomínio, no primeiro texto, do sentido denotativo de "pedra" como matéria mineral sólida e dura.
+Ⓔ a utilização, no segundo texto, do significado de "pedra" como dificuldade materializada por um objeto.
+ CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS
+ Questões de 17 a 32 • História, Geografia, Filosofia e Sociologia
+QUESTÃO 17 (História)
+Antes da chegada dos portugueses, o território que atualmente corresponde ao Brasil era ocupado por diversos povos indígenas, que apresentavam diferentes formas de organização social, econômica e cultural. Esses povos utilizavam os recursos naturais de acordo com suas necessidades e conhecimentos sobre o ambiente.
+A partir dessas características, é correto afirmar que a sociedade indígena existente antes da colonização portuguesa era marcada pela:
+Ⓐ inexistência de atividades agrícolas e pelo nomadismo de todos os grupos.
+Ⓑ utilização diversificada dos recursos naturais e pela existência de diferentes formas de organização social.
+Ⓒ formação de um Estado centralizado responsável pela administração de todo o território.
+Ⓓ utilização predominante do trabalho escravo como base da produção econômica.
+Ⓔ existência de uma única cultura indígena compartilhada por todos os povos.
+QUESTÃO 18 (História)
+Na cidade de Atenas, durante a Antiguidade, determinados cidadãos participavam diretamente das decisões políticas da pólis. Entretanto, essa participação não abrangia toda a população, pois mulheres, escravizados e estrangeiros estavam excluídos dos direitos políticos.
+A experiência ateniense demonstra que a democracia na Grécia Antiga:
+Ⓐ estabelecia igualdade política entre todos os habitantes da cidade.
+Ⓑ garantia direitos políticos principalmente aos estrangeiros residentes.
+Ⓒ estava relacionada a uma concepção restrita de cidadania.
+Ⓓ eliminava as diferenças sociais existentes na pólis.
+Ⓔ permitia a participação política dos escravizados nas assembleias.
+QUESTÃO 19 (História)
+Durante a República Romana, os conflitos entre patrícios e plebeus contribuíram para importantes transformações políticas. Entre as reivindicações dos plebeus estava a necessidade de tornar as leis conhecidas, reduzindo a possibilidade de interpretação exclusiva pelos grupos que controlavam o poder.
+Esse processo contribuiu para:
+Ⓐ o fortalecimento da monarquia romana.
+Ⓑ a criação de mecanismos de participação e proteção jurídica dos plebeus.
+Ⓒ o fim imediato da escravidão em Roma.
+Ⓓ a divisão do Império Romano em Ocidental e Oriental.
+Ⓔ a expansão do cristianismo como religião oficial.
+QUESTÃO 20 (História)
+Durante boa parte da Idade Média europeia, a sociedade estava organizada em torno de relações de dependência entre diferentes grupos sociais. Os camponeses trabalhavam nas terras dos senhores e, em troca, recebiam proteção e acesso à terra para sua subsistência. A Igreja Católica também exercia grande influência sobre a sociedade.
+Esse contexto caracteriza principalmente:
+Ⓐ o capitalismo comercial.
+Ⓑ o sistema feudal.
+Ⓒ o absolutismo monárquico.
+Ⓓ a democracia ateniense.
+Ⓔ o socialismo medieval.
+QUESTÃO 21 (História)
+No século XVI, críticas à atuação da Igreja Católica ganharam força em diferentes regiões da Europa. Martinho Lutero questionou práticas religiosas e defendeu mudanças na relação entre os fiéis e a religião cristã. O movimento iniciado por essas críticas contribuiu para profundas transformações religiosas e políticas.
+Entre as consequências da Reforma Protestante está:
+Ⓐ a unificação religiosa de toda a Europa sob o comando da Igreja Católica.
+Ⓑ o fortalecimento exclusivo do poder político do papa.
+Ⓒ a formação de novas igrejas cristãs e o enfraquecimento da unidade religiosa da Europa Ocidental.
+Ⓓ o fim imediato das monarquias europeias.
+Ⓔ a eliminação dos conflitos religiosos no continente europeu.
+QUESTÃO 22 (Geografia)
+Mudanças recentes nas dinâmicas de produção e consumo de energia têm ampliado discussões sobre estabilidade econômica, segurança de abastecimento e adaptação tecnológica em diferentes países. Ao mesmo tempo, fatores geopolíticos, ambientais e industriais passaram a influenciar decisões estratégicas relacionadas à organização das matrizes energéticas nacionais.
+Considerando os desafios associados ao cenário energético contemporâneo, qual diretriz apresenta maior potencial de equilíbrio entre desenvolvimento econômico e sustentabilidade energética?
+Ⓐ Diversificação da matriz energética associada à incorporação progressiva de tecnologias de menor impacto ambiental.
+Ⓑ Ampliação da produção energética convencional articulada à revisão periódica dos mecanismos de regulação ambiental.
+Ⓒ Direcionamento de investimentos energéticos para segmentos de maior retorno econômico e adaptação tecnológica reduzida.
+Ⓓ Priorização de fontes fósseis estratégicas vinculada à preservação da competitividade industrial em setores específicos.
+Ⓔ Ampliação do uso de Usinas Termoelétricas aproveitando a redução do custo do petróleo.
+QUESTÃO 23 (Geografia)
+Correspondem geneticamente às áreas essencialmente planas geradas por deposição de sedimentos recentes de origem marinha, lacustre ou fluvial. São associadas aos depósitos do quaternário, principalmente do Holoceno.
+Ecogeografia do Brasil, 2006.
+Em relação à compartimentação geomorfológica brasileira, a definição refere-se às áreas de:
+Ⓐ depressão.
+Ⓑ planaltos.
+Ⓒ tabuleiros.
+Ⓓ planícies.
+Ⓔ chapadas.
+QUESTÃO 24 (Geografia)
+A ocupação dos ambientes naturais ao longo da história tem produzido diferentes formas de apropriação dos recursos, variando conforme os interesses econômicos, os níveis tecnológicos e os marcos institucionais de cada sociedade. Nesse contexto, os conceitos de preservação e conservação ambiental assumem papel central na formulação de políticas públicas, no ordenamento territorial e na gestão sustentável dos ecossistemas.
+Considerando as relações entre ocupação do espaço, uso dos recursos naturais e políticas ambientais, assinale a alternativa correta:
+Ⓐ As políticas de conservação ambiental são incompatíveis com o ordenamento territorial, pois restringem o uso do solo e inviabilizam o desenvolvimento socioeconômico das populações locais.
+Ⓑ A conservação ambiental pressupõe a exclusão total das atividades humanas nos espaços protegidos, sendo aplicada prioritariamente em unidades de proteção integral.
+Ⓒ A distinção entre preservação e conservação reside no fato de que a primeira implica a manutenção dos ecossistemas com mínima ou nenhuma interferência humana, enquanto a segunda admite o uso racional dos recursos naturais, mediado por normas técnicas e legais.
+Ⓓ A ocupação do ambiente natural torna-se ambientalmente adequada quando orientada exclusivamente por critérios econômicos.
+Ⓔ A preservação ambiental admite o uso controlado dos recursos naturais, desde que sejam adotadas técnicas de manejo sustentável.
+QUESTÃO 25 (Geografia)
+O processo de urbanização nas cidades brasileiras, que aconteceu sem o adequado planejamento, implicou o agravamento das desigualdades socioespaciais, provocando, com isso, uma série de consequências para a vida dos seus habitantes.
+Considerando o processo de urbanização no Brasil, assinale a alternativa correta:
+Ⓐ A urbanização é um fenômeno regional impulsionado pelas manufaturas que se acelerou apenas após a Guerra Fria.
+Ⓑ As cidades sofreram profundas transformações, o que pode ser constatado pela expressiva elevação da taxa de população urbana brasileira, que saiu de 36% em 1950 para aproximadamente 84,9% em 2010.
+Ⓒ Os grandes aglomerados urbanos são constituídos, em sua maioria, por moradias com infraestrutura adequada e serviços sociais plenos.
+Ⓓ A urbanização ocorreu de maneira lenta e compassada no Brasil assim como na Primeira Revolução Industrial inglesa.
+Ⓔ A urbanização brasileira eliminou as disparidades regionais ao consolidar a desconcentração industrial.
+QUESTÃO 26 (Geografia)
+Cidade sustentável é o assentamento humano constituído por uma sociedade com consciência de seu papel de agente transformador dos espaços e cuja relação não se dá pela razão natureza-objeto, e sim por uma ação sinérgica entre prudência ecológica, eficiência energética e equidade socioespacial.
+ROMERO, M. Frentes do urbano para a construção de indicadores de sustentabilidade intraurbana. Paranoá, 2007.
+Uma medida pública que CONTRADIZ o modelo de cidade exposto no texto é a:
+Ⓐ coleta seletiva de lixo.
+Ⓑ reutilização das águas pluviais.
+Ⓒ canalização dos cursos hídricos.
+Ⓓ arborização das avenidas centrais.
+Ⓔ educação ambiental da comunidade.
+QUESTÃO 27 (História)
+Antes da chegada dos colonizadores, os povos originários das Américas desenvolveram sistemas complexos de adaptação e manejo ecológico, cujas estruturas sociais baseavam-se na reciprocidade e no uso coletivo da terra, sem a constituição de regimes de propriedade privada da terra.
+A análise sociológica dessas relações de produção indica que a organização comunitária tradicional:
+Ⓐ dependia de coerção estatal para organizar o trabalho agrícola.
+Ⓑ articulava a apropriação dos recursos às necessidades diretas de subsistência e aos laços culturais.
+Ⓒ estabelecia hierarquias rígidas fundamentadas na acumulação de capital.
+Ⓓ inviabilizava o desenvolvimento de saberes técnicos sobre a fauna e flora.
+Ⓔ restringia a cooperação grupal em função de disputas territoriais permanentes.
+QUESTÃO 28 (Filosofia)
+Na pólis grega clássica, o debate público na Ágora constituía o núcleo da cidadania. No entanto, a isonomia e a isegoria eram privilégios restritos aos homens livres e atenienses, excluindo-se as mulheres, os metecos (estrangeiros) e os escravizados da esfera deliberativa.
+Sob a perspectiva da filosofia política, essa contradição evidencia que a democracia clássica:
+Ⓐ universalizava o direito ao voto independentemente da classe de nascimento.
+Ⓑ sustentava-se em uma base material dependente do trabalho de grupos desprovidos de direitos civis.
+Ⓒ anulava a divisão de classes no cotidiano das decisões da assembleia.
+Ⓓ rejeitava o princípio da igualdade entre os pares pertencentes ao corpo de cidadãos.
+Ⓔ promovia a representatividade direta de todas as categorias produtivas da cidade.
+QUESTÃO 29 (História)
+Durante a República Romana, as lutas sociais e as secessões plebeias forçaram a promulgação de códigos jurídicos públicos, a exemplo da Lei das Doze Tábuas, limitando o arbítrio dos magistrados patrícios que até então detinham o monopólio da tradição oral das normas.
+A institucionalização do direito escrito nesse período histórico representa:
+Ⓐ o estabelecimento imediato da igualdade socioeconômica na República.
+Ⓑ uma conquista plebeia voltada à transparência normativa e à contenção de privilégios oligárquicos.
+Ⓒ a abolição das prerrogativas políticas e militares da aristocracia senatorial.
+Ⓓ o enfraquecimento das instituições republicanas frente aos generais consulares.
+Ⓔ a conversão das normas civis aos preceitos exclusivos da religião politeísta.
+QUESTÃO 30 (História)
+No feudalismo europeu, a estrutura social estratificada e estamental era legitimada por uma cosmovisão que justificava a divisão entre os que oravam (clero), os que guerreavam (nobreza) e os que trabalhavam (servos), fundamentada em laços de suserania, vassalagem e servidão.
+A ordem social feudal descrita no texto caracterizava-se por:
+Ⓐ ampla mobilidade social promovida pelo livre comércio urbano.
+Ⓑ uma estrutura de dominação tradicional baseada em obrigações consuetudinárias e dependência pessoal.
+Ⓒ um sistema de remuneração salarial intermediado pelo mercado financeiro corporativo.
+Ⓓ uma autoridade jurídica centralizada na burocracia dos Estados nacionais modernos.
+Ⓔ uma divisão técnica do trabalho orientada pela busca de inovação científica constante.
+QUESTÃO 31 (Sociologia)
+A Reforma Protestante do século XVI, ao romper com o monopólio institucional e eclesiástico de Roma, promoveu o livre exame das Escrituras e redefiniu a ética do trabalho e a relação do indivíduo com o sagrado, repercutindo nas transformações do pensamento moderno.
+Do ponto de vista sociológico, um dos desdobramentos mais relevantes desse movimento foi:
+Ⓐ a restauração da unidade dogmática em toda a Europa ocidental.
+Ⓑ o estímulo à individualização da fé e a descentralização da autoridade religiosa e cultural.
+Ⓒ o fortalecimento irrestrito do poder secular absoluto sob a regência papal.
+Ⓓ a interdição de práticas mercantis e comerciais nos centros urbanos europeus.
+Ⓔ o encerramento de disputas ideológicas e a pacificação confessional no continente.
+QUESTÃO 32 (Sociologia)
+A sociologia contemporânea discute a ampliação contínua dos direitos civis, políticos e sociais como resultado de lutas históricas e mobilizações populares que redefinem o pacto democrático e a inclusão de minorias.
+A dinâmica de consolidação da cidadania em sociedades democráticas decorre fundamentalmente da:
+Ⓐ capacidade das instituições estatais de suprimir conflitos sociais espontâneos.
+Ⓑ tensão permanente entre reivindicações da sociedade civil e as garantias constitucionais vigentes.
+Ⓒ manutenção estrita de hierarquias tradicionais para assegurar a ordem política.
+Ⓓ subordinação dos direitos humanos às flutuações das taxas de crescimento econômico.
+Ⓔ delegação exclusiva das decisões de interesse público aos corpos técnicos especializados.
+ CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS
+ Questões de 33 a 50 • Biologia, Química e Física
+QUESTÃO 33 (Biologia)
+A quantidade de CO2 na atmosfera da Terra aumentou em 50%, e a temperatura está agora cerca de 1,2 °C mais quente em comparação ao século XIX. O ritmo de aumento da temperatura precisa diminuir se quisermos evitar as piores consequências das mudanças climáticas. Cientistas afirmam que o aquecimento global precisa ser mantido em 1,5 °C até o ano 2100. No entanto, a menos que outras ações sejam tomadas, o planeta ainda pode aquecer mais de 2 °C até o final deste século. Na prática, os países precisam enfrentar as mudanças climáticas com ações mitigadoras, que reduzam tanto as emissões quanto os níveis de CO2 na atmosfera.
+Disponível em: www.bbc.com. Acesso em: 6 dez. 2021 (adaptado).
+Qual ação mitigadora auxilia na remoção desse gás presente na atmosfera, reduzindo seus níveis?
+Ⓐ Plantar mais árvores.
+Ⓑ Instalar mais usinas eólicas.
+Ⓒ Ampliar o uso de energia solar.
+Ⓓ Manter os combustíveis fósseis no solo.
+Ⓔ Produzir menos resíduos sólidos urbanos.
+QUESTÃO 34 (Biologia)
+O esquema apresenta as etapas do processo de biodigestão, uma forma
+de dar um destino sustentável a excrementos animais e restos de comida produzidos em áreas de criação de gado e porcos confinados
+Dar destino sustentável às sobras fertilizantes ajuda a evitar a:
+Ⓐ bioacumulação de toxinas em plantas.
+Ⓑ eutrofização dos corpos de água.
+Ⓒ destruição da camada de ozônio.
+Ⓓ ocorrência de inversão térmica.
+Ⓔ produção de chuva ácida.
+QUESTÃO 35 (Biologia)
+A figura apresenta a herança genética de uma característica a partir do cruzamento de insetos de uma mesma espécie 
+Qual alternativa representa a proporção fenotípica da prole resultante do cruzamento entre indivíduos da primeira geração?
+QUESTÃO 36 (Biologia)
+A maioria dos seres vivos tem um relógio biológico (ciclo circadiano), que regula as mudanças metabólicas e comportamentais de acordo com o ciclo de 24 horas de rotação da Terra. Em 2015, um artigo publicado na revista Science Advantage mostrou ser possível a transferência dos genes do relógio circadiano da cianobactéria Synechococcus elongatus para o genoma da bactéria Escherichia coli, um organismo não circadiano.
+CHEN, A. H. et al. Transplantability of a Circadian Lock to Noncircadian Organism. Science Advantage, n. 1, 2015 (adaptado).
+Estarão presentes no organismo geneticamente modificado os genes do:
+Ⓐ metabolismo de E. coli, apenas.
+Ⓑ ciclo circadiano de E. coli, apenas.
+Ⓒ metabolismo de S. elongatus e do ciclo circadiano de E. coli.
+Ⓓ ciclo circadiano de S. elongatus e do metabolismo de E. coli.
+Ⓔ ciclo circadiano de S. elongatus e do ciclo circadiano de E. coli.
+QUESTÃO 37 (Biologia)
+Os sapinhos-ponta-de-flecha constituem um grupo de espécies encontradas na América Central e do Sul. Seus venenos são obtidos por meio do consumo de algumas formigas e cupins que se alimentam de plantas que contêm esses venenos. Esses anfíbios são usados para envenenar as flechas das zarabatanas dos caçadores nativos. Quando capturados e criados em condições artificiais, ou quando nascidos em cativeiro, não são tóxicos.
+BADIO, B. et al. Epibatidine: Discovery and Definition as a Potent Analgesic and Nicotinic Agonist. Med. Chem. Res., n. 4, 1994 (adaptado).
+A perda da capacidade de se obter a toxina nos nascidos em cativeiro é causada pela:
+Ⓐ diferença de umidade entre os ambientes.
+Ⓑ ausência de alimentação natural.
+Ⓒ adaptação ao novo ambiente.
+Ⓓ mudança de comportamento.
+Ⓔ variabilidade genética.
+QUESTÃO 38 (Biologia)
+O bioma Cerrado é caracterizado por apresentar ampla diversidade vegetal. A introdução de espécies exóticas com alta agressividade competitiva, como o capim-gordura para pastagem, vem modificando a dinâmica desse ambiente.
+CARLOS JR., L. A. et al. O capim-gordura e as invasões no Cerrado brasileiro. Jornal do Biólogo, 2008.
+Em longo prazo, essa ação do homem pode gerar qual consequência?
+Ⓐ Diversificar nichos ecológicos.
+Ⓑ Assorear as nascentes do bioma.
+Ⓒ Dificultar a infiltração de água na terra.
+Ⓓ Diminuir as espécies nativas do bioma.
+Ⓔ Contribuir com a redução das queimadas.
+QUESTÃO 39 (Química)
+Os riscos apresentados pelos produtos dependem de suas propriedades e da reatividade quando em contato com outras substâncias. Para prevenir os riscos devido à natureza química dos produtos, devemos conhecer a lista de substâncias incompatíveis e de uso cotidiano em fábricas, hospitais e laboratórios, a fim de observar cuidados na estocagem, manipulação e descarte. O quadro elenca algumas dessas incompatibilidades, que podem levar à ocorrência de acidentes.
+Considere que houve o descarte indevido de dois conjuntos de substâncias:
+(1) ácido clorídrico concentrado com cianeto de potássio;
+(2) ácido nítrico concentrado com sacarose.
+O descarte dos conjuntos (1) e (2) resultará, respectivamente, em:
+Ⓐ liberação de gás tóxico e reação oxidativa forte.
+Ⓑ reação oxidativa forte e liberação de gás tóxico.
+Ⓒ formação de sais tóxicos e reação oxidativa forte.
+Ⓓ liberação de gás tóxico e liberação de gás oxidante.
+Ⓔ formação de sais tóxicos e liberação de gás oxidante.
+QUESTÃO 40 (Química)
+Um grupo de alunos realizou um experimento para observar algumas propriedades dos ácidos, adicionando um pedaço de mármore (CaCO3) a uma solução aquosa de ácido clorídrico (HCl), observando a liberação de um gás e o aumento da temperatura.
+O gás obtido no experimento é o:
+Ⓐ H2
+Ⓑ O2
+Ⓒ CO2
+Ⓓ CO
+Ⓔ Cl2
+QUESTÃO 41 (Química)
+A bula de um determinado medicamento traz as seguintes informações:
+De acordo com as informações apresentadas na bula, a substância que se encontra em maior concentração e a não condutora de corrente elétrica, quando em solução aquosa, são, respectivamente:
+Ⓐ glicose e glicose
+Ⓑ glicose e cloreto de sódio.
+Ⓒ cloreto de sódio e glicose.
+Ⓓ cloreto de potássio e glicose.
+Ⓔ cloreto de sódio e cloreto de potássio.
+QUESTÃO 42 (Química)
+Um marceneiro esqueceu pregos de ferro expostos à umidade do ar e à chuva. Com isso, os pregos de 5,6 g cada foram cobertos por ferrugem (Fe2O3·H2O), segundo a reação: 2 Fe + 3/2 O2 + H2O → Fe2O3·H2O (Massas molares: H = 1; O = 16; Fe = 56 g/mol; Massa molar da ferrugem = 178 g/mol).
+Qual foi a massa de ferrugem produzida ao se oxidar a metade (50%) de um prego de 5,6 g?
+Ⓐ 144 g
+Ⓑ 72 g
+Ⓒ 17,8 g
+Ⓓ 8,90 g
+Ⓔ 4,45 g
+QUESTÃO 43 (Química)
+O consumo exagerado de refrigerantes é preocupante, pois contribui para o aumento de casos de obesidade e diabetes. Considere dois refrigerantes enlatados, um comum e um diet, e que ambos possuem a mesma quantidade de aditivos, exceto pela presença de açúcar. O refrigerante comum contém basicamente água carbonatada e grande quantidade de açúcar; já o refrigerante diet tem água carbonatada e adoçantes, cujas massas são muito pequenas.
+CAVAGIS A D M. PEREIRA E. A. OLIVEIRA, L. C. Um método simples para avaliar o teor de sacarose e CO, em refrigerantes. Quimica Nova na Escola, n. 3. ago. 2014 (adaptado).
+Entre as duas versões apresentadas, o refrigerante comum possui:
+Ⓐ menor massa de solutos dissolvidos.
+Ⓑ menor viscosidade.
+Ⓒ maior volume de gás dissolvido.
+Ⓓ maior densidade.
+Ⓔ maior temperatura de congelamento.
+QUESTÃO 44 (Química)
+A seguir, as entalpias padrão de combustão completa de alguns combustíveis:
+• Carbono (C): -394 kJ/mol de CO2 formado
+• Etino (C2H2): -1300 kJ/mol (-650 kJ por mol de CO2)
+• Propano (C3H8): -2220 kJ/mol (-740 kJ por mol de CO2)
+• Butano (C4H10): -2878 kJ/mol (-719,5 kJ por mol de CO2)
+• Octano (C8H18): -5471 kJ/mol (-683,8 kJ por mol de CO2)
+ATKINS, P. et al. Princípios de Química, 2018.
+Visando a redução do impacto ambiental, qual dos combustíveis listados libera maior quantidade de energia com menor produção de CO2?
+Ⓐ Carbono
+Ⓑ Etino
+Ⓒ Propano
+Ⓓ Butano
+Ⓔ Octano
+QUESTÃO 45 (Física)
+Um experimento foi montado com o intuito de determinar o tempo de queda livre de corpos com tamanhos e massas distintas. Para isso, utilizou-se uma prateleira a 50,0 cm do chão, onde foram colocadas três frutas, conforme a figura. Em um determinado instante, a prateleira foi removida, liberando todas as frutas simultaneamente.
+Considere o tempo de queda da melancia como t1, do melão como t2 e da maçã como t3. Desprezando-se as forças dissipativas, a relação entre os tempos de queda das frutas é:
+Ⓐ t1 = t2 = t3
+Ⓑ t1 > t2 > t3
+Ⓒ t1 < t2 < t3
+Ⓓ t1 > t2 < t3
+Ⓔ t1 < t2 > t3
+QUESTÃO 46 (Física)
+A transferência de calor por radiação pode ser observada realizando-se a experiência de colocar a mesma quantidade de água quente em dois copos metálicos com as mesmas características, sendo que a superfície externa de um deles é pintada de preto (copo 1), e a do outro é espelhada (copo 2). Sabe-se que todo material emite e absorve energia radiante e que bons emissores são também bons absorvedores dessa energia.
+Ao se colocar um termômetro dentro de cada copo observa-se, após alguns minutos, que a temperatura da água:
+Ⓐ dos dois copos diminui igualmente.
+Ⓑ do copo 1 diminui, e a do copo 2 permanece a mesma.
+Ⓒ do copo 2 diminui, e a do copo 1 permanece a mesma.
+Ⓓ do copo 1 diminui mais rapidamente do que a do copo 2.
+Ⓔ do copo 2 diminui mais rapidamente do que a do copo 1.
+QUESTÃO 47 (Física)
+Em um manual de instruções de uma geladeira, constam as seguintes recomendações:
+• Mantenha a porta de seu refrigerador aberta apenas o tempo necessário;
+• É importante não obstruir a circulação do ar com a má distribuição dos alimentos nas prateleiras;
+• Deixe um espaço de, no mínimo, 5 cm entre a parte traseira do produto (dissipador serpentinado) e a parede.
+Com base nos princípios da termodinâmica, as justificativas para essas recomendações são, respectivamente:
+Ⓐ Reduzir a saída de frio do refrigerador para o ambiente, garantir a transmissão do frio entre os alimentos na prateleira e permitir a troca de calor entre o dissipador de calor e o ambiente.
+Ⓑ Reduzir a saída de frio do refrigerador para o ambiente, garantir a convecção do ar interno, garantir o isolamento térmico entre a parte interna e a externa.
+Ⓒ Reduzir o fluxo de calor do ambiente para a parte interna do refrigerador, garantir a convecção do ar interno e permitir a troca de calor entre o dissipador e o ambiente.
+Ⓓ Reduzir o fluxo de calor do ambiente para a parte interna do refrigerador, garantir a transmissão do frio entre os alimentos na prateleira e permitir a troca de calor entre o dissipador e o ambiente.
+Ⓔ Reduzir o fluxo de calor do ambiente para a parte interna do refrigerador, garantir a convecção do ar interno e garantir o isolamento térmico entre as partes interna e externa.
+QUESTÃO 48 (Física)
+Muitas pessoas ainda se espantam com o fato de um passageiro sair ileso de um acidente de carro enquanto o veículo onde estava teve perda total. Essas pessoas talvez considerem, equivocadamente, que os carros mais seguros são os que têm as estruturas mais rígidas. Na verdade, o que ocorre é o contrário. Por isso, a partir de 1958, passaram a ser produzidos carros com partes que se deformam facilmente (região deformável / crumple zone). Assim, além dos cintos de segurança e dos airbags, os carros modernos passaram a contar com o dispositivo de segurança conhecido como crumple zone (região deformável, em inglês), conforme a figura. 
+Momentum and Car safety. GCSE Physics Revision (adaptado).
+Considerando o carro, seus ocupantes e o muro como um sistema isolado, o crumple zone aumenta a segurança dos passageiros porque, durante uma colisão, a deformação da estrutura do carro:
+Ⓐ aciona os airbags do veículo.
+Ⓑ absorve a energia cinética do sistema.
+Ⓒ consome a quantidade de movimento do sistema.
+Ⓓ cria uma barreira de proteção para seus ocupantes.
+Ⓔ diminui a velocidade do centro de massa do sistema.
+QUESTÃO 49 (Física)
+Algumas crianças, ao brincarem de esconde-esconde, tapam os olhos com as mãos, acreditando que, ao adotarem tal procedimento, não poderão ser vistas.
+Essa percepção da criança contraria o conhecimento científico porque, para serem vistos, os objetos:
+Ⓐ refletem partículas de luz (fótons), que atingem os olhos do observador.
+Ⓑ geram partículas de luz (fótons), convertidas pela fonte externa.
+Ⓒ são atingidos por partículas de luz (fótons), emitidas pelos olhos.
+Ⓓ refletem partículas de luz (fótons), que se chocam com os fótons emitidos pelos olhos.
+Ⓔ são atingidos pelas partículas de luz (fótons), emitidas pela fonte externa e pelos olhos.
+QUESTÃO 50 (Física)
+Em uma animação do Tom e Jerry, o camundongo Jerry se assusta ao ver sua imagem em uma bola de Natal cuja superfície é refletora, como mostra a reprodução abaixo.
+Considerando as propriedades ópticas da superfície externa convexa de uma esfera refletora, a imagem conjugada de um objeto real é sempre:
+Ⓐ virtual e ampliada.
+Ⓑ virtual e reduzida.
+Ⓒ real e ampliada.
+Ⓓ real e reduzida.
+Ⓔ real e de mesmo tamanho.
+ MATEMÁTICA E SUAS TECNOLOGIAS
+ Questões de 51 a 70 • Matemática
+QUESTÃO 51 (Matemática)
+Um atleta produz sua própria refeição com custo fixo de R$ 10,00, composta por 400g de frango, 600g de batata-doce e uma hortaliça, com os seguintes preços:
+Em relação a esses preços, haverá um aumento de 50% no preço do kg de batata-doce, e os outros preços não serão alterados. O atleta deseja manter o custo da refeição, a quantidade de batata-doce e a hortaliça. Portanto, terá que reduzir a quantidade de frango.
+Qual deve ser a redução percentual da quantidade de frango para que o atleta alcance seu objetivo?
+Ⓐ 12,5%
+Ⓑ 28,0%
+Ⓒ 30,0%
+Ⓓ 50,0%
+Ⓔ 70,0%
+QUESTÃO 52 (Matemática)
+Em uma loja, o preço promocional de uma geladeira é de R$ 1 000,00 para pagamento somente em dinheiro. Seu preço normal, fora da promoção, é 10% maior. Para pagamento feito com o cartão de crédito da loja, é dado um desconto de 2% sobre o preço normal.
+Uma cliente decidiu comprar essa geladeira, optando pelo pagamento com o cartão de crédito da loja. Ela calculou que o valor a ser pago seria o preço promocional acrescido de 8%. 
+Ao ser informada pela loja do valor a pagar, segundo sua opção, percebeu uma diferença entre seu cálculo e o valor que lhe foi apresentado.
+O valor apresentado pela loja, comparado ao valor calculado pela cliente, foi:
+Ⓐ R$ 2,00 menor.
+Ⓑ R$ 100,00 menor.
+Ⓒ R$ 200,00 menor.
+Ⓓ R$ 42,00 maior.
+Ⓔ R$ 80,00 maior.
+QUESTÃO 53 (Matemática)
+Um ciclista amador de 61 anos de idade utilizou um monitor cardíaco para medir suas frequências cardíacas nos seguintes trechos: 
+Sabe-se que a faixa aeróbica ideal é entre 65% e 85% da frequência cardíaca máxima, calculada por Fc máx = 220 - idade (para 61 anos, Fc máx = 159 bpm; faixa ideal: 103,35 bpm a 135,15 bpm).
+Os trechos do percurso nos quais esse ciclista se mantém dentro de sua faixa aeróbica ideal são:
+Ⓐ leve no plano, forte no plano, subida moderada e subida forte.
+Ⓑ leve no plano, forte no plano e subida moderada.
+Ⓒ forte no plano, subida moderada e subida forte.
+Ⓓ forte no plano e subida moderada.
+Ⓔ leve no plano e subida forte.
+QUESTÃO 54 (Matemática)
+Dirigir após ingerir bebidas alcoólicas é uma atitude extremamente perigosa, uma vez que, a partir da primeira dose, a pessoa já começa a ter perda de sensibilidade de movimentos e de reflexos. 
+Apesar de a eliminação e absorção do álcool depender de cada pessoa e de como o organismo consegue metabolizar a substância, ao final da primeira hora após a ingestão, a concentração de álcool (C) no sangue corresponde a aproximadamente 90% da quantidade (q) de álcool ingerida, e a eliminação total dessa concentração pode demorar até 12 horas.
+Disponível em: http://g1.globo.com (adaptado).
+Nessas condições, ao final da primeira hora após a ingestão da quantidade q de álcool, a concentração C dessa substância no sangue é expressa algebricamente por:
+Ⓐ C = 0,9q
+Ⓑ C = 0,1q
+Ⓒ C = 1 - 0,1q
+Ⓓ C = 1 - 0,9q
+Ⓔ C = q – 10
+QUESTÃO 55 (Matemática)
+Um estacionamento possui 120 vagas para veículos, e todas essas vagas estão ocupadas. Cada cliente paga uma mensalidade para utilizar uma vaga, que é calculada com base nas despesas mensais do estacionamento e no lucro pretendido. As despesas mensais do estacionamento são: R$ 14 240,00 com manutenção mais R$ 36,00 de seguro por veículo. O lucro do estacionamento é determinado pela diferença do valor arrecadado com as mensalidades pelas despesas efetuadas. A partir do mês seguinte, o valor do seguro por veículo aumentará em 20%, e as despesas com manutenção permanecerão sem alterações. Com isso, o dono do estacionamento reajustará as mensalidades para obter um lucro mensal de R$ 10 000,00. Apesar desse reajuste, todas as vagas continuarão ocupadas.
+O valor, em real, da mensalidade individual reajustada será:
+Ⓐ 185,60.
+Ⓑ 226,09.
+Ⓒ 245,20.
+Ⓓ 268,93.
+Ⓔ 285,60.
+QUESTÃO 56 (Matemática)
+Uma pesquisa sobre serviços de streaming foi realizada com 60 pessoas:
+• 35 usam Netflix;
+• 30 usam Spotify;
+• 25 usam YouTube Premium;
+• 15 usam Netflix e Spotify;
+• 12 usam Netflix e YouTube Premium;
+• 10 usam Spotify e YouTube Premium;
+• 5 usam os três serviços simultaneamente.
+Com base nos dados coletados, a quantidade de pessoas que utilizam apenas a plataforma Netflix e o número de entrevistados que não utilizam nenhum desses três serviços são, respectivamente:
+Ⓐ 13 e 2.
+Ⓑ 15 e 5.
+Ⓒ 18 e 3.
+Ⓓ 20 e 2.
+Ⓔ 22 e 5.
+QUESTÃO 57 (Matemática)
+Uma pessoa precisa comprar 15 sacos de cimento para uma reforma residencial e pesquisou preços unitários e fretes em cinco depósitos:
+
+Considerando o valor total dos 15 sacos somado ao valor do frete, qual depósito é o mais econômico?
+Ⓐ Depósito 1.
+Ⓑ Depósito 2.
+Ⓒ Depósito 3.
+Ⓓ Depósito 4.
+Ⓔ Depósito 5.
+QUESTÃO 58 (Matemática)
+Uma professora de matemática utiliza em suas aulas uma “máquina caça-números” para verificar os conhecimentos de seus estudantes sobre representações de números racionais. Essa máquina tem um visor dividido em seis compartimentos e, na lateral, uma alavanca. Cada estudante puxa a alavanca e espera que os compartimentos parem de girar. A partir daí, precisa responder para a professora em quais posições se encontram os números que representam a mesma quantidade.Um estudante puxou a alavanca, aguardou que os compartimentos parassem de girar e observou os números apresentados no visor. A configuração da máquina naquele instante está apresentada abaixo:
+O estudante que respondeu corretamente à pergunta indicou as posições:
+Ⓐ I, II e IV.
+Ⓑ II, IV e V.
+Ⓒ II, III e V.
+Ⓓ III, V e VI.
+Ⓔ III, IV e VI.
+QUESTÃO 59 (Matemática)
+Atualmente, há telefones celulares com telas de diversos tamanhos e em formatos retangulares. Alguns deles apresentam telas medindo  polegadas, com determinadas especificações técnicas. Além disso, em muitos modelos, com a inclusão de novas funções no celular, suas telas ficaram maiores, sendo muito comum encontrarmos atualmente telas medindo  polegadas, conforme a figura.
+Disponível em: www.tecmundo.com.br (adaptado).
+A diferença de tamanho, em valor absoluto, entre as medidas, em polegada, das telas do celular 2 e do celular 1, representada apenas com uma casa decimal, é:
+Ⓐ 0,1.
+Ⓑ 0,5.
+Ⓒ 1,0.
+Ⓓ 1,3.
+Ⓔ 1,8.
+QUESTÃO 60 (Matemática)
+Um município possui uma população estimada em 180.000 habitantes espalhados por um território retangular com dimensões de 15 km de largura por 24 km de comprimento.
+A densidade demográfica desse município, expressa em habitantes por quilômetro quadrado (hab/km²), é igual a:
+Ⓐ 360 hab/km².
+Ⓑ 500 hab/km².
+Ⓒ 750 hab/km².
+Ⓓ 1 200 hab/km².
+Ⓔ 1 500 hab/km².
+QUESTÃO 61 (Matemática)
+Uma pessoa pretende instalar um kit de gás natural veicular (GNV) em seu carro. Na loja que escolheu para realizar a compra e instalação desse kit, havia cinco modelos de cilindro para armazenamento do gás, cujas capacidades, em metro cúbico, eram, respectivamente: 10, 14, 17, 21 e 25. O preço do cilindro é proporcional à sua capacidade. Esse carro rodará 30 km diariamente, 7 dias por semana, e o consumo do GNV é de 1 m³ a cada 13 km rodados. A pessoa escolherá o modelo de cilindro de menor preço e que garanta apenas um abastecimento semanal.
+Nessas condições, qual será a capacidade, em metro cúbico, do cilindro escolhido por essa pessoa?
+Ⓐ 10 m³
+Ⓑ 14 m³
+Ⓒ 17 m³
+Ⓓ 21 m³
+Ⓔ 25 m³
+QUESTÃO 62 (Matemática)
+Na cantina de uma escola, há cinco alimentos vendidos em pacotes com diferentes quantidades de porções. As informações nutricionais contidas nos rótulos desses produtos estão indicadas nas imagens:
+
+Uma estudante opta sempre pelo alimento com a menor quantidade total de sódio por pacote.
+Qual desses produtos deve ser o escolhido pela estudante?
+Ⓐ Batata chips.
+Ⓑ Palitos salgados.
+Ⓒ Biscoito multigrãos.
+Ⓓ Biscoito de polvilho.
+Ⓔ Biscoito de água e sal.
+QUESTÃO 63 (Matemática)
+No atletismo, um grande desafio da prova de 100 metros rasos é a sua conclusão num tempo abaixo da marca de referência dos 10,00 segundos. Vários atletas já alcançaram esse feito. Em 2009, o jamaicano Usain Bolt estabeleceu o recorde mundial masculino dessa prova, com o tempo de 9,58 segundos.
+Qual é a diferença, em segundo, entre a marca de referência e a marca estabelecida por Usain Bolt em 2009?
+Ⓐ 0,02 s
+Ⓑ 0,42 s
+Ⓒ 0,52 s
+Ⓓ 1,02 s
+Ⓔ 1,42 s
+QUESTÃO 64 (Matemática)
+Uma distribuidora de combustível possui caminhões-tanque com capacidade de 30 000 litros cada. Em qualquer transporte realizado por esses caminhões, um mesmo volume de combustível é descartado, pois fica com muitas impurezas. Esse volume descartado independe da quantidade transportada.Um posto de combustível encomendou 10 000 litros de gasolina dessa distribuidora, que enviou 10 200 litros, considerando o volume descartado no transporte. Mesmo assim, a quantidade de gasolina entregue ao posto foi de 9 900 litros.Em um novo pedido, esse posto solicitou que fosse entregue exatamente o dobro do volume de gasolina encomendado no pedido anterior.
+Utilizando o mesmo caminhão da entrega anterior, qual é o volume mínimo de gasolina, em litro, que a distribuidora deverá enviar para garantir a entrega da quantidade encomendada nesse novo pedido?
+Ⓐ 20 100 litros.
+Ⓑ 20 200 litros.
+Ⓒ 20 300 litros.
+Ⓓ 20 400 litros.
+Ⓔ 20 600 litros.
+QUESTÃO 65 (Matemática)
+Uma empresa produziu, em um determinado mês, 110 toneladas de plástico a partir de derivados de petróleo e 80 toneladas a partir de plásticos reciclados. O custo para reciclar uma tonelada de plástico é de R$ 500,00, que equivale a 5% do custo para produzir a mesma quantidade de plástico a partir de derivados de petróleo. Para o mês seguinte, a meta dessa empresa é produzir a mesma quantidade de plástico que foi produzida nesse mês, mas com redução de, pelo menos, 50% no custo de produção.
+Para que no mês seguinte a empresa atinja a meta, a quantidade mínima de toneladas de plástico a serem produzidas a partir de reciclagem deve ser:
+Ⓐ 135 toneladas.
+Ⓑ 140 toneladas.
+Ⓒ 155 toneladas.
+Ⓓ 160 toneladas.
+Ⓔ 175 toneladas.
+QUESTÃO 66 (Matemática)
+Um carro que custa 60 mil reais é comercializado por uma revendedora que oferece duas opções de pagamento, todas sem entrada e sem juros:
+Opção 1: pagamento em n parcelas iguais;
+Opção 2: pagamento em 6 parcelas a mais do que na opção 1 e o valor de cada parcela se torna R$ 500,00 menor do que o valor da parcela na opção 1.
+Nas duas opções de pagamento, o valor total a ser pago pelo carro é o mesmo.
+Qual é a quantidade n de parcelas contidas na opção 1 de pagamento?
+Ⓐ 18 parcelas.
+Ⓑ 24 parcelas.
+Ⓒ 30 parcelas.
+Ⓓ 42 parcelas.
+Ⓔ 48 parcelas.
+QUESTÃO 67 (Matemática)
+A final de um campeonato de futebol foi disputada em 2 tempos regulamentares, de 45 minutos cada, sem acréscimos, com uma prorrogação de 30 minutos, também sem acréscimos. Um jogador entrou no início do segundo tempo, com um equipamento para medir a distância percorrida durante sua participação no jogo. Ao final do segundo tempo regulamentar, esse jogador havia percorrido 4,5km. Ele manteve na prorrogação a mesma velocidade média que havia mantido no segundo tempo regulamentar.
+A distância percorrida por esse jogador durante sua participação na partida, em quilômetro, foi:
+Ⓐ 4,5 km.
+Ⓑ 6,0 km.
+Ⓒ 7,5 km.
+Ⓓ 9,0 km.
+Ⓔ 12,0 km.
+QUESTÃO 68 (Matemática)
+Em um país, a primeira etapa para obtenção da carteira de motorista é a contratação de três produtos:
+• pacote com 20 aulas teóricas;
+• pacote com 10 aulas práticas;
+• aluguel do veículo para realização das aulas práticas.
+Uma pessoa que pretende obter a carteira de motorista pesquisou o valor do aluguel do veículo e os valores de cada aula teórica e de cada aula prática em três autoescolas. O quadro apresenta esses valores.
+Ela contratará os três produtos numa mesma autoescola de modo que o custo total nessa primeira etapa seja o menor possível.
+A autoescola que será contratada e o respectivo custo total são:
+Ⓐ I, com o custo total de R$ 1 400,00.
+Ⓑ II, com o custo total de R$ 280,00.
+Ⓒ II, com o custo total de R$ 1 300,00.
+Ⓓ III, com o custo total de R$ 460,00.
+Ⓔ III, com o custo total de R$ 1 200,00.
+QUESTÃO 69 (Matemática)
+Um artista, que costuma fazer desenhos com areia na praia, pediu a um banhista que fizesse um pequeno desenho, que serviria de esboço para uma grande obra de arte a ser feita na areia. Esse desenho está representado na figura.
+Após a conclusão, a obra de arte obtida manteve as mesmas proporções do desenho feito pelo banhista, sendo que as medidas indicadas na figura foram ampliadas para 30 m.
+Em qual escala esse desenho representa a obra de arte?
+Ⓐ 1 : 1,5
+Ⓑ 1 : 2,25
+Ⓒ 1 : 10
+Ⓓ 1 : 100
+Ⓔ 1 : 150
+QUESTÃO 70 (Matemática)
+Em janeiro do ano passado, a direção de uma fábrica abriu uma creche para os filhos de seus funcionários, com 10 salas, cada uma com capacidade para atender 10 crianças a cada ano. As vagas são sorteadas entre os filhos dos funcionários inscritos, enquanto os não contemplados pelo sorteio formam uma lista de espera. No ano passado, a lista de espera teve 400 nomes e, neste ano, esse número cresceu 10%. A direção da fábrica realizou uma pesquisa e constatou que a lista de espera para o próximo ano terá a mesma quantidade de nomes da lista de espera deste ano. Decidiu, então, construir, ao longo desse ano, novas salas para a creche, também com capacidade de atendimento para 10 crianças cada, de modo que o número de nomes na lista de espera no próximo ano seja 25% menor que o deste ano.
+O número mínimo de salas que deverão ser construídas é:
+Ⓐ 10 salas.
+Ⓑ 11 salas.
+Ⓒ 13 salas.
+Ⓓ 30 salas.
+Ⓔ 33 salas.
+1. O rascunho da redação deve ser feito no espaço apropriado.
+2. O texto definitivo deve ser escrito à tinta preta, na folha própria, em até 30 (trinta) linhas.
+3. A redação que apresentar cópia dos textos da Proposta de Redação ou do Caderno de Questões terá o número de linhas
+copiadas desconsiderado para a contagem de linhas.
+4. Receberá nota zero, em qualquer das situações expressas a seguir, a redação que:
+  4.1. tiver até 7 (sete) linhas escritas, sendo considerada “texto insuficiente”;
+  4.2. fugir ao tema ou não atender ao tipo dissertativo-argumentativo;
+  4.3. apresentar parte do texto deliberadamente desconectada do tema proposto;
+  4.4. apresentar nome, assinatura, rubrica ou outras formas de identificação no espaço destinado ao texto.
+ATENÇÃO: Escreva à tinta preta. Não assine fora do campo acima. Textos em desconexão temática deliberada receberão nota zero.
+INSTRUÇÕES DE PREENCHIMENTO: Preencha integralmente a bolinha com caneta preta. Exemplo correto:  ●  |  Incorretos:  ✕  ✓  ─  ○
+SIMULADO ENEM • COLETIVO VOA VOA / PREPARATÓRIO GABARITA • GABARITO OFICIAL UNIFICADO
